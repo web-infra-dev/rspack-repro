@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm-run-all build:*",
+    "build:rspack": "WEBPACK=1 pnpm rspack -c ./config.mjs",
+    "build:webpack": "RSPACK=1 pnpm webpack -c ./config.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,5 +14,13 @@
   "license": "ISC",
   "devDependencies": {
     "@rspack/cli": "0.1.7"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
   }
 }
