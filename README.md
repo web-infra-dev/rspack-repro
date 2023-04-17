@@ -13,5 +13,5 @@ A GitHub template for create reproduction with Rspack fastly.
 
 `pnpm run build` would both run Webpack and Rspack with config `./config.mjs`
 
-Webpack will emits output in `./webpack-dist`
-Rspack will emits output in `./rspack-dist`
+- Webpack will emits output in `./webpack-dist`
+- Rspack will emits output in `./rspack-dist`
