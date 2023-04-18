@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm-run-all build:*",
+    "build": "npm-run-all build:* --sequential --print-name",
     "build:rspack": "WEBPACK=1 pnpm rspack -c ./config.mjs",
     "build:webpack": "RSPACK=1 pnpm webpack -c ./config.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,14 +12,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-  },
   "dependencies": {
     "@rspack/cli": "0.1.7",
-    "webpack-cli": "^5.0.1",
     "webpack": "^5.79.0",
-    "npm-run-all": "^4.1.5",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

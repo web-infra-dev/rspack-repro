@@ -15,3 +15,5 @@ A GitHub template for create reproduction with Rspack fastly.
 
 - Webpack will emits output in `./webpack-dist`
 - Rspack will emits output in `./rspack-dist`
+
+`./webpack-dist` and `./rspack-dist` are not added to `.gitignore` on purpose.
