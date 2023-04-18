@@ -1,4 +1,8 @@
 # rspack-repro
+
+- [Rspack website](https://www.rspack.dev/)
+- [Rspack repo](https://github.com/web-infra-dev/rspack)
+
 A GitHub template for create reproduction with Rspack fastly.
 
 ## versions
