@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npm-run-all build:* --sequential --print-name",
-    "build:rspack": "WEBPACK=1 pnpm rspack -c ./config.mjs",
-    "build:webpack": "RSPACK=1 pnpm webpack -c ./config.mjs",
+    "build:rspack": "RSPACK=1 pnpm rspack -c ./config.mjs",
+    "build:webpack": "WEBPACK=1 pnpm webpack -c ./config.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
