@@ -17,25 +17,14 @@ const config = {
   entry: {
     main: "./src/index.js",
   },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        resourceQuery: /raw/,
-        type: "asset/source",
-      },
-    ],
+  externalsPresets: {
+    node: true,
   },
   output: {
     path: isRunningWebpack
       ? path.resolve(__dirname, "webpack-dist")
       : path.resolve(__dirname, "rspack-dist"),
     filename: "main.js",
-  },
-  resolve: {
-    alias: {
-      "./answer": path.resolve(__dirname, "./src/answer.js?raw"),
-    },
   },
 };
 
