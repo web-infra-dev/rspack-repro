@@ -8,7 +8,7 @@ A GitHub template for create reproduction with Rspack fastly.
 ## versions
 
 ```
-    "@rspack/cli": "0.1.7",
+    "@rspack/cli": "nightly",
     "webpack-cli": "^5.0.1",
     "webpack": "^5.79.0",
 ```
