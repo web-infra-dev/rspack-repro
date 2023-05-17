@@ -3,7 +3,9 @@
 - [Rspack website](https://www.rspack.dev/)
 - [Rspack repo](https://github.com/web-infra-dev/rspack)
 
-A GitHub template for create reproduction with Rspack fastly.
+A GitHub template for creating a Rspack minimal reproducible example.
+
+Webpack is included for comparing the outputs.
 
 ## versions
 
@@ -20,4 +22,5 @@ A GitHub template for create reproduction with Rspack fastly.
 - Webpack will emits output in `./webpack-dist`
 - Rspack will emits output in `./rspack-dist`
 
-`./webpack-dist` and `./rspack-dist` are not added to `.gitignore` on purpose.
+`./webpack-dist` and `./rspack-dist` are purposely not added to `.gitignore`.
+It is recommended to commit these files so we quickly compare the outputs.
