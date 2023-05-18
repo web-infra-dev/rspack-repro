@@ -21,10 +21,11 @@ const config = {
     node: true,
   },
   output: {
+    clean: true,
     path: isRunningWebpack
       ? path.resolve(__dirname, "webpack-dist")
       : path.resolve(__dirname, "rspack-dist"),
-    filename: "main.js",
+    filename: "[name].js",
   },
 };
 
