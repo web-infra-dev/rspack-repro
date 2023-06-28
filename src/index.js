@@ -1,1 +1,3 @@
-import('./answer')
+import('./render').then(exports => {
+    exports.render()
+})

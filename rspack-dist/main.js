@@ -1,7 +1,9 @@
 (function() {
 var __webpack_modules__ = {
 "./src/index.js": function (module, exports, __webpack_require__) {
-__webpack_require__.el("./src/answer.tsx").then(__webpack_require__.bind(__webpack_require__, "./src/answer.tsx")).then(__webpack_require__.ir);
+__webpack_require__.el("./src/render.js").then(__webpack_require__.bind(__webpack_require__, "./src/render.js")).then(__webpack_require__.ir).then((exports)=>{
+    exports.render();
+});
 },
 
 }
@@ -25,21 +27,6 @@ function __webpack_require__(moduleId) {
 }
 // expose the modules object (__webpack_modules__)
  __webpack_require__.m = __webpack_modules__;
-// webpack/runtime/ensure_chunk
-(function() {
-__webpack_require__.f = {};
-// This file contains only the entry chunk.
-// The chunk loading function for additional chunks
-__webpack_require__.e = function (chunkId) {
-	return Promise.all(
-		Object.keys(__webpack_require__.f).reduce(function (promises, key) {
-			__webpack_require__.f[key](chunkId, promises);
-			return promises;
-		}, [])
-	);
-};
-
-})();
 // ir
 (function() {
 function _getRequireCache(nodeInterop) {
@@ -92,69 +79,73 @@ __webpack_require__.ir = function (obj, nodeInterop) {
 };
 
 })();
-// webpack/runtime/on_chunk_loaded
+// webpack/runtime/load_chunk_with_module
 (function() {
-var deferred = [];
-__webpack_require__.O = function (result, chunkIds, fn, priority) {
-	if (chunkIds) {
-		priority = priority || 0;
-		for (var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--)
-			deferred[i] = deferred[i - 1];
-		deferred[i] = [chunkIds, fn, priority];
-		return;
-	}
-	var notFulfilled = Infinity;
-	for (var i = 0; i < deferred.length; i++) {
-		var chunkIds = deferred[i][0],
-			fn = deferred[i][1],
-			priority = deferred[i][2];
-		var fulfilled = true;
-		for (var j = 0; j < chunkIds.length; j++) {
-			if (
-				(priority & (1 === 0) || notFulfilled >= priority) &&
-				Object.keys(__webpack_require__.O).every(function (key) {
-					return __webpack_require__.O[key](chunkIds[j]);
-				})
-			) {
-				chunkIds.splice(j--, 1);
-			} else {
-				fulfilled = false;
-				if (priority < notFulfilled) notFulfilled = priority;
-			}
-		}
-		if (fulfilled) {
-			deferred.splice(i--, 1);
-			var r = fn();
-			if (r !== undefined) result = r;
-		}
-	}
-	return result;
+var map = {"./src/render.js": ["src_render_js",],};
+
+__webpack_require__.el = function(module) {
+  var chunkId = map[module];
+  if (chunkId === undefined) {
+      return Promise.resolve();
+  }
+  if (chunkId.length > 1) {
+    return Promise.all(chunkId.map(__webpack_require__.e));
+  } else {
+    return __webpack_require__.e(chunkId[0]);
+  };
+}
+
+})();
+// webpack/runtime/ensure_chunk
+(function() {
+__webpack_require__.f = {};
+// This file contains only the entry chunk.
+// The chunk loading function for additional chunks
+__webpack_require__.e = function (chunkId) {
+	return Promise.all(
+		Object.keys(__webpack_require__.f).reduce(function (promises, key) {
+			__webpack_require__.f[key](chunkId, promises);
+			return promises;
+		}, [])
+	);
 };
 
 })();
-// webpack/runtime/load_chunk_with_module
+// webpack/runtime/public_path
 (function() {
-var map = {"./src/answer.tsx": ["src_answer_tsx",],};
 
-    __webpack_require__.el = function(module) {
-        var chunkId = map[module];
-        if (chunkId === undefined) {
-            return Promise.resolve();
-        }
-        if (chunkId.length > 1) {
-          return Promise.all(chunkId.map(__webpack_require__.e));
-        } else {
-          return __webpack_require__.e(chunkId[0]);
-        };
+  var scriptUrl;
+  if (self.importScripts) scriptUrl = self.location + "";
+  var document = self.document;
+  if (!scriptUrl && document) {
+    if (document.currentScript) scriptUrl = document.currentScript.src;
+      if (!scriptUrl) {
+        var scripts = document.getElementsByTagName("script");
+		    if (scripts.length) scriptUrl = scripts[scripts.length - 1].src;
+      }
     }
-    
+  // When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration",
+  // or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.',
+  if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+  scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+  __webpack_require__.p = scriptUrl
+  
+})();
+// webpack/runtime/get_chunk_filename/__webpack_require__.u
+(function() {
+// This function allow to reference chunks
+        __webpack_require__.u = function (chunkId) {
+          // return url for filenames based on template
+          return {"src_render_js": "src_render_js.js",}[chunkId];
+        };
+      
 })();
 // webpack/runtime/get_chunk_filename/__webpack_require__.k
 (function() {
 // This function allow to reference chunks
         __webpack_require__.k = function (chunkId) {
           // return url for filenames based on template
-          return {"src_answer_tsx": "src_answer_tsx.css",}[chunkId];
+          return {"src_render_js": "src_render_js.css",}[chunkId];
         };
       
 })();
@@ -230,35 +221,6 @@ __webpack_require__.o = function (obj, prop) {
 };
 
 })();
-// webpack/runtime/public_path
-(function() {
-
-  var scriptUrl;
-  if (self.importScripts) scriptUrl = self.location + "";
-  var document = self.document;
-  if (!scriptUrl && document) {
-    if (document.currentScript) scriptUrl = document.currentScript.src;
-      if (!scriptUrl) {
-        var scripts = document.getElementsByTagName("script");
-		    if (scripts.length) scriptUrl = scripts[scripts.length - 1].src;
-      }
-    }
-  // When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration",
-  // or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.',
-  if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-  scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-  __webpack_require__.p = scriptUrl
-  
-})();
-// webpack/runtime/get_chunk_filename/__webpack_require__.u
-(function() {
-// This function allow to reference chunks
-        __webpack_require__.u = function (chunkId) {
-          // return url for filenames based on template
-          return {"src_answer_tsx": "src_answer_tsx.js",}[chunkId];
-        };
-      
-})();
 // webpack/runtime/jsonp_chunk_loading
 (function() {
 var installedChunks = {"main": 0,};
@@ -313,9 +275,6 @@ __webpack_require__.f.j = function (chunkId, promises) {
 		}
 	}
 };
-__webpack_require__.O.j = function (chunkId) {
-	return installedChunks[chunkId] === 0;
-};
 // install a JSONP callback for chunk loading
 var webpackJsonpCallback = function (parentChunkLoadingFunction, data) {
 	var chunkIds = data[0],
@@ -345,7 +304,7 @@ var webpackJsonpCallback = function (parentChunkLoadingFunction, data) {
 		}
 		installedChunks[chunkId] = 0;
 	}
-	return __webpack_require__.O(result);
+	
 };
 
 var chunkLoadingGlobal = self['webpackChunkrspack_repro'] = self['webpackChunkrspack_repro'] || [];
@@ -431,7 +390,7 @@ __webpack_require__.f.css = function (chunkId, promises) {
 		if (installedChunkData) {
 			promises.push(installedChunkData[2]);
 		} else {
-			if ([].indexOf(chunkId) > -1) {
+			if (["src_render_js",].indexOf(chunkId) > -1) {
 				// setup Promise in chunk cache
 				var promise = new Promise(function (resolve, reject) {
 					installedChunkData = installedChunks[chunkId] = [resolve, reject];
@@ -476,6 +435,5 @@ __webpack_require__.f.css = function (chunkId, promises) {
 };
 
 })();
-var __webpack_exports__ = __webpack_require__('./src/index.js');
-__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-})();
+var __webpack_exports__ = __webpack_require__("./src/index.js");
+})()
