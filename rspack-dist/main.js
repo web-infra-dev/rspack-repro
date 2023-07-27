@@ -1,9 +1,28 @@
 (function() {
 var __webpack_modules__ = {
 "./src/index.js": function (module, exports, __webpack_require__) {
-__webpack_require__.el("./src/render.js").then(__webpack_require__.bind(__webpack_require__, "./src/render.js")).then(__webpack_require__.ir).then((exports)=>{
-    exports.render();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
 });
+var _mock_b = __webpack_require__("./src/mock_b.js");
+console.log('result:', _mock_b.result);
+__webpack_require__.el("./src/render.js").then(__webpack_require__.bind(__webpack_require__, "./src/render.js")).then(__webpack_require__.ir).then((exports1)=>{
+    exports1.render();
+});
+},
+"./src/mock_b.js": function (module, exports, __webpack_require__) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "result", {
+    enumerable: true,
+    get: function() {
+        return result;
+    }
+});
+const result = 'b';
 },
 
 }

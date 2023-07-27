@@ -1,5 +1,23 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({});
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/mock_b.js":
+/*!***********************!*\
+  !*** ./src/mock_b.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "result": () => (/* binding */ result)
+/* harmony export */ });
+const result = 'b';
+
+
+/***/ })
+
+/******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -369,12 +387,20 @@
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-__webpack_require__.e(/*! import() */ "src_render_js").then(__webpack_require__.bind(__webpack_require__, /*! ./render */ "./src/render.js")).then(exports => {
-    exports.render()
-})
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Users_yangjian_project_rspack_repro_src_mock_a_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/mock_a.js */ "./src/mock_b.js");
+
+console.log('result:', _Users_yangjian_project_rspack_repro_src_mock_a_js__WEBPACK_IMPORTED_MODULE_0__.result);
+__webpack_require__.e(/*! import() */ "src_render_js").then(__webpack_require__.bind(__webpack_require__, /*! ./render */ "./src/render.js")).then((exports) => {
+  exports.render();
+});
+
+})();
 
 /******/ })()
 ;
