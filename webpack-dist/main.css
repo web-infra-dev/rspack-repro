@@ -1,0 +1,4 @@
+body {
+  color: red;
+}
+head{--webpack-rspack-repro-main:\.\/src\/a\.scss;}
