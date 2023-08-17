@@ -8,7 +8,7 @@
     "build:rspack": "RSPACK=1 pnpm rspack -c ./config.mjs",
     "build:webpack": "WEBPACK=1 pnpm webpack -c ./config.mjs",
     "dev:webpack": "WEBPACK=1 webpack serve -c ./config.mjs",
-    "dev:rspack": "WEBPACK=1 rspack dev -c ./config.mjs",
+    "dev:rspack": "RSPACK=1 rspack dev -c ./config.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
