@@ -1,6 +1,6 @@
 import path from "path";
 import { fileURLToPath } from "url";
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+import HtmlWebpackPlugin from "html-webpack-plugin";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const isRunningWebpack = !!process.env.WEBPACK;
@@ -18,16 +18,7 @@ const config = {
   entry: {
     main: "./src/index",
   },
-  plugins: [
-    ...(isRunningWebpack ? [
-      new HtmlWebpackPlugin(),
-    ] : [])
-  ],
-  ...(isRunningRspack ? {
-    builtins: {
-      html: [{}],
-    },
-  } : {}),
+  plugins: [new HtmlWebpackPlugin()],
   output: {
     clean: true,
     path: isRunningWebpack
@@ -37,7 +28,7 @@ const config = {
   },
   experiments: {
     css: true,
-  }
+  },
 };
 
 export default config;
