@@ -1,6 +1,7 @@
 import path from "path";
 import { fileURLToPath } from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import MonacoEditorWebpackPlugin from "monaco-editor-webpack-plugin";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const isRunningWebpack = !!process.env.WEBPACK;
@@ -18,7 +19,9 @@ const config = {
   entry: {
     main: "./src/index",
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    templateContent: `<div id="container"></div>`
+  }), new MonacoEditorWebpackPlugin()],
   output: {
     clean: true,
     path: isRunningWebpack
