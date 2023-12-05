@@ -18,7 +18,10 @@ const config = {
   entry: {
     main: "./src/index",
   },
-  plugins: [new HtmlWebpackPlugin()],
+  optimization: {
+    minimize: true,
+    minimizer:[]
+  },
   output: {
     clean: true,
     path: isRunningWebpack
