@@ -1,3 +1,3 @@
-import('./render').then(exports => {
-    exports.render()
-})
+import React from 'react';
+console.log({React});
+export { React }

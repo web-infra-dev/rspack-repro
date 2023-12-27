@@ -10,25 +10,26 @@ if (!isRunningRspack && !isRunningWebpack) {
 }
 
 /**
- * @type {import('webpack').Configuration | import('@rspack/cli').Configuration}
+ * @type {import('webpack').Configuration}
  */
 const config = {
   mode: "development",
   devtool: false,
+  target: 'node',
   entry: {
     main: "./src/index",
   },
-  plugins: [new HtmlWebpackPlugin()],
   output: {
-    clean: true,
-    path: isRunningWebpack
-      ? path.resolve(__dirname, "webpack-dist")
-      : path.resolve(__dirname, "rspack-dist"),
-    filename: "[name].js",
+    libraryTarget: 'module',
+    module: true,
+    chunkFormat: 'module',
+    path: path.resolve(__dirname,process.env.WEBPACK ? 'webpack-dist' : 'rspack-dist')
   },
   experiments: {
-    css: true,
+    outputModule: true
   },
+  externals: ['react'],
+  externalsType: 'module'
 };
 
 export default config;
