@@ -13,11 +13,14 @@ if (!isRunningRspack && !isRunningWebpack) {
  * @type {import('webpack').Configuration}
  */
 const config = {
-  mode: "development",
+  mode: "production",
   devtool: false,
   target: 'node',
   entry: {
     main: "./src/index",
+  },
+  optimization:{
+    minimize:false
   },
   output: {
     libraryTarget: 'module',
@@ -26,10 +29,14 @@ const config = {
     path: path.resolve(__dirname,process.env.WEBPACK ? 'webpack-dist' : 'rspack-dist')
   },
   experiments: {
-    outputModule: true
+    outputModule: true,
   },
   externals: ['react'],
   externalsType: 'module'
 };
-
+if(process.env.RSPACK) {
+  config.experiments.rspackFuture = {
+    newTreeshaking:true
+  }
+}
 export default config;

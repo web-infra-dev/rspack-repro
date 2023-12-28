@@ -1,22 +1,19 @@
-import * as __WEBPACK_EXTERNAL_MODULE_react__ from 'react';
+import * as __WEBPACK_EXTERNAL_MODULE__503__ from 'react';
 var __webpack_modules__ = {
-"./src/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"138": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-__webpack_require__.d(__webpack_exports__, {
-  React: function() { return react__WEBPACK_IMPORTED_MODULE_0__["default"]; }
-});
-/* harmony import */var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */"react");
+/* harmony import */var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */"503");
 
 console.log({
-    React: react__WEBPACK_IMPORTED_MODULE_0__["default"]
+    React: react__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */.Z
 });
 
 }),
-"react": (function (module, exports, __webpack_require__) {
+"503": (function (module, exports, __webpack_require__) {
 var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
             var y = x => () => x
-            module.exports = __WEBPACK_EXTERNAL_MODULE_react__}),
+            module.exports = __WEBPACK_EXTERNAL_MODULE__503__}),
 
 }
 // The module cache
@@ -65,4 +62,4 @@ __webpack_require__.o = function (obj, prop) {
 };
 
 }();
-var __webpack_exports__ = __webpack_require__("./src/index.js");
+var __webpack_exports__ = __webpack_require__("138");
