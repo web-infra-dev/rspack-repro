@@ -34,13 +34,10 @@ const config = {
     mangleExports: false,
     minimize: false,
     moduleIds: "named",
-    // sideEffects: false,
-    // usedExports: false,
     splitChunks: {
       cacheGroups: {
-        json: {
-          type: "json",
-        },
+        vendor: false,
+        default: false
       },
       chunks: "all",
       maxSize: 256 * 1024, // 256 KiB

@@ -17,7 +17,7 @@
   "dependencies": {
     "@aws-sdk/client-cloudwatch": "3.490.0",
     "@rspack/cli": "latest",
-    "@rspack/core": "latest",
+    "@rspack/core": "0.5.3",
     "swc-loader": "0.2.3",
     "html-webpack-plugin": "^5.5.3",
     "webpack": "^5.79.0",

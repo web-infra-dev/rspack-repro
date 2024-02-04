@@ -1,6 +1,5 @@
-exports.ids = ['vendors-node_modules_aws-sdk_client-cloudwatch_dist-es_CloudWatch_js-node_modules_aws-sdk_cli-f2eb3f'];
-exports.modules = {
-"./node_modules/@aws-crypto/crc32/build/aws_crc32.js": (function (__unused_webpack_module, exports, __webpack_require__) {
+var __webpack_modules__ = {
+"./node_modules/.pnpm/@aws-crypto+crc32@3.0.0/node_modules/@aws-crypto/crc32/build/aws_crc32.js": (function (__unused_webpack_module, exports, __webpack_require__) {
 "use strict";
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -8,9 +7,9 @@ Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
 exports.AwsCrc32 = void 0;
-var tslib_1 = __webpack_require__(/*! tslib */"./node_modules/@aws-crypto/crc32/node_modules/tslib/tslib.es6.js");
-var util_1 = __webpack_require__(/*! @aws-crypto/util */"./node_modules/@aws-crypto/util/build/index.js");
-var index_1 = __webpack_require__(/*! ./index */"./node_modules/@aws-crypto/crc32/build/index.js");
+var tslib_1 = __webpack_require__(/*! tslib */"./node_modules/.pnpm/tslib@1.14.1/node_modules/tslib/tslib.es6.js");
+var util_1 = __webpack_require__(/*! @aws-crypto/util */"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/index.js");
+var index_1 = __webpack_require__(/*! ./index */"./node_modules/.pnpm/@aws-crypto+crc32@3.0.0/node_modules/@aws-crypto/crc32/build/index.js");
 var AwsCrc32 = function() {
     function AwsCrc32() {
         this.crc32 = new index_1.Crc32();
@@ -36,14 +35,14 @@ var AwsCrc32 = function() {
 }();
 exports.AwsCrc32 = AwsCrc32; //# sourceMappingURL=aws_crc32.js.map
 }),
-"./node_modules/@aws-crypto/crc32/build/index.js": (function (__unused_webpack_module, exports, __webpack_require__) {
+"./node_modules/.pnpm/@aws-crypto+crc32@3.0.0/node_modules/@aws-crypto/crc32/build/index.js": (function (__unused_webpack_module, exports, __webpack_require__) {
 "use strict";
 Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
 exports.AwsCrc32 = exports.Crc32 = exports.crc32 = void 0;
-var tslib_1 = __webpack_require__(/*! tslib */"./node_modules/@aws-crypto/crc32/node_modules/tslib/tslib.es6.js");
-var util_1 = __webpack_require__(/*! @aws-crypto/util */"./node_modules/@aws-crypto/util/build/index.js");
+var tslib_1 = __webpack_require__(/*! tslib */"./node_modules/.pnpm/tslib@1.14.1/node_modules/tslib/tslib.es6.js");
+var util_1 = __webpack_require__(/*! @aws-crypto/util */"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/index.js");
 function crc32(data) {
     return new Crc32().update(data).digest();
 }
@@ -338,7 +337,7 @@ var a_lookUpTable = [
     0x2D02EF8D
 ];
 var lookupTable = (0, util_1.uint32ArrayFrom)(a_lookUpTable);
-var aws_crc32_1 = __webpack_require__(/*! ./aws_crc32 */"./node_modules/@aws-crypto/crc32/build/aws_crc32.js");
+var aws_crc32_1 = __webpack_require__(/*! ./aws_crc32 */"./node_modules/.pnpm/@aws-crypto+crc32@3.0.0/node_modules/@aws-crypto/crc32/build/aws_crc32.js");
 Object.defineProperty(exports, "AwsCrc32", ({
     enumerable: true,
     get: function() {
@@ -346,378 +345,7 @@ Object.defineProperty(exports, "AwsCrc32", ({
     }
 })); //# sourceMappingURL=index.js.map
 }),
-"./node_modules/@aws-crypto/crc32/node_modules/tslib/tslib.es6.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-__webpack_require__.d(__webpack_exports__, {
-  __assign: function() { return __assign; },
-  __asyncDelegator: function() { return __asyncDelegator; },
-  __asyncGenerator: function() { return __asyncGenerator; },
-  __asyncValues: function() { return __asyncValues; },
-  __await: function() { return __await; },
-  __awaiter: function() { return __awaiter; },
-  __classPrivateFieldGet: function() { return __classPrivateFieldGet; },
-  __classPrivateFieldSet: function() { return __classPrivateFieldSet; },
-  __createBinding: function() { return __createBinding; },
-  __decorate: function() { return __decorate; },
-  __exportStar: function() { return __exportStar; },
-  __extends: function() { return __extends; },
-  __generator: function() { return __generator; },
-  __importDefault: function() { return __importDefault; },
-  __importStar: function() { return __importStar; },
-  __makeTemplateObject: function() { return __makeTemplateObject; },
-  __metadata: function() { return __metadata; },
-  __param: function() { return __param; },
-  __read: function() { return __read; },
-  __rest: function() { return __rest; },
-  __spread: function() { return __spread; },
-  __spreadArrays: function() { return __spreadArrays; },
-  __values: function() { return __values; }
-});
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */ /* global Reflect, Promise */ var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf || ({
-        __proto__: []
-    }) instanceof Array && function(d, b) {
-        d.__proto__ = b;
-    } || function(d, b) {
-        for(var p in b)if (b.hasOwnProperty(p)) d[p] = b[p];
-    };
-    return extendStatics(d, b);
-};
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() {
-        this.constructor = d;
-    }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for(var s, i = 1, n = arguments.length; i < n; i++){
-            s = arguments[i];
-            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-function __rest(s, e) {
-    var t = {};
-    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
-        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-    }
-    return t;
-}
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-function __param(paramIndex, decorator) {
-    return function(target, key) {
-        decorator(target, key, paramIndex);
-    };
-}
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) {
-        return value instanceof P ? value : new P(function(resolve) {
-            resolve(value);
-        });
-    }
-    return new (P || (P = Promise))(function(resolve, reject) {
-        function fulfilled(value) {
-            try {
-                step(generator.next(value));
-            } catch (e) {
-                reject(e);
-            }
-        }
-        function rejected(value) {
-            try {
-                step(generator["throw"](value));
-            } catch (e) {
-                reject(e);
-            }
-        }
-        function step(result) {
-            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
-        }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-function __generator(thisArg, body) {
-    var _ = {
-        label: 0,
-        sent: function() {
-            if (t[0] & 1) throw t[1];
-            return t[1];
-        },
-        trys: [],
-        ops: []
-    }, f, y, t, g;
-    return g = {
-        next: verb(0),
-        "throw": verb(1),
-        "return": verb(2)
-    }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
-        return this;
-    }), g;
-    function verb(n) {
-        return function(v) {
-            return step([
-                n,
-                v
-            ]);
-        };
-    }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while(_)try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [
-                op[0] & 2,
-                t.value
-            ];
-            switch(op[0]){
-                case 0:
-                case 1:
-                    t = op;
-                    break;
-                case 4:
-                    _.label++;
-                    return {
-                        value: op[1],
-                        done: false
-                    };
-                case 5:
-                    _.label++;
-                    y = op[1];
-                    op = [
-                        0
-                    ];
-                    continue;
-                case 7:
-                    op = _.ops.pop();
-                    _.trys.pop();
-                    continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
-                        _ = 0;
-                        continue;
-                    }
-                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
-                        _.label = op[1];
-                        break;
-                    }
-                    if (op[0] === 6 && _.label < t[1]) {
-                        _.label = t[1];
-                        t = op;
-                        break;
-                    }
-                    if (t && _.label < t[2]) {
-                        _.label = t[2];
-                        _.ops.push(op);
-                        break;
-                    }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop();
-                    continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) {
-            op = [
-                6,
-                e
-            ];
-            y = 0;
-        } finally{
-            f = t = 0;
-        }
-        if (op[0] & 5) throw op[1];
-        return {
-            value: op[0] ? op[1] : void 0,
-            done: true
-        };
-    }
-}
-function __createBinding(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}
-function __exportStar(m, exports) {
-    for(var p in m)if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function() {
-            if (o && i >= o.length) o = void 0;
-            return {
-                value: o && o[i++],
-                done: !o
-            };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while((n === void 0 || n-- > 0) && !(r = i.next()).done)ar.push(r.value);
-    } catch (error) {
-        e = {
-            error: error
-        };
-    } finally{
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        } finally{
-            if (e) throw e.error;
-        }
-    }
-    return ar;
-}
-function __spread() {
-    for(var ar = [], i = 0; i < arguments.length; i++)ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-function __spreadArrays() {
-    for(var s = 0, i = 0, il = arguments.length; i < il; i++)s += arguments[i].length;
-    for(var r = Array(s), k = 0, i = 0; i < il; i++)for(var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)r[k] = a[j];
-    return r;
-}
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
-        return this;
-    }, i;
-    function verb(n) {
-        if (g[n]) i[n] = function(v) {
-            return new Promise(function(a, b) {
-                q.push([
-                    n,
-                    v,
-                    a,
-                    b
-                ]) > 1 || resume(n, v);
-            });
-        };
-    }
-    function resume(n, v) {
-        try {
-            step(g[n](v));
-        } catch (e) {
-            settle(q[0][3], e);
-        }
-    }
-    function step(r) {
-        r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
-    }
-    function fulfill(value) {
-        resume("next", value);
-    }
-    function reject(value) {
-        resume("throw", value);
-    }
-    function settle(f, v) {
-        if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]);
-    }
-}
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function(e) {
-        throw e;
-    }), verb("return"), i[Symbol.iterator] = function() {
-        return this;
-    }, i;
-    function verb(n, f) {
-        i[n] = o[n] ? function(v) {
-            return (p = !p) ? {
-                value: __await(o[n](v)),
-                done: n === "return"
-            } : f ? f(v) : v;
-        } : f;
-    }
-}
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
-        return this;
-    }, i);
-    function verb(n) {
-        i[n] = o[n] && function(v) {
-            return new Promise(function(resolve, reject) {
-                v = o[n](v), settle(resolve, reject, v.done, v.value);
-            });
-        };
-    }
-    function settle(resolve, reject, d, v) {
-        Promise.resolve(v).then(function(v) {
-            resolve({
-                value: v,
-                done: d
-            });
-        }, reject);
-    }
-}
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) Object.defineProperty(cooked, "raw", {
-        value: raw
-    });
-    else cooked.raw = raw;
-    return cooked;
-}
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) {
-        for(var k in mod)if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    }
-    result.default = mod;
-    return result;
-}
-function __importDefault(mod) {
-    return mod && mod.__esModule ? mod : {
-        default: mod
-    };
-}
-function __classPrivateFieldGet(receiver, privateMap) {
-    if (!privateMap.has(receiver)) throw new TypeError("attempted to get private field on non-instance");
-    return privateMap.get(receiver);
-}
-function __classPrivateFieldSet(receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) throw new TypeError("attempted to set private field on non-instance");
-    privateMap.set(receiver, value);
-    return value;
-}
-}),
-"./node_modules/@aws-crypto/util/build/convertToBuffer.js": (function (__unused_webpack_module, exports, __webpack_require__) {
+"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/convertToBuffer.js": (function (__unused_webpack_module, exports, __webpack_require__) {
 "use strict";
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -725,7 +353,7 @@ Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
 exports.convertToBuffer = void 0;
-var util_utf8_browser_1 = __webpack_require__(/*! @aws-sdk/util-utf8-browser */"./node_modules/@aws-sdk/util-utf8-browser/dist-es/index.js");
+var util_utf8_browser_1 = __webpack_require__(/*! @aws-sdk/util-utf8-browser */"./node_modules/.pnpm/@aws-sdk+util-utf8-browser@3.259.0/node_modules/@aws-sdk/util-utf8-browser/dist-es/index.js");
 // Quick polyfill
 var fromUtf8 = typeof Buffer !== "undefined" && Buffer.from ? function(input) {
     return Buffer.from(input, "utf8");
@@ -739,7 +367,7 @@ function convertToBuffer(data) {
 }
 exports.convertToBuffer = convertToBuffer; //# sourceMappingURL=convertToBuffer.js.map
 }),
-"./node_modules/@aws-crypto/util/build/index.js": (function (__unused_webpack_module, exports, __webpack_require__) {
+"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/index.js": (function (__unused_webpack_module, exports, __webpack_require__) {
 "use strict";
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -747,28 +375,28 @@ Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
 exports.uint32ArrayFrom = exports.numToUint8 = exports.isEmptyData = exports.convertToBuffer = void 0;
-var convertToBuffer_1 = __webpack_require__(/*! ./convertToBuffer */"./node_modules/@aws-crypto/util/build/convertToBuffer.js");
+var convertToBuffer_1 = __webpack_require__(/*! ./convertToBuffer */"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/convertToBuffer.js");
 Object.defineProperty(exports, "convertToBuffer", ({
     enumerable: true,
     get: function() {
         return convertToBuffer_1.convertToBuffer;
     }
 }));
-var isEmptyData_1 = __webpack_require__(/*! ./isEmptyData */"./node_modules/@aws-crypto/util/build/isEmptyData.js");
+var isEmptyData_1 = __webpack_require__(/*! ./isEmptyData */"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/isEmptyData.js");
 Object.defineProperty(exports, "isEmptyData", ({
     enumerable: true,
     get: function() {
         return isEmptyData_1.isEmptyData;
     }
 }));
-var numToUint8_1 = __webpack_require__(/*! ./numToUint8 */"./node_modules/@aws-crypto/util/build/numToUint8.js");
+var numToUint8_1 = __webpack_require__(/*! ./numToUint8 */"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/numToUint8.js");
 Object.defineProperty(exports, "numToUint8", ({
     enumerable: true,
     get: function() {
         return numToUint8_1.numToUint8;
     }
 }));
-var uint32ArrayFrom_1 = __webpack_require__(/*! ./uint32ArrayFrom */"./node_modules/@aws-crypto/util/build/uint32ArrayFrom.js");
+var uint32ArrayFrom_1 = __webpack_require__(/*! ./uint32ArrayFrom */"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/uint32ArrayFrom.js");
 Object.defineProperty(exports, "uint32ArrayFrom", ({
     enumerable: true,
     get: function() {
@@ -776,7 +404,7 @@ Object.defineProperty(exports, "uint32ArrayFrom", ({
     }
 })); //# sourceMappingURL=index.js.map
 }),
-"./node_modules/@aws-crypto/util/build/isEmptyData.js": (function (__unused_webpack_module, exports) {
+"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/isEmptyData.js": (function (__unused_webpack_module, exports) {
 "use strict";
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -790,7 +418,7 @@ function isEmptyData(data) {
 }
 exports.isEmptyData = isEmptyData; //# sourceMappingURL=isEmptyData.js.map
 }),
-"./node_modules/@aws-crypto/util/build/numToUint8.js": (function (__unused_webpack_module, exports) {
+"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/numToUint8.js": (function (__unused_webpack_module, exports) {
 "use strict";
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -808,7 +436,7 @@ function numToUint8(num) {
 }
 exports.numToUint8 = numToUint8; //# sourceMappingURL=numToUint8.js.map
 }),
-"./node_modules/@aws-crypto/util/build/uint32ArrayFrom.js": (function (__unused_webpack_module, exports) {
+"./node_modules/.pnpm/@aws-crypto+util@3.0.0/node_modules/@aws-crypto/util/build/uint32ArrayFrom.js": (function (__unused_webpack_module, exports) {
 "use strict";
 // Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: Apache-2.0
@@ -831,152 +459,24 @@ function uint32ArrayFrom(a_lookUpTable) {
 }
 exports.uint32ArrayFrom = uint32ArrayFrom; //# sourceMappingURL=uint32ArrayFrom.js.map
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatch.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_DeleteAlarmsCommand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commands/DeleteAlarmsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteAlarmsCommand.js");
-/* harmony import */var _commands_DeleteAnomalyDetectorCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./commands/DeleteAnomalyDetectorCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteAnomalyDetectorCommand.js");
-/* harmony import */var _commands_DeleteDashboardsCommand__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./commands/DeleteDashboardsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteDashboardsCommand.js");
-/* harmony import */var _commands_DeleteInsightRulesCommand__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./commands/DeleteInsightRulesCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteInsightRulesCommand.js");
-/* harmony import */var _commands_DeleteMetricStreamCommand__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./commands/DeleteMetricStreamCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteMetricStreamCommand.js");
-/* harmony import */var _commands_DescribeAlarmHistoryCommand__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./commands/DescribeAlarmHistoryCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmHistoryCommand.js");
-/* harmony import */var _commands_DescribeAlarmsCommand__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./commands/DescribeAlarmsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmsCommand.js");
-/* harmony import */var _commands_DescribeAlarmsForMetricCommand__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./commands/DescribeAlarmsForMetricCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmsForMetricCommand.js");
-/* harmony import */var _commands_DescribeAnomalyDetectorsCommand__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./commands/DescribeAnomalyDetectorsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAnomalyDetectorsCommand.js");
-/* harmony import */var _commands_DescribeInsightRulesCommand__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./commands/DescribeInsightRulesCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeInsightRulesCommand.js");
-/* harmony import */var _commands_DisableAlarmActionsCommand__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./commands/DisableAlarmActionsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DisableAlarmActionsCommand.js");
-/* harmony import */var _commands_DisableInsightRulesCommand__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./commands/DisableInsightRulesCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DisableInsightRulesCommand.js");
-/* harmony import */var _commands_EnableAlarmActionsCommand__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./commands/EnableAlarmActionsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/EnableAlarmActionsCommand.js");
-/* harmony import */var _commands_EnableInsightRulesCommand__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./commands/EnableInsightRulesCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/EnableInsightRulesCommand.js");
-/* harmony import */var _commands_GetDashboardCommand__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./commands/GetDashboardCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetDashboardCommand.js");
-/* harmony import */var _commands_GetInsightRuleReportCommand__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./commands/GetInsightRuleReportCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetInsightRuleReportCommand.js");
-/* harmony import */var _commands_GetMetricDataCommand__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./commands/GetMetricDataCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricDataCommand.js");
-/* harmony import */var _commands_GetMetricStatisticsCommand__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./commands/GetMetricStatisticsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricStatisticsCommand.js");
-/* harmony import */var _commands_GetMetricStreamCommand__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./commands/GetMetricStreamCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricStreamCommand.js");
-/* harmony import */var _commands_GetMetricWidgetImageCommand__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./commands/GetMetricWidgetImageCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricWidgetImageCommand.js");
-/* harmony import */var _commands_ListDashboardsCommand__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./commands/ListDashboardsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListDashboardsCommand.js");
-/* harmony import */var _commands_ListManagedInsightRulesCommand__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./commands/ListManagedInsightRulesCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListManagedInsightRulesCommand.js");
-/* harmony import */var _commands_ListMetricsCommand__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./commands/ListMetricsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricsCommand.js");
-/* harmony import */var _commands_ListMetricStreamsCommand__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./commands/ListMetricStreamsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricStreamsCommand.js");
-/* harmony import */var _commands_ListTagsForResourceCommand__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./commands/ListTagsForResourceCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListTagsForResourceCommand.js");
-/* harmony import */var _commands_PutAnomalyDetectorCommand__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./commands/PutAnomalyDetectorCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutAnomalyDetectorCommand.js");
-/* harmony import */var _commands_PutCompositeAlarmCommand__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./commands/PutCompositeAlarmCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutCompositeAlarmCommand.js");
-/* harmony import */var _commands_PutDashboardCommand__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./commands/PutDashboardCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutDashboardCommand.js");
-/* harmony import */var _commands_PutInsightRuleCommand__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./commands/PutInsightRuleCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutInsightRuleCommand.js");
-/* harmony import */var _commands_PutManagedInsightRulesCommand__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./commands/PutManagedInsightRulesCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutManagedInsightRulesCommand.js");
-/* harmony import */var _commands_PutMetricAlarmCommand__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./commands/PutMetricAlarmCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutMetricAlarmCommand.js");
-/* harmony import */var _commands_PutMetricDataCommand__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./commands/PutMetricDataCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutMetricDataCommand.js");
-/* harmony import */var _commands_PutMetricStreamCommand__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./commands/PutMetricStreamCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutMetricStreamCommand.js");
-/* harmony import */var _commands_SetAlarmStateCommand__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./commands/SetAlarmStateCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/SetAlarmStateCommand.js");
-/* harmony import */var _commands_StartMetricStreamsCommand__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./commands/StartMetricStreamsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/StartMetricStreamsCommand.js");
-/* harmony import */var _commands_StopMetricStreamsCommand__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./commands/StopMetricStreamsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/StopMetricStreamsCommand.js");
-/* harmony import */var _commands_TagResourceCommand__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./commands/TagResourceCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/TagResourceCommand.js");
-/* harmony import */var _commands_UntagResourceCommand__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./commands/UntagResourceCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/UntagResourceCommand.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const commands = {
-    DeleteAlarmsCommand: ,
-    DeleteAnomalyDetectorCommand: ,
-    DeleteDashboardsCommand: ,
-    DeleteInsightRulesCommand: ,
-    DeleteMetricStreamCommand: ,
-    DescribeAlarmHistoryCommand: ,
-    DescribeAlarmsCommand: ,
-    DescribeAlarmsForMetricCommand: ,
-    DescribeAnomalyDetectorsCommand: ,
-    DescribeInsightRulesCommand: ,
-    DisableAlarmActionsCommand: ,
-    DisableInsightRulesCommand: ,
-    EnableAlarmActionsCommand: ,
-    EnableInsightRulesCommand: ,
-    GetDashboardCommand: ,
-    GetInsightRuleReportCommand: ,
-    GetMetricDataCommand: ,
-    GetMetricStatisticsCommand: ,
-    GetMetricStreamCommand: ,
-    GetMetricWidgetImageCommand: ,
-    ListDashboardsCommand: ,
-    ListManagedInsightRulesCommand: ,
-    ListMetricsCommand: ,
-    ListMetricStreamsCommand: ,
-    ListTagsForResourceCommand: ,
-    PutAnomalyDetectorCommand: ,
-    PutCompositeAlarmCommand: ,
-    PutDashboardCommand: ,
-    PutInsightRuleCommand: ,
-    PutManagedInsightRulesCommand: ,
-    PutMetricAlarmCommand: ,
-    PutMetricDataCommand: _commands_PutMetricDataCommand__WEBPACK_IMPORTED_MODULE_32__.PutMetricDataCommand,
-    PutMetricStreamCommand: ,
-    SetAlarmStateCommand: ,
-    StartMetricStreamsCommand: ,
-    StopMetricStreamsCommand: ,
-    TagResourceCommand: ,
-    UntagResourceCommand: 
-};
-class CloudWatch extends _CloudWatchClient__WEBPACK_IMPORTED_MODULE_39__.CloudWatchClient {
-}
-(0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__.createAggregatedClient)(commands, CloudWatch);
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   CloudWatchClient: function() { return CloudWatchClient; }
 });
-/* harmony import */var _aws_sdk_middleware_host_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/middleware-host-header */"./node_modules/@aws-sdk/middleware-host-header/dist-es/index.js");
-/* harmony import */var _aws_sdk_middleware_logger__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @aws-sdk/middleware-logger */"./node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js");
-/* harmony import */var _aws_sdk_middleware_recursion_detection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/middleware-recursion-detection */"./node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js");
-/* harmony import */var _aws_sdk_middleware_signing__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/middleware-signing */"./node_modules/@aws-sdk/middleware-signing/dist-es/index.js");
-/* harmony import */var _aws_sdk_middleware_user_agent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @aws-sdk/middleware-user-agent */"./node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js");
-/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/@smithy/config-resolver/dist-es/index.js");
-/* harmony import */var _smithy_middleware_content_length__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-content-length */"./node_modules/@smithy/middleware-content-length/dist-es/index.js");
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/@smithy/middleware-retry/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _runtimeConfig__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./runtimeConfig */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeConfig.js");
-/* harmony import */var _runtimeExtensions__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./runtimeExtensions */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeExtensions.js");
+/* harmony import */var _aws_sdk_middleware_host_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/middleware-host-header */"./node_modules/.pnpm/@aws-sdk+middleware-host-header@3.489.0/node_modules/@aws-sdk/middleware-host-header/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_logger__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @aws-sdk/middleware-logger */"./node_modules/.pnpm/@aws-sdk+middleware-logger@3.489.0/node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js");
+/* harmony import */var _aws_sdk_middleware_recursion_detection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/middleware-recursion-detection */"./node_modules/.pnpm/@aws-sdk+middleware-recursion-detection@3.489.0/node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_signing__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/middleware-signing */"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_user_agent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @aws-sdk/middleware-user-agent */"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js");
+/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/index.js");
+/* harmony import */var _smithy_middleware_content_length__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-content-length */"./node_modules/.pnpm/@smithy+middleware-content-length@2.1.1/node_modules/@smithy/middleware-content-length/dist-es/index.js");
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _runtimeConfig__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./runtimeConfig */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeConfig.js");
+/* harmony import */var _runtimeExtensions__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./runtimeExtensions */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeExtensions.js");
 
 
 
@@ -1017,134 +517,16 @@ class CloudWatchClient extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_8_
     }
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteAlarmsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmHistoryCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class DeleteAlarmsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "DeleteAlarms", {}).n("CloudWatchClient", "DeleteAlarmsCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteAnomalyDetectorCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class DeleteAnomalyDetectorCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "DeleteAnomalyDetector", {}).n("CloudWatchClient", "DeleteAnomalyDetectorCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteDashboardsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class DeleteDashboardsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "DeleteDashboards", {}).n("CloudWatchClient", "DeleteDashboardsCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteInsightRulesCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class DeleteInsightRulesCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "DeleteInsightRules", {}).n("CloudWatchClient", "DeleteInsightRulesCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DeleteMetricStreamCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class DeleteMetricStreamCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "DeleteMetricStream", {}).n("CloudWatchClient", "DeleteMetricStreamCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmHistoryCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
+__webpack_require__.d(__webpack_exports__, {
+  DescribeAlarmHistoryCommand: function() { return DescribeAlarmHistoryCommand; }
+});
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
 
 
 
@@ -1158,17 +540,19 @@ class DescribeAlarmHistoryCommand extends _smithy_smithy_client__WEBPACK_IMPORTE
         (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
         (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
     ];
-}).s("GraniteServiceVersion20100801", "DescribeAlarmHistory", {}).n("CloudWatchClient", "DescribeAlarmHistoryCommand").f(void 0, void 0).ser().de().build() {
+}).s("GraniteServiceVersion20100801", "DescribeAlarmHistory", {}).n("CloudWatchClient", "DescribeAlarmHistoryCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_DescribeAlarmHistoryCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_DescribeAlarmHistoryCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
+__webpack_require__.d(__webpack_exports__, {
+  DescribeAlarmsCommand: function() { return DescribeAlarmsCommand; }
+});
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
 
 
 
@@ -1182,41 +566,19 @@ class DescribeAlarmsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODU
         (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
         (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
     ];
-}).s("GraniteServiceVersion20100801", "DescribeAlarms", {}).n("CloudWatchClient", "DescribeAlarmsCommand").f(void 0, void 0).ser().de().build() {
+}).s("GraniteServiceVersion20100801", "DescribeAlarms", {}).n("CloudWatchClient", "DescribeAlarmsCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_DescribeAlarmsCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_DescribeAlarmsCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmsForMetricCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAnomalyDetectorsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class DescribeAlarmsForMetricCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "DescribeAlarmsForMetric", {}).n("CloudWatchClient", "DescribeAlarmsForMetricCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAnomalyDetectorsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
+__webpack_require__.d(__webpack_exports__, {
+  DescribeAnomalyDetectorsCommand: function() { return DescribeAnomalyDetectorsCommand; }
+});
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
 
 
 
@@ -1230,17 +592,19 @@ class DescribeAnomalyDetectorsCommand extends _smithy_smithy_client__WEBPACK_IMP
         (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
         (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
     ];
-}).s("GraniteServiceVersion20100801", "DescribeAnomalyDetectors", {}).n("CloudWatchClient", "DescribeAnomalyDetectorsCommand").f(void 0, void 0).ser().de().build() {
+}).s("GraniteServiceVersion20100801", "DescribeAnomalyDetectors", {}).n("CloudWatchClient", "DescribeAnomalyDetectorsCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_DescribeAnomalyDetectorsCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_DescribeAnomalyDetectorsCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeInsightRulesCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeInsightRulesCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
+__webpack_require__.d(__webpack_exports__, {
+  DescribeInsightRulesCommand: function() { return DescribeInsightRulesCommand; }
+});
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
 
 
 
@@ -1254,161 +618,19 @@ class DescribeInsightRulesCommand extends _smithy_smithy_client__WEBPACK_IMPORTE
         (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
         (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
     ];
-}).s("GraniteServiceVersion20100801", "DescribeInsightRules", {}).n("CloudWatchClient", "DescribeInsightRulesCommand").f(void 0, void 0).ser().de().build() {
+}).s("GraniteServiceVersion20100801", "DescribeInsightRules", {}).n("CloudWatchClient", "DescribeInsightRulesCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_DescribeInsightRulesCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_DescribeInsightRulesCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DisableAlarmActionsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricDataCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class DisableAlarmActionsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "DisableAlarmActions", {}).n("CloudWatchClient", "DisableAlarmActionsCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DisableInsightRulesCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class DisableInsightRulesCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "DisableInsightRules", {}).n("CloudWatchClient", "DisableInsightRulesCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/EnableAlarmActionsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class EnableAlarmActionsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "EnableAlarmActions", {}).n("CloudWatchClient", "EnableAlarmActionsCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/EnableInsightRulesCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class EnableInsightRulesCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "EnableInsightRules", {}).n("CloudWatchClient", "EnableInsightRulesCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetDashboardCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class GetDashboardCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "GetDashboard", {}).n("CloudWatchClient", "GetDashboardCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetInsightRuleReportCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class GetInsightRuleReportCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "GetInsightRuleReport", {}).n("CloudWatchClient", "GetInsightRuleReportCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricDataCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
+__webpack_require__.d(__webpack_exports__, {
+  GetMetricDataCommand: function() { return GetMetricDataCommand; }
+});
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
 
 
 
@@ -1422,89 +644,19 @@ class GetMetricDataCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODUL
         (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
         (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
     ];
-}).s("GraniteServiceVersion20100801", "GetMetricData", {}).n("CloudWatchClient", "GetMetricDataCommand").f(void 0, void 0).ser().de().build() {
+}).s("GraniteServiceVersion20100801", "GetMetricData", {}).n("CloudWatchClient", "GetMetricDataCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_GetMetricDataCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_GetMetricDataCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricStatisticsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListDashboardsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class GetMetricStatisticsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "GetMetricStatistics", {}).n("CloudWatchClient", "GetMetricStatisticsCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricStreamCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class GetMetricStreamCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "GetMetricStream", {}).n("CloudWatchClient", "GetMetricStreamCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricWidgetImageCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class GetMetricWidgetImageCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "GetMetricWidgetImage", {}).n("CloudWatchClient", "GetMetricWidgetImageCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListDashboardsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
+__webpack_require__.d(__webpack_exports__, {
+  ListDashboardsCommand: function() { return ListDashboardsCommand; }
+});
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
 
 
 
@@ -1518,17 +670,19 @@ class ListDashboardsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODU
         (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
         (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
     ];
-}).s("GraniteServiceVersion20100801", "ListDashboards", {}).n("CloudWatchClient", "ListDashboardsCommand").f(void 0, void 0).ser().de().build() {
+}).s("GraniteServiceVersion20100801", "ListDashboards", {}).n("CloudWatchClient", "ListDashboardsCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_ListDashboardsCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_ListDashboardsCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListManagedInsightRulesCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListManagedInsightRulesCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
+__webpack_require__.d(__webpack_exports__, {
+  ListManagedInsightRulesCommand: function() { return ListManagedInsightRulesCommand; }
+});
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
 
 
 
@@ -1542,17 +696,19 @@ class ListManagedInsightRulesCommand extends _smithy_smithy_client__WEBPACK_IMPO
         (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
         (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
     ];
-}).s("GraniteServiceVersion20100801", "ListManagedInsightRules", {}).n("CloudWatchClient", "ListManagedInsightRulesCommand").f(void 0, void 0).ser().de().build() {
+}).s("GraniteServiceVersion20100801", "ListManagedInsightRules", {}).n("CloudWatchClient", "ListManagedInsightRulesCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_ListManagedInsightRulesCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_ListManagedInsightRulesCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricStreamsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricStreamsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
+__webpack_require__.d(__webpack_exports__, {
+  ListMetricStreamsCommand: function() { return ListMetricStreamsCommand; }
+});
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
 
 
 
@@ -1566,17 +722,19 @@ class ListMetricStreamsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_M
         (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
         (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
     ];
-}).s("GraniteServiceVersion20100801", "ListMetricStreams", {}).n("CloudWatchClient", "ListMetricStreamsCommand").f(void 0, void 0).ser().de().build() {
+}).s("GraniteServiceVersion20100801", "ListMetricStreams", {}).n("CloudWatchClient", "ListMetricStreamsCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_ListMetricStreamsCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_ListMetricStreamsCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
+__webpack_require__.d(__webpack_exports__, {
+  ListMetricsCommand: function() { return ListMetricsCommand; }
+});
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
 
 
 
@@ -1590,393 +748,11 @@ class ListMetricsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_
         (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
         (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
     ];
-}).s("GraniteServiceVersion20100801", "ListMetrics", {}).n("CloudWatchClient", "ListMetricsCommand").f(void 0, void 0).ser().de().build() {
+}).s("GraniteServiceVersion20100801", "ListMetrics", {}).n("CloudWatchClient", "ListMetricsCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_ListMetricsCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_ListMetricsCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListTagsForResourceCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class ListTagsForResourceCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "ListTagsForResource", {}).n("CloudWatchClient", "ListTagsForResourceCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutAnomalyDetectorCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class PutAnomalyDetectorCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "PutAnomalyDetector", {}).n("CloudWatchClient", "PutAnomalyDetectorCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutCompositeAlarmCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class PutCompositeAlarmCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "PutCompositeAlarm", {}).n("CloudWatchClient", "PutCompositeAlarmCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutDashboardCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class PutDashboardCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "PutDashboard", {}).n("CloudWatchClient", "PutDashboardCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutInsightRuleCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class PutInsightRuleCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "PutInsightRule", {}).n("CloudWatchClient", "PutInsightRuleCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutManagedInsightRulesCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class PutManagedInsightRulesCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "PutManagedInsightRules", {}).n("CloudWatchClient", "PutManagedInsightRulesCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutMetricAlarmCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class PutMetricAlarmCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "PutMetricAlarm", {}).n("CloudWatchClient", "PutMetricAlarmCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutMetricDataCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-__webpack_require__.d(__webpack_exports__, {
-  PutMetricDataCommand: function() { return PutMetricDataCommand; }
-});
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class PutMetricDataCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "PutMetricData", {}).n("CloudWatchClient", "PutMetricDataCommand").f(void 0, void 0).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.se_PutMetricDataCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__.de_PutMetricDataCommand).build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutMetricStreamCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class PutMetricStreamCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "PutMetricStream", {}).n("CloudWatchClient", "PutMetricStreamCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/SetAlarmStateCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class SetAlarmStateCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "SetAlarmState", {}).n("CloudWatchClient", "SetAlarmStateCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/StartMetricStreamsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class StartMetricStreamsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "StartMetricStreams", {}).n("CloudWatchClient", "StartMetricStreamsCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/StopMetricStreamsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class StopMetricStreamsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "StopMetricStreams", {}).n("CloudWatchClient", "StopMetricStreamsCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/TagResourceCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class TagResourceCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "TagResource", {}).n("CloudWatchClient", "TagResourceCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/UntagResourceCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class UntagResourceCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("GraniteServiceVersion20100801", "UntagResource", {}).n("CloudWatchClient", "UntagResourceCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/EndpointParameters.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   commonParams: function() { return commonParams; },
   resolveClientEndpointParameters: function() { return resolveClientEndpointParameters; }
@@ -2008,14 +784,13 @@ const commonParams = {
     }
 };
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/endpointResolver.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/endpointResolver.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   defaultEndpointResolver: function() { return defaultEndpointResolver; }
 });
-/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/@smithy/util-endpoints/dist-es/index.js");
-/* harmony import */var _ruleset__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ruleset */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/ruleset.js");
+/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js");
+/* harmony import */var _ruleset__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ruleset */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/ruleset.js");
 
 
 const defaultEndpointResolver = (endpointParams, context = {})=>{
@@ -2025,9 +800,8 @@ const defaultEndpointResolver = (endpointParams, context = {})=>{
     });
 };
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/ruleset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/ruleset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ruleSet: function() { return ruleSet; }
 });
@@ -2284,26 +1058,12 @@ const _data = {
 };
 const ruleSet = _data;
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/models/CloudWatchServiceException.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _aws_sdk_util_endpoints__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @aws-sdk/util-endpoints */"./node_modules/@aws-sdk/util-endpoints/dist-es/index.js");
-
-
-
-
-
-
-
-
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/models/CloudWatchServiceException.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   CloudWatchServiceException: function() { return CloudWatchServiceException; }
 });
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
 
 
 class CloudWatchServiceException extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__.ServiceException {
@@ -2313,21 +1073,16 @@ class CloudWatchServiceException extends _smithy_smithy_client__WEBPACK_IMPORTED
     }
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/models/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/models/models_0.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/models/models_0.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   InternalServiceFault: function() { return InternalServiceFault; },
+  InvalidNextToken: function() { return InvalidNextToken; },
   InvalidParameterCombinationException: function() { return InvalidParameterCombinationException; },
   InvalidParameterValueException: function() { return InvalidParameterValueException; },
   MissingRequiredParameterException: function() { return MissingRequiredParameterException; }
 });
-/* harmony import */var _CloudWatchServiceException__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CloudWatchServiceException */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/models/CloudWatchServiceException.js");
+/* harmony import */var _CloudWatchServiceException__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CloudWatchServiceException */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/models/CloudWatchServiceException.js");
 
 const ActionsSuppressedBy = (/* unused pure expression or super */ null && ({
     Alarm: "Alarm",
@@ -2513,7 +1268,7 @@ const ScanBy = (/* unused pure expression or super */ null && ({
     TIMESTAMP_ASCENDING: "TimestampAscending",
     TIMESTAMP_DESCENDING: "TimestampDescending"
 }));
-class InvalidNextToken extends (/* unused pure expression or super */ null && (__BaseException)) {
+class InvalidNextToken extends _CloudWatchServiceException__WEBPACK_IMPORTED_MODULE_0__.CloudWatchServiceException {
     constructor(opts){
         super({
             name: "InvalidNextToken",
@@ -2587,137 +1342,184 @@ class InvalidFormatFault extends (/* unused pure expression or super */ null && 
     }
 }
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeAlarmHistoryPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeAlarmHistoryPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_DescribeAlarmHistoryCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/DescribeAlarmHistoryCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmHistoryCommand.js");
-
-
-
-const paginateDescribeAlarmHistory = (_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, , "NextToken", "NextToken", "MaxRecords");
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeAlarmsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_DescribeAlarmsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/DescribeAlarmsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmsCommand.js");
-
-
-
-const paginateDescribeAlarms = (_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, , "NextToken", "NextToken", "MaxRecords");
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeAnomalyDetectorsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_DescribeAnomalyDetectorsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/DescribeAnomalyDetectorsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAnomalyDetectorsCommand.js");
-
-
-
-const paginateDescribeAnomalyDetectors = (_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, , "NextToken", "NextToken", "MaxResults");
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeInsightRulesPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_DescribeInsightRulesCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/DescribeInsightRulesCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeInsightRulesCommand.js");
-
-
-
-const paginateDescribeInsightRules = (_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, , "NextToken", "NextToken", "MaxResults");
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/GetMetricDataPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_GetMetricDataCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/GetMetricDataCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricDataCommand.js");
-
-
-
-const paginateGetMetricData = (_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, , "NextToken", "NextToken", "MaxDatapoints");
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/Interfaces.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListDashboardsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_ListDashboardsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListDashboardsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListDashboardsCommand.js");
-
-
-
-const paginateListDashboards = (_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, , "NextToken", "NextToken", "");
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListManagedInsightRulesPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_ListManagedInsightRulesCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListManagedInsightRulesCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListManagedInsightRulesCommand.js");
-
-
-
-const paginateListManagedInsightRules = (_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, , "NextToken", "NextToken", "MaxResults");
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListMetricStreamsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_ListMetricStreamsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListMetricStreamsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricStreamsCommand.js");
-
-
-
-const paginateListMetricStreams = (_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, , "NextToken", "NextToken", "MaxResults");
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListMetricsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */var _commands_ListMetricsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListMetricsCommand */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricsCommand.js");
-
-
-
-const paginateListMetrics = (_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, , "NextToken", "NextToken", "");
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-
-
-
-
-
-
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
-  de_PutMetricDataCommand: function() { return de_PutMetricDataCommand; },
-  se_PutMetricDataCommand: function() { return se_PutMetricDataCommand; }
+  paginateDescribeAlarmHistory: function() { return paginateDescribeAlarmHistory; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var fast_xml_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! fast-xml-parser */"./node_modules/fast-xml-parser/src/fxp.js");
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
+/* harmony import */var _commands_DescribeAlarmHistoryCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/DescribeAlarmHistoryCommand */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmHistoryCommand.js");
+
+
+
+const paginateDescribeAlarmHistory = (0, _smithy_core__WEBPACK_IMPORTED_MODULE_0__.createPaginator)(_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, _commands_DescribeAlarmHistoryCommand__WEBPACK_IMPORTED_MODULE_2__.DescribeAlarmHistoryCommand, "NextToken", "NextToken", "MaxRecords");
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeAlarmsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  paginateDescribeAlarms: function() { return paginateDescribeAlarms; }
+});
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
+/* harmony import */var _commands_DescribeAlarmsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/DescribeAlarmsCommand */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAlarmsCommand.js");
+
+
+
+const paginateDescribeAlarms = (0, _smithy_core__WEBPACK_IMPORTED_MODULE_0__.createPaginator)(_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, _commands_DescribeAlarmsCommand__WEBPACK_IMPORTED_MODULE_2__.DescribeAlarmsCommand, "NextToken", "NextToken", "MaxRecords");
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeAnomalyDetectorsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  paginateDescribeAnomalyDetectors: function() { return paginateDescribeAnomalyDetectors; }
+});
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
+/* harmony import */var _commands_DescribeAnomalyDetectorsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/DescribeAnomalyDetectorsCommand */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeAnomalyDetectorsCommand.js");
+
+
+
+const paginateDescribeAnomalyDetectors = (0, _smithy_core__WEBPACK_IMPORTED_MODULE_0__.createPaginator)(_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, _commands_DescribeAnomalyDetectorsCommand__WEBPACK_IMPORTED_MODULE_2__.DescribeAnomalyDetectorsCommand, "NextToken", "NextToken", "MaxResults");
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeInsightRulesPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  paginateDescribeInsightRules: function() { return paginateDescribeInsightRules; }
+});
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
+/* harmony import */var _commands_DescribeInsightRulesCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/DescribeInsightRulesCommand */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/DescribeInsightRulesCommand.js");
+
+
+
+const paginateDescribeInsightRules = (0, _smithy_core__WEBPACK_IMPORTED_MODULE_0__.createPaginator)(_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, _commands_DescribeInsightRulesCommand__WEBPACK_IMPORTED_MODULE_2__.DescribeInsightRulesCommand, "NextToken", "NextToken", "MaxResults");
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/GetMetricDataPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  paginateGetMetricData: function() { return paginateGetMetricData; }
+});
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
+/* harmony import */var _commands_GetMetricDataCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/GetMetricDataCommand */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/GetMetricDataCommand.js");
+
+
+
+const paginateGetMetricData = (0, _smithy_core__WEBPACK_IMPORTED_MODULE_0__.createPaginator)(_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, _commands_GetMetricDataCommand__WEBPACK_IMPORTED_MODULE_2__.GetMetricDataCommand, "NextToken", "NextToken", "MaxDatapoints");
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListDashboardsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  paginateListDashboards: function() { return paginateListDashboards; }
+});
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
+/* harmony import */var _commands_ListDashboardsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListDashboardsCommand */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListDashboardsCommand.js");
+
+
+
+const paginateListDashboards = (0, _smithy_core__WEBPACK_IMPORTED_MODULE_0__.createPaginator)(_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, _commands_ListDashboardsCommand__WEBPACK_IMPORTED_MODULE_2__.ListDashboardsCommand, "NextToken", "NextToken", "");
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListManagedInsightRulesPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  paginateListManagedInsightRules: function() { return paginateListManagedInsightRules; }
+});
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
+/* harmony import */var _commands_ListManagedInsightRulesCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListManagedInsightRulesCommand */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListManagedInsightRulesCommand.js");
+
+
+
+const paginateListManagedInsightRules = (0, _smithy_core__WEBPACK_IMPORTED_MODULE_0__.createPaginator)(_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, _commands_ListManagedInsightRulesCommand__WEBPACK_IMPORTED_MODULE_2__.ListManagedInsightRulesCommand, "NextToken", "NextToken", "MaxResults");
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListMetricStreamsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  paginateListMetricStreams: function() { return paginateListMetricStreams; }
+});
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
+/* harmony import */var _commands_ListMetricStreamsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListMetricStreamsCommand */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricStreamsCommand.js");
+
+
+
+const paginateListMetricStreams = (0, _smithy_core__WEBPACK_IMPORTED_MODULE_0__.createPaginator)(_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, _commands_ListMetricStreamsCommand__WEBPACK_IMPORTED_MODULE_2__.ListMetricStreamsCommand, "NextToken", "NextToken", "MaxResults");
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListMetricsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  paginateListMetrics: function() { return paginateListMetrics; }
+});
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CloudWatchClient */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
+/* harmony import */var _commands_ListMetricsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListMetricsCommand */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/ListMetricsCommand.js");
+
+
+
+const paginateListMetrics = (0, _smithy_core__WEBPACK_IMPORTED_MODULE_0__.createPaginator)(_CloudWatchClient__WEBPACK_IMPORTED_MODULE_1__.CloudWatchClient, _commands_ListMetricsCommand__WEBPACK_IMPORTED_MODULE_2__.ListMetricsCommand, "NextToken", "NextToken", "");
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  paginateDescribeAlarmHistory: function() { return /* reexport safe */ _DescribeAlarmHistoryPaginator__WEBPACK_IMPORTED_MODULE_0__.paginateDescribeAlarmHistory; },
+  paginateDescribeAlarms: function() { return /* reexport safe */ _DescribeAlarmsPaginator__WEBPACK_IMPORTED_MODULE_1__.paginateDescribeAlarms; },
+  paginateDescribeAnomalyDetectors: function() { return /* reexport safe */ _DescribeAnomalyDetectorsPaginator__WEBPACK_IMPORTED_MODULE_2__.paginateDescribeAnomalyDetectors; },
+  paginateDescribeInsightRules: function() { return /* reexport safe */ _DescribeInsightRulesPaginator__WEBPACK_IMPORTED_MODULE_3__.paginateDescribeInsightRules; },
+  paginateGetMetricData: function() { return /* reexport safe */ _GetMetricDataPaginator__WEBPACK_IMPORTED_MODULE_4__.paginateGetMetricData; },
+  paginateListDashboards: function() { return /* reexport safe */ _ListDashboardsPaginator__WEBPACK_IMPORTED_MODULE_6__.paginateListDashboards; },
+  paginateListManagedInsightRules: function() { return /* reexport safe */ _ListManagedInsightRulesPaginator__WEBPACK_IMPORTED_MODULE_7__.paginateListManagedInsightRules; },
+  paginateListMetricStreams: function() { return /* reexport safe */ _ListMetricStreamsPaginator__WEBPACK_IMPORTED_MODULE_8__.paginateListMetricStreams; },
+  paginateListMetrics: function() { return /* reexport safe */ _ListMetricsPaginator__WEBPACK_IMPORTED_MODULE_9__.paginateListMetrics; }
+});
+/* harmony import */var _DescribeAlarmHistoryPaginator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DescribeAlarmHistoryPaginator */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeAlarmHistoryPaginator.js");
+/* harmony import */var _DescribeAlarmsPaginator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DescribeAlarmsPaginator */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeAlarmsPaginator.js");
+/* harmony import */var _DescribeAnomalyDetectorsPaginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DescribeAnomalyDetectorsPaginator */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeAnomalyDetectorsPaginator.js");
+/* harmony import */var _DescribeInsightRulesPaginator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./DescribeInsightRulesPaginator */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/DescribeInsightRulesPaginator.js");
+/* harmony import */var _GetMetricDataPaginator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./GetMetricDataPaginator */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/GetMetricDataPaginator.js");
+/* harmony import */var _ListDashboardsPaginator__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ListDashboardsPaginator */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListDashboardsPaginator.js");
+/* harmony import */var _ListManagedInsightRulesPaginator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ListManagedInsightRulesPaginator */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListManagedInsightRulesPaginator.js");
+/* harmony import */var _ListMetricStreamsPaginator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ListMetricStreamsPaginator */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListMetricStreamsPaginator.js");
+/* harmony import */var _ListMetricsPaginator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ListMetricsPaginator */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/ListMetricsPaginator.js");
+
+
+
+
+
+
+
+
+
+
+}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/protocols/Aws_query.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.d(__webpack_exports__, {
+  de_DescribeAlarmHistoryCommand: function() { return de_DescribeAlarmHistoryCommand; },
+  de_DescribeAlarmsCommand: function() { return de_DescribeAlarmsCommand; },
+  de_DescribeAnomalyDetectorsCommand: function() { return de_DescribeAnomalyDetectorsCommand; },
+  de_DescribeInsightRulesCommand: function() { return de_DescribeInsightRulesCommand; },
+  de_GetMetricDataCommand: function() { return de_GetMetricDataCommand; },
+  de_ListDashboardsCommand: function() { return de_ListDashboardsCommand; },
+  de_ListManagedInsightRulesCommand: function() { return de_ListManagedInsightRulesCommand; },
+  de_ListMetricStreamsCommand: function() { return de_ListMetricStreamsCommand; },
+  de_ListMetricsCommand: function() { return de_ListMetricsCommand; },
+  se_DescribeAlarmHistoryCommand: function() { return se_DescribeAlarmHistoryCommand; },
+  se_DescribeAlarmsCommand: function() { return se_DescribeAlarmsCommand; },
+  se_DescribeAnomalyDetectorsCommand: function() { return se_DescribeAnomalyDetectorsCommand; },
+  se_DescribeInsightRulesCommand: function() { return se_DescribeInsightRulesCommand; },
+  se_GetMetricDataCommand: function() { return se_GetMetricDataCommand; },
+  se_ListDashboardsCommand: function() { return se_ListDashboardsCommand; },
+  se_ListManagedInsightRulesCommand: function() { return se_ListManagedInsightRulesCommand; },
+  se_ListMetricStreamsCommand: function() { return se_ListMetricStreamsCommand; },
+  se_ListMetricsCommand: function() { return se_ListMetricsCommand; }
+});
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var fast_xml_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! fast-xml-parser */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/fxp.js");
 /* harmony import */var fast_xml_parser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(fast_xml_parser__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */var _models_CloudWatchServiceException__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/CloudWatchServiceException */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/models/CloudWatchServiceException.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/models/models_0.js");
+/* harmony import */var _models_CloudWatchServiceException__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/CloudWatchServiceException */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/models/CloudWatchServiceException.js");
+/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/models/models_0.js");
 
 
 
@@ -4125,7 +2927,7 @@ const de_PutMetricAlarmCommandError = async (output, context)=>{
 };
 const de_PutMetricDataCommand = async (output, context)=>{
     if (output.statusCode >= 300) return de_PutMetricDataCommandError(output, context);
-    await (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.collectBody)(output.body, context);
+    await collectBody(output.body, context);
     const response = {
         $metadata: deserializeMetadata(output)
     };
@@ -4429,11 +3231,11 @@ const de_InvalidFormatFaultRes = async (parsedOutput, context)=>{
 const de_InvalidNextTokenRes = async (parsedOutput, context)=>{
     const body = parsedOutput.body;
     const deserialized = de_InvalidNextToken(body.Error, context);
-    const exception = new InvalidNextToken({
+    const exception = new _models_models_0__WEBPACK_IMPORTED_MODULE_3__.InvalidNextToken({
         $metadata: deserializeMetadata(parsedOutput),
         ...deserialized
     });
-    return __decorateServiceException(exception, body);
+    return (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.decorateServiceException)(exception, body);
 };
 const de_InvalidParameterCombinationExceptionRes = async (parsedOutput, context)=>{
     const body = parsedOutput.body;
@@ -4559,7 +3361,7 @@ const se_Counts = (input, context)=>{
     let counter = 1;
     for (const entry of input){
         if (entry === null) continue;
-        entries[`member.${counter}`] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.serializeFloat)(entry);
+        entries[`member.${counter}`] = __serializeFloat(entry);
         counter++;
     }
     return entries;
@@ -5089,7 +3891,7 @@ const se_MetricDatum = (input, context)=>{
         });
     }
     if (input[_Ti] != null) entries[_Ti] = input[_Ti].toISOString().split(".")[0] + "Z";
-    if (input[_Va] != null) entries[_Va] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.serializeFloat)(input[_Va]);
+    if (input[_Va] != null) entries[_Va] = __serializeFloat(input[_Va]);
     if (input[_SVt] != null) {
         const memberEntries = se_StatisticSet(input[_SVt], context);
         Object.entries(memberEntries).forEach(([key, value])=>{
@@ -5548,10 +4350,10 @@ const se_Statistics = (input, context)=>{
 };
 const se_StatisticSet = (input, context)=>{
     const entries = {};
-    if (input[_SCa] != null) entries[_SCa] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.serializeFloat)(input[_SCa]);
-    if (input[_Su] != null) entries[_Su] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.serializeFloat)(input[_Su]);
-    if (input[_Mi] != null) entries[_Mi] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.serializeFloat)(input[_Mi]);
-    if (input[_Ma] != null) entries[_Ma] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.serializeFloat)(input[_Ma]);
+    if (input[_SCa] != null) entries[_SCa] = __serializeFloat(input[_SCa]);
+    if (input[_Su] != null) entries[_Su] = __serializeFloat(input[_Su]);
+    if (input[_Mi] != null) entries[_Mi] = __serializeFloat(input[_Mi]);
+    if (input[_Ma] != null) entries[_Ma] = __serializeFloat(input[_Ma]);
     return entries;
 };
 const se_StopMetricStreamsInput = (input, context)=>{
@@ -5626,19 +4428,19 @@ const se_Values = (input, context)=>{
     let counter = 1;
     for (const entry of input){
         if (entry === null) continue;
-        entries[`member.${counter}`] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.serializeFloat)(entry);
+        entries[`member.${counter}`] = __serializeFloat(entry);
         counter++;
     }
     return entries;
 };
 const de_AlarmHistoryItem = (output, context)=>{
     const contents = {};
-    if (output[_ANl] != null) contents[_ANl] = __expectString(output[_ANl]);
-    if (output[_ATl] != null) contents[_ATl] = __expectString(output[_ATl]);
-    if (output[_Ti] != null) contents[_Ti] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_Ti]));
-    if (output[_HIT] != null) contents[_HIT] = __expectString(output[_HIT]);
-    if (output[_HS] != null) contents[_HS] = __expectString(output[_HS]);
-    if (output[_HD] != null) contents[_HD] = __expectString(output[_HD]);
+    if (output[_ANl] != null) contents[_ANl] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ANl]);
+    if (output[_ATl] != null) contents[_ATl] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ATl]);
+    if (output[_Ti] != null) contents[_Ti] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_Ti]));
+    if (output[_HIT] != null) contents[_HIT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_HIT]);
+    if (output[_HS] != null) contents[_HS] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_HS]);
+    if (output[_HD] != null) contents[_HD] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_HD]);
     return contents;
 };
 const de_AlarmHistoryItems = (output, context)=>{
@@ -5648,13 +4450,13 @@ const de_AlarmHistoryItems = (output, context)=>{
 };
 const de_AnomalyDetector = (output, context)=>{
     const contents = {};
-    if (output[_N] != null) contents[_N] = __expectString(output[_N]);
-    if (output[_MN] != null) contents[_MN] = __expectString(output[_MN]);
+    if (output[_N] != null) contents[_N] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_N]);
+    if (output[_MN] != null) contents[_MN] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_MN]);
     if (output.Dimensions === "") contents[_D] = [];
-    else if (output[_D] != null && output[_D][_m] != null) contents[_D] = de_Dimensions(__getArrayIfSingleItem(output[_D][_m]), context);
-    if (output[_S] != null) contents[_S] = __expectString(output[_S]);
+    else if (output[_D] != null && output[_D][_m] != null) contents[_D] = de_Dimensions((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_D][_m]), context);
+    if (output[_S] != null) contents[_S] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_S]);
     if (output[_Co] != null) contents[_Co] = de_AnomalyDetectorConfiguration(output[_Co], context);
-    if (output[_SV] != null) contents[_SV] = __expectString(output[_SV]);
+    if (output[_SV] != null) contents[_SV] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_SV]);
     if (output[_SMAD] != null) contents[_SMAD] = de_SingleMetricAnomalyDetector(output[_SMAD], context);
     if (output[_MMAD] != null) contents[_MMAD] = de_MetricMathAnomalyDetector(output[_MMAD], context);
     return contents;
@@ -5662,8 +4464,8 @@ const de_AnomalyDetector = (output, context)=>{
 const de_AnomalyDetectorConfiguration = (output, context)=>{
     const contents = {};
     if (output.ExcludedTimeRanges === "") contents[_ETR] = [];
-    else if (output[_ETR] != null && output[_ETR][_m] != null) contents[_ETR] = de_AnomalyDetectorExcludedTimeRanges(__getArrayIfSingleItem(output[_ETR][_m]), context);
-    if (output[_MT] != null) contents[_MT] = __expectString(output[_MT]);
+    else if (output[_ETR] != null && output[_ETR][_m] != null) contents[_ETR] = de_AnomalyDetectorExcludedTimeRanges((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_ETR][_m]), context);
+    if (output[_MT] != null) contents[_MT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_MT]);
     return contents;
 };
 const de_AnomalyDetectorExcludedTimeRanges = (output, context)=>{
@@ -5683,28 +4485,28 @@ const de_BatchFailures = (output, context)=>{
 };
 const de_CompositeAlarm = (output, context)=>{
     const contents = {};
-    if (output[_AE] != null) contents[_AE] = __parseBoolean(output[_AE]);
+    if (output[_AE] != null) contents[_AE] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseBoolean)(output[_AE]);
     if (output.AlarmActions === "") contents[_AA] = [];
-    else if (output[_AA] != null && output[_AA][_m] != null) contents[_AA] = de_ResourceList(__getArrayIfSingleItem(output[_AA][_m]), context);
-    if (output[_AAl] != null) contents[_AAl] = __expectString(output[_AAl]);
-    if (output[_ACUT] != null) contents[_ACUT] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_ACUT]));
-    if (output[_AD] != null) contents[_AD] = __expectString(output[_AD]);
-    if (output[_ANl] != null) contents[_ANl] = __expectString(output[_ANl]);
-    if (output[_AR] != null) contents[_AR] = __expectString(output[_AR]);
+    else if (output[_AA] != null && output[_AA][_m] != null) contents[_AA] = de_ResourceList((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_AA][_m]), context);
+    if (output[_AAl] != null) contents[_AAl] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_AAl]);
+    if (output[_ACUT] != null) contents[_ACUT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_ACUT]));
+    if (output[_AD] != null) contents[_AD] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_AD]);
+    if (output[_ANl] != null) contents[_ANl] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ANl]);
+    if (output[_AR] != null) contents[_AR] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_AR]);
     if (output.InsufficientDataActions === "") contents[_IDA] = [];
-    else if (output[_IDA] != null && output[_IDA][_m] != null) contents[_IDA] = de_ResourceList(__getArrayIfSingleItem(output[_IDA][_m]), context);
+    else if (output[_IDA] != null && output[_IDA][_m] != null) contents[_IDA] = de_ResourceList((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_IDA][_m]), context);
     if (output.OKActions === "") contents[_OKA] = [];
-    else if (output[_OKA] != null && output[_OKA][_m] != null) contents[_OKA] = de_ResourceList(__getArrayIfSingleItem(output[_OKA][_m]), context);
-    if (output[_SRt] != null) contents[_SRt] = __expectString(output[_SRt]);
-    if (output[_SRD] != null) contents[_SRD] = __expectString(output[_SRD]);
-    if (output[_SUT] != null) contents[_SUT] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_SUT]));
-    if (output[_SV] != null) contents[_SV] = __expectString(output[_SV]);
-    if (output[_STT] != null) contents[_STT] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_STT]));
-    if (output[_ASB] != null) contents[_ASB] = __expectString(output[_ASB]);
-    if (output[_ASR] != null) contents[_ASR] = __expectString(output[_ASR]);
-    if (output[_ASc] != null) contents[_ASc] = __expectString(output[_ASc]);
-    if (output[_ASWP] != null) contents[_ASWP] = __strictParseInt32(output[_ASWP]);
-    if (output[_ASEP] != null) contents[_ASEP] = __strictParseInt32(output[_ASEP]);
+    else if (output[_OKA] != null && output[_OKA][_m] != null) contents[_OKA] = de_ResourceList((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_OKA][_m]), context);
+    if (output[_SRt] != null) contents[_SRt] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_SRt]);
+    if (output[_SRD] != null) contents[_SRD] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_SRD]);
+    if (output[_SUT] != null) contents[_SUT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_SUT]));
+    if (output[_SV] != null) contents[_SV] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_SV]);
+    if (output[_STT] != null) contents[_STT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_STT]));
+    if (output[_ASB] != null) contents[_ASB] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ASB]);
+    if (output[_ASR] != null) contents[_ASR] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ASR]);
+    if (output[_ASc] != null) contents[_ASc] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ASc]);
+    if (output[_ASWP] != null) contents[_ASWP] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseInt32)(output[_ASWP]);
+    if (output[_ASEP] != null) contents[_ASEP] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseInt32)(output[_ASEP]);
     return contents;
 };
 const de_CompositeAlarms = (output, context)=>{
@@ -5724,10 +4526,10 @@ const de_DashboardEntries = (output, context)=>{
 };
 const de_DashboardEntry = (output, context)=>{
     const contents = {};
-    if (output[_DNa] != null) contents[_DNa] = __expectString(output[_DNa]);
-    if (output[_DAa] != null) contents[_DAa] = __expectString(output[_DAa]);
-    if (output[_LMa] != null) contents[_LMa] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_LMa]));
-    if (output[_Si] != null) contents[_Si] = __strictParseLong(output[_Si]);
+    if (output[_DNa] != null) contents[_DNa] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_DNa]);
+    if (output[_DAa] != null) contents[_DAa] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_DAa]);
+    if (output[_LMa] != null) contents[_LMa] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_LMa]));
+    if (output[_Si] != null) contents[_Si] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseLong)(output[_Si]);
     return contents;
 };
 const de_DashboardInvalidInputError = (output, context)=>{
@@ -5780,7 +4582,7 @@ const de_DatapointValueMap = (output, context)=>{
 };
 const de_DatapointValues = (output, context)=>{
     return (output || []).filter((e)=>e != null).map((entry)=>{
-        return __strictParseFloat(entry);
+        return (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseFloat)(entry);
     });
 };
 const de_DeleteAnomalyDetectorOutput = (output, context)=>{
@@ -5804,8 +4606,8 @@ const de_DeleteMetricStreamOutput = (output, context)=>{
 const de_DescribeAlarmHistoryOutput = (output, context)=>{
     const contents = {};
     if (output.AlarmHistoryItems === "") contents[_AHI] = [];
-    else if (output[_AHI] != null && output[_AHI][_m] != null) contents[_AHI] = de_AlarmHistoryItems(__getArrayIfSingleItem(output[_AHI][_m]), context);
-    if (output[_NT] != null) contents[_NT] = __expectString(output[_NT]);
+    else if (output[_AHI] != null && output[_AHI][_m] != null) contents[_AHI] = de_AlarmHistoryItems((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_AHI][_m]), context);
+    if (output[_NT] != null) contents[_NT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_NT]);
     return contents;
 };
 const de_DescribeAlarmsForMetricOutput = (output, context)=>{
@@ -5817,30 +4619,30 @@ const de_DescribeAlarmsForMetricOutput = (output, context)=>{
 const de_DescribeAlarmsOutput = (output, context)=>{
     const contents = {};
     if (output.CompositeAlarms === "") contents[_CA] = [];
-    else if (output[_CA] != null && output[_CA][_m] != null) contents[_CA] = de_CompositeAlarms(__getArrayIfSingleItem(output[_CA][_m]), context);
+    else if (output[_CA] != null && output[_CA][_m] != null) contents[_CA] = de_CompositeAlarms((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_CA][_m]), context);
     if (output.MetricAlarms === "") contents[_MA] = [];
-    else if (output[_MA] != null && output[_MA][_m] != null) contents[_MA] = de_MetricAlarms(__getArrayIfSingleItem(output[_MA][_m]), context);
-    if (output[_NT] != null) contents[_NT] = __expectString(output[_NT]);
+    else if (output[_MA] != null && output[_MA][_m] != null) contents[_MA] = de_MetricAlarms((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_MA][_m]), context);
+    if (output[_NT] != null) contents[_NT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_NT]);
     return contents;
 };
 const de_DescribeAnomalyDetectorsOutput = (output, context)=>{
     const contents = {};
     if (output.AnomalyDetectors === "") contents[_ADn] = [];
-    else if (output[_ADn] != null && output[_ADn][_m] != null) contents[_ADn] = de_AnomalyDetectors(__getArrayIfSingleItem(output[_ADn][_m]), context);
-    if (output[_NT] != null) contents[_NT] = __expectString(output[_NT]);
+    else if (output[_ADn] != null && output[_ADn][_m] != null) contents[_ADn] = de_AnomalyDetectors((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_ADn][_m]), context);
+    if (output[_NT] != null) contents[_NT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_NT]);
     return contents;
 };
 const de_DescribeInsightRulesOutput = (output, context)=>{
     const contents = {};
-    if (output[_NT] != null) contents[_NT] = __expectString(output[_NT]);
+    if (output[_NT] != null) contents[_NT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_NT]);
     if (output.InsightRules === "") contents[_IR] = [];
-    else if (output[_IR] != null && output[_IR][_m] != null) contents[_IR] = de_InsightRules(__getArrayIfSingleItem(output[_IR][_m]), context);
+    else if (output[_IR] != null && output[_IR][_m] != null) contents[_IR] = de_InsightRules((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_IR][_m]), context);
     return contents;
 };
 const de_Dimension = (output, context)=>{
     const contents = {};
-    if (output[_Na] != null) contents[_Na] = __expectString(output[_Na]);
-    if (output[_Va] != null) contents[_Va] = __expectString(output[_Va]);
+    if (output[_Na] != null) contents[_Na] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Na]);
+    if (output[_Va] != null) contents[_Va] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Va]);
     return contents;
 };
 const de_Dimensions = (output, context)=>{
@@ -5883,10 +4685,10 @@ const de_GetInsightRuleReportOutput = (output, context)=>{
 const de_GetMetricDataOutput = (output, context)=>{
     const contents = {};
     if (output.MetricDataResults === "") contents[_MDR] = [];
-    else if (output[_MDR] != null && output[_MDR][_m] != null) contents[_MDR] = de_MetricDataResults(__getArrayIfSingleItem(output[_MDR][_m]), context);
-    if (output[_NT] != null) contents[_NT] = __expectString(output[_NT]);
+    else if (output[_MDR] != null && output[_MDR][_m] != null) contents[_MDR] = de_MetricDataResults((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_MDR][_m]), context);
+    if (output[_NT] != null) contents[_NT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_NT]);
     if (output.Messages === "") contents[_Mess] = [];
-    else if (output[_Mess] != null && output[_Mess][_m] != null) contents[_Mess] = de_MetricDataResultMessages(__getArrayIfSingleItem(output[_Mess][_m]), context);
+    else if (output[_Mess] != null && output[_Mess][_m] != null) contents[_Mess] = de_MetricDataResultMessages((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_Mess][_m]), context);
     return contents;
 };
 const de_GetMetricStatisticsOutput = (output, context)=>{
@@ -5922,11 +4724,11 @@ const de_GetMetricWidgetImageOutput = (output, context)=>{
 };
 const de_InsightRule = (output, context)=>{
     const contents = {};
-    if (output[_Na] != null) contents[_Na] = __expectString(output[_Na]);
-    if (output[_Stat] != null) contents[_Stat] = __expectString(output[_Stat]);
-    if (output[_Sc] != null) contents[_Sc] = __expectString(output[_Sc]);
-    if (output[_De] != null) contents[_De] = __expectString(output[_De]);
-    if (output[_MRana] != null) contents[_MRana] = __parseBoolean(output[_MRana]);
+    if (output[_Na] != null) contents[_Na] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Na]);
+    if (output[_Stat] != null) contents[_Stat] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Stat]);
+    if (output[_Sc] != null) contents[_Sc] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Sc]);
+    if (output[_De] != null) contents[_De] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_De]);
+    if (output[_MRana] != null) contents[_MRana] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseBoolean)(output[_MRana]);
     return contents;
 };
 const de_InsightRuleContributor = (output, context)=>{
@@ -5998,7 +4800,7 @@ const de_InvalidFormatFault = (output, context)=>{
 };
 const de_InvalidNextToken = (output, context)=>{
     const contents = {};
-    if (output[_me] != null) contents[_me] = __expectString(output[_me]);
+    if (output[_me] != null) contents[_me] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_me]);
     return contents;
 };
 const de_InvalidParameterCombinationException = (output, context)=>{
@@ -6024,31 +4826,31 @@ const de_LimitExceededFault = (output, context)=>{
 const de_ListDashboardsOutput = (output, context)=>{
     const contents = {};
     if (output.DashboardEntries === "") contents[_DE] = [];
-    else if (output[_DE] != null && output[_DE][_m] != null) contents[_DE] = de_DashboardEntries(__getArrayIfSingleItem(output[_DE][_m]), context);
-    if (output[_NT] != null) contents[_NT] = __expectString(output[_NT]);
+    else if (output[_DE] != null && output[_DE][_m] != null) contents[_DE] = de_DashboardEntries((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_DE][_m]), context);
+    if (output[_NT] != null) contents[_NT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_NT]);
     return contents;
 };
 const de_ListManagedInsightRulesOutput = (output, context)=>{
     const contents = {};
     if (output.ManagedRules === "") contents[_MRan] = [];
-    else if (output[_MRan] != null && output[_MRan][_m] != null) contents[_MRan] = de_ManagedRuleDescriptions(__getArrayIfSingleItem(output[_MRan][_m]), context);
-    if (output[_NT] != null) contents[_NT] = __expectString(output[_NT]);
+    else if (output[_MRan] != null && output[_MRan][_m] != null) contents[_MRan] = de_ManagedRuleDescriptions((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_MRan][_m]), context);
+    if (output[_NT] != null) contents[_NT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_NT]);
     return contents;
 };
 const de_ListMetricsOutput = (output, context)=>{
     const contents = {};
     if (output.Metrics === "") contents[_M] = [];
-    else if (output[_M] != null && output[_M][_m] != null) contents[_M] = de_Metrics(__getArrayIfSingleItem(output[_M][_m]), context);
-    if (output[_NT] != null) contents[_NT] = __expectString(output[_NT]);
+    else if (output[_M] != null && output[_M][_m] != null) contents[_M] = de_Metrics((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_M][_m]), context);
+    if (output[_NT] != null) contents[_NT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_NT]);
     if (output.OwningAccounts === "") contents[_OAw] = [];
-    else if (output[_OAw] != null && output[_OAw][_m] != null) contents[_OAw] = de_OwningAccounts(__getArrayIfSingleItem(output[_OAw][_m]), context);
+    else if (output[_OAw] != null && output[_OAw][_m] != null) contents[_OAw] = de_OwningAccounts((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_OAw][_m]), context);
     return contents;
 };
 const de_ListMetricStreamsOutput = (output, context)=>{
     const contents = {};
-    if (output[_NT] != null) contents[_NT] = __expectString(output[_NT]);
+    if (output[_NT] != null) contents[_NT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_NT]);
     if (output.Entries === "") contents[_En] = [];
-    else if (output[_En] != null && output[_En][_m] != null) contents[_En] = de_MetricStreamEntries(__getArrayIfSingleItem(output[_En][_m]), context);
+    else if (output[_En] != null && output[_En][_m] != null) contents[_En] = de_MetricStreamEntries((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_En][_m]), context);
     return contents;
 };
 const de_ListTagsForResourceOutput = (output, context)=>{
@@ -6059,8 +4861,8 @@ const de_ListTagsForResourceOutput = (output, context)=>{
 };
 const de_ManagedRuleDescription = (output, context)=>{
     const contents = {};
-    if (output[_TN] != null) contents[_TN] = __expectString(output[_TN]);
-    if (output[_RARN] != null) contents[_RARN] = __expectString(output[_RARN]);
+    if (output[_TN] != null) contents[_TN] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_TN]);
+    if (output[_RARN] != null) contents[_RARN] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_RARN]);
     if (output[_RS] != null) contents[_RS] = de_ManagedRuleState(output[_RS], context);
     return contents;
 };
@@ -6071,60 +4873,60 @@ const de_ManagedRuleDescriptions = (output, context)=>{
 };
 const de_ManagedRuleState = (output, context)=>{
     const contents = {};
-    if (output[_RNu] != null) contents[_RNu] = __expectString(output[_RNu]);
-    if (output[_Stat] != null) contents[_Stat] = __expectString(output[_Stat]);
+    if (output[_RNu] != null) contents[_RNu] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_RNu]);
+    if (output[_Stat] != null) contents[_Stat] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Stat]);
     return contents;
 };
 const de_MessageData = (output, context)=>{
     const contents = {};
-    if (output[_Cod] != null) contents[_Cod] = __expectString(output[_Cod]);
-    if (output[_Va] != null) contents[_Va] = __expectString(output[_Va]);
+    if (output[_Cod] != null) contents[_Cod] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Cod]);
+    if (output[_Va] != null) contents[_Va] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Va]);
     return contents;
 };
 const de_Metric = (output, context)=>{
     const contents = {};
-    if (output[_N] != null) contents[_N] = __expectString(output[_N]);
-    if (output[_MN] != null) contents[_MN] = __expectString(output[_MN]);
+    if (output[_N] != null) contents[_N] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_N]);
+    if (output[_MN] != null) contents[_MN] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_MN]);
     if (output.Dimensions === "") contents[_D] = [];
-    else if (output[_D] != null && output[_D][_m] != null) contents[_D] = de_Dimensions(__getArrayIfSingleItem(output[_D][_m]), context);
+    else if (output[_D] != null && output[_D][_m] != null) contents[_D] = de_Dimensions((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_D][_m]), context);
     return contents;
 };
 const de_MetricAlarm = (output, context)=>{
     const contents = {};
-    if (output[_ANl] != null) contents[_ANl] = __expectString(output[_ANl]);
-    if (output[_AAl] != null) contents[_AAl] = __expectString(output[_AAl]);
-    if (output[_AD] != null) contents[_AD] = __expectString(output[_AD]);
-    if (output[_ACUT] != null) contents[_ACUT] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_ACUT]));
-    if (output[_AE] != null) contents[_AE] = __parseBoolean(output[_AE]);
+    if (output[_ANl] != null) contents[_ANl] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ANl]);
+    if (output[_AAl] != null) contents[_AAl] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_AAl]);
+    if (output[_AD] != null) contents[_AD] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_AD]);
+    if (output[_ACUT] != null) contents[_ACUT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_ACUT]));
+    if (output[_AE] != null) contents[_AE] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseBoolean)(output[_AE]);
     if (output.OKActions === "") contents[_OKA] = [];
-    else if (output[_OKA] != null && output[_OKA][_m] != null) contents[_OKA] = de_ResourceList(__getArrayIfSingleItem(output[_OKA][_m]), context);
+    else if (output[_OKA] != null && output[_OKA][_m] != null) contents[_OKA] = de_ResourceList((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_OKA][_m]), context);
     if (output.AlarmActions === "") contents[_AA] = [];
-    else if (output[_AA] != null && output[_AA][_m] != null) contents[_AA] = de_ResourceList(__getArrayIfSingleItem(output[_AA][_m]), context);
+    else if (output[_AA] != null && output[_AA][_m] != null) contents[_AA] = de_ResourceList((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_AA][_m]), context);
     if (output.InsufficientDataActions === "") contents[_IDA] = [];
-    else if (output[_IDA] != null && output[_IDA][_m] != null) contents[_IDA] = de_ResourceList(__getArrayIfSingleItem(output[_IDA][_m]), context);
-    if (output[_SV] != null) contents[_SV] = __expectString(output[_SV]);
-    if (output[_SRt] != null) contents[_SRt] = __expectString(output[_SRt]);
-    if (output[_SRD] != null) contents[_SRD] = __expectString(output[_SRD]);
-    if (output[_SUT] != null) contents[_SUT] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_SUT]));
-    if (output[_MN] != null) contents[_MN] = __expectString(output[_MN]);
-    if (output[_N] != null) contents[_N] = __expectString(output[_N]);
-    if (output[_St] != null) contents[_St] = __expectString(output[_St]);
-    if (output[_ES] != null) contents[_ES] = __expectString(output[_ES]);
+    else if (output[_IDA] != null && output[_IDA][_m] != null) contents[_IDA] = de_ResourceList((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_IDA][_m]), context);
+    if (output[_SV] != null) contents[_SV] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_SV]);
+    if (output[_SRt] != null) contents[_SRt] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_SRt]);
+    if (output[_SRD] != null) contents[_SRD] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_SRD]);
+    if (output[_SUT] != null) contents[_SUT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_SUT]));
+    if (output[_MN] != null) contents[_MN] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_MN]);
+    if (output[_N] != null) contents[_N] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_N]);
+    if (output[_St] != null) contents[_St] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_St]);
+    if (output[_ES] != null) contents[_ES] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ES]);
     if (output.Dimensions === "") contents[_D] = [];
-    else if (output[_D] != null && output[_D][_m] != null) contents[_D] = de_Dimensions(__getArrayIfSingleItem(output[_D][_m]), context);
-    if (output[_P] != null) contents[_P] = __strictParseInt32(output[_P]);
-    if (output[_U] != null) contents[_U] = __expectString(output[_U]);
-    if (output[_EP] != null) contents[_EP] = __strictParseInt32(output[_EP]);
-    if (output[_DTA] != null) contents[_DTA] = __strictParseInt32(output[_DTA]);
-    if (output[_Th] != null) contents[_Th] = __strictParseFloat(output[_Th]);
-    if (output[_CO] != null) contents[_CO] = __expectString(output[_CO]);
-    if (output[_TMD] != null) contents[_TMD] = __expectString(output[_TMD]);
-    if (output[_ELSCP] != null) contents[_ELSCP] = __expectString(output[_ELSCP]);
+    else if (output[_D] != null && output[_D][_m] != null) contents[_D] = de_Dimensions((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_D][_m]), context);
+    if (output[_P] != null) contents[_P] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseInt32)(output[_P]);
+    if (output[_U] != null) contents[_U] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_U]);
+    if (output[_EP] != null) contents[_EP] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseInt32)(output[_EP]);
+    if (output[_DTA] != null) contents[_DTA] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseInt32)(output[_DTA]);
+    if (output[_Th] != null) contents[_Th] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseFloat)(output[_Th]);
+    if (output[_CO] != null) contents[_CO] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_CO]);
+    if (output[_TMD] != null) contents[_TMD] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_TMD]);
+    if (output[_ELSCP] != null) contents[_ELSCP] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ELSCP]);
     if (output.Metrics === "") contents[_M] = [];
-    else if (output[_M] != null && output[_M][_m] != null) contents[_M] = de_MetricDataQueries(__getArrayIfSingleItem(output[_M][_m]), context);
-    if (output[_TMI] != null) contents[_TMI] = __expectString(output[_TMI]);
-    if (output[_ESv] != null) contents[_ESv] = __expectString(output[_ESv]);
-    if (output[_STT] != null) contents[_STT] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_STT]));
+    else if (output[_M] != null && output[_M][_m] != null) contents[_M] = de_MetricDataQueries((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_M][_m]), context);
+    if (output[_TMI] != null) contents[_TMI] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_TMI]);
+    if (output[_ESv] != null) contents[_ESv] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_ESv]);
+    if (output[_STT] != null) contents[_STT] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_STT]));
     return contents;
 };
 const de_MetricAlarms = (output, context)=>{
@@ -6139,26 +4941,26 @@ const de_MetricDataQueries = (output, context)=>{
 };
 const de_MetricDataQuery = (output, context)=>{
     const contents = {};
-    if (output[_I] != null) contents[_I] = __expectString(output[_I]);
+    if (output[_I] != null) contents[_I] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_I]);
     if (output[_MS] != null) contents[_MS] = de_MetricStat(output[_MS], context);
-    if (output[_E] != null) contents[_E] = __expectString(output[_E]);
-    if (output[_L] != null) contents[_L] = __expectString(output[_L]);
-    if (output[_RD] != null) contents[_RD] = __parseBoolean(output[_RD]);
-    if (output[_P] != null) contents[_P] = __strictParseInt32(output[_P]);
-    if (output[_AI] != null) contents[_AI] = __expectString(output[_AI]);
+    if (output[_E] != null) contents[_E] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_E]);
+    if (output[_L] != null) contents[_L] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_L]);
+    if (output[_RD] != null) contents[_RD] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseBoolean)(output[_RD]);
+    if (output[_P] != null) contents[_P] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseInt32)(output[_P]);
+    if (output[_AI] != null) contents[_AI] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_AI]);
     return contents;
 };
 const de_MetricDataResult = (output, context)=>{
     const contents = {};
-    if (output[_I] != null) contents[_I] = __expectString(output[_I]);
-    if (output[_L] != null) contents[_L] = __expectString(output[_L]);
+    if (output[_I] != null) contents[_I] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_I]);
+    if (output[_L] != null) contents[_L] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_L]);
     if (output.Timestamps === "") contents[_Tim] = [];
-    else if (output[_Tim] != null && output[_Tim][_m] != null) contents[_Tim] = de_Timestamps(__getArrayIfSingleItem(output[_Tim][_m]), context);
+    else if (output[_Tim] != null && output[_Tim][_m] != null) contents[_Tim] = de_Timestamps((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_Tim][_m]), context);
     if (output.Values === "") contents[_Val] = [];
-    else if (output[_Val] != null && output[_Val][_m] != null) contents[_Val] = de_DatapointValues(__getArrayIfSingleItem(output[_Val][_m]), context);
-    if (output[_SCt] != null) contents[_SCt] = __expectString(output[_SCt]);
+    else if (output[_Val] != null && output[_Val][_m] != null) contents[_Val] = de_DatapointValues((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_Val][_m]), context);
+    if (output[_SCt] != null) contents[_SCt] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_SCt]);
     if (output.Messages === "") contents[_Mess] = [];
-    else if (output[_Mess] != null && output[_Mess][_m] != null) contents[_Mess] = de_MetricDataResultMessages(__getArrayIfSingleItem(output[_Mess][_m]), context);
+    else if (output[_Mess] != null && output[_Mess][_m] != null) contents[_Mess] = de_MetricDataResultMessages((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_Mess][_m]), context);
     return contents;
 };
 const de_MetricDataResultMessages = (output, context)=>{
@@ -6174,7 +4976,7 @@ const de_MetricDataResults = (output, context)=>{
 const de_MetricMathAnomalyDetector = (output, context)=>{
     const contents = {};
     if (output.MetricDataQueries === "") contents[_MDQ] = [];
-    else if (output[_MDQ] != null && output[_MDQ][_m] != null) contents[_MDQ] = de_MetricDataQueries(__getArrayIfSingleItem(output[_MDQ][_m]), context);
+    else if (output[_MDQ] != null && output[_MDQ][_m] != null) contents[_MDQ] = de_MetricDataQueries((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_MDQ][_m]), context);
     return contents;
 };
 const de_Metrics = (output, context)=>{
@@ -6185,9 +4987,9 @@ const de_Metrics = (output, context)=>{
 const de_MetricStat = (output, context)=>{
     const contents = {};
     if (output[_Me] != null) contents[_Me] = de_Metric(output[_Me], context);
-    if (output[_P] != null) contents[_P] = __strictParseInt32(output[_P]);
-    if (output[_S] != null) contents[_S] = __expectString(output[_S]);
-    if (output[_U] != null) contents[_U] = __expectString(output[_U]);
+    if (output[_P] != null) contents[_P] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.strictParseInt32)(output[_P]);
+    if (output[_S] != null) contents[_S] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_S]);
+    if (output[_U] != null) contents[_U] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_U]);
     return contents;
 };
 const de_MetricStreamEntries = (output, context)=>{
@@ -6197,13 +4999,13 @@ const de_MetricStreamEntries = (output, context)=>{
 };
 const de_MetricStreamEntry = (output, context)=>{
     const contents = {};
-    if (output[_Ar] != null) contents[_Ar] = __expectString(output[_Ar]);
-    if (output[_CD] != null) contents[_CD] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_CD]));
-    if (output[_LUD] != null) contents[_LUD] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_LUD]));
-    if (output[_Na] != null) contents[_Na] = __expectString(output[_Na]);
-    if (output[_FA] != null) contents[_FA] = __expectString(output[_FA]);
-    if (output[_Stat] != null) contents[_Stat] = __expectString(output[_Stat]);
-    if (output[_OF] != null) contents[_OF] = __expectString(output[_OF]);
+    if (output[_Ar] != null) contents[_Ar] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Ar]);
+    if (output[_CD] != null) contents[_CD] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_CD]));
+    if (output[_LUD] != null) contents[_LUD] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_LUD]));
+    if (output[_Na] != null) contents[_Na] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Na]);
+    if (output[_FA] != null) contents[_FA] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_FA]);
+    if (output[_Stat] != null) contents[_Stat] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_Stat]);
+    if (output[_OF] != null) contents[_OF] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_OF]);
     return contents;
 };
 const de_MetricStreamFilter = (output, context)=>{
@@ -6259,7 +5061,7 @@ const de_MissingRequiredParameterException = (output, context)=>{
 };
 const de_OwningAccounts = (output, context)=>{
     return (output || []).filter((e)=>e != null).map((entry)=>{
-        return __expectString(entry);
+        return (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(entry);
     });
 };
 const de_PartialFailure = (output, context)=>{
@@ -6297,13 +5099,13 @@ const de_PutMetricStreamOutput = (output, context)=>{
 };
 const de_Range = (output, context)=>{
     const contents = {};
-    if (output[_ST] != null) contents[_ST] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_ST]));
-    if (output[_ET] != null) contents[_ET] = __expectNonNull(__parseRfc3339DateTimeWithOffset(output[_ET]));
+    if (output[_ST] != null) contents[_ST] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_ST]));
+    if (output[_ET] != null) contents[_ET] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(output[_ET]));
     return contents;
 };
 const de_ResourceList = (output, context)=>{
     return (output || []).filter((e)=>e != null).map((entry)=>{
-        return __expectString(entry);
+        return (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(entry);
     });
 };
 const de_ResourceNotFound = (output, context)=>{
@@ -6320,11 +5122,11 @@ const de_ResourceNotFoundException = (output, context)=>{
 };
 const de_SingleMetricAnomalyDetector = (output, context)=>{
     const contents = {};
-    if (output[_N] != null) contents[_N] = __expectString(output[_N]);
-    if (output[_MN] != null) contents[_MN] = __expectString(output[_MN]);
+    if (output[_N] != null) contents[_N] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_N]);
+    if (output[_MN] != null) contents[_MN] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_MN]);
     if (output.Dimensions === "") contents[_D] = [];
-    else if (output[_D] != null && output[_D][_m] != null) contents[_D] = de_Dimensions(__getArrayIfSingleItem(output[_D][_m]), context);
-    if (output[_S] != null) contents[_S] = __expectString(output[_S]);
+    else if (output[_D] != null && output[_D][_m] != null) contents[_D] = de_Dimensions((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.getArrayIfSingleItem)(output[_D][_m]), context);
+    if (output[_S] != null) contents[_S] = (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectString)(output[_S]);
     return contents;
 };
 const de_StartMetricStreamsOutput = (output, context)=>{
@@ -6352,7 +5154,7 @@ const de_TagResourceOutput = (output, context)=>{
 };
 const de_Timestamps = (output, context)=>{
     return (output || []).filter((e)=>e != null).map((entry)=>{
-        return __expectNonNull(__parseRfc3339DateTimeWithOffset(entry));
+        return (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.expectNonNull)((0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.parseRfc3339DateTimeWithOffset)(entry));
     });
 };
 const de_UntagResourceOutput = (output, context)=>{
@@ -6628,27 +5430,26 @@ const loadQueryErrorCode = (output, data)=>{
     if (output.statusCode == 404) return "NotFound";
 };
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRuntimeConfig: function() { return getRuntimeConfig; }
 });
-/* harmony import */var _package_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../package.json */"./node_modules/@aws-sdk/client-cloudwatch/package.json");
-/* harmony import */var _aws_sdk_client_sts__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @aws-sdk/client-sts */"./node_modules/@aws-sdk/client-sts/dist-es/defaultRoleAssumers.js");
-/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/@aws-sdk/core/dist-es/client/emitWarningIfUnsupportedVersion.js");
-/* harmony import */var _aws_sdk_credential_provider_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-node */"./node_modules/@aws-sdk/credential-provider-node/dist-es/index.js");
-/* harmony import */var _aws_sdk_util_user_agent_node__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/util-user-agent-node */"./node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js");
-/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/@smithy/config-resolver/dist-es/index.js");
-/* harmony import */var _smithy_hash_node__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/hash-node */"./node_modules/@smithy/hash-node/dist-es/index.js");
-/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/@smithy/middleware-retry/dist-es/index.js");
-/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/@smithy/node-config-provider/dist-es/index.js");
-/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/@smithy/node-http-handler/dist-es/index.js");
-/* harmony import */var _smithy_util_body_length_node__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/util-body-length-node */"./node_modules/@smithy/util-body-length-node/dist-es/index.js");
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
-/* harmony import */var _runtimeConfig_shared__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./runtimeConfig.shared */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeConfig.shared.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _smithy_util_defaults_mode_node__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @smithy/util-defaults-mode-node */"./node_modules/@smithy/util-defaults-mode-node/dist-es/index.js");
+/* harmony import */var _package_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../package.json */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/package.json");
+/* harmony import */var _aws_sdk_client_sts__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @aws-sdk/client-sts */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/defaultRoleAssumers.js");
+/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/client/emitWarningIfUnsupportedVersion.js");
+/* harmony import */var _aws_sdk_credential_provider_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-node */"./node_modules/.pnpm/@aws-sdk+credential-provider-node@3.490.0/node_modules/@aws-sdk/credential-provider-node/dist-es/index.js");
+/* harmony import */var _aws_sdk_util_user_agent_node__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/util-user-agent-node */"./node_modules/.pnpm/@aws-sdk+util-user-agent-node@3.489.0/node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js");
+/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/index.js");
+/* harmony import */var _smithy_hash_node__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/hash-node */"./node_modules/.pnpm/@smithy+hash-node@2.1.1/node_modules/@smithy/hash-node/dist-es/index.js");
+/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/index.js");
+/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/index.js");
+/* harmony import */var _smithy_util_body_length_node__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/util-body-length-node */"./node_modules/.pnpm/@smithy+util-body-length-node@2.2.1/node_modules/@smithy/util-body-length-node/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _runtimeConfig_shared__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./runtimeConfig.shared */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeConfig.shared.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_util_defaults_mode_node__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @smithy/util-defaults-mode-node */"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/index.js");
 
 
 
@@ -6696,17 +5497,16 @@ const getRuntimeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeConfig.shared.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeConfig.shared.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRuntimeConfig: function() { return getRuntimeConfig; }
 });
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/@smithy/url-parser/dist-es/index.js");
-/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/@smithy/util-base64/dist-es/index.js");
-/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/@smithy/util-utf8/dist-es/index.js");
-/* harmony import */var _endpoint_endpointResolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./endpoint/endpointResolver */"./node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/endpointResolver.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/.pnpm/@smithy+url-parser@2.1.1/node_modules/@smithy/url-parser/dist-es/index.js");
+/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/index.js");
+/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js");
+/* harmony import */var _endpoint_endpointResolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./endpoint/endpointResolver */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/endpoint/endpointResolver.js");
 
 
 
@@ -6728,15 +5528,14 @@ const getRuntimeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeExtensions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/runtimeExtensions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveRuntimeExtensions: function() { return resolveRuntimeExtensions; }
 });
-/* harmony import */var _aws_sdk_region_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/region-config-resolver */"./node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js");
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _aws_sdk_region_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/region-config-resolver */"./node_modules/.pnpm/@aws-sdk+region-config-resolver@3.489.0/node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
 
 
 
@@ -6756,157 +5555,23 @@ const resolveRuntimeExtensions = (runtimeConfig, extensions)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/waiters/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/SSOClient.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/waiters/waitForAlarmExists.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_waiter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-waiter */"./node_modules/@smithy/util-waiter/dist-es/index.js");
-
-
-const checkState = async (client, input)=>{
-    let reason;
-    try {
-        const result = await client.send(new DescribeAlarmsCommand(input));
-        reason = result;
-        try {
-            const returnComparator = ()=>{
-                const flat_1 = [].concat(...result.MetricAlarms);
-                return flat_1.length > 0.0;
-            };
-            if (returnComparator() == true) return {
-                state: WaiterState.SUCCESS,
-                reason
-            };
-        } catch (e) {}
-    } catch (exception) {
-        reason = exception;
-    }
-    return {
-        state: WaiterState.RETRY,
-        reason
-    };
-};
-const waitForAlarmExists = async (params, input)=>{
-    const serviceDefaults = {
-        minDelay: 5,
-        maxDelay: 120
-    };
-    return createWaiter({
-        ...serviceDefaults,
-        ...params
-    }, input, checkState);
-};
-const waitUntilAlarmExists = async (params, input)=>{
-    const serviceDefaults = {
-        minDelay: 5,
-        maxDelay: 120
-    };
-    const result = await createWaiter({
-        ...serviceDefaults,
-        ...params
-    }, input, checkState);
-    return checkExceptions(result);
-};
-}),
-"./node_modules/@aws-sdk/client-cloudwatch/dist-es/waiters/waitForCompositeAlarmExists.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_waiter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-waiter */"./node_modules/@smithy/util-waiter/dist-es/index.js");
-
-
-const checkState = async (client, input)=>{
-    let reason;
-    try {
-        const result = await client.send(new DescribeAlarmsCommand(input));
-        reason = result;
-        try {
-            const returnComparator = ()=>{
-                const flat_1 = [].concat(...result.CompositeAlarms);
-                return flat_1.length > 0.0;
-            };
-            if (returnComparator() == true) return {
-                state: WaiterState.SUCCESS,
-                reason
-            };
-        } catch (e) {}
-    } catch (exception) {
-        reason = exception;
-    }
-    return {
-        state: WaiterState.RETRY,
-        reason
-    };
-};
-const waitForCompositeAlarmExists = async (params, input)=>{
-    const serviceDefaults = {
-        minDelay: 5,
-        maxDelay: 120
-    };
-    return createWaiter({
-        ...serviceDefaults,
-        ...params
-    }, input, checkState);
-};
-const waitUntilCompositeAlarmExists = async (params, input)=>{
-    const serviceDefaults = {
-        minDelay: 5,
-        maxDelay: 120
-    };
-    const result = await createWaiter({
-        ...serviceDefaults,
-        ...params
-    }, input, checkState);
-    return checkExceptions(result);
-};
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/SSO.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _commands_GetRoleCredentialsCommand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commands/GetRoleCredentialsCommand */"./node_modules/@aws-sdk/client-sso/dist-es/commands/GetRoleCredentialsCommand.js");
-/* harmony import */var _commands_ListAccountRolesCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./commands/ListAccountRolesCommand */"./node_modules/@aws-sdk/client-sso/dist-es/commands/ListAccountRolesCommand.js");
-/* harmony import */var _commands_ListAccountsCommand__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./commands/ListAccountsCommand */"./node_modules/@aws-sdk/client-sso/dist-es/commands/ListAccountsCommand.js");
-/* harmony import */var _commands_LogoutCommand__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./commands/LogoutCommand */"./node_modules/@aws-sdk/client-sso/dist-es/commands/LogoutCommand.js");
-/* harmony import */var _SSOClient__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SSOClient */"./node_modules/@aws-sdk/client-sso/dist-es/SSOClient.js");
-
-
-
-
-
-
-const commands = {
-    GetRoleCredentialsCommand: _commands_GetRoleCredentialsCommand__WEBPACK_IMPORTED_MODULE_1__.GetRoleCredentialsCommand,
-    ListAccountRolesCommand: ,
-    ListAccountsCommand: ,
-    LogoutCommand: 
-};
-class SSO extends _SSOClient__WEBPACK_IMPORTED_MODULE_5__.SSOClient {
-}
-(0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__.createAggregatedClient)(commands, SSO);
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/SSOClient.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   SSOClient: function() { return SSOClient; }
 });
-/* harmony import */var _aws_sdk_middleware_host_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/middleware-host-header */"./node_modules/@aws-sdk/middleware-host-header/dist-es/index.js");
-/* harmony import */var _aws_sdk_middleware_logger__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @aws-sdk/middleware-logger */"./node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js");
-/* harmony import */var _aws_sdk_middleware_recursion_detection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/middleware-recursion-detection */"./node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js");
-/* harmony import */var _aws_sdk_middleware_user_agent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/middleware-user-agent */"./node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js");
-/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/@smithy/config-resolver/dist-es/index.js");
-/* harmony import */var _smithy_middleware_content_length__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/middleware-content-length */"./node_modules/@smithy/middleware-content-length/dist-es/index.js");
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/@smithy/middleware-retry/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _runtimeConfig__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./runtimeConfig */"./node_modules/@aws-sdk/client-sso/dist-es/runtimeConfig.js");
-/* harmony import */var _runtimeExtensions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./runtimeExtensions */"./node_modules/@aws-sdk/client-sso/dist-es/runtimeExtensions.js");
+/* harmony import */var _aws_sdk_middleware_host_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/middleware-host-header */"./node_modules/.pnpm/@aws-sdk+middleware-host-header@3.489.0/node_modules/@aws-sdk/middleware-host-header/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_logger__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @aws-sdk/middleware-logger */"./node_modules/.pnpm/@aws-sdk+middleware-logger@3.489.0/node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js");
+/* harmony import */var _aws_sdk_middleware_recursion_detection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/middleware-recursion-detection */"./node_modules/.pnpm/@aws-sdk+middleware-recursion-detection@3.489.0/node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_user_agent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/middleware-user-agent */"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js");
+/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/index.js");
+/* harmony import */var _smithy_middleware_content_length__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/middleware-content-length */"./node_modules/.pnpm/@smithy+middleware-content-length@2.1.1/node_modules/@smithy/middleware-content-length/dist-es/index.js");
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _runtimeConfig__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./runtimeConfig */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/runtimeConfig.js");
+/* harmony import */var _runtimeExtensions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./runtimeExtensions */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/runtimeExtensions.js");
 
 
 
@@ -6944,18 +5609,17 @@ class SSOClient extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_7__.Clien
     }
 }
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/commands/GetRoleCredentialsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/commands/GetRoleCredentialsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   GetRoleCredentialsCommand: function() { return GetRoleCredentialsCommand; }
 });
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sso/dist-es/models/models_0.js");
-/* harmony import */var _protocols_Aws_restJson1__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_restJson1 */"./node_modules/@aws-sdk/client-sso/dist-es/protocols/Aws_restJson1.js");
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/models/models_0.js");
+/* harmony import */var _protocols_Aws_restJson1__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_restJson1 */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/protocols/Aws_restJson1.js");
 
 
 
@@ -6973,95 +5637,8 @@ class GetRoleCredentialsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_
 }).s("SWBPortalService", "GetRoleCredentials", {}).n("SSOClient", "GetRoleCredentialsCommand").f(_models_models_0__WEBPACK_IMPORTED_MODULE_4__.GetRoleCredentialsRequestFilterSensitiveLog, _models_models_0__WEBPACK_IMPORTED_MODULE_4__.GetRoleCredentialsResponseFilterSensitiveLog).ser(_protocols_Aws_restJson1__WEBPACK_IMPORTED_MODULE_5__.se_GetRoleCredentialsCommand).de(_protocols_Aws_restJson1__WEBPACK_IMPORTED_MODULE_5__.de_GetRoleCredentialsCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/commands/ListAccountRolesCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/endpoint/EndpointParameters.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sso/dist-es/models/models_0.js");
-/* harmony import */var _protocols_Aws_restJson1__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_restJson1 */"./node_modules/@aws-sdk/client-sso/dist-es/protocols/Aws_restJson1.js");
-
-
-
-
-
-
-
-class ListAccountRolesCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("SWBPortalService", "ListAccountRoles", {}).n("SSOClient", "ListAccountRolesCommand").f(, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/commands/ListAccountsCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sso/dist-es/models/models_0.js");
-/* harmony import */var _protocols_Aws_restJson1__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_restJson1 */"./node_modules/@aws-sdk/client-sso/dist-es/protocols/Aws_restJson1.js");
-
-
-
-
-
-
-
-class ListAccountsCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("SWBPortalService", "ListAccounts", {}).n("SSOClient", "ListAccountsCommand").f(, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/commands/LogoutCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sso/dist-es/models/models_0.js");
-/* harmony import */var _protocols_Aws_restJson1__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_restJson1 */"./node_modules/@aws-sdk/client-sso/dist-es/protocols/Aws_restJson1.js");
-
-
-
-
-
-
-
-class LogoutCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("SWBPortalService", "Logout", {}).n("SSOClient", "LogoutCommand").f(, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/commands/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/EndpointParameters.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   commonParams: function() { return commonParams; },
   resolveClientEndpointParameters: function() { return resolveClientEndpointParameters; }
@@ -7093,14 +5670,13 @@ const commonParams = {
     }
 };
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/endpointResolver.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/endpoint/endpointResolver.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   defaultEndpointResolver: function() { return defaultEndpointResolver; }
 });
-/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/@smithy/util-endpoints/dist-es/index.js");
-/* harmony import */var _ruleset__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ruleset */"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/ruleset.js");
+/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js");
+/* harmony import */var _ruleset__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ruleset */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/endpoint/ruleset.js");
 
 
 const defaultEndpointResolver = (endpointParams, context = {})=>{
@@ -7110,9 +5686,8 @@ const defaultEndpointResolver = (endpointParams, context = {})=>{
     });
 };
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/ruleset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/endpoint/ruleset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ruleSet: function() { return ruleSet; }
 });
@@ -7369,25 +5944,12 @@ const _data = {
 };
 const ruleSet = _data;
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/models/SSOServiceException.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _aws_sdk_util_endpoints__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @aws-sdk/util-endpoints */"./node_modules/@aws-sdk/util-endpoints/dist-es/index.js");
-
-
-
-
-
-
-
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/models/SSOServiceException.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   SSOServiceException: function() { return SSOServiceException; }
 });
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
 
 
 class SSOServiceException extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__.ServiceException {
@@ -7397,14 +5959,8 @@ class SSOServiceException extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE
     }
 }
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/models/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/models/models_0.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/models/models_0.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   GetRoleCredentialsRequestFilterSensitiveLog: function() { return GetRoleCredentialsRequestFilterSensitiveLog; },
   GetRoleCredentialsResponseFilterSensitiveLog: function() { return GetRoleCredentialsResponseFilterSensitiveLog; },
@@ -7413,8 +5969,8 @@ __webpack_require__.d(__webpack_exports__, {
   TooManyRequestsException: function() { return TooManyRequestsException; },
   UnauthorizedException: function() { return UnauthorizedException; }
 });
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _SSOServiceException__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SSOServiceException */"./node_modules/@aws-sdk/client-sso/dist-es/models/SSOServiceException.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _SSOServiceException__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SSOServiceException */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/models/SSOServiceException.js");
 
 
 class InvalidRequestException extends _SSOServiceException__WEBPACK_IMPORTED_MODULE_1__.SSOServiceException {
@@ -7505,51 +6061,16 @@ const LogoutRequestFilterSensitiveLog = (obj)=>({
         }
     });
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/pagination/Interfaces.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/protocols/Aws_restJson1.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/pagination/ListAccountRolesPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _commands_ListAccountRolesCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListAccountRolesCommand */"./node_modules/@aws-sdk/client-sso/dist-es/commands/ListAccountRolesCommand.js");
-/* harmony import */var _SSOClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../SSOClient */"./node_modules/@aws-sdk/client-sso/dist-es/SSOClient.js");
-
-
-
-const paginateListAccountRoles = (_SSOClient__WEBPACK_IMPORTED_MODULE_1__.SSOClient, , "nextToken", "nextToken", "maxResults");
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/pagination/ListAccountsPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _commands_ListAccountsCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../commands/ListAccountsCommand */"./node_modules/@aws-sdk/client-sso/dist-es/commands/ListAccountsCommand.js");
-/* harmony import */var _SSOClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../SSOClient */"./node_modules/@aws-sdk/client-sso/dist-es/SSOClient.js");
-
-
-
-const paginateListAccounts = (_SSOClient__WEBPACK_IMPORTED_MODULE_1__.SSOClient, , "nextToken", "nextToken", "maxResults");
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/pagination/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-}),
-"./node_modules/@aws-sdk/client-sso/dist-es/protocols/Aws_restJson1.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   de_GetRoleCredentialsCommand: function() { return de_GetRoleCredentialsCommand; },
   se_GetRoleCredentialsCommand: function() { return se_GetRoleCredentialsCommand; }
 });
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sso/dist-es/models/models_0.js");
-/* harmony import */var _models_SSOServiceException__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/SSOServiceException */"./node_modules/@aws-sdk/client-sso/dist-es/models/SSOServiceException.js");
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/models/models_0.js");
+/* harmony import */var _models_SSOServiceException__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/SSOServiceException */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/models/SSOServiceException.js");
 
 
 
@@ -7879,25 +6400,24 @@ const loadRestJsonErrorCode = (output, data)=>{
     if (data["__type"] !== undefined) return sanitizeErrorCode(data["__type"]);
 };
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/runtimeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/runtimeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRuntimeConfig: function() { return getRuntimeConfig; }
 });
-/* harmony import */var _package_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../package.json */"./node_modules/@aws-sdk/client-sso/package.json");
-/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/@aws-sdk/core/dist-es/client/emitWarningIfUnsupportedVersion.js");
-/* harmony import */var _aws_sdk_util_user_agent_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/util-user-agent-node */"./node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js");
-/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/@smithy/config-resolver/dist-es/index.js");
-/* harmony import */var _smithy_hash_node__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/hash-node */"./node_modules/@smithy/hash-node/dist-es/index.js");
-/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/@smithy/middleware-retry/dist-es/index.js");
-/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/@smithy/node-config-provider/dist-es/index.js");
-/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/@smithy/node-http-handler/dist-es/index.js");
-/* harmony import */var _smithy_util_body_length_node__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/util-body-length-node */"./node_modules/@smithy/util-body-length-node/dist-es/index.js");
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
-/* harmony import */var _runtimeConfig_shared__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./runtimeConfig.shared */"./node_modules/@aws-sdk/client-sso/dist-es/runtimeConfig.shared.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _smithy_util_defaults_mode_node__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/util-defaults-mode-node */"./node_modules/@smithy/util-defaults-mode-node/dist-es/index.js");
+/* harmony import */var _package_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../package.json */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/package.json");
+/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/client/emitWarningIfUnsupportedVersion.js");
+/* harmony import */var _aws_sdk_util_user_agent_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/util-user-agent-node */"./node_modules/.pnpm/@aws-sdk+util-user-agent-node@3.489.0/node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js");
+/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/index.js");
+/* harmony import */var _smithy_hash_node__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/hash-node */"./node_modules/.pnpm/@smithy+hash-node@2.1.1/node_modules/@smithy/hash-node/dist-es/index.js");
+/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/index.js");
+/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/index.js");
+/* harmony import */var _smithy_util_body_length_node__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/util-body-length-node */"./node_modules/.pnpm/@smithy+util-body-length-node@2.2.1/node_modules/@smithy/util-body-length-node/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _runtimeConfig_shared__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./runtimeConfig.shared */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/runtimeConfig.shared.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_util_defaults_mode_node__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/util-defaults-mode-node */"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/index.js");
 
 
 
@@ -7942,17 +6462,16 @@ const getRuntimeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/runtimeConfig.shared.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/runtimeConfig.shared.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRuntimeConfig: function() { return getRuntimeConfig; }
 });
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/@smithy/url-parser/dist-es/index.js");
-/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/@smithy/util-base64/dist-es/index.js");
-/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/@smithy/util-utf8/dist-es/index.js");
-/* harmony import */var _endpoint_endpointResolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./endpoint/endpointResolver */"./node_modules/@aws-sdk/client-sso/dist-es/endpoint/endpointResolver.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/.pnpm/@smithy+url-parser@2.1.1/node_modules/@smithy/url-parser/dist-es/index.js");
+/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/index.js");
+/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js");
+/* harmony import */var _endpoint_endpointResolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./endpoint/endpointResolver */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/endpoint/endpointResolver.js");
 
 
 
@@ -7974,15 +6493,14 @@ const getRuntimeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-sso/dist-es/runtimeExtensions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/runtimeExtensions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveRuntimeExtensions: function() { return resolveRuntimeExtensions; }
 });
-/* harmony import */var _aws_sdk_region_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/region-config-resolver */"./node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js");
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _aws_sdk_region_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/region-config-resolver */"./node_modules/.pnpm/@aws-sdk+region-config-resolver@3.489.0/node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
 
 
 
@@ -8002,63 +6520,25 @@ const resolveRuntimeExtensions = (runtimeConfig, extensions)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/STS.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/STSClient.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _commands_AssumeRoleCommand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commands/AssumeRoleCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleCommand.js");
-/* harmony import */var _commands_AssumeRoleWithSAMLCommand__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./commands/AssumeRoleWithSAMLCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleWithSAMLCommand.js");
-/* harmony import */var _commands_AssumeRoleWithWebIdentityCommand__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./commands/AssumeRoleWithWebIdentityCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleWithWebIdentityCommand.js");
-/* harmony import */var _commands_DecodeAuthorizationMessageCommand__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./commands/DecodeAuthorizationMessageCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/DecodeAuthorizationMessageCommand.js");
-/* harmony import */var _commands_GetAccessKeyInfoCommand__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./commands/GetAccessKeyInfoCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/GetAccessKeyInfoCommand.js");
-/* harmony import */var _commands_GetCallerIdentityCommand__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./commands/GetCallerIdentityCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/GetCallerIdentityCommand.js");
-/* harmony import */var _commands_GetFederationTokenCommand__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./commands/GetFederationTokenCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/GetFederationTokenCommand.js");
-/* harmony import */var _commands_GetSessionTokenCommand__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./commands/GetSessionTokenCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/GetSessionTokenCommand.js");
-/* harmony import */var _STSClient__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./STSClient */"./node_modules/@aws-sdk/client-sts/dist-es/STSClient.js");
-
-
-
-
-
-
-
-
-
-
-const commands = {
-    AssumeRoleCommand: _commands_AssumeRoleCommand__WEBPACK_IMPORTED_MODULE_1__.AssumeRoleCommand,
-    AssumeRoleWithSAMLCommand: ,
-    AssumeRoleWithWebIdentityCommand: _commands_AssumeRoleWithWebIdentityCommand__WEBPACK_IMPORTED_MODULE_3__.AssumeRoleWithWebIdentityCommand,
-    DecodeAuthorizationMessageCommand: ,
-    GetAccessKeyInfoCommand: ,
-    GetCallerIdentityCommand: ,
-    GetFederationTokenCommand: ,
-    GetSessionTokenCommand: 
-};
-class STS extends _STSClient__WEBPACK_IMPORTED_MODULE_9__.STSClient {
-}
-(0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__.createAggregatedClient)(commands, STS);
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/STSClient.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   STSClient: function() { return STSClient; }
 });
-/* harmony import */var _aws_sdk_middleware_host_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/middleware-host-header */"./node_modules/@aws-sdk/middleware-host-header/dist-es/index.js");
-/* harmony import */var _aws_sdk_middleware_logger__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @aws-sdk/middleware-logger */"./node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js");
-/* harmony import */var _aws_sdk_middleware_recursion_detection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/middleware-recursion-detection */"./node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js");
-/* harmony import */var _aws_sdk_middleware_user_agent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/middleware-user-agent */"./node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js");
-/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/@smithy/config-resolver/dist-es/index.js");
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _smithy_middleware_content_length__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-content-length */"./node_modules/@smithy/middleware-content-length/dist-es/index.js");
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/@smithy/middleware-retry/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _auth_httpAuthSchemeProvider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./auth/httpAuthSchemeProvider */"./node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthSchemeProvider.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _runtimeConfig__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./runtimeConfig */"./node_modules/@aws-sdk/client-sts/dist-es/runtimeConfig.js");
-/* harmony import */var _runtimeExtensions__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./runtimeExtensions */"./node_modules/@aws-sdk/client-sts/dist-es/runtimeExtensions.js");
+/* harmony import */var _aws_sdk_middleware_host_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/middleware-host-header */"./node_modules/.pnpm/@aws-sdk+middleware-host-header@3.489.0/node_modules/@aws-sdk/middleware-host-header/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_logger__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @aws-sdk/middleware-logger */"./node_modules/.pnpm/@aws-sdk+middleware-logger@3.489.0/node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js");
+/* harmony import */var _aws_sdk_middleware_recursion_detection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/middleware-recursion-detection */"./node_modules/.pnpm/@aws-sdk+middleware-recursion-detection@3.489.0/node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_user_agent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/middleware-user-agent */"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js");
+/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/index.js");
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _smithy_middleware_content_length__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-content-length */"./node_modules/.pnpm/@smithy+middleware-content-length@2.1.1/node_modules/@smithy/middleware-content-length/dist-es/index.js");
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _auth_httpAuthSchemeProvider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./auth/httpAuthSchemeProvider */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthSchemeProvider.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _runtimeConfig__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./runtimeConfig */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/runtimeConfig.js");
+/* harmony import */var _runtimeExtensions__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./runtimeExtensions */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/runtimeExtensions.js");
 
 
 
@@ -8112,9 +6592,8 @@ class STSClient extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_8__.Clien
     }
 }
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthExtensionConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthExtensionConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getHttpAuthExtensionConfiguration: function() { return getHttpAuthExtensionConfiguration; },
   resolveHttpAuthRuntimeConfig: function() { return resolveHttpAuthRuntimeConfig; }
@@ -8154,17 +6633,16 @@ const resolveHttpAuthRuntimeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthSchemeProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthSchemeProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   defaultSTSHttpAuthSchemeParametersProvider: function() { return defaultSTSHttpAuthSchemeParametersProvider; },
   defaultSTSHttpAuthSchemeProvider: function() { return defaultSTSHttpAuthSchemeProvider; },
   resolveHttpAuthSchemeConfig: function() { return resolveHttpAuthSchemeConfig; }
 });
-/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/resolveAwsSdkSigV4Config.js");
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
-/* harmony import */var _STSClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../STSClient */"./node_modules/@aws-sdk/client-sts/dist-es/STSClient.js");
+/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/resolveAwsSdkSigV4Config.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _STSClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../STSClient */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/STSClient.js");
 
 
 
@@ -8222,18 +6700,17 @@ const resolveHttpAuthSchemeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AssumeRoleCommand: function() { return AssumeRoleCommand; }
 });
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
 
 
 
@@ -8251,44 +6728,17 @@ class AssumeRoleCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1
 }).s("AWSSecurityTokenServiceV20110615", "AssumeRole", {}).n("STSClient", "AssumeRoleCommand").f(void 0, _models_models_0__WEBPACK_IMPORTED_MODULE_4__.AssumeRoleResponseFilterSensitiveLog).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__.se_AssumeRoleCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__.de_AssumeRoleCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleWithSAMLCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleWithWebIdentityCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-
-class AssumeRoleWithSAMLCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("AWSSecurityTokenServiceV20110615", "AssumeRoleWithSAML", {}).n("STSClient", "AssumeRoleWithSAMLCommand").f(, ).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleWithWebIdentityCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AssumeRoleWithWebIdentityCommand: function() { return AssumeRoleWithWebIdentityCommand; }
 });
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
+/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js");
+/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
 
 
 
@@ -8306,150 +6756,13 @@ class AssumeRoleWithWebIdentityCommand extends _smithy_smithy_client__WEBPACK_IM
 }).s("AWSSecurityTokenServiceV20110615", "AssumeRoleWithWebIdentity", {}).n("STSClient", "AssumeRoleWithWebIdentityCommand").f(_models_models_0__WEBPACK_IMPORTED_MODULE_4__.AssumeRoleWithWebIdentityRequestFilterSensitiveLog, _models_models_0__WEBPACK_IMPORTED_MODULE_4__.AssumeRoleWithWebIdentityResponseFilterSensitiveLog).ser(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__.se_AssumeRoleWithWebIdentityCommand).de(_protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__.de_AssumeRoleWithWebIdentityCommand).build() {
 }
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/commands/DecodeAuthorizationMessageCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/defaultRoleAssumers.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class DecodeAuthorizationMessageCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("AWSSecurityTokenServiceV20110615", "DecodeAuthorizationMessage", {}).n("STSClient", "DecodeAuthorizationMessageCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/commands/GetAccessKeyInfoCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class GetAccessKeyInfoCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("AWSSecurityTokenServiceV20110615", "GetAccessKeyInfo", {}).n("STSClient", "GetAccessKeyInfoCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/commands/GetCallerIdentityCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-class GetCallerIdentityCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("AWSSecurityTokenServiceV20110615", "GetCallerIdentity", {}).n("STSClient", "GetCallerIdentityCommand").f(void 0, void 0).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/commands/GetFederationTokenCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-
-class GetFederationTokenCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("AWSSecurityTokenServiceV20110615", "GetFederationToken", {}).n("STSClient", "GetFederationTokenCommand").f(void 0, ).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/commands/GetSessionTokenCommand.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../endpoint/EndpointParameters */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js");
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js");
-/* harmony import */var _protocols_Aws_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../protocols/Aws_query */"./node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js");
-
-
-
-
-
-
-
-class GetSessionTokenCommand extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__.Command.classBuilder().ep({
-    ..._endpoint_EndpointParameters__WEBPACK_IMPORTED_MODULE_2__.commonParams
-}).m(function(Command, cs, config, o) {
-    return [
-        (0, _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_3__.getSerdePlugin)(config, this.serialize, this.deserialize),
-        (0, _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__.getEndpointPlugin)(config, Command.getEndpointParameterInstructions())
-    ];
-}).s("AWSSecurityTokenServiceV20110615", "GetSessionToken", {}).n("STSClient", "GetSessionTokenCommand").f(void 0, ).ser().de().build() {
-}
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/commands/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-
-
-
-
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/defaultRoleAssumers.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   decorateDefaultCredentialProvider: function() { return decorateDefaultCredentialProvider; }
 });
-/* harmony import */var _defaultStsRoleAssumers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultStsRoleAssumers */"./node_modules/@aws-sdk/client-sts/dist-es/defaultStsRoleAssumers.js");
-/* harmony import */var _STSClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./STSClient */"./node_modules/@aws-sdk/client-sts/dist-es/STSClient.js");
+/* harmony import */var _defaultStsRoleAssumers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultStsRoleAssumers */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/defaultStsRoleAssumers.js");
+/* harmony import */var _STSClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./STSClient */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/STSClient.js");
 
 
 const getCustomizableStsClientCtor = (baseCtor, customizations)=>{
@@ -8469,16 +6782,15 @@ const decorateDefaultCredentialProvider = (provider)=>(input)=>provider({
             ...input
         });
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/defaultStsRoleAssumers.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/defaultStsRoleAssumers.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   decorateDefaultCredentialProvider: function() { return decorateDefaultCredentialProvider; },
   getDefaultRoleAssumer: function() { return getDefaultRoleAssumer; },
   getDefaultRoleAssumerWithWebIdentity: function() { return getDefaultRoleAssumerWithWebIdentity; }
 });
-/* harmony import */var _commands_AssumeRoleCommand__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commands/AssumeRoleCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleCommand.js");
-/* harmony import */var _commands_AssumeRoleWithWebIdentityCommand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commands/AssumeRoleWithWebIdentityCommand */"./node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleWithWebIdentityCommand.js");
+/* harmony import */var _commands_AssumeRoleCommand__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commands/AssumeRoleCommand */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleCommand.js");
+/* harmony import */var _commands_AssumeRoleWithWebIdentityCommand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commands/AssumeRoleWithWebIdentityCommand */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/commands/AssumeRoleWithWebIdentityCommand.js");
 
 
 const ASSUME_ROLE_DEFAULT_REGION = "us-east-1";
@@ -8549,9 +6861,8 @@ const decorateDefaultCredentialProvider = (provider)=>(input)=>provider({
             ...input
         });
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/endpoint/EndpointParameters.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   commonParams: function() { return commonParams; },
   resolveClientEndpointParameters: function() { return resolveClientEndpointParameters; }
@@ -8588,14 +6899,13 @@ const commonParams = {
     }
 };
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/endpointResolver.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/endpoint/endpointResolver.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   defaultEndpointResolver: function() { return defaultEndpointResolver; }
 });
-/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/@smithy/util-endpoints/dist-es/index.js");
-/* harmony import */var _ruleset__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ruleset */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/ruleset.js");
+/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js");
+/* harmony import */var _ruleset__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ruleset */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/endpoint/ruleset.js");
 
 
 const defaultEndpointResolver = (endpointParams, context = {})=>{
@@ -8605,9 +6915,8 @@ const defaultEndpointResolver = (endpointParams, context = {})=>{
     });
 };
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/ruleset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/endpoint/ruleset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ruleSet: function() { return ruleSet; }
 });
@@ -9142,25 +7451,12 @@ const _data = {
 };
 const ruleSet = _data;
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/models/STSServiceException.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _aws_sdk_util_endpoints__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @aws-sdk/util-endpoints */"./node_modules/@aws-sdk/util-endpoints/dist-es/index.js");
-
-
-
-
-
-
-
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/models/STSServiceException.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   STSServiceException: function() { return STSServiceException; }
 });
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
 
 
 class STSServiceException extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__.ServiceException {
@@ -9170,14 +7466,8 @@ class STSServiceException extends _smithy_smithy_client__WEBPACK_IMPORTED_MODULE
     }
 }
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/models/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AssumeRoleResponseFilterSensitiveLog: function() { return AssumeRoleResponseFilterSensitiveLog; },
   AssumeRoleWithWebIdentityRequestFilterSensitiveLog: function() { return AssumeRoleWithWebIdentityRequestFilterSensitiveLog; },
@@ -9190,8 +7480,8 @@ __webpack_require__.d(__webpack_exports__, {
   PackedPolicyTooLargeException: function() { return PackedPolicyTooLargeException; },
   RegionDisabledException: function() { return RegionDisabledException; }
 });
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _STSServiceException__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./STSServiceException */"./node_modules/@aws-sdk/client-sts/dist-es/models/STSServiceException.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _STSServiceException__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./STSServiceException */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/models/STSServiceException.js");
 
 
 class ExpiredTokenException extends _STSServiceException__WEBPACK_IMPORTED_MODULE_1__.STSServiceException {
@@ -9339,21 +7629,20 @@ const GetSessionTokenResponseFilterSensitiveLog = (obj)=>({
         }
     });
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/protocols/Aws_query.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   de_AssumeRoleCommand: function() { return de_AssumeRoleCommand; },
   de_AssumeRoleWithWebIdentityCommand: function() { return de_AssumeRoleWithWebIdentityCommand; },
   se_AssumeRoleCommand: function() { return se_AssumeRoleCommand; },
   se_AssumeRoleWithWebIdentityCommand: function() { return se_AssumeRoleWithWebIdentityCommand; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var fast_xml_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! fast-xml-parser */"./node_modules/fast-xml-parser/src/fxp.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var fast_xml_parser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! fast-xml-parser */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/fxp.js");
 /* harmony import */var fast_xml_parser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(fast_xml_parser__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js");
-/* harmony import */var _models_STSServiceException__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/STSServiceException */"./node_modules/@aws-sdk/client-sts/dist-es/models/STSServiceException.js");
+/* harmony import */var _models_models_0__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/models_0 */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/models/models_0.js");
+/* harmony import */var _models_STSServiceException__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/STSServiceException */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/models/STSServiceException.js");
 
 
 
@@ -10214,29 +8503,28 @@ const loadQueryErrorCode = (output, data)=>{
     if (output.statusCode == 404) return "NotFound";
 };
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/runtimeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/runtimeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRuntimeConfig: function() { return getRuntimeConfig; }
 });
-/* harmony import */var _package_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../package.json */"./node_modules/@aws-sdk/client-sts/package.json");
-/* harmony import */var _defaultStsRoleAssumers__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./defaultStsRoleAssumers */"./node_modules/@aws-sdk/client-sts/dist-es/defaultStsRoleAssumers.js");
-/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/@aws-sdk/core/dist-es/client/emitWarningIfUnsupportedVersion.js");
-/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/AwsSdkSigV4Signer.js");
-/* harmony import */var _aws_sdk_credential_provider_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-node */"./node_modules/@aws-sdk/credential-provider-node/dist-es/index.js");
-/* harmony import */var _aws_sdk_util_user_agent_node__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/util-user-agent-node */"./node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js");
-/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/@smithy/config-resolver/dist-es/index.js");
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _smithy_hash_node__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/hash-node */"./node_modules/@smithy/hash-node/dist-es/index.js");
-/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/@smithy/middleware-retry/dist-es/index.js");
-/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/@smithy/node-config-provider/dist-es/index.js");
-/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/@smithy/node-http-handler/dist-es/index.js");
-/* harmony import */var _smithy_util_body_length_node__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/util-body-length-node */"./node_modules/@smithy/util-body-length-node/dist-es/index.js");
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
-/* harmony import */var _runtimeConfig_shared__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./runtimeConfig.shared */"./node_modules/@aws-sdk/client-sts/dist-es/runtimeConfig.shared.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _smithy_util_defaults_mode_node__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @smithy/util-defaults-mode-node */"./node_modules/@smithy/util-defaults-mode-node/dist-es/index.js");
+/* harmony import */var _package_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../package.json */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/package.json");
+/* harmony import */var _defaultStsRoleAssumers__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./defaultStsRoleAssumers */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/defaultStsRoleAssumers.js");
+/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/client/emitWarningIfUnsupportedVersion.js");
+/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/AwsSdkSigV4Signer.js");
+/* harmony import */var _aws_sdk_credential_provider_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-node */"./node_modules/.pnpm/@aws-sdk+credential-provider-node@3.490.0/node_modules/@aws-sdk/credential-provider-node/dist-es/index.js");
+/* harmony import */var _aws_sdk_util_user_agent_node__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/util-user-agent-node */"./node_modules/.pnpm/@aws-sdk+util-user-agent-node@3.489.0/node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js");
+/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/index.js");
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _smithy_hash_node__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/hash-node */"./node_modules/.pnpm/@smithy+hash-node@2.1.1/node_modules/@smithy/hash-node/dist-es/index.js");
+/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/index.js");
+/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/index.js");
+/* harmony import */var _smithy_util_body_length_node__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @smithy/util-body-length-node */"./node_modules/.pnpm/@smithy+util-body-length-node@2.2.1/node_modules/@smithy/util-body-length-node/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _runtimeConfig_shared__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./runtimeConfig.shared */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/runtimeConfig.shared.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_util_defaults_mode_node__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @smithy/util-defaults-mode-node */"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/index.js");
 
 
 
@@ -10297,20 +8585,19 @@ const getRuntimeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/runtimeConfig.shared.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/runtimeConfig.shared.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRuntimeConfig: function() { return getRuntimeConfig; }
 });
-/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/AwsSdkSigV4Signer.js");
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/@smithy/url-parser/dist-es/index.js");
-/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/@smithy/util-base64/dist-es/index.js");
-/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/@smithy/util-utf8/dist-es/index.js");
-/* harmony import */var _auth_httpAuthSchemeProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./auth/httpAuthSchemeProvider */"./node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthSchemeProvider.js");
-/* harmony import */var _endpoint_endpointResolver__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./endpoint/endpointResolver */"./node_modules/@aws-sdk/client-sts/dist-es/endpoint/endpointResolver.js");
+/* harmony import */var _aws_sdk_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @aws-sdk/core */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/AwsSdkSigV4Signer.js");
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/.pnpm/@smithy+url-parser@2.1.1/node_modules/@smithy/url-parser/dist-es/index.js");
+/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/index.js");
+/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js");
+/* harmony import */var _auth_httpAuthSchemeProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./auth/httpAuthSchemeProvider */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthSchemeProvider.js");
+/* harmony import */var _endpoint_endpointResolver__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./endpoint/endpointResolver */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/endpoint/endpointResolver.js");
 
 
 
@@ -10348,16 +8635,15 @@ const getRuntimeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/client-sts/dist-es/runtimeExtensions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/runtimeExtensions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveRuntimeExtensions: function() { return resolveRuntimeExtensions; }
 });
-/* harmony import */var _aws_sdk_region_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/region-config-resolver */"./node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js");
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _auth_httpAuthExtensionConfiguration__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./auth/httpAuthExtensionConfiguration */"./node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthExtensionConfiguration.js");
+/* harmony import */var _aws_sdk_region_config_resolver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/region-config-resolver */"./node_modules/.pnpm/@aws-sdk+region-config-resolver@3.489.0/node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _auth_httpAuthExtensionConfiguration__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./auth/httpAuthExtensionConfiguration */"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/dist-es/auth/httpAuthExtensionConfiguration.js");
 
 
 
@@ -10380,9 +8666,8 @@ const resolveRuntimeExtensions = (runtimeConfig, extensions)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/core/dist-es/client/emitWarningIfUnsupportedVersion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/client/emitWarningIfUnsupportedVersion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   emitWarningIfUnsupportedVersion: function() { return emitWarningIfUnsupportedVersion; }
 });
@@ -10400,21 +8685,15 @@ More information can be found at: https://a.co/dzr2AJd`);
     }
 };
 }),
-"./node_modules/@aws-sdk/core/dist-es/client/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/AwsSdkSigV4Signer.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/AwsSdkSigV4Signer.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AwsSdkSigV4Signer: function() { return AwsSdkSigV4Signer; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils */"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getSkewCorrectedDate.js");
-/* harmony import */var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils */"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getDateHeader.js");
-/* harmony import */var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils */"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getUpdatedSystemClockOffset.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getSkewCorrectedDate.js");
+/* harmony import */var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getDateHeader.js");
+/* harmony import */var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getUpdatedSystemClockOffset.js");
 
 
 const throwSigningPropertyError = (name, property)=>{
@@ -10467,20 +8746,13 @@ class AwsSdkSigV4Signer {
 }
 const AWSSDKSigV4Signer = (/* unused pure expression or super */ null && (AwsSdkSigV4Signer));
 }),
-"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/resolveAwsSdkSigV4Config.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-}),
-"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/aws_sdk/resolveAwsSdkSigV4Config.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveAwsSdkSigV4Config: function() { return resolveAwsSdkSigV4Config; }
 });
-/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/@smithy/core/dist-es/index.js");
-/* harmony import */var _smithy_signature_v4__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/signature-v4 */"./node_modules/@smithy/signature-v4/dist-es/index.js");
+/* harmony import */var _smithy_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/core */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js");
+/* harmony import */var _smithy_signature_v4__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/signature-v4 */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/index.js");
 
 
 const resolveAwsSdkSigV4Config = (config)=>{
@@ -10548,36 +8820,28 @@ const resolveAwsSdkSigV4Config = (config)=>{
 };
 const resolveAWSSDKSigV4Config = (/* unused pure expression or super */ null && (resolveAwsSdkSigV4Config));
 }),
-"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getDateHeader.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getDateHeader.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getDateHeader: function() { return getDateHeader; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
 
 const getDateHeader = (response)=>_smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__.HttpResponse.isInstance(response) ? response.headers?.date ?? response.headers?.Date : undefined;
 }),
-"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getSkewCorrectedDate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getSkewCorrectedDate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getSkewCorrectedDate: function() { return getSkewCorrectedDate; }
 });
 const getSkewCorrectedDate = (systemClockOffset)=>new Date(Date.now() + systemClockOffset);
 }),
-"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getUpdatedSystemClockOffset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getUpdatedSystemClockOffset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getUpdatedSystemClockOffset: function() { return getUpdatedSystemClockOffset; }
 });
-/* harmony import */var _isClockSkewed__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isClockSkewed */"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/isClockSkewed.js");
+/* harmony import */var _isClockSkewed__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isClockSkewed */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/isClockSkewed.js");
 
 const getUpdatedSystemClockOffset = (clockTime, currentSystemClockOffset)=>{
     const clockTimeInMs = Date.parse(clockTime);
@@ -10585,103 +8849,21 @@ const getUpdatedSystemClockOffset = (clockTime, currentSystemClockOffset)=>{
     return currentSystemClockOffset;
 };
 }),
-"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/isClockSkewed.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-}),
-"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/isClockSkewed.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isClockSkewed: function() { return isClockSkewed; }
 });
-/* harmony import */var _getSkewCorrectedDate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getSkewCorrectedDate */"./node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getSkewCorrectedDate.js");
+/* harmony import */var _getSkewCorrectedDate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getSkewCorrectedDate */"./node_modules/.pnpm/@aws-sdk+core@3.490.0/node_modules/@aws-sdk/core/dist-es/httpAuthSchemes/utils/getSkewCorrectedDate.js");
 
 const isClockSkewed = (clockTime, systemClockOffset)=>Math.abs((0, _getSkewCorrectedDate__WEBPACK_IMPORTED_MODULE_0__.getSkewCorrectedDate)(systemClockOffset).getTime() - clockTime) >= 300000;
 }),
-"./node_modules/@aws-sdk/core/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-env@3.489.0/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-}),
-"./node_modules/@aws-sdk/core/dist-es/protocols/coercing-serializers.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const _toStr = (val)=>{
-    if (val == null) return val;
-    if (typeof val === "number" || typeof val === "bigint") {
-        const warning = new Error(`Received number ${val} where a string was expected.`);
-        warning.name = "Warning";
-        console.warn(warning);
-        return String(val);
-    }
-    if (typeof val === "boolean") {
-        const warning = new Error(`Received boolean ${val} where a string was expected.`);
-        warning.name = "Warning";
-        console.warn(warning);
-        return String(val);
-    }
-    return val;
-};
-const _toBool = (val)=>{
-    if (val == null) return val;
-    typeof val;
-    if (typeof val === "string") {
-        const lowercase = val.toLowerCase();
-        if (val !== "" && lowercase !== "false" && lowercase !== "true") {
-            const warning = new Error(`Received string "${val}" where a boolean was expected.`);
-            warning.name = "Warning";
-            console.warn(warning);
-        }
-        return val !== "" && lowercase !== "false";
-    }
-    return val;
-};
-const _toNum = (val)=>{
-    if (val == null) return val;
-    typeof val;
-    if (typeof val === "string") {
-        const num = Number(val);
-        if (num.toString() !== val) {
-            const warning = new Error(`Received string "${val}" where a number was expected.`);
-            warning.name = "Warning";
-            console.warn(warning);
-            return val;
-        }
-        return num;
-    }
-    return val;
-};
-}),
-"./node_modules/@aws-sdk/core/dist-es/protocols/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-}),
-"./node_modules/@aws-sdk/core/dist-es/protocols/json/awsExpectUnion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-
-const awsExpectUnion = (value)=>{
-    if (value == null) return undefined;
-    if (typeof value === "object" && "__type" in value) delete value.__type;
-    return expectUnion(value);
-};
-}),
-"./node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromEnv: function() { return fromEnv; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 
 const ENV_KEY = "AWS_ACCESS_KEY_ID";
 const ENV_SECRET = "AWS_SECRET_ACCESS_KEY";
@@ -10710,19 +8892,13 @@ const fromEnv = ()=>async ()=>{
         throw new _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__.CredentialsProviderError("Unable to find environment variable credentials.");
     };
 }),
-"./node_modules/@aws-sdk/credential-provider-env/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/fromIni.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/credential-provider-ini/dist-es/fromIni.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromIni: function() { return fromIni; }
 });
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
-/* harmony import */var _resolveProfileData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveProfileData */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProfileData.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _resolveProfileData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveProfileData */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProfileData.js");
 
 
 const fromIni = (init = {})=>async ()=>{
@@ -10730,26 +8906,24 @@ const fromIni = (init = {})=>async ()=>{
         return (0, _resolveProfileData__WEBPACK_IMPORTED_MODULE_1__.resolveProfileData)((0, _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__.getProfileName)(init), profiles, init);
     };
 }),
-"./node_modules/@aws-sdk/credential-provider-ini/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromIni: function() { return /* reexport safe */ _fromIni__WEBPACK_IMPORTED_MODULE_0__.fromIni; }
 });
-/* harmony import */var _fromIni__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromIni */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/fromIni.js");
+/* harmony import */var _fromIni__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromIni */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/fromIni.js");
 
 }),
-"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveAssumeRoleCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveAssumeRoleCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isAssumeRoleProfile: function() { return isAssumeRoleProfile; },
   resolveAssumeRoleCredentials: function() { return resolveAssumeRoleCredentials; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
-/* harmony import */var _resolveCredentialSource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveCredentialSource */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveCredentialSource.js");
-/* harmony import */var _resolveProfileData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resolveProfileData */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProfileData.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _resolveCredentialSource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveCredentialSource */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveCredentialSource.js");
+/* harmony import */var _resolveProfileData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resolveProfileData */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProfileData.js");
 
 
 
@@ -10791,15 +8965,14 @@ const resolveAssumeRoleCredentials = async (profileName, profiles, options, visi
     return options.roleAssumer(sourceCreds, params);
 };
 }),
-"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveCredentialSource.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveCredentialSource.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveCredentialSource: function() { return resolveCredentialSource; }
 });
-/* harmony import */var _aws_sdk_credential_provider_env__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/credential-provider-env */"./node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js");
-/* harmony import */var _smithy_credential_provider_imds__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/credential-provider-imds */"./node_modules/@smithy/credential-provider-imds/dist-es/index.js");
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _aws_sdk_credential_provider_env__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/credential-provider-env */"./node_modules/.pnpm/@aws-sdk+credential-provider-env@3.489.0/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js");
+/* harmony import */var _smithy_credential_provider_imds__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/credential-provider-imds */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/index.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 
 
 
@@ -10813,14 +8986,13 @@ const resolveCredentialSource = (credentialSource, profileName)=>{
     else throw new _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__.CredentialsProviderError(`Unsupported credential source in profile ${profileName}. Got ${credentialSource}, ` + `expected EcsContainer or Ec2InstanceMetadata or Environment.`);
 };
 }),
-"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProcessCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProcessCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isProcessProfile: function() { return isProcessProfile; },
   resolveProcessCredentials: function() { return resolveProcessCredentials; }
 });
-/* harmony import */var _aws_sdk_credential_provider_process__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-process */"./node_modules/@aws-sdk/credential-provider-process/dist-es/index.js");
+/* harmony import */var _aws_sdk_credential_provider_process__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-process */"./node_modules/.pnpm/@aws-sdk+credential-provider-process@3.489.0/node_modules/@aws-sdk/credential-provider-process/dist-es/index.js");
 
 const isProcessProfile = (arg)=>Boolean(arg) && typeof arg === "object" && typeof arg.credential_process === "string";
 const resolveProcessCredentials = async (options, profile)=>(0, _aws_sdk_credential_provider_process__WEBPACK_IMPORTED_MODULE_0__.fromProcess)({
@@ -10828,18 +9000,17 @@ const resolveProcessCredentials = async (options, profile)=>(0, _aws_sdk_credent
         profile
     })();
 }),
-"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProfileData.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProfileData.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveProfileData: function() { return resolveProfileData; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
-/* harmony import */var _resolveAssumeRoleCredentials__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./resolveAssumeRoleCredentials */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveAssumeRoleCredentials.js");
-/* harmony import */var _resolveProcessCredentials__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveProcessCredentials */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProcessCredentials.js");
-/* harmony import */var _resolveSsoCredentials__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resolveSsoCredentials */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveSsoCredentials.js");
-/* harmony import */var _resolveStaticCredentials__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./resolveStaticCredentials */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveStaticCredentials.js");
-/* harmony import */var _resolveWebIdentityCredentials__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveWebIdentityCredentials */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveWebIdentityCredentials.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _resolveAssumeRoleCredentials__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./resolveAssumeRoleCredentials */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveAssumeRoleCredentials.js");
+/* harmony import */var _resolveProcessCredentials__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveProcessCredentials */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveProcessCredentials.js");
+/* harmony import */var _resolveSsoCredentials__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resolveSsoCredentials */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveSsoCredentials.js");
+/* harmony import */var _resolveStaticCredentials__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./resolveStaticCredentials */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveStaticCredentials.js");
+/* harmony import */var _resolveWebIdentityCredentials__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveWebIdentityCredentials */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveWebIdentityCredentials.js");
 
 
 
@@ -10857,14 +9028,13 @@ const resolveProfileData = async (profileName, profiles, options, visitedProfile
     throw new _smithy_property_provider__WEBPACK_IMPORTED_MODULE_5__.CredentialsProviderError(`Profile ${profileName} could not be found or parsed in shared credentials file.`);
 };
 }),
-"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveSsoCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveSsoCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isSsoProfile: function() { return /* reexport safe */ _aws_sdk_credential_provider_sso__WEBPACK_IMPORTED_MODULE_0__.isSsoProfile; },
   resolveSsoCredentials: function() { return resolveSsoCredentials; }
 });
-/* harmony import */var _aws_sdk_credential_provider_sso__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-sso */"./node_modules/@aws-sdk/credential-provider-sso/dist-es/index.js");
+/* harmony import */var _aws_sdk_credential_provider_sso__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-sso */"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/index.js");
 
 
 const resolveSsoCredentials = (data)=>{
@@ -10878,9 +9048,8 @@ const resolveSsoCredentials = (data)=>{
     })();
 };
 }),
-"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveStaticCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveStaticCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isStaticCredsProfile: function() { return isStaticCredsProfile; },
   resolveStaticCredentials: function() { return resolveStaticCredentials; }
@@ -10896,14 +9065,13 @@ const resolveStaticCredentials = (profile)=>Promise.resolve({
         credentialScope: profile.aws_credential_scope
     });
 }),
-"./node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveWebIdentityCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/resolveWebIdentityCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isWebIdentityProfile: function() { return isWebIdentityProfile; },
   resolveWebIdentityCredentials: function() { return resolveWebIdentityCredentials; }
 });
-/* harmony import */var _aws_sdk_credential_provider_web_identity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-web-identity */"./node_modules/@aws-sdk/credential-provider-web-identity/dist-es/index.js");
+/* harmony import */var _aws_sdk_credential_provider_web_identity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-web-identity */"./node_modules/.pnpm/@aws-sdk+credential-provider-web-identity@3.489.0/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/index.js");
 
 const isWebIdentityProfile = (arg)=>Boolean(arg) && typeof arg === "object" && typeof arg.web_identity_token_file === "string" && typeof arg.role_arn === "string" && [
         "undefined",
@@ -10916,22 +9084,21 @@ const resolveWebIdentityCredentials = async (profile, options)=>(0, _aws_sdk_cre
         roleAssumerWithWebIdentity: options.roleAssumerWithWebIdentity
     })();
 }),
-"./node_modules/@aws-sdk/credential-provider-node/dist-es/defaultProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-node@3.490.0/node_modules/@aws-sdk/credential-provider-node/dist-es/defaultProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   defaultProvider: function() { return defaultProvider; }
 });
-/* harmony import */var _aws_sdk_credential_provider_env__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @aws-sdk/credential-provider-env */"./node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js");
-/* harmony import */var _aws_sdk_credential_provider_ini__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-ini */"./node_modules/@aws-sdk/credential-provider-ini/dist-es/index.js");
-/* harmony import */var _aws_sdk_credential_provider_process__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/credential-provider-process */"./node_modules/@aws-sdk/credential-provider-process/dist-es/index.js");
-/* harmony import */var _aws_sdk_credential_provider_sso__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/credential-provider-sso */"./node_modules/@aws-sdk/credential-provider-sso/dist-es/index.js");
-/* harmony import */var _aws_sdk_credential_provider_web_identity__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @aws-sdk/credential-provider-web-identity */"./node_modules/@aws-sdk/credential-provider-web-identity/dist-es/index.js");
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/memoize.js");
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/chain.js");
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
-/* harmony import */var _remoteProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./remoteProvider */"./node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js");
+/* harmony import */var _aws_sdk_credential_provider_env__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @aws-sdk/credential-provider-env */"./node_modules/.pnpm/@aws-sdk+credential-provider-env@3.489.0/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js");
+/* harmony import */var _aws_sdk_credential_provider_ini__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/credential-provider-ini */"./node_modules/.pnpm/@aws-sdk+credential-provider-ini@3.490.0/node_modules/@aws-sdk/credential-provider-ini/dist-es/index.js");
+/* harmony import */var _aws_sdk_credential_provider_process__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/credential-provider-process */"./node_modules/.pnpm/@aws-sdk+credential-provider-process@3.489.0/node_modules/@aws-sdk/credential-provider-process/dist-es/index.js");
+/* harmony import */var _aws_sdk_credential_provider_sso__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/credential-provider-sso */"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/index.js");
+/* harmony import */var _aws_sdk_credential_provider_web_identity__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @aws-sdk/credential-provider-web-identity */"./node_modules/.pnpm/@aws-sdk+credential-provider-web-identity@3.489.0/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/index.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/memoize.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/chain.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _remoteProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./remoteProvider */"./node_modules/.pnpm/@aws-sdk+credential-provider-node@3.490.0/node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js");
 
 
 
@@ -10946,23 +9113,21 @@ const defaultProvider = (init = {})=>(0, _smithy_property_provider__WEBPACK_IMPO
         throw new _smithy_property_provider__WEBPACK_IMPORTED_MODULE_9__.CredentialsProviderError("Could not load credentials from any providers", false);
     }), (credentials)=>credentials.expiration !== undefined && credentials.expiration.getTime() - Date.now() < 300000, (credentials)=>credentials.expiration !== undefined);
 }),
-"./node_modules/@aws-sdk/credential-provider-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-node@3.490.0/node_modules/@aws-sdk/credential-provider-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   defaultProvider: function() { return /* reexport safe */ _defaultProvider__WEBPACK_IMPORTED_MODULE_0__.defaultProvider; }
 });
-/* harmony import */var _defaultProvider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultProvider */"./node_modules/@aws-sdk/credential-provider-node/dist-es/defaultProvider.js");
+/* harmony import */var _defaultProvider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultProvider */"./node_modules/.pnpm/@aws-sdk+credential-provider-node@3.490.0/node_modules/@aws-sdk/credential-provider-node/dist-es/defaultProvider.js");
 
 }),
-"./node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-node@3.490.0/node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   remoteProvider: function() { return remoteProvider; }
 });
-/* harmony import */var _smithy_credential_provider_imds__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/credential-provider-imds */"./node_modules/@smithy/credential-provider-imds/dist-es/index.js");
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_credential_provider_imds__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/credential-provider-imds */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/index.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 
 
 const ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
@@ -10974,14 +9139,13 @@ const remoteProvider = (init)=>{
     return (0, _smithy_credential_provider_imds__WEBPACK_IMPORTED_MODULE_0__.fromInstanceMetadata)(init);
 };
 }),
-"./node_modules/@aws-sdk/credential-provider-process/dist-es/fromProcess.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-process@3.489.0/node_modules/@aws-sdk/credential-provider-process/dist-es/fromProcess.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromProcess: function() { return fromProcess; }
 });
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
-/* harmony import */var _resolveProcessCredentials__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveProcessCredentials */"./node_modules/@aws-sdk/credential-provider-process/dist-es/resolveProcessCredentials.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _resolveProcessCredentials__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveProcessCredentials */"./node_modules/.pnpm/@aws-sdk+credential-provider-process@3.489.0/node_modules/@aws-sdk/credential-provider-process/dist-es/resolveProcessCredentials.js");
 
 
 const fromProcess = (init = {})=>async ()=>{
@@ -10989,9 +9153,8 @@ const fromProcess = (init = {})=>async ()=>{
         return (0, _resolveProcessCredentials__WEBPACK_IMPORTED_MODULE_1__.resolveProcessCredentials)((0, _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__.getProfileName)(init), profiles);
     };
 }),
-"./node_modules/@aws-sdk/credential-provider-process/dist-es/getValidatedProcessCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-process@3.489.0/node_modules/@aws-sdk/credential-provider-process/dist-es/getValidatedProcessCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getValidatedProcessCredentials: function() { return getValidatedProcessCredentials; }
 });
@@ -11018,27 +9181,25 @@ const getValidatedProcessCredentials = (profileName, data)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/credential-provider-process/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-process@3.489.0/node_modules/@aws-sdk/credential-provider-process/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromProcess: function() { return /* reexport safe */ _fromProcess__WEBPACK_IMPORTED_MODULE_0__.fromProcess; }
 });
-/* harmony import */var _fromProcess__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromProcess */"./node_modules/@aws-sdk/credential-provider-process/dist-es/fromProcess.js");
+/* harmony import */var _fromProcess__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromProcess */"./node_modules/.pnpm/@aws-sdk+credential-provider-process@3.489.0/node_modules/@aws-sdk/credential-provider-process/dist-es/fromProcess.js");
 
 }),
-"./node_modules/@aws-sdk/credential-provider-process/dist-es/resolveProcessCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-process@3.489.0/node_modules/@aws-sdk/credential-provider-process/dist-es/resolveProcessCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveProcessCredentials: function() { return resolveProcessCredentials; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 /* harmony import */var child_process__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! child_process */"child_process");
 /* harmony import */var child_process__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(child_process__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */var util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! util */"util");
 /* harmony import */var util__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(util__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */var _getValidatedProcessCredentials__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getValidatedProcessCredentials */"./node_modules/@aws-sdk/credential-provider-process/dist-es/getValidatedProcessCredentials.js");
+/* harmony import */var _getValidatedProcessCredentials__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getValidatedProcessCredentials */"./node_modules/.pnpm/@aws-sdk+credential-provider-process@3.489.0/node_modules/@aws-sdk/credential-provider-process/dist-es/getValidatedProcessCredentials.js");
 
 
 
@@ -11065,17 +9226,16 @@ const resolveProcessCredentials = async (profileName, profiles)=>{
     } else throw new _smithy_property_provider__WEBPACK_IMPORTED_MODULE_3__.CredentialsProviderError(`Profile ${profileName} could not be found in shared credentials file.`);
 };
 }),
-"./node_modules/@aws-sdk/credential-provider-sso/dist-es/fromSSO.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/fromSSO.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromSSO: function() { return fromSSO; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
-/* harmony import */var _isSsoProfile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./isSsoProfile */"./node_modules/@aws-sdk/credential-provider-sso/dist-es/isSsoProfile.js");
-/* harmony import */var _resolveSSOCredentials__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveSSOCredentials */"./node_modules/@aws-sdk/credential-provider-sso/dist-es/resolveSSOCredentials.js");
-/* harmony import */var _validateSsoProfile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./validateSsoProfile */"./node_modules/@aws-sdk/credential-provider-sso/dist-es/validateSsoProfile.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _isSsoProfile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./isSsoProfile */"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/isSsoProfile.js");
+/* harmony import */var _resolveSSOCredentials__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveSSOCredentials */"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/resolveSSOCredentials.js");
+/* harmony import */var _validateSsoProfile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./validateSsoProfile */"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/validateSsoProfile.js");
 
 
 
@@ -11120,41 +9280,38 @@ const fromSSO = (init = {})=>async ()=>{
         });
     };
 }),
-"./node_modules/@aws-sdk/credential-provider-sso/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromSSO: function() { return /* reexport safe */ _fromSSO__WEBPACK_IMPORTED_MODULE_0__.fromSSO; },
   isSsoProfile: function() { return /* reexport safe */ _isSsoProfile__WEBPACK_IMPORTED_MODULE_1__.isSsoProfile; },
   validateSsoProfile: function() { return /* reexport safe */ _validateSsoProfile__WEBPACK_IMPORTED_MODULE_3__.validateSsoProfile; }
 });
-/* harmony import */var _fromSSO__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromSSO */"./node_modules/@aws-sdk/credential-provider-sso/dist-es/fromSSO.js");
-/* harmony import */var _isSsoProfile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./isSsoProfile */"./node_modules/@aws-sdk/credential-provider-sso/dist-es/isSsoProfile.js");
-/* harmony import */var _validateSsoProfile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./validateSsoProfile */"./node_modules/@aws-sdk/credential-provider-sso/dist-es/validateSsoProfile.js");
+/* harmony import */var _fromSSO__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromSSO */"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/fromSSO.js");
+/* harmony import */var _isSsoProfile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./isSsoProfile */"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/isSsoProfile.js");
+/* harmony import */var _validateSsoProfile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./validateSsoProfile */"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/validateSsoProfile.js");
 
 
 
 
 }),
-"./node_modules/@aws-sdk/credential-provider-sso/dist-es/isSsoProfile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/isSsoProfile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isSsoProfile: function() { return isSsoProfile; }
 });
 const isSsoProfile = (arg)=>arg && (typeof arg.sso_start_url === "string" || typeof arg.sso_account_id === "string" || typeof arg.sso_session === "string" || typeof arg.sso_region === "string" || typeof arg.sso_role_name === "string");
 }),
-"./node_modules/@aws-sdk/credential-provider-sso/dist-es/resolveSSOCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/resolveSSOCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveSSOCredentials: function() { return resolveSSOCredentials; }
 });
-/* harmony import */var _aws_sdk_client_sso__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @aws-sdk/client-sso */"./node_modules/@aws-sdk/client-sso/dist-es/SSOClient.js");
-/* harmony import */var _aws_sdk_client_sso__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @aws-sdk/client-sso */"./node_modules/@aws-sdk/client-sso/dist-es/commands/GetRoleCredentialsCommand.js");
-/* harmony import */var _aws_sdk_token_providers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/token-providers */"./node_modules/@aws-sdk/token-providers/dist-es/fromSso.js");
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _aws_sdk_client_sso__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @aws-sdk/client-sso */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/SSOClient.js");
+/* harmony import */var _aws_sdk_client_sso__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @aws-sdk/client-sso */"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/dist-es/commands/GetRoleCredentialsCommand.js");
+/* harmony import */var _aws_sdk_token_providers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/token-providers */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/fromSso.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
 
 
 
@@ -11206,18 +9363,12 @@ const resolveSSOCredentials = async ({ ssoStartUrl, ssoSession, ssoAccountId, ss
     };
 };
 }),
-"./node_modules/@aws-sdk/credential-provider-sso/dist-es/types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-sso@3.490.0/node_modules/@aws-sdk/credential-provider-sso/dist-es/validateSsoProfile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/credential-provider-sso/dist-es/validateSsoProfile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   validateSsoProfile: function() { return validateSsoProfile; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 
 const validateSsoProfile = (profile)=>{
     const { sso_start_url, sso_account_id, sso_region, sso_role_name } = profile;
@@ -11225,16 +9376,15 @@ const validateSsoProfile = (profile)=>{
     return profile;
 };
 }),
-"./node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-web-identity@3.489.0/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromTokenFile: function() { return fromTokenFile; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 /* harmony import */var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs */"fs");
 /* harmony import */var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */var _fromWebToken__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fromWebToken */"./node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromWebToken.js");
+/* harmony import */var _fromWebToken__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fromWebToken */"./node_modules/.pnpm/@aws-sdk+credential-provider-web-identity@3.489.0/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromWebToken.js");
 
 
 
@@ -11256,13 +9406,12 @@ const fromTokenFile = (init = {})=>async ()=>{
         })();
     };
 }),
-"./node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromWebToken.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-web-identity@3.489.0/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromWebToken.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromWebToken: function() { return fromWebToken; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 
 const fromWebToken = (init)=>()=>{
         const { roleArn, roleSessionName, webIdentityToken, providerId, policyArns, policy, durationSeconds, roleAssumerWithWebIdentity } = init;
@@ -11278,24 +9427,22 @@ const fromWebToken = (init)=>()=>{
         });
     };
 }),
-"./node_modules/@aws-sdk/credential-provider-web-identity/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+credential-provider-web-identity@3.489.0/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromTokenFile: function() { return /* reexport safe */ _fromTokenFile__WEBPACK_IMPORTED_MODULE_0__.fromTokenFile; }
 });
-/* harmony import */var _fromTokenFile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromTokenFile */"./node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js");
+/* harmony import */var _fromTokenFile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromTokenFile */"./node_modules/.pnpm/@aws-sdk+credential-provider-web-identity@3.489.0/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js");
 
 
 }),
-"./node_modules/@aws-sdk/middleware-host-header/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-host-header@3.489.0/node_modules/@aws-sdk/middleware-host-header/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getHostHeaderPlugin: function() { return getHostHeaderPlugin; },
   resolveHostHeaderConfig: function() { return resolveHostHeaderConfig; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
 
 function resolveHostHeaderConfig(input) {
     return input;
@@ -11329,14 +9476,8 @@ const getHostHeaderPlugin = (options)=>({
         }
     });
 }),
-"./node_modules/@aws-sdk/middleware-logger/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-logger@3.489.0/node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getLoggerPlugin: function() { return getLoggerPlugin; }
 });
@@ -11384,13 +9525,12 @@ const getLoggerPlugin = (options)=>({
         }
     });
 }),
-"./node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-recursion-detection@3.489.0/node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRecursionDetectionPlugin: function() { return getRecursionDetectionPlugin; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
 
 const TRACE_ID_HEADER_NAME = "X-Amzn-Trace-Id";
 const ENV_LAMBDA_FUNCTION_NAME = "AWS_LAMBDA_FUNCTION_NAME";
@@ -11422,15 +9562,14 @@ const getRecursionDetectionPlugin = (options)=>({
         }
     });
 }),
-"./node_modules/@aws-sdk/middleware-signing/dist-es/awsAuthConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/awsAuthConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveAwsAuthConfig: function() { return resolveAwsAuthConfig; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/memoize.js");
-/* harmony import */var _smithy_signature_v4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/signature-v4 */"./node_modules/@smithy/signature-v4/dist-es/index.js");
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/memoize.js");
+/* harmony import */var _smithy_signature_v4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/signature-v4 */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/index.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
 
 
 
@@ -11516,15 +9655,14 @@ const normalizeCredentialProvider = (credentials)=>{
     return (0, _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_1__.normalizeProvider)(credentials);
 };
 }),
-"./node_modules/@aws-sdk/middleware-signing/dist-es/awsAuthMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/awsAuthMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getAwsAuthPlugin: function() { return getAwsAuthPlugin; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _utils_getSkewCorrectedDate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/getSkewCorrectedDate */"./node_modules/@aws-sdk/middleware-signing/dist-es/utils/getSkewCorrectedDate.js");
-/* harmony import */var _utils_getUpdatedSystemClockOffset__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/getUpdatedSystemClockOffset */"./node_modules/@aws-sdk/middleware-signing/dist-es/utils/getUpdatedSystemClockOffset.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _utils_getSkewCorrectedDate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/getSkewCorrectedDate */"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/utils/getSkewCorrectedDate.js");
+/* harmony import */var _utils_getUpdatedSystemClockOffset__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/getUpdatedSystemClockOffset */"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/utils/getUpdatedSystemClockOffset.js");
 
 
 
@@ -11574,33 +9712,30 @@ const getAwsAuthPlugin = (options)=>({
     });
 const getSigV4AuthPlugin = (/* unused pure expression or super */ null && (getAwsAuthPlugin));
 }),
-"./node_modules/@aws-sdk/middleware-signing/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getAwsAuthPlugin: function() { return /* reexport safe */ _awsAuthMiddleware__WEBPACK_IMPORTED_MODULE_1__.getAwsAuthPlugin; },
   resolveAwsAuthConfig: function() { return /* reexport safe */ _awsAuthConfiguration__WEBPACK_IMPORTED_MODULE_0__.resolveAwsAuthConfig; }
 });
-/* harmony import */var _awsAuthConfiguration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./awsAuthConfiguration */"./node_modules/@aws-sdk/middleware-signing/dist-es/awsAuthConfiguration.js");
-/* harmony import */var _awsAuthMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./awsAuthMiddleware */"./node_modules/@aws-sdk/middleware-signing/dist-es/awsAuthMiddleware.js");
+/* harmony import */var _awsAuthConfiguration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./awsAuthConfiguration */"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/awsAuthConfiguration.js");
+/* harmony import */var _awsAuthMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./awsAuthMiddleware */"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/awsAuthMiddleware.js");
 
 
 }),
-"./node_modules/@aws-sdk/middleware-signing/dist-es/utils/getSkewCorrectedDate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/utils/getSkewCorrectedDate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getSkewCorrectedDate: function() { return getSkewCorrectedDate; }
 });
 const getSkewCorrectedDate = (systemClockOffset)=>new Date(Date.now() + systemClockOffset);
 }),
-"./node_modules/@aws-sdk/middleware-signing/dist-es/utils/getUpdatedSystemClockOffset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/utils/getUpdatedSystemClockOffset.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getUpdatedSystemClockOffset: function() { return getUpdatedSystemClockOffset; }
 });
-/* harmony import */var _isClockSkewed__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isClockSkewed */"./node_modules/@aws-sdk/middleware-signing/dist-es/utils/isClockSkewed.js");
+/* harmony import */var _isClockSkewed__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isClockSkewed */"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/utils/isClockSkewed.js");
 
 const getUpdatedSystemClockOffset = (clockTime, currentSystemClockOffset)=>{
     const clockTimeInMs = Date.parse(clockTime);
@@ -11608,19 +9743,17 @@ const getUpdatedSystemClockOffset = (clockTime, currentSystemClockOffset)=>{
     return currentSystemClockOffset;
 };
 }),
-"./node_modules/@aws-sdk/middleware-signing/dist-es/utils/isClockSkewed.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/utils/isClockSkewed.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isClockSkewed: function() { return isClockSkewed; }
 });
-/* harmony import */var _getSkewCorrectedDate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getSkewCorrectedDate */"./node_modules/@aws-sdk/middleware-signing/dist-es/utils/getSkewCorrectedDate.js");
+/* harmony import */var _getSkewCorrectedDate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getSkewCorrectedDate */"./node_modules/.pnpm/@aws-sdk+middleware-signing@3.489.0/node_modules/@aws-sdk/middleware-signing/dist-es/utils/getSkewCorrectedDate.js");
 
 const isClockSkewed = (clockTime, systemClockOffset)=>Math.abs((0, _getSkewCorrectedDate__WEBPACK_IMPORTED_MODULE_0__.getSkewCorrectedDate)(systemClockOffset).getTime() - clockTime) >= 300000;
 }),
-"./node_modules/@aws-sdk/middleware-user-agent/dist-es/configurations.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/configurations.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveUserAgentConfig: function() { return resolveUserAgentConfig; }
 });
@@ -11635,9 +9768,8 @@ function resolveUserAgentConfig(input) {
     };
 }
 }),
-"./node_modules/@aws-sdk/middleware-user-agent/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   SPACE: function() { return SPACE; },
   UA_ESCAPE_CHAR: function() { return UA_ESCAPE_CHAR; },
@@ -11655,27 +9787,25 @@ const UA_NAME_ESCAPE_REGEX = /[^\!\$\%\&\'\*\+\-\.\^\_\`\|\~\d\w]/g;
 const UA_VALUE_ESCAPE_REGEX = /[^\!\$\%\&\'\*\+\-\.\^\_\`\|\~\d\w\#]/g;
 const UA_ESCAPE_CHAR = "-";
 }),
-"./node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getUserAgentPlugin: function() { return /* reexport safe */ _user_agent_middleware__WEBPACK_IMPORTED_MODULE_1__.getUserAgentPlugin; },
   resolveUserAgentConfig: function() { return /* reexport safe */ _configurations__WEBPACK_IMPORTED_MODULE_0__.resolveUserAgentConfig; }
 });
-/* harmony import */var _configurations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./configurations */"./node_modules/@aws-sdk/middleware-user-agent/dist-es/configurations.js");
-/* harmony import */var _user_agent_middleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./user-agent-middleware */"./node_modules/@aws-sdk/middleware-user-agent/dist-es/user-agent-middleware.js");
+/* harmony import */var _configurations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./configurations */"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/configurations.js");
+/* harmony import */var _user_agent_middleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./user-agent-middleware */"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/user-agent-middleware.js");
 
 
 }),
-"./node_modules/@aws-sdk/middleware-user-agent/dist-es/user-agent-middleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/user-agent-middleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getUserAgentPlugin: function() { return getUserAgentPlugin; }
 });
-/* harmony import */var _aws_sdk_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/util-endpoints */"./node_modules/@aws-sdk/util-endpoints/dist-es/index.js");
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants */"./node_modules/@aws-sdk/middleware-user-agent/dist-es/constants.js");
+/* harmony import */var _aws_sdk_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/util-endpoints */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/constants.js");
 
 
 
@@ -11745,9 +9875,8 @@ const getUserAgentPlugin = (config)=>({
         }
     });
 }),
-"./node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+region-config-resolver@3.489.0/node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getAwsRegionExtensionConfiguration: function() { return getAwsRegionExtensionConfiguration; },
   resolveAwsRegionExtensionConfiguration: function() { return resolveAwsRegionExtensionConfiguration; }
@@ -11774,102 +9903,36 @@ const resolveAwsRegionExtensionConfiguration = (awsRegionExtensionConfiguration)
     };
 };
 }),
-"./node_modules/@aws-sdk/region-config-resolver/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/bundle/client-sso-oidc-node.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-}),
-"./node_modules/@aws-sdk/region-config-resolver/dist-es/regionConfig/config.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const REGION_ENV_NAME = "AWS_REGION";
-const REGION_INI_NAME = "region";
-const NODE_REGION_CONFIG_OPTIONS = (/* unused pure expression or super */ null && ({
-    environmentVariableSelector: (env)=>env[REGION_ENV_NAME],
-    configFileSelector: (profile)=>profile[REGION_INI_NAME],
-    default: ()=>{
-        throw new Error("Region is missing");
-    }
-}));
-const NODE_REGION_CONFIG_FILE_OPTIONS = (/* unused pure expression or super */ null && ({
-    preferredFile: "credentials"
-}));
-}),
-"./node_modules/@aws-sdk/region-config-resolver/dist-es/regionConfig/getRealRegion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-const getRealRegion = (region)=>isFipsRegion(region) ? [
-        "fips-aws-global",
-        "aws-fips"
-    ].includes(region) ? "us-east-1" : region.replace(/fips-(dkr-|prod-)?|-fips/, "") : region;
-}),
-"./node_modules/@aws-sdk/region-config-resolver/dist-es/regionConfig/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-}),
-"./node_modules/@aws-sdk/region-config-resolver/dist-es/regionConfig/isFipsRegion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const isFipsRegion = (region)=>typeof region === "string" && (region.startsWith("fips-") || region.endsWith("-fips"));
-}),
-"./node_modules/@aws-sdk/region-config-resolver/dist-es/regionConfig/resolveRegionConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-const resolveRegionConfig = (input)=>{
-    const { region, useFipsEndpoint } = input;
-    if (!region) throw new Error("Region is missing");
-    return {
-        ...input,
-        region: async ()=>{
-            if (typeof region === "string") return getRealRegion(region);
-            const providedRegion = await region();
-            return getRealRegion(providedRegion);
-        },
-        useFipsEndpoint: async ()=>{
-            const providedRegion = typeof region === "string" ? region : await region();
-            if (isFipsRegion(providedRegion)) return true;
-            return typeof useFipsEndpoint !== "function" ? Promise.resolve(!!useFipsEndpoint) : useFipsEndpoint();
-        }
-    };
-};
-}),
-"./node_modules/@aws-sdk/token-providers/dist-es/bundle/client-sso-oidc-node.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   CreateTokenCommand: function() { return CreateTokenCommand; },
   SSOOIDCClient: function() { return SSOOIDCClient; }
 });
-/* harmony import */var _aws_sdk_middleware_host_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/middleware-host-header */"./node_modules/@aws-sdk/middleware-host-header/dist-es/index.js");
-/* harmony import */var _aws_sdk_middleware_logger__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @aws-sdk/middleware-logger */"./node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js");
-/* harmony import */var _aws_sdk_middleware_recursion_detection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/middleware-recursion-detection */"./node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js");
-/* harmony import */var _aws_sdk_middleware_user_agent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/middleware-user-agent */"./node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js");
-/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/@smithy/config-resolver/dist-es/index.js");
-/* harmony import */var _smithy_middleware_content_length__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/middleware-content-length */"./node_modules/@smithy/middleware-content-length/dist-es/index.js");
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/@smithy/middleware-retry/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _aws_sdk_util_user_agent_node__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @aws-sdk/util-user-agent-node */"./node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js");
-/* harmony import */var _smithy_hash_node__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/hash-node */"./node_modules/@smithy/hash-node/dist-es/index.js");
-/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/@smithy/node-config-provider/dist-es/index.js");
-/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/@smithy/node-http-handler/dist-es/index.js");
-/* harmony import */var _smithy_util_body_length_node__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @smithy/util-body-length-node */"./node_modules/@smithy/util-body-length-node/dist-es/index.js");
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
-/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/@smithy/url-parser/dist-es/index.js");
-/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/@smithy/util-base64/dist-es/index.js");
-/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/@smithy/util-utf8/dist-es/index.js");
-/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/@smithy/util-endpoints/dist-es/index.js");
-/* harmony import */var _smithy_util_defaults_mode_node__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @smithy/util-defaults-mode-node */"./node_modules/@smithy/util-defaults-mode-node/dist-es/index.js");
-/* harmony import */var _aws_sdk_region_config_resolver__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @aws-sdk/region-config-resolver */"./node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js");
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_host_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/middleware-host-header */"./node_modules/.pnpm/@aws-sdk+middleware-host-header@3.489.0/node_modules/@aws-sdk/middleware-host-header/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_logger__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @aws-sdk/middleware-logger */"./node_modules/.pnpm/@aws-sdk+middleware-logger@3.489.0/node_modules/@aws-sdk/middleware-logger/dist-es/loggerMiddleware.js");
+/* harmony import */var _aws_sdk_middleware_recursion_detection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @aws-sdk/middleware-recursion-detection */"./node_modules/.pnpm/@aws-sdk+middleware-recursion-detection@3.489.0/node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js");
+/* harmony import */var _aws_sdk_middleware_user_agent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-sdk/middleware-user-agent */"./node_modules/.pnpm/@aws-sdk+middleware-user-agent@3.489.0/node_modules/@aws-sdk/middleware-user-agent/dist-es/index.js");
+/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/index.js");
+/* harmony import */var _smithy_middleware_content_length__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/middleware-content-length */"./node_modules/.pnpm/@smithy+middleware-content-length@2.1.1/node_modules/@smithy/middleware-content-length/dist-es/index.js");
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _aws_sdk_util_user_agent_node__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @aws-sdk/util-user-agent-node */"./node_modules/.pnpm/@aws-sdk+util-user-agent-node@3.489.0/node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js");
+/* harmony import */var _smithy_hash_node__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @smithy/hash-node */"./node_modules/.pnpm/@smithy+hash-node@2.1.1/node_modules/@smithy/hash-node/dist-es/index.js");
+/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/index.js");
+/* harmony import */var _smithy_util_body_length_node__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @smithy/util-body-length-node */"./node_modules/.pnpm/@smithy+util-body-length-node@2.2.1/node_modules/@smithy/util-body-length-node/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/.pnpm/@smithy+url-parser@2.1.1/node_modules/@smithy/url-parser/dist-es/index.js");
+/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/index.js");
+/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js");
+/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js");
+/* harmony import */var _smithy_util_defaults_mode_node__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @smithy/util-defaults-mode-node */"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/index.js");
+/* harmony import */var _aws_sdk_region_config_resolver__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @aws-sdk/region-config-resolver */"./node_modules/.pnpm/@aws-sdk+region-config-resolver@3.489.0/node_modules/@aws-sdk/region-config-resolver/dist-es/extensions/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
 
 
 
@@ -13048,9 +11111,8 @@ var SSOOIDC = class extends SSOOIDCClient {
 (0, _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_7__.createAggregatedClient)(commands, SSOOIDC);
 
 }),
-"./node_modules/@aws-sdk/token-providers/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   EXPIRE_WINDOW_MS: function() { return EXPIRE_WINDOW_MS; },
   REFRESH_MESSAGE: function() { return REFRESH_MESSAGE; }
@@ -13058,19 +11120,18 @@ __webpack_require__.d(__webpack_exports__, {
 const EXPIRE_WINDOW_MS = 300000;
 const REFRESH_MESSAGE = `To refresh this SSO session run 'aws sso login' with the corresponding profile.`;
 }),
-"./node_modules/@aws-sdk/token-providers/dist-es/fromSso.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/fromSso.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromSso: function() { return fromSso; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/TokenProviderError.js");
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants */"./node_modules/@aws-sdk/token-providers/dist-es/constants.js");
-/* harmony import */var _getNewSsoOidcToken__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./getNewSsoOidcToken */"./node_modules/@aws-sdk/token-providers/dist-es/getNewSsoOidcToken.js");
-/* harmony import */var _validateTokenExpiry__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./validateTokenExpiry */"./node_modules/@aws-sdk/token-providers/dist-es/validateTokenExpiry.js");
-/* harmony import */var _validateTokenKey__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./validateTokenKey */"./node_modules/@aws-sdk/token-providers/dist-es/validateTokenKey.js");
-/* harmony import */var _writeSSOTokenToFile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./writeSSOTokenToFile */"./node_modules/@aws-sdk/token-providers/dist-es/writeSSOTokenToFile.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/TokenProviderError.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/constants.js");
+/* harmony import */var _getNewSsoOidcToken__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./getNewSsoOidcToken */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/getNewSsoOidcToken.js");
+/* harmony import */var _validateTokenExpiry__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./validateTokenExpiry */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/validateTokenExpiry.js");
+/* harmony import */var _validateTokenKey__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./validateTokenKey */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/validateTokenKey.js");
+/* harmony import */var _writeSSOTokenToFile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./writeSSOTokenToFile */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/writeSSOTokenToFile.js");
 
 
 
@@ -13142,23 +11203,13 @@ const fromSso = (init = {})=>async ()=>{
         }
     };
 }),
-"./node_modules/@aws-sdk/token-providers/dist-es/fromStatic.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/getNewSsoOidcToken.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-const fromStatic = ({ token })=>async ()=>{
-        if (!token || !token.token) throw new TokenProviderError(`Please pass a valid token to fromStatic`, false);
-        return token;
-    };
-}),
-"./node_modules/@aws-sdk/token-providers/dist-es/getNewSsoOidcToken.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getNewSsoOidcToken: function() { return getNewSsoOidcToken; }
 });
-/* harmony import */var _bundle_client_sso_oidc_node__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bundle/client-sso-oidc-node */"./node_modules/@aws-sdk/token-providers/dist-es/bundle/client-sso-oidc-node.js");
-/* harmony import */var _getSsoOidcClient__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getSsoOidcClient */"./node_modules/@aws-sdk/token-providers/dist-es/getSsoOidcClient.js");
+/* harmony import */var _bundle_client_sso_oidc_node__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bundle/client-sso-oidc-node */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/bundle/client-sso-oidc-node.js");
+/* harmony import */var _getSsoOidcClient__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getSsoOidcClient */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/getSsoOidcClient.js");
 
 
 const getNewSsoOidcToken = (ssoToken, ssoRegion)=>{
@@ -13171,13 +11222,12 @@ const getNewSsoOidcToken = (ssoToken, ssoRegion)=>{
     }));
 };
 }),
-"./node_modules/@aws-sdk/token-providers/dist-es/getSsoOidcClient.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/getSsoOidcClient.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getSsoOidcClient: function() { return getSsoOidcClient; }
 });
-/* harmony import */var _bundle_client_sso_oidc_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bundle/client-sso-oidc-node */"./node_modules/@aws-sdk/token-providers/dist-es/bundle/client-sso-oidc-node.js");
+/* harmony import */var _bundle_client_sso_oidc_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bundle/client-sso-oidc-node */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/bundle/client-sso-oidc-node.js");
 
 const ssoOidcClientsHash = {};
 const getSsoOidcClient = (ssoRegion)=>{
@@ -13189,58 +11239,38 @@ const getSsoOidcClient = (ssoRegion)=>{
     return ssoOidcClient;
 };
 }),
-"./node_modules/@aws-sdk/token-providers/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/validateTokenExpiry.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-}),
-"./node_modules/@aws-sdk/token-providers/dist-es/nodeProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-const nodeProvider = (init = {})=>memoize(chain(fromSso(init), async ()=>{
-        throw new TokenProviderError("Could not load token from any providers", false);
-    }), (token)=>token.expiration !== undefined && token.expiration.getTime() - Date.now() < 300000, (token)=>token.expiration !== undefined);
-}),
-"./node_modules/@aws-sdk/token-providers/dist-es/validateTokenExpiry.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   validateTokenExpiry: function() { return validateTokenExpiry; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/TokenProviderError.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */"./node_modules/@aws-sdk/token-providers/dist-es/constants.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/TokenProviderError.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/constants.js");
 
 
 const validateTokenExpiry = (token)=>{
     if (token.expiration && token.expiration.getTime() < Date.now()) throw new _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__.TokenProviderError(`Token is expired. ${_constants__WEBPACK_IMPORTED_MODULE_1__.REFRESH_MESSAGE}`, false);
 };
 }),
-"./node_modules/@aws-sdk/token-providers/dist-es/validateTokenKey.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/validateTokenKey.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   validateTokenKey: function() { return validateTokenKey; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/TokenProviderError.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */"./node_modules/@aws-sdk/token-providers/dist-es/constants.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/TokenProviderError.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/constants.js");
 
 
 const validateTokenKey = (key, value, forRefresh = false)=>{
     if (typeof value === "undefined") throw new _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__.TokenProviderError(`Value not present for '${key}' in SSO Token${forRefresh ? ". Cannot refresh" : ""}. ${_constants__WEBPACK_IMPORTED_MODULE_1__.REFRESH_MESSAGE}`, false);
 };
 }),
-"./node_modules/@aws-sdk/token-providers/dist-es/writeSSOTokenToFile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+token-providers@3.489.0/node_modules/@aws-sdk/token-providers/dist-es/writeSSOTokenToFile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   writeSSOTokenToFile: function() { return writeSSOTokenToFile; }
 });
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
 /* harmony import */var fs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fs */"fs");
 /* harmony import */var fs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -13252,13 +11282,12 @@ const writeSSOTokenToFile = (id, ssoToken)=>{
     return writeFile(tokenFilepath, tokenString);
 };
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/aws.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/aws.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/@smithy/util-endpoints/dist-es/index.js");
-/* harmony import */var _lib_aws_isVirtualHostableS3Bucket__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/aws/isVirtualHostableS3Bucket */"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/isVirtualHostableS3Bucket.js");
-/* harmony import */var _lib_aws_parseArn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/aws/parseArn */"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/parseArn.js");
-/* harmony import */var _lib_aws_partition__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/aws/partition */"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partition.js");
+/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js");
+/* harmony import */var _lib_aws_isVirtualHostableS3Bucket__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/aws/isVirtualHostableS3Bucket */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/isVirtualHostableS3Bucket.js");
+/* harmony import */var _lib_aws_parseArn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/aws/parseArn */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/parseArn.js");
+/* harmony import */var _lib_aws_partition__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/aws/partition */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partition.js");
 
 
 
@@ -13270,31 +11299,29 @@ const awsEndpointFunctions = {
 };
 _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__.customEndpointFunctions.aws = awsEndpointFunctions;
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getUserAgentPrefix: function() { return /* reexport safe */ _lib_aws_partition__WEBPACK_IMPORTED_MODULE_1__.getUserAgentPrefix; }
 });
-/* harmony import */var _aws__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./aws */"./node_modules/@aws-sdk/util-endpoints/dist-es/aws.js");
-/* harmony import */var _lib_aws_partition__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/aws/partition */"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partition.js");
-/* harmony import */var _lib_isIpAddress__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/isIpAddress */"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/isIpAddress.js");
-/* harmony import */var _resolveEndpoint__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveEndpoint */"./node_modules/@aws-sdk/util-endpoints/dist-es/resolveEndpoint.js");
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./types */"./node_modules/@aws-sdk/util-endpoints/dist-es/types/index.js");
+/* harmony import */var _aws__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./aws */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/aws.js");
+/* harmony import */var _lib_aws_partition__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/aws/partition */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partition.js");
+/* harmony import */var _lib_isIpAddress__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/isIpAddress */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/isIpAddress.js");
+/* harmony import */var _resolveEndpoint__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveEndpoint */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/resolveEndpoint.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./types */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/types/index.js");
 
 
 
 
 
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/isVirtualHostableS3Bucket.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/isVirtualHostableS3Bucket.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isVirtualHostableS3Bucket: function() { return isVirtualHostableS3Bucket; }
 });
-/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/@smithy/util-endpoints/dist-es/index.js");
-/* harmony import */var _isIpAddress__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../isIpAddress */"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/isIpAddress.js");
+/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js");
+/* harmony import */var _isIpAddress__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../isIpAddress */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/isIpAddress.js");
 
 
 const isVirtualHostableS3Bucket = (value, allowSubDomains = false)=>{
@@ -13311,9 +11338,8 @@ const isVirtualHostableS3Bucket = (value, allowSubDomains = false)=>{
     return true;
 };
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/parseArn.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/parseArn.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   parseArn: function() { return parseArn; }
 });
@@ -13331,14 +11357,13 @@ const parseArn = (value)=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partition.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partition.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getUserAgentPrefix: function() { return getUserAgentPrefix; },
   partition: function() { return partition; }
 });
-/* harmony import */var _partitions_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partitions.json */"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partitions.json");
+/* harmony import */var _partitions_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partitions.json */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partitions.json");
 
 let selectedPartitionsInfo = _partitions_json__WEBPACK_IMPORTED_MODULE_0__;
 let selectedUserAgentPrefix = "";
@@ -13374,51 +11399,27 @@ const useDefaultPartitionInfo = ()=>{
 };
 const getUserAgentPrefix = ()=>selectedUserAgentPrefix;
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/isIpAddress.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/isIpAddress.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isIpAddress: function() { return /* reexport safe */ _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__.isIpAddress; }
 });
-/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/@smithy/util-endpoints/dist-es/index.js");
+/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js");
 
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/resolveEndpoint.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/resolveEndpoint.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/@smithy/util-endpoints/dist-es/index.js");
+/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js");
 
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/types/EndpointError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/types/EndpointError.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/@smithy/util-endpoints/dist-es/index.js");
+/* harmony import */var _smithy_util_endpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-endpoints */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js");
 
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/types/EndpointRuleObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/types/index.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/types/ErrorRuleObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/types/RuleSetObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/types/TreeRuleObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/types/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _EndpointError__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EndpointError */"./node_modules/@aws-sdk/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _EndpointError__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EndpointError */"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/types/EndpointError.js");
 
 
 
@@ -13426,14 +11427,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 }),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/types/shared.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-user-agent-node@3.489.0/node_modules/@aws-sdk/util-user-agent-node/dist-es/crt-availability.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@aws-sdk/util-user-agent-node/dist-es/crt-availability.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   crtAvailability: function() { return crtAvailability; }
 });
@@ -13441,18 +11436,17 @@ const crtAvailability = {
     isCrtAvailable: false
 };
 }),
-"./node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-user-agent-node@3.489.0/node_modules/@aws-sdk/util-user-agent-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   defaultUserAgent: function() { return defaultUserAgent; }
 });
-/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/@smithy/node-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js");
 /* harmony import */var os__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! os */"os");
 /* harmony import */var os__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(os__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */var process__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! process */"process");
 /* harmony import */var process__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(process__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */var _is_crt_available__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./is-crt-available */"./node_modules/@aws-sdk/util-user-agent-node/dist-es/is-crt-available.js");
+/* harmony import */var _is_crt_available__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./is-crt-available */"./node_modules/.pnpm/@aws-sdk+util-user-agent-node@3.489.0/node_modules/@aws-sdk/util-user-agent-node/dist-es/is-crt-available.js");
 
 
 
@@ -13513,13 +11507,12 @@ const defaultUserAgent = ({ serviceId, clientVersion })=>{
     };
 };
 }),
-"./node_modules/@aws-sdk/util-user-agent-node/dist-es/is-crt-available.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-user-agent-node@3.489.0/node_modules/@aws-sdk/util-user-agent-node/dist-es/is-crt-available.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isCrtAvailable: function() { return isCrtAvailable; }
 });
-/* harmony import */var _crt_availability__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./crt-availability */"./node_modules/@aws-sdk/util-user-agent-node/dist-es/crt-availability.js");
+/* harmony import */var _crt_availability__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./crt-availability */"./node_modules/.pnpm/@aws-sdk+util-user-agent-node@3.489.0/node_modules/@aws-sdk/util-user-agent-node/dist-es/crt-availability.js");
 
 const isCrtAvailable = ()=>{
     if (_crt_availability__WEBPACK_IMPORTED_MODULE_0__.crtAvailability.isCrtAvailable) return [
@@ -13528,23 +11521,22 @@ const isCrtAvailable = ()=>{
     return null;
 };
 }),
-"./node_modules/@aws-sdk/util-utf8-browser/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-utf8-browser@3.259.0/node_modules/@aws-sdk/util-utf8-browser/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromUtf8: function() { return fromUtf8; },
   toUtf8: function() { return toUtf8; }
 });
-/* harmony import */var _pureJs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pureJs */"./node_modules/@aws-sdk/util-utf8-browser/dist-es/pureJs.js");
-/* harmony import */var _whatwgEncodingApi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./whatwgEncodingApi */"./node_modules/@aws-sdk/util-utf8-browser/dist-es/whatwgEncodingApi.js");
+/* harmony import */var _pureJs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pureJs */"./node_modules/.pnpm/@aws-sdk+util-utf8-browser@3.259.0/node_modules/@aws-sdk/util-utf8-browser/dist-es/pureJs.js");
+/* harmony import */var _whatwgEncodingApi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./whatwgEncodingApi */"./node_modules/.pnpm/@aws-sdk+util-utf8-browser@3.259.0/node_modules/@aws-sdk/util-utf8-browser/dist-es/whatwgEncodingApi.js");
 
 
 const fromUtf8 = (input)=>typeof TextEncoder === "function" ? (0, _whatwgEncodingApi__WEBPACK_IMPORTED_MODULE_0__.fromUtf8)(input) : (0, _pureJs__WEBPACK_IMPORTED_MODULE_1__.fromUtf8)(input);
 const toUtf8 = (input)=>typeof TextDecoder === "function" ? (0, _whatwgEncodingApi__WEBPACK_IMPORTED_MODULE_0__.toUtf8)(input) : (0, _pureJs__WEBPACK_IMPORTED_MODULE_1__.toUtf8)(input);
 }),
-"./node_modules/@aws-sdk/util-utf8-browser/dist-es/pureJs.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-utf8-browser@3.259.0/node_modules/@aws-sdk/util-utf8-browser/dist-es/pureJs.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromUtf8: function() { return fromUtf8; },
   toUtf8: function() { return toUtf8; }
@@ -13584,9 +11576,8 @@ const toUtf8 = (input)=>{
     return decoded;
 };
 }),
-"./node_modules/@aws-sdk/util-utf8-browser/dist-es/whatwgEncodingApi.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@aws-sdk+util-utf8-browser@3.259.0/node_modules/@aws-sdk/util-utf8-browser/dist-es/whatwgEncodingApi.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromUtf8: function() { return fromUtf8; },
   toUtf8: function() { return toUtf8; }
@@ -13598,13 +11589,12 @@ function toUtf8(input) {
     return new TextDecoder("utf-8").decode(input);
 }
 }),
-"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/NodeUseDualstackEndpointConfigOptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/NodeUseDualstackEndpointConfigOptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS: function() { return NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS; }
 });
-/* harmony import */var _smithy_util_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-config-provider */"./node_modules/@smithy/util-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_util_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-config-provider */"./node_modules/.pnpm/@smithy+util-config-provider@2.2.1/node_modules/@smithy/util-config-provider/dist-es/index.js");
 
 const ENV_USE_DUALSTACK_ENDPOINT = "AWS_USE_DUALSTACK_ENDPOINT";
 const CONFIG_USE_DUALSTACK_ENDPOINT = "use_dualstack_endpoint";
@@ -13615,13 +11605,12 @@ const NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS = {
     default: false
 };
 }),
-"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/NodeUseFipsEndpointConfigOptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/NodeUseFipsEndpointConfigOptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS: function() { return NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS; }
 });
-/* harmony import */var _smithy_util_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-config-provider */"./node_modules/@smithy/util-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_util_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-config-provider */"./node_modules/.pnpm/@smithy+util-config-provider@2.2.1/node_modules/@smithy/util-config-provider/dist-es/index.js");
 
 const ENV_USE_FIPS_ENDPOINT = "AWS_USE_FIPS_ENDPOINT";
 const CONFIG_USE_FIPS_ENDPOINT = "use_fips_endpoint";
@@ -13632,26 +11621,24 @@ const NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS = {
     default: false
 };
 }),
-"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS: function() { return /* reexport safe */ _NodeUseDualstackEndpointConfigOptions__WEBPACK_IMPORTED_MODULE_0__.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS; },
   NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS: function() { return /* reexport safe */ _NodeUseFipsEndpointConfigOptions__WEBPACK_IMPORTED_MODULE_1__.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS; }
 });
-/* harmony import */var _NodeUseDualstackEndpointConfigOptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NodeUseDualstackEndpointConfigOptions */"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/NodeUseDualstackEndpointConfigOptions.js");
-/* harmony import */var _NodeUseFipsEndpointConfigOptions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NodeUseFipsEndpointConfigOptions */"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/NodeUseFipsEndpointConfigOptions.js");
-/* harmony import */var _resolveCustomEndpointsConfig__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resolveCustomEndpointsConfig */"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/resolveCustomEndpointsConfig.js");
-/* harmony import */var _resolveEndpointsConfig__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveEndpointsConfig */"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/resolveEndpointsConfig.js");
+/* harmony import */var _NodeUseDualstackEndpointConfigOptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NodeUseDualstackEndpointConfigOptions */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/NodeUseDualstackEndpointConfigOptions.js");
+/* harmony import */var _NodeUseFipsEndpointConfigOptions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NodeUseFipsEndpointConfigOptions */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/NodeUseFipsEndpointConfigOptions.js");
+/* harmony import */var _resolveCustomEndpointsConfig__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resolveCustomEndpointsConfig */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/resolveCustomEndpointsConfig.js");
+/* harmony import */var _resolveEndpointsConfig__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveEndpointsConfig */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/resolveEndpointsConfig.js");
 
 
 
 
 }),
-"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/resolveCustomEndpointsConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/resolveCustomEndpointsConfig.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
 
 const resolveCustomEndpointsConfig = (input)=>{
     const { endpoint, urlParser } = input;
@@ -13664,10 +11651,9 @@ const resolveCustomEndpointsConfig = (input)=>{
     };
 };
 }),
-"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/resolveEndpointsConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/resolveEndpointsConfig.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
 
 
 const resolveEndpointsConfig = (input)=>{
@@ -13686,27 +11672,8 @@ const resolveEndpointsConfig = (input)=>{
     };
 };
 }),
-"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/utils/getEndpointFromRegion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-const getEndpointFromRegion = async (input)=>{
-    const { tls = true } = input;
-    const region = await input.region();
-    const dnsHostRegex = new RegExp(/^([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9])$/);
-    if (!dnsHostRegex.test(region)) throw new Error("Invalid region in client config");
-    const useDualstackEndpoint = await input.useDualstackEndpoint();
-    const useFipsEndpoint = await input.useFipsEndpoint();
-    const { hostname } = await input.regionInfoProvider(region, {
-        useDualstackEndpoint,
-        useFipsEndpoint
-    }) ?? {};
-    if (!hostname) throw new Error("Cannot resolve hostname from client config");
-    return input.urlParser(`${tls ? "https:" : "http:"}//${hostname}`);
-};
-}),
-"./node_modules/@smithy/config-resolver/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODE_REGION_CONFIG_FILE_OPTIONS: function() { return /* reexport safe */ _regionConfig__WEBPACK_IMPORTED_MODULE_1__.NODE_REGION_CONFIG_FILE_OPTIONS; },
   NODE_REGION_CONFIG_OPTIONS: function() { return /* reexport safe */ _regionConfig__WEBPACK_IMPORTED_MODULE_1__.NODE_REGION_CONFIG_OPTIONS; },
@@ -13714,15 +11681,14 @@ __webpack_require__.d(__webpack_exports__, {
   NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS: function() { return /* reexport safe */ _endpointsConfig__WEBPACK_IMPORTED_MODULE_0__.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS; },
   resolveRegionConfig: function() { return /* reexport safe */ _regionConfig__WEBPACK_IMPORTED_MODULE_1__.resolveRegionConfig; }
 });
-/* harmony import */var _endpointsConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./endpointsConfig */"./node_modules/@smithy/config-resolver/dist-es/endpointsConfig/index.js");
-/* harmony import */var _regionConfig__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./regionConfig */"./node_modules/@smithy/config-resolver/dist-es/regionConfig/index.js");
+/* harmony import */var _endpointsConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./endpointsConfig */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/endpointsConfig/index.js");
+/* harmony import */var _regionConfig__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./regionConfig */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/index.js");
 
 
 
 }),
-"./node_modules/@smithy/config-resolver/dist-es/regionConfig/config.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/config.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODE_REGION_CONFIG_FILE_OPTIONS: function() { return NODE_REGION_CONFIG_FILE_OPTIONS; },
   NODE_REGION_CONFIG_OPTIONS: function() { return NODE_REGION_CONFIG_OPTIONS; }
@@ -13740,48 +11706,44 @@ const NODE_REGION_CONFIG_FILE_OPTIONS = {
     preferredFile: "credentials"
 };
 }),
-"./node_modules/@smithy/config-resolver/dist-es/regionConfig/getRealRegion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/getRealRegion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRealRegion: function() { return getRealRegion; }
 });
-/* harmony import */var _isFipsRegion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isFipsRegion */"./node_modules/@smithy/config-resolver/dist-es/regionConfig/isFipsRegion.js");
+/* harmony import */var _isFipsRegion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isFipsRegion */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/isFipsRegion.js");
 
 const getRealRegion = (region)=>(0, _isFipsRegion__WEBPACK_IMPORTED_MODULE_0__.isFipsRegion)(region) ? [
         "fips-aws-global",
         "aws-fips"
     ].includes(region) ? "us-east-1" : region.replace(/fips-(dkr-|prod-)?|-fips/, "") : region;
 }),
-"./node_modules/@smithy/config-resolver/dist-es/regionConfig/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODE_REGION_CONFIG_FILE_OPTIONS: function() { return /* reexport safe */ _config__WEBPACK_IMPORTED_MODULE_0__.NODE_REGION_CONFIG_FILE_OPTIONS; },
   NODE_REGION_CONFIG_OPTIONS: function() { return /* reexport safe */ _config__WEBPACK_IMPORTED_MODULE_0__.NODE_REGION_CONFIG_OPTIONS; },
   resolveRegionConfig: function() { return /* reexport safe */ _resolveRegionConfig__WEBPACK_IMPORTED_MODULE_1__.resolveRegionConfig; }
 });
-/* harmony import */var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./config */"./node_modules/@smithy/config-resolver/dist-es/regionConfig/config.js");
-/* harmony import */var _resolveRegionConfig__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveRegionConfig */"./node_modules/@smithy/config-resolver/dist-es/regionConfig/resolveRegionConfig.js");
+/* harmony import */var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./config */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/config.js");
+/* harmony import */var _resolveRegionConfig__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolveRegionConfig */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/resolveRegionConfig.js");
 
 
 }),
-"./node_modules/@smithy/config-resolver/dist-es/regionConfig/isFipsRegion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/isFipsRegion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isFipsRegion: function() { return isFipsRegion; }
 });
 const isFipsRegion = (region)=>typeof region === "string" && (region.startsWith("fips-") || region.endsWith("-fips"));
 }),
-"./node_modules/@smithy/config-resolver/dist-es/regionConfig/resolveRegionConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/resolveRegionConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveRegionConfig: function() { return resolveRegionConfig; }
 });
-/* harmony import */var _getRealRegion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getRealRegion */"./node_modules/@smithy/config-resolver/dist-es/regionConfig/getRealRegion.js");
-/* harmony import */var _isFipsRegion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./isFipsRegion */"./node_modules/@smithy/config-resolver/dist-es/regionConfig/isFipsRegion.js");
+/* harmony import */var _getRealRegion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getRealRegion */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/getRealRegion.js");
+/* harmony import */var _isFipsRegion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./isFipsRegion */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/regionConfig/isFipsRegion.js");
 
 
 const resolveRegionConfig = (input)=>{
@@ -13802,108 +11764,18 @@ const resolveRegionConfig = (input)=>{
     };
 };
 }),
-"./node_modules/@smithy/config-resolver/dist-es/regionInfo/PartitionHash.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/getSmithyContext.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/config-resolver/dist-es/regionInfo/RegionHash.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/config-resolver/dist-es/regionInfo/getHostnameFromVariants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const getHostnameFromVariants = (variants = [], { useFipsEndpoint, useDualstackEndpoint })=>variants.find(({ tags })=>useFipsEndpoint === tags.includes("fips") && useDualstackEndpoint === tags.includes("dualstack"))?.hostname;
-}),
-"./node_modules/@smithy/config-resolver/dist-es/regionInfo/getRegionInfo.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-const getRegionInfo = (region, { useFipsEndpoint = false, useDualstackEndpoint = false, signingService, regionHash, partitionHash })=>{
-    const partition = getResolvedPartition(region, {
-        partitionHash
-    });
-    const resolvedRegion = region in regionHash ? region : partitionHash[partition]?.endpoint ?? region;
-    const hostnameOptions = {
-        useFipsEndpoint,
-        useDualstackEndpoint
-    };
-    const regionHostname = getHostnameFromVariants(regionHash[resolvedRegion]?.variants, hostnameOptions);
-    const partitionHostname = getHostnameFromVariants(partitionHash[partition]?.variants, hostnameOptions);
-    const hostname = getResolvedHostname(resolvedRegion, {
-        regionHostname,
-        partitionHostname
-    });
-    if (hostname === undefined) throw new Error(`Endpoint resolution failed for: ${{
-        resolvedRegion,
-        useFipsEndpoint,
-        useDualstackEndpoint
-    }}`);
-    const signingRegion = getResolvedSigningRegion(hostname, {
-        signingRegion: regionHash[resolvedRegion]?.signingRegion,
-        regionRegex: partitionHash[partition].regionRegex,
-        useFipsEndpoint
-    });
-    return {
-        partition,
-        signingService,
-        hostname,
-        ...signingRegion && {
-            signingRegion
-        },
-        ...regionHash[resolvedRegion]?.signingService && {
-            signingService: regionHash[resolvedRegion].signingService
-        }
-    };
-};
-}),
-"./node_modules/@smithy/config-resolver/dist-es/regionInfo/getResolvedHostname.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const getResolvedHostname = (resolvedRegion, { regionHostname, partitionHostname })=>regionHostname ? regionHostname : partitionHostname ? partitionHostname.replace("{region}", resolvedRegion) : undefined;
-}),
-"./node_modules/@smithy/config-resolver/dist-es/regionInfo/getResolvedPartition.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const getResolvedPartition = (region, { partitionHash })=>Object.keys(partitionHash || {}).find((key)=>partitionHash[key].regions.includes(region)) ?? "aws";
-}),
-"./node_modules/@smithy/config-resolver/dist-es/regionInfo/getResolvedSigningRegion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const getResolvedSigningRegion = (hostname, { signingRegion, regionRegex, useFipsEndpoint })=>{
-    if (signingRegion) return signingRegion;
-    else if (useFipsEndpoint) {
-        const regionRegexJs = regionRegex.replace("\\\\", "\\").replace(/^\^/g, "\\.").replace(/\$$/g, "\\.");
-        const regionRegexmatchArray = hostname.match(regionRegexJs);
-        if (regionRegexmatchArray) return regionRegexmatchArray[0].slice(1, -1);
-    }
-};
-}),
-"./node_modules/@smithy/config-resolver/dist-es/regionInfo/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-}),
-"./node_modules/@smithy/core/dist-es/getSmithyContext.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
 
 const getSmithyContext = (context)=>context[SMITHY_CONTEXT_KEY] || (context[SMITHY_CONTEXT_KEY] = {});
 }),
-"./node_modules/@smithy/core/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   DefaultIdentityProviderConfig: function() { return /* reexport safe */ _util_identity_and_auth__WEBPACK_IMPORTED_MODULE_2__.DefaultIdentityProviderConfig; },
   NoAuthSigner: function() { return /* reexport safe */ _util_identity_and_auth__WEBPACK_IMPORTED_MODULE_2__.NoAuthSigner; },
+  createPaginator: function() { return /* reexport safe */ _pagination_createPaginator__WEBPACK_IMPORTED_MODULE_6__.createPaginator; },
   doesIdentityRequireRefresh: function() { return /* reexport safe */ _util_identity_and_auth__WEBPACK_IMPORTED_MODULE_2__.doesIdentityRequireRefresh; },
   getHttpAuthSchemeEndpointRuleSetPlugin: function() { return /* reexport safe */ _middleware_http_auth_scheme__WEBPACK_IMPORTED_MODULE_0__.getHttpAuthSchemeEndpointRuleSetPlugin; },
   getHttpSigningPlugin: function() { return /* reexport safe */ _middleware_http_signing__WEBPACK_IMPORTED_MODULE_1__.getHttpSigningPlugin; },
@@ -13912,12 +11784,13 @@ __webpack_require__.d(__webpack_exports__, {
   normalizeProvider: function() { return /* reexport safe */ _normalizeProvider__WEBPACK_IMPORTED_MODULE_4__.normalizeProvider; },
   requestBuilder: function() { return /* reexport safe */ _protocols_requestBuilder__WEBPACK_IMPORTED_MODULE_5__.requestBuilder; }
 });
-/* harmony import */var _middleware_http_auth_scheme__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./middleware-http-auth-scheme */"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/index.js");
-/* harmony import */var _middleware_http_signing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./middleware-http-signing */"./node_modules/@smithy/core/dist-es/middleware-http-signing/index.js");
-/* harmony import */var _util_identity_and_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util-identity-and-auth */"./node_modules/@smithy/core/dist-es/util-identity-and-auth/index.js");
-/* harmony import */var _getSmithyContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getSmithyContext */"./node_modules/@smithy/core/dist-es/getSmithyContext.js");
-/* harmony import */var _normalizeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./normalizeProvider */"./node_modules/@smithy/core/dist-es/normalizeProvider.js");
-/* harmony import */var _protocols_requestBuilder__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./protocols/requestBuilder */"./node_modules/@smithy/core/dist-es/protocols/requestBuilder.js");
+/* harmony import */var _middleware_http_auth_scheme__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./middleware-http-auth-scheme */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/index.js");
+/* harmony import */var _middleware_http_signing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./middleware-http-signing */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-signing/index.js");
+/* harmony import */var _util_identity_and_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util-identity-and-auth */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/index.js");
+/* harmony import */var _getSmithyContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getSmithyContext */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/getSmithyContext.js");
+/* harmony import */var _normalizeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./normalizeProvider */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/normalizeProvider.js");
+/* harmony import */var _protocols_requestBuilder__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./protocols/requestBuilder */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/protocols/requestBuilder.js");
+/* harmony import */var _pagination_createPaginator__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pagination/createPaginator */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/pagination/createPaginator.js");
 
 
 
@@ -13926,14 +11799,13 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/getHttpAuthSchemeEndpointRuleSetPlugin.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/getHttpAuthSchemeEndpointRuleSetPlugin.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getHttpAuthSchemeEndpointRuleSetPlugin: function() { return getHttpAuthSchemeEndpointRuleSetPlugin; }
 });
-/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/@smithy/middleware-endpoint/dist-es/index.js");
-/* harmony import */var _httpAuthSchemeMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./httpAuthSchemeMiddleware */"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/httpAuthSchemeMiddleware.js");
+/* harmony import */var _smithy_middleware_endpoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-endpoint */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js");
+/* harmony import */var _httpAuthSchemeMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./httpAuthSchemeMiddleware */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/httpAuthSchemeMiddleware.js");
 
 
 const httpAuthSchemeEndpointRuleSetMiddlewareOptions = {
@@ -13955,11 +11827,10 @@ const getHttpAuthSchemeEndpointRuleSetPlugin = (config, { httpAuthSchemeParamete
         }
     });
 }),
-"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/getHttpAuthSchemePlugin.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/getHttpAuthSchemePlugin.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _httpAuthSchemeMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpAuthSchemeMiddleware */"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/httpAuthSchemeMiddleware.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _httpAuthSchemeMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpAuthSchemeMiddleware */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/httpAuthSchemeMiddleware.js");
 
 
 const httpAuthSchemeMiddlewareOptions = {
@@ -13981,14 +11852,13 @@ const getHttpAuthSchemePlugin = (config, { httpAuthSchemeParametersProvider, ide
         }
     });
 }),
-"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/httpAuthSchemeMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/httpAuthSchemeMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   httpAuthSchemeMiddleware: function() { return httpAuthSchemeMiddleware; }
 });
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
 
 
 function convertHttpAuthSchemesToMap(httpAuthSchemes) {
@@ -14026,27 +11896,25 @@ const httpAuthSchemeMiddleware = (config, mwOptions)=>(next, context)=>async (ar
             return next(args);
         };
 }),
-"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getHttpAuthSchemeEndpointRuleSetPlugin: function() { return /* reexport safe */ _getHttpAuthSchemeEndpointRuleSetPlugin__WEBPACK_IMPORTED_MODULE_1__.getHttpAuthSchemeEndpointRuleSetPlugin; }
 });
-/* harmony import */var _httpAuthSchemeMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpAuthSchemeMiddleware */"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/httpAuthSchemeMiddleware.js");
-/* harmony import */var _getHttpAuthSchemeEndpointRuleSetPlugin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getHttpAuthSchemeEndpointRuleSetPlugin */"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/getHttpAuthSchemeEndpointRuleSetPlugin.js");
-/* harmony import */var _getHttpAuthSchemePlugin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getHttpAuthSchemePlugin */"./node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/getHttpAuthSchemePlugin.js");
+/* harmony import */var _httpAuthSchemeMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpAuthSchemeMiddleware */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/httpAuthSchemeMiddleware.js");
+/* harmony import */var _getHttpAuthSchemeEndpointRuleSetPlugin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getHttpAuthSchemeEndpointRuleSetPlugin */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/getHttpAuthSchemeEndpointRuleSetPlugin.js");
+/* harmony import */var _getHttpAuthSchemePlugin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getHttpAuthSchemePlugin */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-auth-scheme/getHttpAuthSchemePlugin.js");
 
 
 
 }),
-"./node_modules/@smithy/core/dist-es/middleware-http-signing/getHttpSigningMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-signing/getHttpSigningMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getHttpSigningPlugin: function() { return getHttpSigningPlugin; }
 });
-/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/@smithy/middleware-retry/dist-es/index.js");
-/* harmony import */var _httpSigningMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./httpSigningMiddleware */"./node_modules/@smithy/core/dist-es/middleware-http-signing/httpSigningMiddleware.js");
+/* harmony import */var _smithy_middleware_retry__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-retry */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/index.js");
+/* harmony import */var _httpSigningMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./httpSigningMiddleware */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-signing/httpSigningMiddleware.js");
 
 
 const httpSigningMiddlewareOptions = {
@@ -14070,15 +11938,14 @@ const getHttpSigningPlugin = (config)=>({
         }
     });
 }),
-"./node_modules/@smithy/core/dist-es/middleware-http-signing/httpSigningMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-signing/httpSigningMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   httpSigningMiddleware: function() { return httpSigningMiddleware; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
 
 
 
@@ -14100,20 +11967,18 @@ const httpSigningMiddleware = (config)=>(next, context)=>async (args)=>{
             return output;
         };
 }),
-"./node_modules/@smithy/core/dist-es/middleware-http-signing/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-signing/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getHttpSigningPlugin: function() { return /* reexport safe */ _getHttpSigningMiddleware__WEBPACK_IMPORTED_MODULE_1__.getHttpSigningPlugin; }
 });
-/* harmony import */var _httpSigningMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpSigningMiddleware */"./node_modules/@smithy/core/dist-es/middleware-http-signing/httpSigningMiddleware.js");
-/* harmony import */var _getHttpSigningMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getHttpSigningMiddleware */"./node_modules/@smithy/core/dist-es/middleware-http-signing/getHttpSigningMiddleware.js");
+/* harmony import */var _httpSigningMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpSigningMiddleware */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-signing/httpSigningMiddleware.js");
+/* harmony import */var _getHttpSigningMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getHttpSigningMiddleware */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/middleware-http-signing/getHttpSigningMiddleware.js");
 
 
 }),
-"./node_modules/@smithy/core/dist-es/normalizeProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/normalizeProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   normalizeProvider: function() { return normalizeProvider; }
 });
@@ -14123,9 +11988,11 @@ const normalizeProvider = (input)=>{
     return ()=>promisified;
 };
 }),
-"./node_modules/@smithy/core/dist-es/pagination/createPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/pagination/createPaginator.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
+__webpack_require__.d(__webpack_exports__, {
+  createPaginator: function() { return createPaginator; }
+});
 const makePagedClientRequest = async (CommandCtor, client, input, ...args)=>{
     return await client.send(new CommandCtor(input), ...args);
 };
@@ -14148,14 +12015,13 @@ function createPaginator(ClientCtor, CommandCtor, inputTokenName, outputTokenNam
     };
 }
 }),
-"./node_modules/@smithy/core/dist-es/protocols/requestBuilder.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/protocols/requestBuilder.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   requestBuilder: function() { return requestBuilder; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
 
 
 function requestBuilder(input, context) {
@@ -14222,9 +12088,8 @@ class RequestBuilder {
     }
 }
 }),
-"./node_modules/@smithy/core/dist-es/util-identity-and-auth/DefaultIdentityProviderConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/DefaultIdentityProviderConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   DefaultIdentityProviderConfig: function() { return DefaultIdentityProviderConfig; }
 });
@@ -14238,10 +12103,9 @@ class DefaultIdentityProviderConfig {
     }
 }
 }),
-"./node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/httpApiKeyAuth.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/httpApiKeyAuth.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
 
 class HttpApiKeyAuthSigner {
     async sign(httpRequest, identity, signingProperties) {
@@ -14257,33 +12121,19 @@ class HttpApiKeyAuthSigner {
     }
 }
 }),
-"./node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/httpBearerAuth.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-class HttpBearerAuthSigner {
-    async sign(httpRequest, identity, signingProperties) {
-        const clonedRequest = httpRequest.clone();
-        if (!identity.token) throw new Error("request could not be signed with `token` since the `token` is not defined");
-        clonedRequest.headers["Authorization"] = `Bearer ${identity.token}`;
-        return clonedRequest;
-    }
-}
-}),
-"./node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NoAuthSigner: function() { return /* reexport safe */ _noAuth__WEBPACK_IMPORTED_MODULE_2__.NoAuthSigner; }
 });
-/* harmony import */var _httpApiKeyAuth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpApiKeyAuth */"./node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/httpApiKeyAuth.js");
-/* harmony import */var _noAuth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./noAuth */"./node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/noAuth.js");
+/* harmony import */var _httpApiKeyAuth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpApiKeyAuth */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/httpApiKeyAuth.js");
+/* harmony import */var _noAuth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./noAuth */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/noAuth.js");
 
 
 
 }),
-"./node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/noAuth.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/noAuth.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NoAuthSigner: function() { return NoAuthSigner; }
 });
@@ -14293,9 +12143,8 @@ class NoAuthSigner {
     }
 }
 }),
-"./node_modules/@smithy/core/dist-es/util-identity-and-auth/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   DefaultIdentityProviderConfig: function() { return /* reexport safe */ _DefaultIdentityProviderConfig__WEBPACK_IMPORTED_MODULE_0__.DefaultIdentityProviderConfig; },
   NoAuthSigner: function() { return /* reexport safe */ _httpAuthSchemes__WEBPACK_IMPORTED_MODULE_1__.NoAuthSigner; },
@@ -14303,16 +12152,15 @@ __webpack_require__.d(__webpack_exports__, {
   isIdentityExpired: function() { return /* reexport safe */ _memoizeIdentityProvider__WEBPACK_IMPORTED_MODULE_2__.isIdentityExpired; },
   memoizeIdentityProvider: function() { return /* reexport safe */ _memoizeIdentityProvider__WEBPACK_IMPORTED_MODULE_2__.memoizeIdentityProvider; }
 });
-/* harmony import */var _DefaultIdentityProviderConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DefaultIdentityProviderConfig */"./node_modules/@smithy/core/dist-es/util-identity-and-auth/DefaultIdentityProviderConfig.js");
-/* harmony import */var _httpAuthSchemes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./httpAuthSchemes */"./node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/index.js");
-/* harmony import */var _memoizeIdentityProvider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./memoizeIdentityProvider */"./node_modules/@smithy/core/dist-es/util-identity-and-auth/memoizeIdentityProvider.js");
+/* harmony import */var _DefaultIdentityProviderConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DefaultIdentityProviderConfig */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/DefaultIdentityProviderConfig.js");
+/* harmony import */var _httpAuthSchemes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./httpAuthSchemes */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/httpAuthSchemes/index.js");
+/* harmony import */var _memoizeIdentityProvider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./memoizeIdentityProvider */"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/memoizeIdentityProvider.js");
 
 
 
 }),
-"./node_modules/@smithy/core/dist-es/util-identity-and-auth/memoizeIdentityProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+core@1.3.1/node_modules/@smithy/core/dist-es/util-identity-and-auth/memoizeIdentityProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   doesIdentityRequireRefresh: function() { return doesIdentityRequireRefresh; },
   isIdentityExpired: function() { return isIdentityExpired; },
@@ -14359,9 +12207,8 @@ const memoizeIdentityProvider = (provider, isExpired, requiresRefresh)=>{
     };
 };
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/config/Endpoint.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/config/Endpoint.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Endpoint: function() { return Endpoint; }
 });
@@ -14371,9 +12218,8 @@ var Endpoint;
     Endpoint["IPv6"] = "http://[fd00:ec2::254]";
 })(Endpoint || (Endpoint = {}));
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointConfigOptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointConfigOptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ENDPOINT_CONFIG_OPTIONS: function() { return ENDPOINT_CONFIG_OPTIONS; }
 });
@@ -14385,9 +12231,8 @@ const ENDPOINT_CONFIG_OPTIONS = {
     default: undefined
 };
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointMode.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointMode.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   EndpointMode: function() { return EndpointMode; }
 });
@@ -14397,13 +12242,12 @@ var EndpointMode;
     EndpointMode["IPv6"] = "IPv6";
 })(EndpointMode || (EndpointMode = {}));
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointModeConfigOptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointModeConfigOptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ENDPOINT_MODE_CONFIG_OPTIONS: function() { return ENDPOINT_MODE_CONFIG_OPTIONS; }
 });
-/* harmony import */var _EndpointMode__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EndpointMode */"./node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointMode.js");
+/* harmony import */var _EndpointMode__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EndpointMode */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointMode.js");
 
 const ENV_ENDPOINT_MODE_NAME = "AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE";
 const CONFIG_ENDPOINT_MODE_NAME = "ec2_metadata_service_endpoint_mode";
@@ -14413,13 +12257,12 @@ const ENDPOINT_MODE_CONFIG_OPTIONS = {
     default: _EndpointMode__WEBPACK_IMPORTED_MODULE_0__.EndpointMode.IPv4
 };
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/error/InstanceMetadataV1FallbackError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/error/InstanceMetadataV1FallbackError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   InstanceMetadataV1FallbackError: function() { return InstanceMetadataV1FallbackError; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 
 class InstanceMetadataV1FallbackError extends _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__.CredentialsProviderError {
     constructor(message, tryNextLink = true){
@@ -14430,21 +12273,20 @@ class InstanceMetadataV1FallbackError extends _smithy_property_provider__WEBPACK
     }
 }
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/fromContainerMetadata.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/fromContainerMetadata.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ENV_CMDS_FULL_URI: function() { return ENV_CMDS_FULL_URI; },
   ENV_CMDS_RELATIVE_URI: function() { return ENV_CMDS_RELATIVE_URI; },
   fromContainerMetadata: function() { return fromContainerMetadata; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 /* harmony import */var url__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! url */"url");
 /* harmony import */var url__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(url__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */var _remoteProvider_httpRequest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./remoteProvider/httpRequest */"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/httpRequest.js");
-/* harmony import */var _remoteProvider_ImdsCredentials__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./remoteProvider/ImdsCredentials */"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/ImdsCredentials.js");
-/* harmony import */var _remoteProvider_RemoteProviderInit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./remoteProvider/RemoteProviderInit */"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/RemoteProviderInit.js");
-/* harmony import */var _remoteProvider_retry__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./remoteProvider/retry */"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/retry.js");
+/* harmony import */var _remoteProvider_httpRequest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./remoteProvider/httpRequest */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/httpRequest.js");
+/* harmony import */var _remoteProvider_ImdsCredentials__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./remoteProvider/ImdsCredentials */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/ImdsCredentials.js");
+/* harmony import */var _remoteProvider_RemoteProviderInit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./remoteProvider/RemoteProviderInit */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/RemoteProviderInit.js");
+/* harmony import */var _remoteProvider_retry__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./remoteProvider/retry */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/retry.js");
 
 
 
@@ -14500,21 +12342,20 @@ const getCmdsUri = async ()=>{
     throw new _smithy_property_provider__WEBPACK_IMPORTED_MODULE_5__.CredentialsProviderError("The container metadata credential provider cannot be used unless" + ` the ${ENV_CMDS_RELATIVE_URI} or ${ENV_CMDS_FULL_URI} environment` + " variable is set", false);
 };
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/fromInstanceMetadata.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/fromInstanceMetadata.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromInstanceMetadata: function() { return fromInstanceMetadata; }
 });
-/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/@smithy/node-config-provider/dist-es/index.js");
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
-/* harmony import */var _error_InstanceMetadataV1FallbackError__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./error/InstanceMetadataV1FallbackError */"./node_modules/@smithy/credential-provider-imds/dist-es/error/InstanceMetadataV1FallbackError.js");
-/* harmony import */var _remoteProvider_httpRequest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./remoteProvider/httpRequest */"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/httpRequest.js");
-/* harmony import */var _remoteProvider_ImdsCredentials__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./remoteProvider/ImdsCredentials */"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/ImdsCredentials.js");
-/* harmony import */var _remoteProvider_RemoteProviderInit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./remoteProvider/RemoteProviderInit */"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/RemoteProviderInit.js");
-/* harmony import */var _remoteProvider_retry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./remoteProvider/retry */"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/retry.js");
-/* harmony import */var _utils_getInstanceMetadataEndpoint__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/getInstanceMetadataEndpoint */"./node_modules/@smithy/credential-provider-imds/dist-es/utils/getInstanceMetadataEndpoint.js");
-/* harmony import */var _utils_staticStabilityProvider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/staticStabilityProvider */"./node_modules/@smithy/credential-provider-imds/dist-es/utils/staticStabilityProvider.js");
+/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _error_InstanceMetadataV1FallbackError__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./error/InstanceMetadataV1FallbackError */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/error/InstanceMetadataV1FallbackError.js");
+/* harmony import */var _remoteProvider_httpRequest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./remoteProvider/httpRequest */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/httpRequest.js");
+/* harmony import */var _remoteProvider_ImdsCredentials__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./remoteProvider/ImdsCredentials */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/ImdsCredentials.js");
+/* harmony import */var _remoteProvider_RemoteProviderInit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./remoteProvider/RemoteProviderInit */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/RemoteProviderInit.js");
+/* harmony import */var _remoteProvider_retry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./remoteProvider/retry */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/retry.js");
+/* harmony import */var _utils_getInstanceMetadataEndpoint__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/getInstanceMetadataEndpoint */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/utils/getInstanceMetadataEndpoint.js");
+/* harmony import */var _utils_staticStabilityProvider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/staticStabilityProvider */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/utils/staticStabilityProvider.js");
 
 
 
@@ -14647,9 +12488,8 @@ const getCredentialsFromProfile = async (profile, options)=>{
     return (0, _remoteProvider_ImdsCredentials__WEBPACK_IMPORTED_MODULE_8__.fromImdsCredentials)(credsResponse);
 };
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ENV_CMDS_FULL_URI: function() { return /* reexport safe */ _fromContainerMetadata__WEBPACK_IMPORTED_MODULE_0__.ENV_CMDS_FULL_URI; },
   ENV_CMDS_RELATIVE_URI: function() { return /* reexport safe */ _fromContainerMetadata__WEBPACK_IMPORTED_MODULE_0__.ENV_CMDS_RELATIVE_URI; },
@@ -14658,10 +12498,10 @@ __webpack_require__.d(__webpack_exports__, {
   getInstanceMetadataEndpoint: function() { return /* reexport safe */ _utils_getInstanceMetadataEndpoint__WEBPACK_IMPORTED_MODULE_5__.getInstanceMetadataEndpoint; },
   httpRequest: function() { return /* reexport safe */ _remoteProvider_httpRequest__WEBPACK_IMPORTED_MODULE_4__.httpRequest; }
 });
-/* harmony import */var _fromContainerMetadata__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromContainerMetadata */"./node_modules/@smithy/credential-provider-imds/dist-es/fromContainerMetadata.js");
-/* harmony import */var _fromInstanceMetadata__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fromInstanceMetadata */"./node_modules/@smithy/credential-provider-imds/dist-es/fromInstanceMetadata.js");
-/* harmony import */var _remoteProvider_httpRequest__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./remoteProvider/httpRequest */"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/httpRequest.js");
-/* harmony import */var _utils_getInstanceMetadataEndpoint__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils/getInstanceMetadataEndpoint */"./node_modules/@smithy/credential-provider-imds/dist-es/utils/getInstanceMetadataEndpoint.js");
+/* harmony import */var _fromContainerMetadata__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromContainerMetadata */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/fromContainerMetadata.js");
+/* harmony import */var _fromInstanceMetadata__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fromInstanceMetadata */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/fromInstanceMetadata.js");
+/* harmony import */var _remoteProvider_httpRequest__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./remoteProvider/httpRequest */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/httpRequest.js");
+/* harmony import */var _utils_getInstanceMetadataEndpoint__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils/getInstanceMetadataEndpoint */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/utils/getInstanceMetadataEndpoint.js");
 
 
 
@@ -14669,9 +12509,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/ImdsCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/ImdsCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromImdsCredentials: function() { return fromImdsCredentials; },
   isImdsCredentials: function() { return isImdsCredentials; }
@@ -14684,9 +12523,8 @@ const fromImdsCredentials = (creds)=>({
         expiration: new Date(creds.Expiration)
     });
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/RemoteProviderInit.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/RemoteProviderInit.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   providerConfigFromInit: function() { return providerConfigFromInit; }
 });
@@ -14697,13 +12535,12 @@ const providerConfigFromInit = ({ maxRetries = DEFAULT_MAX_RETRIES, timeout = DE
         timeout
     });
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/httpRequest.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/httpRequest.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   httpRequest: function() { return httpRequest; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/ProviderError.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/ProviderError.js");
 /* harmony import */var buffer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! buffer */"buffer");
 /* harmony import */var buffer__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(buffer__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */var http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! http */"http");
@@ -14747,9 +12584,8 @@ function httpRequest(options) {
     });
 }
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/retry.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/remoteProvider/retry.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   retry: function() { return retry; }
 });
@@ -14759,14 +12595,8 @@ const retry = (toRetry, maxRetries)=>{
     return promise;
 };
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/utils/getExtendedInstanceMetadataCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/credential-provider-imds/dist-es/utils/getExtendedInstanceMetadataCredentials.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getExtendedInstanceMetadataCredentials: function() { return getExtendedInstanceMetadataCredentials; }
 });
@@ -14787,18 +12617,17 @@ const getExtendedInstanceMetadataCredentials = (credentials, logger)=>{
     };
 };
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/utils/getInstanceMetadataEndpoint.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/utils/getInstanceMetadataEndpoint.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getInstanceMetadataEndpoint: function() { return getInstanceMetadataEndpoint; }
 });
-/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/@smithy/node-config-provider/dist-es/index.js");
-/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/@smithy/url-parser/dist-es/index.js");
-/* harmony import */var _config_Endpoint__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/Endpoint */"./node_modules/@smithy/credential-provider-imds/dist-es/config/Endpoint.js");
-/* harmony import */var _config_EndpointConfigOptions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config/EndpointConfigOptions */"./node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointConfigOptions.js");
-/* harmony import */var _config_EndpointMode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/EndpointMode */"./node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointMode.js");
-/* harmony import */var _config_EndpointModeConfigOptions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config/EndpointModeConfigOptions */"./node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointModeConfigOptions.js");
+/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/.pnpm/@smithy+url-parser@2.1.1/node_modules/@smithy/url-parser/dist-es/index.js");
+/* harmony import */var _config_Endpoint__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/Endpoint */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/config/Endpoint.js");
+/* harmony import */var _config_EndpointConfigOptions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config/EndpointConfigOptions */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointConfigOptions.js");
+/* harmony import */var _config_EndpointMode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/EndpointMode */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointMode.js");
+/* harmony import */var _config_EndpointModeConfigOptions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config/EndpointModeConfigOptions */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/config/EndpointModeConfigOptions.js");
 
 
 
@@ -14819,13 +12648,12 @@ const getFromEndpointModeConfig = async ()=>{
     }
 };
 }),
-"./node_modules/@smithy/credential-provider-imds/dist-es/utils/staticStabilityProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/utils/staticStabilityProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   staticStabilityProvider: function() { return staticStabilityProvider; }
 });
-/* harmony import */var _getExtendedInstanceMetadataCredentials__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getExtendedInstanceMetadataCredentials */"./node_modules/@smithy/credential-provider-imds/dist-es/utils/getExtendedInstanceMetadataCredentials.js");
+/* harmony import */var _getExtendedInstanceMetadataCredentials__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getExtendedInstanceMetadataCredentials */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/utils/getExtendedInstanceMetadataCredentials.js");
 
 const staticStabilityProvider = (provider, options = {})=>{
     const logger = options?.logger || console;
@@ -14846,12 +12674,11 @@ const staticStabilityProvider = (provider, options = {})=>{
     };
 };
 }),
-"./node_modules/@smithy/eventstream-codec/dist-es/EventStreamCodec.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/EventStreamCodec.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _aws_crypto_crc32__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-crypto/crc32 */"./node_modules/@aws-crypto/crc32/build/index.js");
-/* harmony import */var _HeaderMarshaller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderMarshaller */"./node_modules/@smithy/eventstream-codec/dist-es/HeaderMarshaller.js");
-/* harmony import */var _splitMessage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./splitMessage */"./node_modules/@smithy/eventstream-codec/dist-es/splitMessage.js");
+/* harmony import */var _aws_crypto_crc32__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-crypto/crc32 */"./node_modules/.pnpm/@aws-crypto+crc32@3.0.0/node_modules/@aws-crypto/crc32/build/index.js");
+/* harmony import */var _HeaderMarshaller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderMarshaller */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/HeaderMarshaller.js");
+/* harmony import */var _splitMessage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./splitMessage */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/splitMessage.js");
 
 
 
@@ -14918,14 +12745,13 @@ class EventStreamCodec {
     }
 }
 }),
-"./node_modules/@smithy/eventstream-codec/dist-es/HeaderMarshaller.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/HeaderMarshaller.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   HeaderMarshaller: function() { return HeaderMarshaller; }
 });
-/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/@smithy/util-hex-encoding/dist-es/index.js");
-/* harmony import */var _Int64__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Int64 */"./node_modules/@smithy/eventstream-codec/dist-es/Int64.js");
+/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/.pnpm/@smithy+util-hex-encoding@2.1.1/node_modules/@smithy/util-hex-encoding/dist-es/index.js");
+/* harmony import */var _Int64__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Int64 */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/Int64.js");
 
 
 class HeaderMarshaller {
@@ -15114,13 +12940,12 @@ const TIMESTAMP_TAG = "timestamp";
 const UUID_TAG = "uuid";
 const UUID_PATTERN = /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/;
 }),
-"./node_modules/@smithy/eventstream-codec/dist-es/Int64.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/Int64.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Int64: function() { return Int64; }
 });
-/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/@smithy/util-hex-encoding/dist-es/index.js");
+/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/.pnpm/@smithy+util-hex-encoding@2.1.1/node_modules/@smithy/util-hex-encoding/dist-es/index.js");
 
 class Int64 {
     constructor(bytes){
@@ -15152,14 +12977,8 @@ function negate(bytes) {
     }
 }
 }),
-"./node_modules/@smithy/eventstream-codec/dist-es/Message.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/MessageDecoderStream.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/eventstream-codec/dist-es/MessageDecoderStream.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 class MessageDecoderStream {
     constructor(options){
         this.options = options;
@@ -15175,9 +12994,8 @@ class MessageDecoderStream {
     }
 }
 }),
-"./node_modules/@smithy/eventstream-codec/dist-es/MessageEncoderStream.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/MessageEncoderStream.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 class MessageEncoderStream {
     constructor(options){
         this.options = options;
@@ -15194,9 +13012,8 @@ class MessageEncoderStream {
     }
 }
 }),
-"./node_modules/@smithy/eventstream-codec/dist-es/SmithyMessageDecoderStream.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/SmithyMessageDecoderStream.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 class SmithyMessageDecoderStream {
     constructor(options){
         this.options = options;
@@ -15213,9 +13030,8 @@ class SmithyMessageDecoderStream {
     }
 }
 }),
-"./node_modules/@smithy/eventstream-codec/dist-es/SmithyMessageEncoderStream.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/SmithyMessageEncoderStream.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 class SmithyMessageEncoderStream {
     constructor(options){
         this.options = options;
@@ -15231,19 +13047,18 @@ class SmithyMessageEncoderStream {
     }
 }
 }),
-"./node_modules/@smithy/eventstream-codec/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   HeaderMarshaller: function() { return /* reexport safe */ _HeaderMarshaller__WEBPACK_IMPORTED_MODULE_1__.HeaderMarshaller; }
 });
-/* harmony import */var _EventStreamCodec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EventStreamCodec */"./node_modules/@smithy/eventstream-codec/dist-es/EventStreamCodec.js");
-/* harmony import */var _HeaderMarshaller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderMarshaller */"./node_modules/@smithy/eventstream-codec/dist-es/HeaderMarshaller.js");
-/* harmony import */var _Int64__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Int64 */"./node_modules/@smithy/eventstream-codec/dist-es/Int64.js");
-/* harmony import */var _MessageDecoderStream__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MessageDecoderStream */"./node_modules/@smithy/eventstream-codec/dist-es/MessageDecoderStream.js");
-/* harmony import */var _MessageEncoderStream__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./MessageEncoderStream */"./node_modules/@smithy/eventstream-codec/dist-es/MessageEncoderStream.js");
-/* harmony import */var _SmithyMessageDecoderStream__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SmithyMessageDecoderStream */"./node_modules/@smithy/eventstream-codec/dist-es/SmithyMessageDecoderStream.js");
-/* harmony import */var _SmithyMessageEncoderStream__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SmithyMessageEncoderStream */"./node_modules/@smithy/eventstream-codec/dist-es/SmithyMessageEncoderStream.js");
+/* harmony import */var _EventStreamCodec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EventStreamCodec */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/EventStreamCodec.js");
+/* harmony import */var _HeaderMarshaller__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderMarshaller */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/HeaderMarshaller.js");
+/* harmony import */var _Int64__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Int64 */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/Int64.js");
+/* harmony import */var _MessageDecoderStream__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MessageDecoderStream */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/MessageDecoderStream.js");
+/* harmony import */var _MessageEncoderStream__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./MessageEncoderStream */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/MessageEncoderStream.js");
+/* harmony import */var _SmithyMessageDecoderStream__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SmithyMessageDecoderStream */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/SmithyMessageDecoderStream.js");
+/* harmony import */var _SmithyMessageEncoderStream__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SmithyMessageEncoderStream */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/SmithyMessageEncoderStream.js");
 
 
 
@@ -15253,10 +13068,9 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/eventstream-codec/dist-es/splitMessage.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/splitMessage.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _aws_crypto_crc32__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-crypto/crc32 */"./node_modules/@aws-crypto/crc32/build/index.js");
+/* harmony import */var _aws_crypto_crc32__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-crypto/crc32 */"./node_modules/.pnpm/@aws-crypto+crc32@3.0.0/node_modules/@aws-crypto/crc32/build/index.js");
 
 const PRELUDE_MEMBER_LENGTH = 4;
 const PRELUDE_LENGTH = PRELUDE_MEMBER_LENGTH * 2;
@@ -15280,14 +13094,13 @@ function splitMessage({ byteLength, byteOffset, buffer }) {
     };
 }
 }),
-"./node_modules/@smithy/hash-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+hash-node@2.1.1/node_modules/@smithy/hash-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Hash: function() { return Hash; }
 });
-/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/@smithy/util-buffer-from/dist-es/index.js");
-/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/@smithy/util-utf8/dist-es/index.js");
+/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/.pnpm/@smithy+util-buffer-from@2.1.1/node_modules/@smithy/util-buffer-from/dist-es/index.js");
+/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js");
 /* harmony import */var buffer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! buffer */"buffer");
 /* harmony import */var buffer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(buffer__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */var crypto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! crypto */"crypto");
@@ -15319,21 +13132,19 @@ function castSourceData(toCast, encoding) {
     return (0, _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__.fromArrayBuffer)(toCast);
 }
 }),
-"./node_modules/@smithy/is-array-buffer/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+is-array-buffer@2.1.1/node_modules/@smithy/is-array-buffer/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isArrayBuffer: function() { return isArrayBuffer; }
 });
 const isArrayBuffer = (arg)=>typeof ArrayBuffer === "function" && arg instanceof ArrayBuffer || Object.prototype.toString.call(arg) === "[object ArrayBuffer]";
 }),
-"./node_modules/@smithy/middleware-content-length/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-content-length@2.1.1/node_modules/@smithy/middleware-content-length/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getContentLengthPlugin: function() { return getContentLengthPlugin; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
 
 const CONTENT_LENGTH_HEADER = "content-length";
 function contentLengthMiddleware(bodyLengthChecker) {
@@ -15370,9 +13181,8 @@ const getContentLengthPlugin = (options)=>({
         }
     });
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/createConfigValueProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/createConfigValueProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   createConfigValueProvider: function() { return createConfigValueProvider; }
 });
@@ -15401,28 +13211,26 @@ const createConfigValueProvider = (configKey, canonicalEndpointParamKey, config)
     return configProvider;
 };
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getEndpointFromConfig: function() { return getEndpointFromConfig; }
 });
-/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/@smithy/node-config-provider/dist-es/index.js");
-/* harmony import */var _getEndpointUrlConfig__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getEndpointUrlConfig */"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointUrlConfig.js");
+/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js");
+/* harmony import */var _getEndpointUrlConfig__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getEndpointUrlConfig */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointUrlConfig.js");
 
 
 const getEndpointFromConfig = async (serviceId)=>(0, _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_0__.loadConfig)((0, _getEndpointUrlConfig__WEBPACK_IMPORTED_MODULE_1__.getEndpointUrlConfig)(serviceId))();
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromInstructions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromInstructions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getEndpointFromInstructions: function() { return getEndpointFromInstructions; }
 });
-/* harmony import */var _service_customizations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../service-customizations */"./node_modules/@smithy/middleware-endpoint/dist-es/service-customizations/s3.js");
-/* harmony import */var _createConfigValueProvider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./createConfigValueProvider */"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/createConfigValueProvider.js");
-/* harmony import */var _getEndpointFromConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getEndpointFromConfig */"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromConfig.js");
-/* harmony import */var _toEndpointV1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toEndpointV1 */"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/toEndpointV1.js");
+/* harmony import */var _service_customizations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../service-customizations */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/service-customizations/s3.js");
+/* harmony import */var _createConfigValueProvider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./createConfigValueProvider */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/createConfigValueProvider.js");
+/* harmony import */var _getEndpointFromConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getEndpointFromConfig */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromConfig.js");
+/* harmony import */var _toEndpointV1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toEndpointV1 */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/toEndpointV1.js");
 
 
 
@@ -15459,13 +13267,12 @@ const resolveParams = async (commandInput, instructionsSupplier, clientConfig)=>
     return endpointParams;
 };
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointUrlConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointUrlConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getEndpointUrlConfig: function() { return getEndpointUrlConfig; }
 });
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
 
 const ENV_ENDPOINT_URL = "AWS_ENDPOINT_URL";
 const CONFIG_ENDPOINT_URL = "endpoint_url";
@@ -15503,20 +13310,18 @@ const getEndpointUrlConfig = (serviceId)=>({
         default: undefined
     });
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/index.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _getEndpointFromInstructions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getEndpointFromInstructions */"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromInstructions.js");
+/* harmony import */var _getEndpointFromInstructions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getEndpointFromInstructions */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromInstructions.js");
 
 
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/toEndpointV1.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/toEndpointV1.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   toEndpointV1: function() { return toEndpointV1; }
 });
-/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/@smithy/url-parser/dist-es/index.js");
+/* harmony import */var _smithy_url_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/url-parser */"./node_modules/.pnpm/@smithy+url-parser@2.1.1/node_modules/@smithy/url-parser/dist-es/index.js");
 
 const toEndpointV1 = (endpoint)=>{
     if (typeof endpoint === "object") {
@@ -15526,14 +13331,13 @@ const toEndpointV1 = (endpoint)=>{
     return (0, _smithy_url_parser__WEBPACK_IMPORTED_MODULE_0__.parseUrl)(endpoint);
 };
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/endpointMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/endpointMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   endpointMiddleware: function() { return endpointMiddleware; }
 });
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
-/* harmony import */var _adaptors_getEndpointFromInstructions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./adaptors/getEndpointFromInstructions */"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromInstructions.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _adaptors_getEndpointFromInstructions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./adaptors/getEndpointFromInstructions */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/getEndpointFromInstructions.js");
 
 
 const endpointMiddleware = ({ config, instructions })=>{
@@ -15567,15 +13371,14 @@ const endpointMiddleware = ({ config, instructions })=>{
         };
 };
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/getEndpointPlugin.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/getEndpointPlugin.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   endpointMiddlewareOptions: function() { return endpointMiddlewareOptions; },
   getEndpointPlugin: function() { return getEndpointPlugin; }
 });
-/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
-/* harmony import */var _endpointMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./endpointMiddleware */"./node_modules/@smithy/middleware-endpoint/dist-es/endpointMiddleware.js");
+/* harmony import */var _smithy_middleware_serde__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/middleware-serde */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js");
+/* harmony import */var _endpointMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./endpointMiddleware */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/endpointMiddleware.js");
 
 
 const endpointMiddlewareOptions = {
@@ -15599,32 +13402,30 @@ const getEndpointPlugin = (config, instructions)=>({
         }
     });
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   endpointMiddlewareOptions: function() { return /* reexport safe */ _getEndpointPlugin__WEBPACK_IMPORTED_MODULE_2__.endpointMiddlewareOptions; },
   getEndpointPlugin: function() { return /* reexport safe */ _getEndpointPlugin__WEBPACK_IMPORTED_MODULE_2__.getEndpointPlugin; },
   resolveEndpointConfig: function() { return /* reexport safe */ _resolveEndpointConfig__WEBPACK_IMPORTED_MODULE_3__.resolveEndpointConfig; }
 });
-/* harmony import */var _adaptors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./adaptors */"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/index.js");
-/* harmony import */var _endpointMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./endpointMiddleware */"./node_modules/@smithy/middleware-endpoint/dist-es/endpointMiddleware.js");
-/* harmony import */var _getEndpointPlugin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getEndpointPlugin */"./node_modules/@smithy/middleware-endpoint/dist-es/getEndpointPlugin.js");
-/* harmony import */var _resolveEndpointConfig__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveEndpointConfig */"./node_modules/@smithy/middleware-endpoint/dist-es/resolveEndpointConfig.js");
+/* harmony import */var _adaptors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./adaptors */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/index.js");
+/* harmony import */var _endpointMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./endpointMiddleware */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/endpointMiddleware.js");
+/* harmony import */var _getEndpointPlugin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getEndpointPlugin */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/getEndpointPlugin.js");
+/* harmony import */var _resolveEndpointConfig__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveEndpointConfig */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/resolveEndpointConfig.js");
 
 
 
 
 
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/resolveEndpointConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/resolveEndpointConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveEndpointConfig: function() { return resolveEndpointConfig; }
 });
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
-/* harmony import */var _adaptors_toEndpointV1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./adaptors/toEndpointV1 */"./node_modules/@smithy/middleware-endpoint/dist-es/adaptors/toEndpointV1.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _adaptors_toEndpointV1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./adaptors/toEndpointV1 */"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/adaptors/toEndpointV1.js");
 
 
 const resolveEndpointConfig = (input)=>{
@@ -15642,14 +13443,8 @@ const resolveEndpointConfig = (input)=>{
     };
 };
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/service-customizations/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-endpoint@2.4.1/node_modules/@smithy/middleware-endpoint/dist-es/service-customizations/s3.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/middleware-endpoint/dist-es/service-customizations/s3.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveParamsForS3: function() { return resolveParamsForS3; }
 });
@@ -15685,16 +13480,10 @@ const isArnBucketName = (bucketName)=>{
     return arn === "arn" && !!partition && !!service && !!account && !!typeOrId;
 };
 }),
-"./node_modules/@smithy/middleware-endpoint/dist-es/types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/AdaptiveRetryStrategy.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/middleware-retry/dist-es/AdaptiveRetryStrategy.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
-/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/@smithy/middleware-retry/dist-es/StandardRetryStrategy.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/StandardRetryStrategy.js");
 
 
 class AdaptiveRetryStrategy extends (/* unused pure expression or super */ null && (StandardRetryStrategy)) {
@@ -15716,13 +13505,12 @@ class AdaptiveRetryStrategy extends (/* unused pure expression or super */ null 
     }
 }
 }),
-"./node_modules/@smithy/middleware-retry/dist-es/StandardRetryStrategy.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/StandardRetryStrategy.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
-/* harmony import */var _defaultRetryQuota__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultRetryQuota */"./node_modules/@smithy/middleware-retry/dist-es/defaultRetryQuota.js");
-/* harmony import */var _delayDecider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./delayDecider */"./node_modules/@smithy/middleware-retry/dist-es/delayDecider.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _defaultRetryQuota__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultRetryQuota */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/defaultRetryQuota.js");
+/* harmony import */var _delayDecider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./delayDecider */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/delayDecider.js");
 
 
 
@@ -15800,16 +13588,15 @@ const getDelayFromRetryAfterHeader = (response)=>{
     return retryAfterDate.getTime() - Date.now();
 };
 }),
-"./node_modules/@smithy/middleware-retry/dist-es/configurations.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/configurations.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODE_MAX_ATTEMPT_CONFIG_OPTIONS: function() { return NODE_MAX_ATTEMPT_CONFIG_OPTIONS; },
   NODE_RETRY_MODE_CONFIG_OPTIONS: function() { return NODE_RETRY_MODE_CONFIG_OPTIONS; },
   resolveRetryConfig: function() { return resolveRetryConfig; }
 });
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
 
 
 const ENV_MAX_ATTEMPTS = "AWS_MAX_ATTEMPTS";
@@ -15853,10 +13640,9 @@ const NODE_RETRY_MODE_CONFIG_OPTIONS = {
     default: _smithy_util_retry__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_RETRY_MODE
 };
 }),
-"./node_modules/@smithy/middleware-retry/dist-es/defaultRetryQuota.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/defaultRetryQuota.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
 
 const getDefaultRetryQuota = (initialRetryTokens, options)=>{
     const MAX_CAPACITY = initialRetryTokens;
@@ -15883,16 +13669,14 @@ const getDefaultRetryQuota = (initialRetryTokens, options)=>{
     });
 };
 }),
-"./node_modules/@smithy/middleware-retry/dist-es/delayDecider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/delayDecider.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
 
 const defaultDelayDecider = (delayBase, attempts)=>Math.floor(Math.min(MAXIMUM_RETRY_DELAY, Math.random() * 2 ** attempts * delayBase));
 }),
-"./node_modules/@smithy/middleware-retry/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODE_MAX_ATTEMPT_CONFIG_OPTIONS: function() { return /* reexport safe */ _configurations__WEBPACK_IMPORTED_MODULE_2__.NODE_MAX_ATTEMPT_CONFIG_OPTIONS; },
   NODE_RETRY_MODE_CONFIG_OPTIONS: function() { return /* reexport safe */ _configurations__WEBPACK_IMPORTED_MODULE_2__.NODE_RETRY_MODE_CONFIG_OPTIONS; },
@@ -15900,12 +13684,12 @@ __webpack_require__.d(__webpack_exports__, {
   resolveRetryConfig: function() { return /* reexport safe */ _configurations__WEBPACK_IMPORTED_MODULE_2__.resolveRetryConfig; },
   retryMiddlewareOptions: function() { return /* reexport safe */ _retryMiddleware__WEBPACK_IMPORTED_MODULE_6__.retryMiddlewareOptions; }
 });
-/* harmony import */var _AdaptiveRetryStrategy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdaptiveRetryStrategy */"./node_modules/@smithy/middleware-retry/dist-es/AdaptiveRetryStrategy.js");
-/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/@smithy/middleware-retry/dist-es/StandardRetryStrategy.js");
-/* harmony import */var _configurations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./configurations */"./node_modules/@smithy/middleware-retry/dist-es/configurations.js");
-/* harmony import */var _delayDecider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./delayDecider */"./node_modules/@smithy/middleware-retry/dist-es/delayDecider.js");
-/* harmony import */var _omitRetryHeadersMiddleware__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./omitRetryHeadersMiddleware */"./node_modules/@smithy/middleware-retry/dist-es/omitRetryHeadersMiddleware.js");
-/* harmony import */var _retryMiddleware__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./retryMiddleware */"./node_modules/@smithy/middleware-retry/dist-es/retryMiddleware.js");
+/* harmony import */var _AdaptiveRetryStrategy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdaptiveRetryStrategy */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/AdaptiveRetryStrategy.js");
+/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/StandardRetryStrategy.js");
+/* harmony import */var _configurations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./configurations */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/configurations.js");
+/* harmony import */var _delayDecider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./delayDecider */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/delayDecider.js");
+/* harmony import */var _omitRetryHeadersMiddleware__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./omitRetryHeadersMiddleware */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/omitRetryHeadersMiddleware.js");
+/* harmony import */var _retryMiddleware__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./retryMiddleware */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/retryMiddleware.js");
 
 
 
@@ -15914,9 +13698,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/middleware-retry/dist-es/isStreamingPayload/isStreamingPayload.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/isStreamingPayload/isStreamingPayload.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isStreamingPayload: function() { return isStreamingPayload; }
 });
@@ -15925,11 +13708,10 @@ __webpack_require__.d(__webpack_exports__, {
 
 const isStreamingPayload = (request)=>request?.body instanceof stream__WEBPACK_IMPORTED_MODULE_0__.Readable || typeof ReadableStream !== "undefined" && request?.body instanceof ReadableStream;
 }),
-"./node_modules/@smithy/middleware-retry/dist-es/omitRetryHeadersMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/omitRetryHeadersMiddleware.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
 
 
 const omitRetryHeadersMiddleware = ()=>(next)=>async (args)=>{
@@ -15957,29 +13739,19 @@ const getOmitRetryHeadersPlugin = (options)=>({
         }
     });
 }),
-"./node_modules/@smithy/middleware-retry/dist-es/retryDecider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/retryMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-const defaultRetryDecider = (error)=>{
-    if (!error) return false;
-    return isRetryableByTrait(error) || isClockSkewError(error) || isThrottlingError(error) || isTransientError(error);
-};
-}),
-"./node_modules/@smithy/middleware-retry/dist-es/retryMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRetryPlugin: function() { return getRetryPlugin; },
   retryMiddlewareOptions: function() { return retryMiddlewareOptions; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_service_error_classification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/service-error-classification */"./node_modules/@smithy/service-error-classification/dist-es/index.js");
-/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/@smithy/smithy-client/dist-es/index.js");
-/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/@smithy/util-retry/dist-es/index.js");
-/* harmony import */var uuid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! uuid */"./node_modules/uuid/dist/esm-node/v4.js");
-/* harmony import */var _isStreamingPayload_isStreamingPayload__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./isStreamingPayload/isStreamingPayload */"./node_modules/@smithy/middleware-retry/dist-es/isStreamingPayload/isStreamingPayload.js");
-/* harmony import */var _util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./util */"./node_modules/@smithy/middleware-retry/dist-es/util.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_service_error_classification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @smithy/service-error-classification */"./node_modules/.pnpm/@smithy+service-error-classification@2.1.1/node_modules/@smithy/service-error-classification/dist-es/index.js");
+/* harmony import */var _smithy_smithy_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/smithy-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js");
+/* harmony import */var _smithy_util_retry__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-retry */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js");
+/* harmony import */var uuid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! uuid */"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/v4.js");
+/* harmony import */var _isStreamingPayload_isStreamingPayload__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./isStreamingPayload/isStreamingPayload */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/isStreamingPayload/isStreamingPayload.js");
+/* harmony import */var _util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./util */"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/util.js");
 
 
 
@@ -16081,9 +13853,8 @@ const getRetryAfterHint = (response)=>{
     return retryAfterDate;
 };
 }),
-"./node_modules/@smithy/middleware-retry/dist-es/util.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-retry@2.1.1/node_modules/@smithy/middleware-retry/dist-es/util.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   asSdkError: function() { return asSdkError; }
 });
@@ -16094,9 +13865,8 @@ const asSdkError = (error)=>{
     return new Error(`AWS SDK error wrapper for ${error}`);
 };
 }),
-"./node_modules/@smithy/middleware-serde/dist-es/deserializerMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/deserializerMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   deserializerMiddleware: function() { return deserializerMiddleware; }
 });
@@ -16120,22 +13890,14 @@ const deserializerMiddleware = (options, deserializer)=>(next, context)=>async (
             }
         };
 }),
-"./node_modules/@smithy/middleware-serde/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-}),
-"./node_modules/@smithy/middleware-serde/dist-es/serdePlugin.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getSerdePlugin: function() { return getSerdePlugin; },
   serializerMiddlewareOption: function() { return serializerMiddlewareOption; }
 });
-/* harmony import */var _deserializerMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./deserializerMiddleware */"./node_modules/@smithy/middleware-serde/dist-es/deserializerMiddleware.js");
-/* harmony import */var _serializerMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./serializerMiddleware */"./node_modules/@smithy/middleware-serde/dist-es/serializerMiddleware.js");
+/* harmony import */var _deserializerMiddleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./deserializerMiddleware */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/deserializerMiddleware.js");
+/* harmony import */var _serializerMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./serializerMiddleware */"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serializerMiddleware.js");
 
 
 const deserializerMiddlewareOption = {
@@ -16163,9 +13925,8 @@ function getSerdePlugin(config, serializer, deserializer) {
     };
 }
 }),
-"./node_modules/@smithy/middleware-serde/dist-es/serializerMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-serde@2.1.1/node_modules/@smithy/middleware-serde/dist-es/serializerMiddleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   serializerMiddleware: function() { return serializerMiddleware; }
 });
@@ -16182,9 +13943,8 @@ const serializerMiddleware = (options, serializer)=>(next, context)=>async (args
             });
         };
 }),
-"./node_modules/@smithy/middleware-stack/dist-es/MiddlewareStack.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+middleware-stack@2.1.1/node_modules/@smithy/middleware-stack/dist-es/MiddlewareStack.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   constructStack: function() { return constructStack; }
 });
@@ -16407,35 +14167,28 @@ const priorityWeights = {
     low: 1
 };
 }),
-"./node_modules/@smithy/middleware-stack/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/configLoader.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/node-config-provider/dist-es/configLoader.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   loadConfig: function() { return loadConfig; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/memoize.js");
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/chain.js");
-/* harmony import */var _fromEnv__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fromEnv */"./node_modules/@smithy/node-config-provider/dist-es/fromEnv.js");
-/* harmony import */var _fromSharedConfigFiles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromSharedConfigFiles */"./node_modules/@smithy/node-config-provider/dist-es/fromSharedConfigFiles.js");
-/* harmony import */var _fromStatic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fromStatic */"./node_modules/@smithy/node-config-provider/dist-es/fromStatic.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/memoize.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/chain.js");
+/* harmony import */var _fromEnv__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fromEnv */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/fromEnv.js");
+/* harmony import */var _fromSharedConfigFiles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromSharedConfigFiles */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/fromSharedConfigFiles.js");
+/* harmony import */var _fromStatic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fromStatic */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/fromStatic.js");
 
 
 
 
 const loadConfig = ({ environmentVariableSelector, configFileSelector, default: defaultValue }, configuration = {})=>(0, _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__.memoize)((0, _smithy_property_provider__WEBPACK_IMPORTED_MODULE_2__.chain)((0, _fromEnv__WEBPACK_IMPORTED_MODULE_3__.fromEnv)(environmentVariableSelector), (0, _fromSharedConfigFiles__WEBPACK_IMPORTED_MODULE_0__.fromSharedConfigFiles)(configFileSelector, configuration), (0, _fromStatic__WEBPACK_IMPORTED_MODULE_4__.fromStatic)(defaultValue)));
 }),
-"./node_modules/@smithy/node-config-provider/dist-es/fromEnv.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/fromEnv.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromEnv: function() { return fromEnv; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
 
 const fromEnv = (envVarSelector)=>async ()=>{
         try {
@@ -16447,14 +14200,13 @@ const fromEnv = (envVarSelector)=>async ()=>{
         }
     };
 }),
-"./node_modules/@smithy/node-config-provider/dist-es/fromSharedConfigFiles.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/fromSharedConfigFiles.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromSharedConfigFiles: function() { return fromSharedConfigFiles; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
-/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js");
+/* harmony import */var _smithy_shared_ini_file_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/shared-ini-file-loader */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js");
 
 
 const fromSharedConfigFiles = (configSelector, { preferredFile = "config", ...init } = {})=>async ()=>{
@@ -16479,29 +14231,26 @@ const fromSharedConfigFiles = (configSelector, { preferredFile = "config", ...in
         }
     };
 }),
-"./node_modules/@smithy/node-config-provider/dist-es/fromStatic.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/fromStatic.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromStatic: function() { return fromStatic; }
 });
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/fromStatic.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/fromStatic.js");
 
 const isFunction = (func)=>typeof func === "function";
 const fromStatic = (defaultValue)=>isFunction(defaultValue) ? async ()=>await defaultValue() : (0, _smithy_property_provider__WEBPACK_IMPORTED_MODULE_0__.fromStatic)(defaultValue);
 }),
-"./node_modules/@smithy/node-config-provider/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   loadConfig: function() { return /* reexport safe */ _configLoader__WEBPACK_IMPORTED_MODULE_0__.loadConfig; }
 });
-/* harmony import */var _configLoader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./configLoader */"./node_modules/@smithy/node-config-provider/dist-es/configLoader.js");
+/* harmony import */var _configLoader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./configLoader */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/configLoader.js");
 
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODEJS_TIMEOUT_ERROR_CODES: function() { return NODEJS_TIMEOUT_ERROR_CODES; }
 });
@@ -16511,9 +14260,8 @@ const NODEJS_TIMEOUT_ERROR_CODES = [
     "ETIMEDOUT"
 ];
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/get-transformed-headers.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/get-transformed-headers.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getTransformedHeaders: function() { return getTransformedHeaders; }
 });
@@ -16527,38 +14275,36 @@ const getTransformedHeaders = (headers)=>{
 };
 
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NodeHttpHandler: function() { return /* reexport safe */ _node_http_handler__WEBPACK_IMPORTED_MODULE_0__.NodeHttpHandler; },
   streamCollector: function() { return /* reexport safe */ _stream_collector__WEBPACK_IMPORTED_MODULE_2__.streamCollector; }
 });
-/* harmony import */var _node_http_handler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node-http-handler */"./node_modules/@smithy/node-http-handler/dist-es/node-http-handler.js");
-/* harmony import */var _node_http2_handler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node-http2-handler */"./node_modules/@smithy/node-http-handler/dist-es/node-http2-handler.js");
-/* harmony import */var _stream_collector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./stream-collector */"./node_modules/@smithy/node-http-handler/dist-es/stream-collector/index.js");
+/* harmony import */var _node_http_handler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node-http-handler */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/node-http-handler.js");
+/* harmony import */var _node_http2_handler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node-http2-handler */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/node-http2-handler.js");
+/* harmony import */var _stream_collector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./stream-collector */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/stream-collector/index.js");
 
 
 
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/node-http-handler.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/node-http-handler.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NodeHttpHandler: function() { return NodeHttpHandler; }
 });
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
-/* harmony import */var _smithy_querystring_builder__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/querystring-builder */"./node_modules/@smithy/querystring-builder/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_querystring_builder__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/querystring-builder */"./node_modules/.pnpm/@smithy+querystring-builder@2.1.1/node_modules/@smithy/querystring-builder/dist-es/index.js");
 /* harmony import */var http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! http */"http");
 /* harmony import */var http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(http__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */var https__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! https */"https");
 /* harmony import */var https__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(https__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/node-http-handler/dist-es/constants.js");
-/* harmony import */var _get_transformed_headers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./get-transformed-headers */"./node_modules/@smithy/node-http-handler/dist-es/get-transformed-headers.js");
-/* harmony import */var _set_connection_timeout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./set-connection-timeout */"./node_modules/@smithy/node-http-handler/dist-es/set-connection-timeout.js");
-/* harmony import */var _set_socket_keep_alive__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./set-socket-keep-alive */"./node_modules/@smithy/node-http-handler/dist-es/set-socket-keep-alive.js");
-/* harmony import */var _set_socket_timeout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./set-socket-timeout */"./node_modules/@smithy/node-http-handler/dist-es/set-socket-timeout.js");
-/* harmony import */var _write_request_body__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./write-request-body */"./node_modules/@smithy/node-http-handler/dist-es/write-request-body.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/constants.js");
+/* harmony import */var _get_transformed_headers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./get-transformed-headers */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/get-transformed-headers.js");
+/* harmony import */var _set_connection_timeout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./set-connection-timeout */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/set-connection-timeout.js");
+/* harmony import */var _set_socket_keep_alive__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./set-socket-keep-alive */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/set-socket-keep-alive.js");
+/* harmony import */var _set_socket_timeout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./set-socket-timeout */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/set-socket-timeout.js");
+/* harmony import */var _write_request_body__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./write-request-body */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/write-request-body.js");
 
 
 
@@ -16694,12 +14440,11 @@ class NodeHttpHandler {
     }
 }
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/node-http2-connection-manager.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/node-http2-connection-manager.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 /* harmony import */var http2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! http2 */"http2");
 /* harmony import */var http2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(http2__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */var _node_http2_connection_pool__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node-http2-connection-pool */"./node_modules/@smithy/node-http-handler/dist-es/node-http2-connection-pool.js");
+/* harmony import */var _node_http2_connection_pool__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node-http2-connection-pool */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/node-http2-connection-pool.js");
 
 
 class NodeHttp2ConnectionManager {
@@ -16768,9 +14513,8 @@ class NodeHttp2ConnectionManager {
     }
 }
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/node-http2-connection-pool.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/node-http2-connection-pool.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 class NodeHttp2ConnectionPool {
     constructor(sessions){
         this.sessions = [];
@@ -16800,14 +14544,13 @@ class NodeHttp2ConnectionPool {
     }
 }
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/node-http2-handler.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/node-http2-handler.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/@smithy/protocol-http/dist-es/index.js");
+/* harmony import */var _smithy_protocol_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/protocol-http */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js");
 /* harmony import */var http2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! http2 */"http2");
 /* harmony import */var http2__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(http2__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */var _node_http2_connection_manager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node-http2-connection-manager */"./node_modules/@smithy/node-http-handler/dist-es/node-http2-connection-manager.js");
-/* harmony import */var _write_request_body__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./write-request-body */"./node_modules/@smithy/node-http-handler/dist-es/write-request-body.js");
+/* harmony import */var _node_http2_connection_manager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node-http2-connection-manager */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/node-http2-connection-manager.js");
+/* harmony import */var _write_request_body__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./write-request-body */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/write-request-body.js");
 
 
 
@@ -16948,9 +14691,8 @@ class NodeHttp2Handler {
     }
 }
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/set-connection-timeout.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/set-connection-timeout.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   setConnectionTimeout: function() { return setConnectionTimeout; }
 });
@@ -16970,9 +14712,8 @@ const setConnectionTimeout = (request, reject, timeoutInMs = 0)=>{
     });
 };
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/set-socket-keep-alive.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/set-socket-keep-alive.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   setSocketKeepAlive: function() { return setSocketKeepAlive; }
 });
@@ -16983,9 +14724,8 @@ const setSocketKeepAlive = (request, { keepAlive, keepAliveMsecs })=>{
     });
 };
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/set-socket-timeout.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/set-socket-timeout.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   setSocketTimeout: function() { return setSocketTimeout; }
 });
@@ -16998,9 +14738,8 @@ const setSocketTimeout = (request, reject, timeoutInMs = 0)=>{
     });
 };
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/stream-collector/collector.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/stream-collector/collector.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Collector: function() { return Collector; }
 });
@@ -17018,13 +14757,12 @@ class Collector extends stream__WEBPACK_IMPORTED_MODULE_0__.Writable {
     }
 }
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/stream-collector/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/stream-collector/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   streamCollector: function() { return streamCollector; }
 });
-/* harmony import */var _collector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./collector */"./node_modules/@smithy/node-http-handler/dist-es/stream-collector/collector.js");
+/* harmony import */var _collector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./collector */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/stream-collector/collector.js");
 
 const streamCollector = (stream)=>new Promise((resolve, reject)=>{
         const collector = new _collector__WEBPACK_IMPORTED_MODULE_0__.Collector();
@@ -17040,9 +14778,8 @@ const streamCollector = (stream)=>new Promise((resolve, reject)=>{
         });
     });
 }),
-"./node_modules/@smithy/node-http-handler/dist-es/write-request-body.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/write-request-body.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   writeRequestBody: function() { return writeRequestBody; }
 });
@@ -17079,13 +14816,12 @@ function writeBody(httpRequest, body) {
     else httpRequest.end();
 }
 }),
-"./node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/CredentialsProviderError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   CredentialsProviderError: function() { return CredentialsProviderError; }
 });
-/* harmony import */var _ProviderError__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProviderError */"./node_modules/@smithy/property-provider/dist-es/ProviderError.js");
+/* harmony import */var _ProviderError__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProviderError */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/ProviderError.js");
 
 class CredentialsProviderError extends _ProviderError__WEBPACK_IMPORTED_MODULE_0__.ProviderError {
     constructor(message, tryNextLink = true){
@@ -17096,9 +14832,8 @@ class CredentialsProviderError extends _ProviderError__WEBPACK_IMPORTED_MODULE_0
     }
 }
 }),
-"./node_modules/@smithy/property-provider/dist-es/ProviderError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/ProviderError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ProviderError: function() { return ProviderError; }
 });
@@ -17114,13 +14849,12 @@ class ProviderError extends Error {
     }
 }
 }),
-"./node_modules/@smithy/property-provider/dist-es/TokenProviderError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/TokenProviderError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   TokenProviderError: function() { return TokenProviderError; }
 });
-/* harmony import */var _ProviderError__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProviderError */"./node_modules/@smithy/property-provider/dist-es/ProviderError.js");
+/* harmony import */var _ProviderError__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProviderError */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/ProviderError.js");
 
 class TokenProviderError extends _ProviderError__WEBPACK_IMPORTED_MODULE_0__.ProviderError {
     constructor(message, tryNextLink = true){
@@ -17131,13 +14865,12 @@ class TokenProviderError extends _ProviderError__WEBPACK_IMPORTED_MODULE_0__.Pro
     }
 }
 }),
-"./node_modules/@smithy/property-provider/dist-es/chain.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/chain.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   chain: function() { return chain; }
 });
-/* harmony import */var _ProviderError__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProviderError */"./node_modules/@smithy/property-provider/dist-es/ProviderError.js");
+/* harmony import */var _ProviderError__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProviderError */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/ProviderError.js");
 
 const chain = (...providers)=>async ()=>{
         if (providers.length === 0) throw new _ProviderError__WEBPACK_IMPORTED_MODULE_0__.ProviderError("No providers in chain");
@@ -17153,27 +14886,15 @@ const chain = (...providers)=>async ()=>{
         throw lastProviderError;
     };
 }),
-"./node_modules/@smithy/property-provider/dist-es/fromStatic.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/fromStatic.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromStatic: function() { return fromStatic; }
 });
 const fromStatic = (staticValue)=>()=>Promise.resolve(staticValue);
 }),
-"./node_modules/@smithy/property-provider/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/memoize.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-
-
-}),
-"./node_modules/@smithy/property-provider/dist-es/memoize.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   memoize: function() { return memoize; }
 });
@@ -17212,10 +14933,9 @@ const memoize = (provider, isExpired, requiresRefresh)=>{
     };
 };
 }),
-"./node_modules/@smithy/protocol-http/dist-es/Field.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/Field.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
 
 class Field {
     constructor({ name, kind = FieldPosition.HEADER, values = [] }){
@@ -17240,32 +14960,8 @@ class Field {
     }
 }
 }),
-"./node_modules/@smithy/protocol-http/dist-es/Fields.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/extensions/httpExtensionConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-class Fields {
-    constructor({ fields = [], encoding = "utf-8" }){
-        this.entries = {};
-        fields.forEach(this.setField.bind(this));
-        this.encoding = encoding;
-    }
-    setField(field) {
-        this.entries[field.name.toLowerCase()] = field;
-    }
-    getField(name) {
-        return this.entries[name.toLowerCase()];
-    }
-    removeField(name) {
-        delete this.entries[name.toLowerCase()];
-    }
-    getByType(kind) {
-        return Object.values(this.entries).filter((field)=>field.kind === kind);
-    }
-}
-}),
-"./node_modules/@smithy/protocol-http/dist-es/extensions/httpExtensionConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getHttpHandlerExtensionConfiguration: function() { return getHttpHandlerExtensionConfiguration; },
   resolveHttpHandlerRuntimeConfig: function() { return resolveHttpHandlerRuntimeConfig; }
@@ -17293,24 +14989,17 @@ const resolveHttpHandlerRuntimeConfig = (httpHandlerExtensionConfiguration)=>{
     };
 };
 }),
-"./node_modules/@smithy/protocol-http/dist-es/extensions/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/extensions/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getHttpHandlerExtensionConfiguration: function() { return /* reexport safe */ _httpExtensionConfiguration__WEBPACK_IMPORTED_MODULE_0__.getHttpHandlerExtensionConfiguration; },
   resolveHttpHandlerRuntimeConfig: function() { return /* reexport safe */ _httpExtensionConfiguration__WEBPACK_IMPORTED_MODULE_0__.resolveHttpHandlerRuntimeConfig; }
 });
-/* harmony import */var _httpExtensionConfiguration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpExtensionConfiguration */"./node_modules/@smithy/protocol-http/dist-es/extensions/httpExtensionConfiguration.js");
+/* harmony import */var _httpExtensionConfiguration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./httpExtensionConfiguration */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/extensions/httpExtensionConfiguration.js");
 
 }),
-"./node_modules/@smithy/protocol-http/dist-es/httpHandler.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/httpRequest.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/protocol-http/dist-es/httpRequest.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   HttpRequest: function() { return HttpRequest; }
 });
@@ -17356,9 +15045,8 @@ function cloneQuery(query) {
     }, {});
 }
 }),
-"./node_modules/@smithy/protocol-http/dist-es/httpResponse.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/httpResponse.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   HttpResponse: function() { return HttpResponse; }
 });
@@ -17376,19 +15064,18 @@ class HttpResponse {
     }
 }
 }),
-"./node_modules/@smithy/protocol-http/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   HttpRequest: function() { return /* reexport safe */ _httpRequest__WEBPACK_IMPORTED_MODULE_4__.HttpRequest; },
   HttpResponse: function() { return /* reexport safe */ _httpResponse__WEBPACK_IMPORTED_MODULE_5__.HttpResponse; },
   getHttpHandlerExtensionConfiguration: function() { return /* reexport safe */ _extensions__WEBPACK_IMPORTED_MODULE_0__.getHttpHandlerExtensionConfiguration; },
   resolveHttpHandlerRuntimeConfig: function() { return /* reexport safe */ _extensions__WEBPACK_IMPORTED_MODULE_0__.resolveHttpHandlerRuntimeConfig; }
 });
-/* harmony import */var _extensions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./extensions */"./node_modules/@smithy/protocol-http/dist-es/extensions/index.js");
-/* harmony import */var _Field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Field */"./node_modules/@smithy/protocol-http/dist-es/Field.js");
-/* harmony import */var _httpRequest__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./httpRequest */"./node_modules/@smithy/protocol-http/dist-es/httpRequest.js");
-/* harmony import */var _httpResponse__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./httpResponse */"./node_modules/@smithy/protocol-http/dist-es/httpResponse.js");
+/* harmony import */var _extensions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./extensions */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/extensions/index.js");
+/* harmony import */var _Field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Field */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/Field.js");
+/* harmony import */var _httpRequest__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./httpRequest */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/httpRequest.js");
+/* harmony import */var _httpResponse__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./httpResponse */"./node_modules/.pnpm/@smithy+protocol-http@3.1.1/node_modules/@smithy/protocol-http/dist-es/httpResponse.js");
 
 
 
@@ -17398,26 +15085,12 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/protocol-http/dist-es/isValidHostname.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+querystring-builder@2.1.1/node_modules/@smithy/querystring-builder/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-function isValidHostname(hostname) {
-    const hostPattern = /^[a-z0-9][a-z0-9\.\-]*[a-z0-9]$/;
-    return hostPattern.test(hostname);
-}
-}),
-"./node_modules/@smithy/protocol-http/dist-es/types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/querystring-builder/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   buildQueryString: function() { return buildQueryString; }
 });
-/* harmony import */var _smithy_util_uri_escape__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-uri-escape */"./node_modules/@smithy/util-uri-escape/dist-es/escape-uri.js");
+/* harmony import */var _smithy_util_uri_escape__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-uri-escape */"./node_modules/.pnpm/@smithy+util-uri-escape@2.1.1/node_modules/@smithy/util-uri-escape/dist-es/escape-uri.js");
 
 function buildQueryString(query) {
     const parts = [];
@@ -17434,9 +15107,8 @@ function buildQueryString(query) {
     return parts.join("&");
 }
 }),
-"./node_modules/@smithy/querystring-parser/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+querystring-parser@2.1.1/node_modules/@smithy/querystring-parser/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   parseQueryString: function() { return parseQueryString; }
 });
@@ -17457,9 +15129,8 @@ function parseQueryString(querystring) {
     return query;
 }
 }),
-"./node_modules/@smithy/service-error-classification/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+service-error-classification@2.1.1/node_modules/@smithy/service-error-classification/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODEJS_TIMEOUT_ERROR_CODES: function() { return NODEJS_TIMEOUT_ERROR_CODES; },
   THROTTLING_ERROR_CODES: function() { return THROTTLING_ERROR_CODES; },
@@ -17508,15 +15179,14 @@ const NODEJS_TIMEOUT_ERROR_CODES = [
     "ETIMEDOUT"
 ];
 }),
-"./node_modules/@smithy/service-error-classification/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+service-error-classification@2.1.1/node_modules/@smithy/service-error-classification/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isServerError: function() { return isServerError; },
   isThrottlingError: function() { return isThrottlingError; },
   isTransientError: function() { return isTransientError; }
 });
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/service-error-classification/dist-es/constants.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+service-error-classification@2.1.1/node_modules/@smithy/service-error-classification/dist-es/constants.js");
 
 const isRetryableByTrait = (error)=>error.$retryable !== undefined;
 const isClockSkewError = (error)=>CLOCK_SKEW_ERROR_CODES.includes(error.name);
@@ -17531,14 +15201,13 @@ const isServerError = (error)=>{
     return false;
 };
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigData.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigData.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getConfigData: function() { return getConfigData; }
 });
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
-/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
 
 
 const getConfigData = (data)=>Object.entries(data).filter(([key])=>{
@@ -17556,37 +15225,34 @@ const getConfigData = (data)=>Object.entries(data).filter(([key])=>{
         }
     });
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigFilepath.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigFilepath.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getConfigFilepath: function() { return getConfigFilepath; }
 });
 /* harmony import */var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! path */"path");
 /* harmony import */var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */var _getHomeDir__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getHomeDir */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js");
+/* harmony import */var _getHomeDir__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getHomeDir */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js");
 
 
 const ENV_CONFIG_PATH = "AWS_CONFIG_FILE";
 const getConfigFilepath = ()=>process.env[ENV_CONFIG_PATH] || (0, path__WEBPACK_IMPORTED_MODULE_0__.join)((0, _getHomeDir__WEBPACK_IMPORTED_MODULE_1__.getHomeDir)(), ".aws", "config");
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/getCredentialsFilepath.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getCredentialsFilepath.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getCredentialsFilepath: function() { return getCredentialsFilepath; }
 });
 /* harmony import */var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! path */"path");
 /* harmony import */var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */var _getHomeDir__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getHomeDir */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js");
+/* harmony import */var _getHomeDir__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getHomeDir */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js");
 
 
 const ENV_CREDENTIALS_PATH = "AWS_SHARED_CREDENTIALS_FILE";
 const getCredentialsFilepath = ()=>process.env[ENV_CREDENTIALS_PATH] || (0, path__WEBPACK_IMPORTED_MODULE_0__.join)((0, _getHomeDir__WEBPACK_IMPORTED_MODULE_1__.getHomeDir)(), ".aws", "credentials");
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getHomeDir: function() { return getHomeDir; }
 });
@@ -17611,9 +15277,8 @@ const getHomeDir = ()=>{
     return homeDirCache[homeDirCacheKey];
 };
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/getProfileName.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getProfileName.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ENV_PROFILE: function() { return ENV_PROFILE; },
   getProfileName: function() { return getProfileName; }
@@ -17622,9 +15287,8 @@ const ENV_PROFILE = "AWS_PROFILE";
 const DEFAULT_PROFILE = "default";
 const getProfileName = (init)=>init.profile || process.env[ENV_PROFILE] || DEFAULT_PROFILE;
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFilepath.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFilepath.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getSSOTokenFilepath: function() { return getSSOTokenFilepath; }
 });
@@ -17632,7 +15296,7 @@ __webpack_require__.d(__webpack_exports__, {
 /* harmony import */var crypto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(crypto__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! path */"path");
 /* harmony import */var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */var _getHomeDir__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getHomeDir */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js");
+/* harmony import */var _getHomeDir__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getHomeDir */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js");
 
 
 
@@ -17642,15 +15306,14 @@ const getSSOTokenFilepath = (id)=>{
     return (0, path__WEBPACK_IMPORTED_MODULE_1__.join)((0, _getHomeDir__WEBPACK_IMPORTED_MODULE_2__.getHomeDir)(), ".aws", "sso", "cache", `${cacheName}.json`);
 };
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFromFile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFromFile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getSSOTokenFromFile: function() { return getSSOTokenFromFile; }
 });
 /* harmony import */var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs */"fs");
 /* harmony import */var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */var _getSSOTokenFilepath__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getSSOTokenFilepath */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFilepath.js");
+/* harmony import */var _getSSOTokenFilepath__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getSSOTokenFilepath */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFilepath.js");
 
 
 const { readFile } = fs__WEBPACK_IMPORTED_MODULE_0__.promises;
@@ -17660,14 +15323,13 @@ const getSSOTokenFromFile = async (id)=>{
     return JSON.parse(ssoTokenText);
 };
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/getSsoSessionData.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getSsoSessionData.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getSsoSessionData: function() { return getSsoSessionData; }
 });
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
-/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
 
 
 const getSsoSessionData = (data)=>Object.entries(data).filter(([key])=>key.startsWith(_smithy_types__WEBPACK_IMPORTED_MODULE_0__.IniSectionType.SSO_SESSION + _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_1__.CONFIG_PREFIX_SEPARATOR)).reduce((acc, [key, value])=>({
@@ -17675,9 +15337,8 @@ const getSsoSessionData = (data)=>Object.entries(data).filter(([key])=>key.start
             [key.split(_loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_1__.CONFIG_PREFIX_SEPARATOR)[1]]: value
         }), {});
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   CONFIG_PREFIX_SEPARATOR: function() { return /* reexport safe */ _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_4__.CONFIG_PREFIX_SEPARATOR; },
   ENV_PROFILE: function() { return /* reexport safe */ _getProfileName__WEBPACK_IMPORTED_MODULE_1__.ENV_PROFILE; },
@@ -17688,13 +15349,13 @@ __webpack_require__.d(__webpack_exports__, {
   loadSsoSessionData: function() { return /* reexport safe */ _loadSsoSessionData__WEBPACK_IMPORTED_MODULE_5__.loadSsoSessionData; },
   parseKnownFiles: function() { return /* reexport safe */ _parseKnownFiles__WEBPACK_IMPORTED_MODULE_6__.parseKnownFiles; }
 });
-/* harmony import */var _getHomeDir__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getHomeDir */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js");
-/* harmony import */var _getProfileName__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getProfileName */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getProfileName.js");
-/* harmony import */var _getSSOTokenFilepath__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getSSOTokenFilepath */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFilepath.js");
-/* harmony import */var _getSSOTokenFromFile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getSSOTokenFromFile */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFromFile.js");
-/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
-/* harmony import */var _loadSsoSessionData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./loadSsoSessionData */"./node_modules/@smithy/shared-ini-file-loader/dist-es/loadSsoSessionData.js");
-/* harmony import */var _parseKnownFiles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./parseKnownFiles */"./node_modules/@smithy/shared-ini-file-loader/dist-es/parseKnownFiles.js");
+/* harmony import */var _getHomeDir__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getHomeDir */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getHomeDir.js");
+/* harmony import */var _getProfileName__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getProfileName */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getProfileName.js");
+/* harmony import */var _getSSOTokenFilepath__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getSSOTokenFilepath */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFilepath.js");
+/* harmony import */var _getSSOTokenFromFile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getSSOTokenFromFile */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getSSOTokenFromFile.js");
+/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
+/* harmony import */var _loadSsoSessionData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./loadSsoSessionData */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/loadSsoSessionData.js");
+/* harmony import */var _parseKnownFiles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./parseKnownFiles */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/parseKnownFiles.js");
 
 
 
@@ -17704,18 +15365,17 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   CONFIG_PREFIX_SEPARATOR: function() { return CONFIG_PREFIX_SEPARATOR; },
   loadSharedConfigFiles: function() { return loadSharedConfigFiles; }
 });
-/* harmony import */var _getConfigData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getConfigData */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigData.js");
-/* harmony import */var _getConfigFilepath__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getConfigFilepath */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigFilepath.js");
-/* harmony import */var _getCredentialsFilepath__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getCredentialsFilepath */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getCredentialsFilepath.js");
-/* harmony import */var _parseIni__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parseIni */"./node_modules/@smithy/shared-ini-file-loader/dist-es/parseIni.js");
-/* harmony import */var _slurpFile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slurpFile */"./node_modules/@smithy/shared-ini-file-loader/dist-es/slurpFile.js");
+/* harmony import */var _getConfigData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getConfigData */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigData.js");
+/* harmony import */var _getConfigFilepath__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getConfigFilepath */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigFilepath.js");
+/* harmony import */var _getCredentialsFilepath__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getCredentialsFilepath */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getCredentialsFilepath.js");
+/* harmony import */var _parseIni__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parseIni */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/parseIni.js");
+/* harmony import */var _slurpFile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slurpFile */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/slurpFile.js");
 
 
 
@@ -17739,16 +15399,15 @@ const loadSharedConfigFiles = async (init = {})=>{
     };
 };
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/loadSsoSessionData.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/loadSsoSessionData.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   loadSsoSessionData: function() { return loadSsoSessionData; }
 });
-/* harmony import */var _getConfigFilepath__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getConfigFilepath */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigFilepath.js");
-/* harmony import */var _getSsoSessionData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getSsoSessionData */"./node_modules/@smithy/shared-ini-file-loader/dist-es/getSsoSessionData.js");
-/* harmony import */var _parseIni__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parseIni */"./node_modules/@smithy/shared-ini-file-loader/dist-es/parseIni.js");
-/* harmony import */var _slurpFile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slurpFile */"./node_modules/@smithy/shared-ini-file-loader/dist-es/slurpFile.js");
+/* harmony import */var _getConfigFilepath__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getConfigFilepath */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getConfigFilepath.js");
+/* harmony import */var _getSsoSessionData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getSsoSessionData */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/getSsoSessionData.js");
+/* harmony import */var _parseIni__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parseIni */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/parseIni.js");
+/* harmony import */var _slurpFile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slurpFile */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/slurpFile.js");
 
 
 
@@ -17756,9 +15415,8 @@ __webpack_require__.d(__webpack_exports__, {
 const swallowError = ()=>({});
 const loadSsoSessionData = async (init = {})=>(0, _slurpFile__WEBPACK_IMPORTED_MODULE_3__.slurpFile)(init.configFilepath ?? (0, _getConfigFilepath__WEBPACK_IMPORTED_MODULE_0__.getConfigFilepath)()).then(_parseIni__WEBPACK_IMPORTED_MODULE_2__.parseIni).then(_getSsoSessionData__WEBPACK_IMPORTED_MODULE_1__.getSsoSessionData).catch(swallowError);
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/mergeConfigFiles.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/mergeConfigFiles.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   mergeConfigFiles: function() { return mergeConfigFiles; }
 });
@@ -17771,14 +15429,13 @@ const mergeConfigFiles = (...files)=>{
     return merged;
 };
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/parseIni.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/parseIni.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   parseIni: function() { return parseIni; }
 });
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
-/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
 
 
 const prefixKeyRegex = /^([\w-]+)\s(["'])?([\w-@\+\.%:/]+)\2$/;
@@ -17832,14 +15489,13 @@ const parseIni = (iniData)=>{
     return map;
 };
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/parseKnownFiles.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/parseKnownFiles.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   parseKnownFiles: function() { return parseKnownFiles; }
 });
-/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
-/* harmony import */var _mergeConfigFiles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mergeConfigFiles */"./node_modules/@smithy/shared-ini-file-loader/dist-es/mergeConfigFiles.js");
+/* harmony import */var _loadSharedConfigFiles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./loadSharedConfigFiles */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/loadSharedConfigFiles.js");
+/* harmony import */var _mergeConfigFiles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mergeConfigFiles */"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/mergeConfigFiles.js");
 
 
 const parseKnownFiles = async (init)=>{
@@ -17847,9 +15503,8 @@ const parseKnownFiles = async (init)=>{
     return (0, _mergeConfigFiles__WEBPACK_IMPORTED_MODULE_1__.mergeConfigFiles)(parsedFiles.configFile, parsedFiles.credentialsFile);
 };
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/slurpFile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+shared-ini-file-loader@2.3.1/node_modules/@smithy/shared-ini-file-loader/dist-es/slurpFile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   slurpFile: function() { return slurpFile; }
 });
@@ -17863,30 +15518,24 @@ const slurpFile = (path, options)=>{
     return filePromisesHash[path];
 };
 }),
-"./node_modules/@smithy/shared-ini-file-loader/dist-es/types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/SignatureV4.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/signature-v4/dist-es/SignatureV4.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   SignatureV4: function() { return SignatureV4; }
 });
-/* harmony import */var _smithy_eventstream_codec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/eventstream-codec */"./node_modules/@smithy/eventstream-codec/dist-es/index.js");
-/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/@smithy/util-hex-encoding/dist-es/index.js");
-/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/@smithy/util-middleware/dist-es/index.js");
-/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/@smithy/util-utf8/dist-es/index.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/signature-v4/dist-es/constants.js");
-/* harmony import */var _credentialDerivation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./credentialDerivation */"./node_modules/@smithy/signature-v4/dist-es/credentialDerivation.js");
-/* harmony import */var _getCanonicalHeaders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./getCanonicalHeaders */"./node_modules/@smithy/signature-v4/dist-es/getCanonicalHeaders.js");
-/* harmony import */var _getCanonicalQuery__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./getCanonicalQuery */"./node_modules/@smithy/signature-v4/dist-es/getCanonicalQuery.js");
-/* harmony import */var _getPayloadHash__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./getPayloadHash */"./node_modules/@smithy/signature-v4/dist-es/getPayloadHash.js");
-/* harmony import */var _headerUtil__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./headerUtil */"./node_modules/@smithy/signature-v4/dist-es/headerUtil.js");
-/* harmony import */var _moveHeadersToQuery__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./moveHeadersToQuery */"./node_modules/@smithy/signature-v4/dist-es/moveHeadersToQuery.js");
-/* harmony import */var _prepareRequest__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./prepareRequest */"./node_modules/@smithy/signature-v4/dist-es/prepareRequest.js");
-/* harmony import */var _utilDate__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./utilDate */"./node_modules/@smithy/signature-v4/dist-es/utilDate.js");
+/* harmony import */var _smithy_eventstream_codec__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/eventstream-codec */"./node_modules/.pnpm/@smithy+eventstream-codec@2.1.1/node_modules/@smithy/eventstream-codec/dist-es/index.js");
+/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/.pnpm/@smithy+util-hex-encoding@2.1.1/node_modules/@smithy/util-hex-encoding/dist-es/index.js");
+/* harmony import */var _smithy_util_middleware__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/util-middleware */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js");
+/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/constants.js");
+/* harmony import */var _credentialDerivation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./credentialDerivation */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/credentialDerivation.js");
+/* harmony import */var _getCanonicalHeaders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./getCanonicalHeaders */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/getCanonicalHeaders.js");
+/* harmony import */var _getCanonicalQuery__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./getCanonicalQuery */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/getCanonicalQuery.js");
+/* harmony import */var _getPayloadHash__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./getPayloadHash */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/getPayloadHash.js");
+/* harmony import */var _headerUtil__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./headerUtil */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/headerUtil.js");
+/* harmony import */var _moveHeadersToQuery__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./moveHeadersToQuery */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/moveHeadersToQuery.js");
+/* harmony import */var _prepareRequest__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./prepareRequest */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/prepareRequest.js");
+/* harmony import */var _utilDate__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./utilDate */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/utilDate.js");
 
 
 
@@ -18060,9 +15709,8 @@ const formatDate = (now)=>{
 };
 const getCanonicalHeaderList = (headers)=>Object.keys(headers).sort().join(";");
 }),
-"./node_modules/@smithy/signature-v4/dist-es/cloneRequest.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/cloneRequest.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   cloneRequest: function() { return cloneRequest; }
 });
@@ -18083,9 +15731,8 @@ const cloneQuery = (query)=>Object.keys(query).reduce((carry, paramName)=>{
         };
     }, {});
 }),
-"./node_modules/@smithy/signature-v4/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ALGORITHM_IDENTIFIER: function() { return ALGORITHM_IDENTIFIER; },
   ALGORITHM_QUERY_PARAM: function() { return ALGORITHM_QUERY_PARAM; },
@@ -18161,16 +15808,15 @@ const MAX_CACHE_SIZE = 50;
 const KEY_TYPE_IDENTIFIER = "aws4_request";
 const MAX_PRESIGNED_TTL = 604800;
 }),
-"./node_modules/@smithy/signature-v4/dist-es/credentialDerivation.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/credentialDerivation.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   createScope: function() { return createScope; },
   getSigningKey: function() { return getSigningKey; }
 });
-/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/@smithy/util-hex-encoding/dist-es/index.js");
-/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/@smithy/util-utf8/dist-es/index.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/signature-v4/dist-es/constants.js");
+/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/.pnpm/@smithy+util-hex-encoding@2.1.1/node_modules/@smithy/util-hex-encoding/dist-es/index.js");
+/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/constants.js");
 
 
 
@@ -18204,13 +15850,12 @@ const hmac = (ctor, secret, data)=>{
     return hash.digest();
 };
 }),
-"./node_modules/@smithy/signature-v4/dist-es/getCanonicalHeaders.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/getCanonicalHeaders.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getCanonicalHeaders: function() { return getCanonicalHeaders; }
 });
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/signature-v4/dist-es/constants.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/constants.js");
 
 const getCanonicalHeaders = ({ headers }, unsignableHeaders, signableHeaders)=>{
     const canonical = {};
@@ -18225,14 +15870,13 @@ const getCanonicalHeaders = ({ headers }, unsignableHeaders, signableHeaders)=>{
     return canonical;
 };
 }),
-"./node_modules/@smithy/signature-v4/dist-es/getCanonicalQuery.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/getCanonicalQuery.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getCanonicalQuery: function() { return getCanonicalQuery; }
 });
-/* harmony import */var _smithy_util_uri_escape__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-uri-escape */"./node_modules/@smithy/util-uri-escape/dist-es/escape-uri.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/signature-v4/dist-es/constants.js");
+/* harmony import */var _smithy_util_uri_escape__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-uri-escape */"./node_modules/.pnpm/@smithy+util-uri-escape@2.1.1/node_modules/@smithy/util-uri-escape/dist-es/escape-uri.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/constants.js");
 
 
 const getCanonicalQuery = ({ query = {} })=>{
@@ -18250,16 +15894,15 @@ const getCanonicalQuery = ({ query = {} })=>{
     return keys.map((key)=>serialized[key]).filter((serialized)=>serialized).join("&");
 };
 }),
-"./node_modules/@smithy/signature-v4/dist-es/getPayloadHash.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/getPayloadHash.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getPayloadHash: function() { return getPayloadHash; }
 });
-/* harmony import */var _smithy_is_array_buffer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/is-array-buffer */"./node_modules/@smithy/is-array-buffer/dist-es/index.js");
-/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/@smithy/util-hex-encoding/dist-es/index.js");
-/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/@smithy/util-utf8/dist-es/index.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/signature-v4/dist-es/constants.js");
+/* harmony import */var _smithy_is_array_buffer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @smithy/is-array-buffer */"./node_modules/.pnpm/@smithy+is-array-buffer@2.1.1/node_modules/@smithy/is-array-buffer/dist-es/index.js");
+/* harmony import */var _smithy_util_hex_encoding__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-hex-encoding */"./node_modules/.pnpm/@smithy+util-hex-encoding@2.1.1/node_modules/@smithy/util-hex-encoding/dist-es/index.js");
+/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/constants.js");
 
 
 
@@ -18277,9 +15920,8 @@ const getPayloadHash = async ({ headers, body }, hashConstructor)=>{
     return _constants__WEBPACK_IMPORTED_MODULE_2__.UNSIGNED_PAYLOAD;
 };
 }),
-"./node_modules/@smithy/signature-v4/dist-es/headerUtil.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/headerUtil.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   hasHeader: function() { return hasHeader; }
 });
@@ -18302,18 +15944,17 @@ const deleteHeader = (soughtHeader, headers)=>{
     for (const headerName of Object.keys(headers))if (soughtHeader === headerName.toLowerCase()) delete headers[headerName];
 };
 }),
-"./node_modules/@smithy/signature-v4/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   SignatureV4: function() { return /* reexport safe */ _SignatureV4__WEBPACK_IMPORTED_MODULE_0__.SignatureV4; }
 });
-/* harmony import */var _SignatureV4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SignatureV4 */"./node_modules/@smithy/signature-v4/dist-es/SignatureV4.js");
-/* harmony import */var _getCanonicalHeaders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getCanonicalHeaders */"./node_modules/@smithy/signature-v4/dist-es/getCanonicalHeaders.js");
-/* harmony import */var _getCanonicalQuery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getCanonicalQuery */"./node_modules/@smithy/signature-v4/dist-es/getCanonicalQuery.js");
-/* harmony import */var _getPayloadHash__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getPayloadHash */"./node_modules/@smithy/signature-v4/dist-es/getPayloadHash.js");
-/* harmony import */var _prepareRequest__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./prepareRequest */"./node_modules/@smithy/signature-v4/dist-es/prepareRequest.js");
-/* harmony import */var _credentialDerivation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./credentialDerivation */"./node_modules/@smithy/signature-v4/dist-es/credentialDerivation.js");
+/* harmony import */var _SignatureV4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SignatureV4 */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/SignatureV4.js");
+/* harmony import */var _getCanonicalHeaders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getCanonicalHeaders */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/getCanonicalHeaders.js");
+/* harmony import */var _getCanonicalQuery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getCanonicalQuery */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/getCanonicalQuery.js");
+/* harmony import */var _getPayloadHash__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getPayloadHash */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/getPayloadHash.js");
+/* harmony import */var _prepareRequest__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./prepareRequest */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/prepareRequest.js");
+/* harmony import */var _credentialDerivation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./credentialDerivation */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/credentialDerivation.js");
 
 
 
@@ -18322,13 +15963,12 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/signature-v4/dist-es/moveHeadersToQuery.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/moveHeadersToQuery.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   moveHeadersToQuery: function() { return moveHeadersToQuery; }
 });
-/* harmony import */var _cloneRequest__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cloneRequest */"./node_modules/@smithy/signature-v4/dist-es/cloneRequest.js");
+/* harmony import */var _cloneRequest__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cloneRequest */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/cloneRequest.js");
 
 const moveHeadersToQuery = (request, options = {})=>{
     const { headers, query = {} } = typeof request.clone === "function" ? request.clone() : (0, _cloneRequest__WEBPACK_IMPORTED_MODULE_0__.cloneRequest)(request);
@@ -18346,14 +15986,13 @@ const moveHeadersToQuery = (request, options = {})=>{
     };
 };
 }),
-"./node_modules/@smithy/signature-v4/dist-es/prepareRequest.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/prepareRequest.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   prepareRequest: function() { return prepareRequest; }
 });
-/* harmony import */var _cloneRequest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cloneRequest */"./node_modules/@smithy/signature-v4/dist-es/cloneRequest.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/signature-v4/dist-es/constants.js");
+/* harmony import */var _cloneRequest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cloneRequest */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/cloneRequest.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/constants.js");
 
 
 const prepareRequest = (request)=>{
@@ -18362,9 +16001,8 @@ const prepareRequest = (request)=>{
     return request;
 };
 }),
-"./node_modules/@smithy/signature-v4/dist-es/utilDate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+signature-v4@2.1.1/node_modules/@smithy/signature-v4/dist-es/utilDate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   iso8601: function() { return iso8601; }
 });
@@ -18378,9 +16016,8 @@ const toDate = (time)=>{
     return time;
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/NoOpLogger.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/NoOpLogger.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NoOpLogger: function() { return NoOpLogger; }
 });
@@ -18392,13 +16029,12 @@ class NoOpLogger {
     error() {}
 }
 }),
-"./node_modules/@smithy/smithy-client/dist-es/client.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/client.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Client: function() { return Client; }
 });
-/* harmony import */var _smithy_middleware_stack__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-stack */"./node_modules/@smithy/middleware-stack/dist-es/MiddlewareStack.js");
+/* harmony import */var _smithy_middleware_stack__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/middleware-stack */"./node_modules/.pnpm/@smithy+middleware-stack@2.1.1/node_modules/@smithy/middleware-stack/dist-es/MiddlewareStack.js");
 
 class Client {
     constructor(config){
@@ -18417,13 +16053,12 @@ class Client {
     }
 }
 }),
-"./node_modules/@smithy/smithy-client/dist-es/collect-stream-body.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/collect-stream-body.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   collectBody: function() { return collectBody; }
 });
-/* harmony import */var _smithy_util_stream__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-stream */"./node_modules/@smithy/util-stream/dist-es/index.js");
+/* harmony import */var _smithy_util_stream__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-stream */"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/index.js");
 
 const collectBody = async (streamBody = new Uint8Array(), context)=>{
     if (streamBody instanceof Uint8Array) return _smithy_util_stream__WEBPACK_IMPORTED_MODULE_0__.Uint8ArrayBlobAdapter.mutate(streamBody);
@@ -18432,14 +16067,13 @@ const collectBody = async (streamBody = new Uint8Array(), context)=>{
     return _smithy_util_stream__WEBPACK_IMPORTED_MODULE_0__.Uint8ArrayBlobAdapter.mutate(await fromContext);
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/command.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/command.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Command: function() { return Command; }
 });
-/* harmony import */var _smithy_middleware_stack__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/middleware-stack */"./node_modules/@smithy/middleware-stack/dist-es/MiddlewareStack.js");
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _smithy_middleware_stack__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/middleware-stack */"./node_modules/.pnpm/@smithy+middleware-stack@2.1.1/node_modules/@smithy/middleware-stack/dist-es/MiddlewareStack.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
 
 
 class Command {
@@ -18553,17 +16187,15 @@ class ClassBuilder {
     }
 }
 }),
-"./node_modules/@smithy/smithy-client/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   SENSITIVE_STRING: function() { return SENSITIVE_STRING; }
 });
 const SENSITIVE_STRING = "***SensitiveInformation***";
 }),
-"./node_modules/@smithy/smithy-client/dist-es/create-aggregated-client.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/create-aggregated-client.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   createAggregatedClient: function() { return createAggregatedClient; }
 });
@@ -18583,13 +16215,12 @@ const createAggregatedClient = (commands, Client)=>{
     }
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/date-utils.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/date-utils.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   parseRfc3339DateTimeWithOffset: function() { return parseRfc3339DateTimeWithOffset; }
 });
-/* harmony import */var _parse_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parse-utils */"./node_modules/@smithy/smithy-client/dist-es/parse-utils.js");
+/* harmony import */var _parse_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parse-utils */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/parse-utils.js");
 
 const DAYS = (/* unused pure expression or super */ null && ([
     "Sun",
@@ -18780,13 +16411,12 @@ const stripLeadingZeroes = (value)=>{
     return value.slice(idx);
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/default-error-handler.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/default-error-handler.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   withBaseException: function() { return withBaseException; }
 });
-/* harmony import */var _exceptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./exceptions */"./node_modules/@smithy/smithy-client/dist-es/exceptions.js");
+/* harmony import */var _exceptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./exceptions */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/exceptions.js");
 
 const throwDefaultError = ({ output, parsedBody, exceptionCtor, errorCode })=>{
     const $metadata = deserializeMetadata(output);
@@ -18815,9 +16445,8 @@ const deserializeMetadata = (output)=>({
         cfId: output.headers["x-amz-cf-id"]
     });
 }),
-"./node_modules/@smithy/smithy-client/dist-es/defaults-mode.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/defaults-mode.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   loadConfigsForDefaultMode: function() { return loadConfigsForDefaultMode; }
 });
@@ -18848,9 +16477,8 @@ const loadConfigsForDefaultMode = (mode)=>{
     }
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/emitWarningIfUnsupportedVersion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/emitWarningIfUnsupportedVersion.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   emitWarningIfUnsupportedVersion: function() { return emitWarningIfUnsupportedVersion; }
 });
@@ -18859,9 +16487,8 @@ const emitWarningIfUnsupportedVersion = (version)=>{
     if (version && !warningEmitted && parseInt(version.substring(1, version.indexOf("."))) < 14) warningEmitted = true;
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/exceptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/exceptions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   ServiceException: function() { return ServiceException; },
   decorateServiceException: function() { return decorateServiceException; }
@@ -18885,9 +16512,8 @@ const decorateServiceException = (exception, additions = {})=>{
     return exception;
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/extended-encode-uri-component.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extended-encode-uri-component.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   extendedEncodeURIComponent: function() { return extendedEncodeURIComponent; }
 });
@@ -18897,14 +16523,13 @@ function extendedEncodeURIComponent(str) {
     });
 }
 }),
-"./node_modules/@smithy/smithy-client/dist-es/extensions/checksum.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extensions/checksum.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getChecksumConfiguration: function() { return getChecksumConfiguration; },
   resolveChecksumRuntimeConfig: function() { return resolveChecksumRuntimeConfig; }
 });
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
 
 
 const getChecksumConfiguration = (runtimeConfig)=>{
@@ -18935,15 +16560,14 @@ const resolveChecksumRuntimeConfig = (clientConfig)=>{
     return runtimeConfig;
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/extensions/defaultExtensionConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extensions/defaultExtensionConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getDefaultExtensionConfiguration: function() { return getDefaultExtensionConfiguration; },
   resolveDefaultRuntimeConfig: function() { return resolveDefaultRuntimeConfig; }
 });
-/* harmony import */var _checksum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./checksum */"./node_modules/@smithy/smithy-client/dist-es/extensions/checksum.js");
-/* harmony import */var _retry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./retry */"./node_modules/@smithy/smithy-client/dist-es/extensions/retry.js");
+/* harmony import */var _checksum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./checksum */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extensions/checksum.js");
+/* harmony import */var _retry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./retry */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extensions/retry.js");
 
 
 const getDefaultExtensionConfiguration = (runtimeConfig)=>{
@@ -18960,19 +16584,17 @@ const resolveDefaultRuntimeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/extensions/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extensions/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getDefaultExtensionConfiguration: function() { return /* reexport safe */ _defaultExtensionConfiguration__WEBPACK_IMPORTED_MODULE_0__.getDefaultExtensionConfiguration; },
   resolveDefaultRuntimeConfig: function() { return /* reexport safe */ _defaultExtensionConfiguration__WEBPACK_IMPORTED_MODULE_0__.resolveDefaultRuntimeConfig; }
 });
-/* harmony import */var _defaultExtensionConfiguration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultExtensionConfiguration */"./node_modules/@smithy/smithy-client/dist-es/extensions/defaultExtensionConfiguration.js");
+/* harmony import */var _defaultExtensionConfiguration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultExtensionConfiguration */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extensions/defaultExtensionConfiguration.js");
 
 }),
-"./node_modules/@smithy/smithy-client/dist-es/extensions/retry.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extensions/retry.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getRetryConfiguration: function() { return getRetryConfiguration; },
   resolveRetryRuntimeConfig: function() { return resolveRetryRuntimeConfig; }
@@ -18994,16 +16616,17 @@ const resolveRetryRuntimeConfig = (retryStrategyConfiguration)=>{
     return runtimeConfig;
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/get-array-if-single-item.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/get-array-if-single-item.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
+__webpack_require__.d(__webpack_exports__, {
+  getArrayIfSingleItem: function() { return getArrayIfSingleItem; }
+});
 const getArrayIfSingleItem = (mayBeArray)=>Array.isArray(mayBeArray) ? mayBeArray : [
         mayBeArray
     ];
 }),
-"./node_modules/@smithy/smithy-client/dist-es/get-value-from-text-node.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/get-value-from-text-node.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getValueFromTextNode: function() { return getValueFromTextNode; }
 });
@@ -19016,9 +16639,8 @@ const getValueFromTextNode = (obj)=>{
     return obj;
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Client: function() { return /* reexport safe */ _client__WEBPACK_IMPORTED_MODULE_1__.Client; },
   Command: function() { return /* reexport safe */ _command__WEBPACK_IMPORTED_MODULE_3__.Command; },
@@ -19036,38 +16658,41 @@ __webpack_require__.d(__webpack_exports__, {
   expectObject: function() { return /* reexport safe */ _parse_utils__WEBPACK_IMPORTED_MODULE_17__.expectObject; },
   expectString: function() { return /* reexport safe */ _parse_utils__WEBPACK_IMPORTED_MODULE_17__.expectString; },
   extendedEncodeURIComponent: function() { return /* reexport safe */ _extended_encode_uri_component__WEBPACK_IMPORTED_MODULE_12__.extendedEncodeURIComponent; },
+  getArrayIfSingleItem: function() { return /* reexport safe */ _get_array_if_single_item__WEBPACK_IMPORTED_MODULE_13__.getArrayIfSingleItem; },
   getDefaultExtensionConfiguration: function() { return /* reexport safe */ _extensions__WEBPACK_IMPORTED_MODULE_10__.getDefaultExtensionConfiguration; },
   getValueFromTextNode: function() { return /* reexport safe */ _get_value_from_text_node__WEBPACK_IMPORTED_MODULE_14__.getValueFromTextNode; },
   loadConfigsForDefaultMode: function() { return /* reexport safe */ _defaults_mode__WEBPACK_IMPORTED_MODULE_8__.loadConfigsForDefaultMode; },
   map: function() { return /* reexport safe */ _object_mapping__WEBPACK_IMPORTED_MODULE_16__.map; },
+  parseBoolean: function() { return /* reexport safe */ _parse_utils__WEBPACK_IMPORTED_MODULE_17__.parseBoolean; },
   parseRfc3339DateTimeWithOffset: function() { return /* reexport safe */ _date_utils__WEBPACK_IMPORTED_MODULE_6__.parseRfc3339DateTimeWithOffset; },
   resolveDefaultRuntimeConfig: function() { return /* reexport safe */ _extensions__WEBPACK_IMPORTED_MODULE_10__.resolveDefaultRuntimeConfig; },
   resolvedPath: function() { return /* reexport safe */ _resolve_path__WEBPACK_IMPORTED_MODULE_18__.resolvedPath; },
-  serializeFloat: function() { return /* reexport safe */ _ser_utils__WEBPACK_IMPORTED_MODULE_19__.serializeFloat; },
+  strictParseFloat: function() { return /* reexport safe */ _parse_utils__WEBPACK_IMPORTED_MODULE_17__.strictParseFloat; },
   strictParseInt32: function() { return /* reexport safe */ _parse_utils__WEBPACK_IMPORTED_MODULE_17__.strictParseInt32; },
+  strictParseLong: function() { return /* reexport safe */ _parse_utils__WEBPACK_IMPORTED_MODULE_17__.strictParseLong; },
   take: function() { return /* reexport safe */ _object_mapping__WEBPACK_IMPORTED_MODULE_16__.take; },
   withBaseException: function() { return /* reexport safe */ _default_error_handler__WEBPACK_IMPORTED_MODULE_7__.withBaseException; }
 });
-/* harmony import */var _NoOpLogger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NoOpLogger */"./node_modules/@smithy/smithy-client/dist-es/NoOpLogger.js");
-/* harmony import */var _client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./client */"./node_modules/@smithy/smithy-client/dist-es/client.js");
-/* harmony import */var _collect_stream_body__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./collect-stream-body */"./node_modules/@smithy/smithy-client/dist-es/collect-stream-body.js");
-/* harmony import */var _command__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./command */"./node_modules/@smithy/smithy-client/dist-es/command.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/smithy-client/dist-es/constants.js");
-/* harmony import */var _create_aggregated_client__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./create-aggregated-client */"./node_modules/@smithy/smithy-client/dist-es/create-aggregated-client.js");
-/* harmony import */var _date_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./date-utils */"./node_modules/@smithy/smithy-client/dist-es/date-utils.js");
-/* harmony import */var _default_error_handler__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./default-error-handler */"./node_modules/@smithy/smithy-client/dist-es/default-error-handler.js");
-/* harmony import */var _defaults_mode__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./defaults-mode */"./node_modules/@smithy/smithy-client/dist-es/defaults-mode.js");
-/* harmony import */var _emitWarningIfUnsupportedVersion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./emitWarningIfUnsupportedVersion */"./node_modules/@smithy/smithy-client/dist-es/emitWarningIfUnsupportedVersion.js");
-/* harmony import */var _extensions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./extensions */"./node_modules/@smithy/smithy-client/dist-es/extensions/index.js");
-/* harmony import */var _exceptions__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./exceptions */"./node_modules/@smithy/smithy-client/dist-es/exceptions.js");
-/* harmony import */var _extended_encode_uri_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./extended-encode-uri-component */"./node_modules/@smithy/smithy-client/dist-es/extended-encode-uri-component.js");
-/* harmony import */var _get_value_from_text_node__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./get-value-from-text-node */"./node_modules/@smithy/smithy-client/dist-es/get-value-from-text-node.js");
-/* harmony import */var _lazy_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./lazy-json */"./node_modules/@smithy/smithy-client/dist-es/lazy-json.js");
-/* harmony import */var _object_mapping__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./object-mapping */"./node_modules/@smithy/smithy-client/dist-es/object-mapping.js");
-/* harmony import */var _parse_utils__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./parse-utils */"./node_modules/@smithy/smithy-client/dist-es/parse-utils.js");
-/* harmony import */var _resolve_path__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./resolve-path */"./node_modules/@smithy/smithy-client/dist-es/resolve-path.js");
-/* harmony import */var _ser_utils__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./ser-utils */"./node_modules/@smithy/smithy-client/dist-es/ser-utils.js");
-/* harmony import */var _serde_json__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./serde-json */"./node_modules/@smithy/smithy-client/dist-es/serde-json.js");
+/* harmony import */var _NoOpLogger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NoOpLogger */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/NoOpLogger.js");
+/* harmony import */var _client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/client.js");
+/* harmony import */var _collect_stream_body__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./collect-stream-body */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/collect-stream-body.js");
+/* harmony import */var _command__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./command */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/command.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/constants.js");
+/* harmony import */var _create_aggregated_client__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./create-aggregated-client */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/create-aggregated-client.js");
+/* harmony import */var _date_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./date-utils */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/date-utils.js");
+/* harmony import */var _default_error_handler__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./default-error-handler */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/default-error-handler.js");
+/* harmony import */var _defaults_mode__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./defaults-mode */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/defaults-mode.js");
+/* harmony import */var _emitWarningIfUnsupportedVersion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./emitWarningIfUnsupportedVersion */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/emitWarningIfUnsupportedVersion.js");
+/* harmony import */var _extensions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./extensions */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extensions/index.js");
+/* harmony import */var _exceptions__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./exceptions */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/exceptions.js");
+/* harmony import */var _extended_encode_uri_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./extended-encode-uri-component */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extended-encode-uri-component.js");
+/* harmony import */var _get_array_if_single_item__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./get-array-if-single-item */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/get-array-if-single-item.js");
+/* harmony import */var _get_value_from_text_node__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./get-value-from-text-node */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/get-value-from-text-node.js");
+/* harmony import */var _lazy_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./lazy-json */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/lazy-json.js");
+/* harmony import */var _object_mapping__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./object-mapping */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/object-mapping.js");
+/* harmony import */var _parse_utils__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./parse-utils */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/parse-utils.js");
+/* harmony import */var _resolve_path__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./resolve-path */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/resolve-path.js");
+/* harmony import */var _serde_json__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./serde-json */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/serde-json.js");
 
 
 
@@ -19091,9 +16716,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/smithy-client/dist-es/lazy-json.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/lazy-json.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 const StringWrapper = function() {
     const Class = Object.getPrototypeOf(this).constructor;
     const Constructor = Function.bind.apply(String, [
@@ -19127,9 +16751,8 @@ class LazyJsonString extends (/* unused pure expression or super */ null && (Str
     }
 }
 }),
-"./node_modules/@smithy/smithy-client/dist-es/object-mapping.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/object-mapping.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   map: function() { return map; },
   take: function() { return take; }
@@ -19212,18 +16835,20 @@ const applyInstruction = (target, source, instructions, targetKey)=>{
 const nonNullish = (_)=>_ != null;
 const pass = (_)=>_;
 }),
-"./node_modules/@smithy/smithy-client/dist-es/parse-utils.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/parse-utils.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   expectInt32: function() { return expectInt32; },
   expectLong: function() { return expectLong; },
   expectNonNull: function() { return expectNonNull; },
   expectObject: function() { return expectObject; },
   expectString: function() { return expectString; },
+  parseBoolean: function() { return parseBoolean; },
   strictParseByte: function() { return strictParseByte; },
+  strictParseFloat: function() { return strictParseFloat; },
   strictParseFloat32: function() { return strictParseFloat32; },
   strictParseInt32: function() { return strictParseInt32; },
+  strictParseLong: function() { return strictParseLong; },
   strictParseShort: function() { return strictParseShort; }
 });
 const parseBoolean = (value)=>{
@@ -19334,7 +16959,7 @@ const strictParseDouble = (value)=>{
     if (typeof value == "string") return expectNumber(parseNumber(value));
     return expectNumber(value);
 };
-const strictParseFloat = (/* unused pure expression or super */ null && (strictParseDouble));
+const strictParseFloat = strictParseDouble;
 const strictParseFloat32 = (value)=>{
     if (typeof value == "string") return expectFloat32(parseNumber(value));
     return expectFloat32(value);
@@ -19391,13 +17016,12 @@ const logger = {
     warn: console.warn
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/resolve-path.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/resolve-path.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolvedPath: function() { return resolvedPath; }
 });
-/* harmony import */var _extended_encode_uri_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./extended-encode-uri-component */"./node_modules/@smithy/smithy-client/dist-es/extended-encode-uri-component.js");
+/* harmony import */var _extended_encode_uri_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./extended-encode-uri-component */"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/extended-encode-uri-component.js");
 
 const resolvedPath = (resolvedPath, input, memberName, labelValueProvider, uriLabel, isGreedyLabel)=>{
     if (input != null && input[memberName] !== undefined) {
@@ -19408,27 +17032,8 @@ const resolvedPath = (resolvedPath, input, memberName, labelValueProvider, uriLa
     return resolvedPath;
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/ser-utils.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+smithy-client@2.3.1/node_modules/@smithy/smithy-client/dist-es/serde-json.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-__webpack_require__.d(__webpack_exports__, {
-  serializeFloat: function() { return serializeFloat; }
-});
-const serializeFloat = (value)=>{
-    if (value !== value) return "NaN";
-    switch(value){
-        case Infinity:
-            return "Infinity";
-        case -Infinity:
-            return "-Infinity";
-        default:
-            return value;
-    }
-};
-}),
-"./node_modules/@smithy/smithy-client/dist-es/serde-json.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   _json: function() { return _json; }
 });
@@ -19446,75 +17051,26 @@ const _json = (obj)=>{
     return obj;
 };
 }),
-"./node_modules/@smithy/smithy-client/dist-es/split-every.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/auth/HttpApiKeyAuth.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-function splitEvery(value, delimiter, numDelimiters) {
-    if (numDelimiters <= 0 || !Number.isInteger(numDelimiters)) throw new Error("Invalid number of delimiters (" + numDelimiters + ") for splitEvery.");
-    const segments = value.split(delimiter);
-    if (numDelimiters === 1) return segments;
-    const compoundSegments = [];
-    let currentSegment = "";
-    for(let i = 0; i < segments.length; i++){
-        if (currentSegment === "") currentSegment = segments[i];
-        else currentSegment += delimiter + segments[i];
-        if ((i + 1) % numDelimiters === 0) {
-            compoundSegments.push(currentSegment);
-            currentSegment = "";
-        }
-    }
-    if (currentSegment !== "") compoundSegments.push(currentSegment);
-    return compoundSegments;
-}
-}),
-"./node_modules/@smithy/types/dist-es/abort.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/auth/HttpApiKeyAuth.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 var HttpApiKeyAuthLocation;
 (function(HttpApiKeyAuthLocation) {
     HttpApiKeyAuthLocation["HEADER"] = "header";
     HttpApiKeyAuthLocation["QUERY"] = "query";
 })(HttpApiKeyAuthLocation || (HttpApiKeyAuthLocation = {}));
 }),
-"./node_modules/@smithy/types/dist-es/auth/HttpAuthScheme.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/auth/auth.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/auth/HttpAuthSchemeProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/auth/HttpSigner.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/auth/IdentityProviderConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/auth/auth.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 var HttpAuthLocation;
 (function(HttpAuthLocation) {
     HttpAuthLocation["HEADER"] = "header";
     HttpAuthLocation["QUERY"] = "query";
 })(HttpAuthLocation || (HttpAuthLocation = {}));
 }),
-"./node_modules/@smithy/types/dist-es/auth/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/auth/index.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _auth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./auth */"./node_modules/@smithy/types/dist-es/auth/auth.js");
-/* harmony import */var _HttpApiKeyAuth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HttpApiKeyAuth */"./node_modules/@smithy/types/dist-es/auth/HttpApiKeyAuth.js");
+/* harmony import */var _auth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./auth */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/auth/auth.js");
+/* harmony import */var _HttpApiKeyAuth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HttpApiKeyAuth */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/auth/HttpApiKeyAuth.js");
 
 
 
@@ -19522,61 +17078,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 }),
-"./node_modules/@smithy/types/dist-es/blob/blob-payload-input-types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/endpoint.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/checksum.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/client.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/command.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/connection/config.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/connection/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-}),
-"./node_modules/@smithy/types/dist-es/connection/manager.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/connection/pool.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/crypto.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/encode.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/endpoint.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   EndpointURLScheme: function() { return EndpointURLScheme; }
 });
@@ -19586,48 +17089,8 @@ var EndpointURLScheme;
     EndpointURLScheme["HTTPS"] = "https";
 })(EndpointURLScheme || (EndpointURLScheme = {}));
 }),
-"./node_modules/@smithy/types/dist-es/endpoints/EndpointRuleObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/extensions/checksum.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/endpoints/ErrorRuleObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/endpoints/RuleSetObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/endpoints/TreeRuleObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/endpoints/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-
-}),
-"./node_modules/@smithy/types/dist-es/endpoints/shared.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/eventStream.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/extensions/checksum.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AlgorithmId: function() { return AlgorithmId; }
 });
@@ -19667,10 +17130,9 @@ const resolveChecksumRuntimeConfig = (clientConfig)=>{
     return runtimeConfig;
 };
 }),
-"./node_modules/@smithy/types/dist-es/extensions/defaultClientConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/extensions/defaultClientConfiguration.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _checksum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./checksum */"./node_modules/@smithy/types/dist-es/extensions/checksum.js");
+/* harmony import */var _checksum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./checksum */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/extensions/checksum.js");
 
 const getDefaultClientConfiguration = (runtimeConfig)=>{
     return {
@@ -19683,81 +17145,40 @@ const resolveDefaultRuntimeConfig = (config)=>{
     };
 };
 }),
-"./node_modules/@smithy/types/dist-es/extensions/defaultExtensionConfiguration.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/extensions/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/extensions/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AlgorithmId: function() { return /* reexport safe */ _checksum__WEBPACK_IMPORTED_MODULE_2__.AlgorithmId; }
 });
-/* harmony import */var _defaultClientConfiguration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultClientConfiguration */"./node_modules/@smithy/types/dist-es/extensions/defaultClientConfiguration.js");
-/* harmony import */var _checksum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./checksum */"./node_modules/@smithy/types/dist-es/extensions/checksum.js");
+/* harmony import */var _defaultClientConfiguration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultClientConfiguration */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/extensions/defaultClientConfiguration.js");
+/* harmony import */var _checksum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./checksum */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/extensions/checksum.js");
 
 
 
 }),
-"./node_modules/@smithy/types/dist-es/http.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/http.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 var FieldPosition;
 (function(FieldPosition) {
     FieldPosition[FieldPosition["HEADER"] = 0] = "HEADER";
     FieldPosition[FieldPosition["TRAILER"] = 1] = "TRAILER";
 })(FieldPosition || (FieldPosition = {}));
 }),
-"./node_modules/@smithy/types/dist-es/http/httpHandlerInitialization.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/identity/apiKeyIdentity.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/identity/awsCredentialIdentity.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/identity/identity.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/identity/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-}),
-"./node_modules/@smithy/types/dist-es/identity/tokenIdentity.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AlgorithmId: function() { return /* reexport safe */ _extensions__WEBPACK_IMPORTED_MODULE_12__.AlgorithmId; },
   EndpointURLScheme: function() { return /* reexport safe */ _endpoint__WEBPACK_IMPORTED_MODULE_9__.EndpointURLScheme; },
   IniSectionType: function() { return /* reexport safe */ _profile__WEBPACK_IMPORTED_MODULE_19__.IniSectionType; },
   SMITHY_CONTEXT_KEY: function() { return /* reexport safe */ _middleware__WEBPACK_IMPORTED_MODULE_17__.SMITHY_CONTEXT_KEY; }
 });
-/* harmony import */var _auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth */"./node_modules/@smithy/types/dist-es/auth/index.js");
-/* harmony import */var _endpoint__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./endpoint */"./node_modules/@smithy/types/dist-es/endpoint.js");
-/* harmony import */var _extensions__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./extensions */"./node_modules/@smithy/types/dist-es/extensions/index.js");
-/* harmony import */var _http__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./http */"./node_modules/@smithy/types/dist-es/http.js");
-/* harmony import */var _middleware__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./middleware */"./node_modules/@smithy/types/dist-es/middleware.js");
-/* harmony import */var _profile__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./profile */"./node_modules/@smithy/types/dist-es/profile.js");
-/* harmony import */var _transfer__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./transfer */"./node_modules/@smithy/types/dist-es/transfer.js");
+/* harmony import */var _auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/auth/index.js");
+/* harmony import */var _endpoint__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./endpoint */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/endpoint.js");
+/* harmony import */var _extensions__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./extensions */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/extensions/index.js");
+/* harmony import */var _http__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./http */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/http.js");
+/* harmony import */var _middleware__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./middleware */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/middleware.js");
+/* harmony import */var _profile__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./profile */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/profile.js");
+/* harmony import */var _transfer__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./transfer */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/transfer.js");
 
 
 
@@ -19795,27 +17216,15 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/types/dist-es/logger.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/middleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/middleware.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   SMITHY_CONTEXT_KEY: function() { return SMITHY_CONTEXT_KEY; }
 });
 const SMITHY_CONTEXT_KEY = "__smithy_context";
 }),
-"./node_modules/@smithy/types/dist-es/pagination.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/profile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/profile.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   IniSectionType: function() { return IniSectionType; }
 });
@@ -19826,54 +17235,8 @@ var IniSectionType;
     IniSectionType["SERVICES"] = "services";
 })(IniSectionType || (IniSectionType = {}));
 }),
-"./node_modules/@smithy/types/dist-es/response.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/transfer.js": (function () {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/retry.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/serde.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/shapes.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/signature.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/stream.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/streaming-payload/streaming-blob-common-types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/streaming-payload/streaming-blob-payload-input-types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/streaming-payload/streaming-blob-payload-output-types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/transfer.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 var RequestHandlerProtocol;
 (function(RequestHandlerProtocol) {
     RequestHandlerProtocol["HTTP_0_9"] = "http/0.9";
@@ -19881,43 +17244,12 @@ var RequestHandlerProtocol;
     RequestHandlerProtocol["TDS_8_0"] = "tds/8.0";
 })(RequestHandlerProtocol || (RequestHandlerProtocol = {}));
 }),
-"./node_modules/@smithy/types/dist-es/transform/client-payload-blob-type-narrow.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+url-parser@2.1.1/node_modules/@smithy/url-parser/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/transform/no-undefined.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/transform/type-transform.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/uri.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/util.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/types/dist-es/waiter.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/url-parser/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   parseUrl: function() { return parseUrl; }
 });
-/* harmony import */var _smithy_querystring_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/querystring-parser */"./node_modules/@smithy/querystring-parser/dist-es/index.js");
+/* harmony import */var _smithy_querystring_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/querystring-parser */"./node_modules/.pnpm/@smithy+querystring-parser@2.1.1/node_modules/@smithy/querystring-parser/dist-es/index.js");
 
 const parseUrl = (url)=>{
     if (typeof url === "string") return parseUrl(new URL(url));
@@ -19933,13 +17265,12 @@ const parseUrl = (url)=>{
     };
 };
 }),
-"./node_modules/@smithy/util-base64/dist-es/fromBase64.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/fromBase64.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromBase64: function() { return fromBase64; }
 });
-/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/@smithy/util-buffer-from/dist-es/index.js");
+/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/.pnpm/@smithy+util-buffer-from@2.1.1/node_modules/@smithy/util-buffer-from/dist-es/index.js");
 
 const BASE64_REGEX = /^[A-Za-z0-9+/]*={0,2}$/;
 const fromBase64 = (input)=>{
@@ -19949,31 +17280,28 @@ const fromBase64 = (input)=>{
     return new Uint8Array(buffer.buffer, buffer.byteOffset, buffer.byteLength);
 };
 }),
-"./node_modules/@smithy/util-base64/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromBase64: function() { return /* reexport safe */ _fromBase64__WEBPACK_IMPORTED_MODULE_0__.fromBase64; },
   toBase64: function() { return /* reexport safe */ _toBase64__WEBPACK_IMPORTED_MODULE_1__.toBase64; }
 });
-/* harmony import */var _fromBase64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromBase64 */"./node_modules/@smithy/util-base64/dist-es/fromBase64.js");
-/* harmony import */var _toBase64__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toBase64 */"./node_modules/@smithy/util-base64/dist-es/toBase64.js");
+/* harmony import */var _fromBase64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromBase64 */"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/fromBase64.js");
+/* harmony import */var _toBase64__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toBase64 */"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/toBase64.js");
 
 
 }),
-"./node_modules/@smithy/util-base64/dist-es/toBase64.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/toBase64.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   toBase64: function() { return toBase64; }
 });
-/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/@smithy/util-buffer-from/dist-es/index.js");
+/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/.pnpm/@smithy+util-buffer-from@2.1.1/node_modules/@smithy/util-buffer-from/dist-es/index.js");
 
 const toBase64 = (input)=>(0, _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__.fromArrayBuffer)(input.buffer, input.byteOffset, input.byteLength).toString("base64");
 }),
-"./node_modules/@smithy/util-body-length-node/dist-es/calculateBodyLength.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-body-length-node@2.2.1/node_modules/@smithy/util-body-length-node/dist-es/calculateBodyLength.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   calculateBodyLength: function() { return calculateBodyLength; }
 });
@@ -19991,23 +17319,21 @@ const calculateBodyLength = (body)=>{
     throw new Error(`Body Length computation failed for ${body}`);
 };
 }),
-"./node_modules/@smithy/util-body-length-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-body-length-node@2.2.1/node_modules/@smithy/util-body-length-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   calculateBodyLength: function() { return /* reexport safe */ _calculateBodyLength__WEBPACK_IMPORTED_MODULE_0__.calculateBodyLength; }
 });
-/* harmony import */var _calculateBodyLength__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./calculateBodyLength */"./node_modules/@smithy/util-body-length-node/dist-es/calculateBodyLength.js");
+/* harmony import */var _calculateBodyLength__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./calculateBodyLength */"./node_modules/.pnpm/@smithy+util-body-length-node@2.2.1/node_modules/@smithy/util-body-length-node/dist-es/calculateBodyLength.js");
 
 }),
-"./node_modules/@smithy/util-buffer-from/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-buffer-from@2.1.1/node_modules/@smithy/util-buffer-from/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromArrayBuffer: function() { return fromArrayBuffer; },
   fromString: function() { return fromString; }
 });
-/* harmony import */var _smithy_is_array_buffer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/is-array-buffer */"./node_modules/@smithy/is-array-buffer/dist-es/index.js");
+/* harmony import */var _smithy_is_array_buffer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/is-array-buffer */"./node_modules/.pnpm/@smithy+is-array-buffer@2.1.1/node_modules/@smithy/is-array-buffer/dist-es/index.js");
 /* harmony import */var buffer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! buffer */"buffer");
 /* harmony import */var buffer__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(buffer__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -20021,9 +17347,8 @@ const fromString = (input, encoding)=>{
     return encoding ? buffer__WEBPACK_IMPORTED_MODULE_0__.Buffer.from(input, encoding) : buffer__WEBPACK_IMPORTED_MODULE_0__.Buffer.from(input);
 };
 }),
-"./node_modules/@smithy/util-config-provider/dist-es/booleanSelector.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-config-provider@2.2.1/node_modules/@smithy/util-config-provider/dist-es/booleanSelector.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   booleanSelector: function() { return booleanSelector; }
 });
@@ -20034,32 +17359,20 @@ const booleanSelector = (obj, key, type)=>{
     throw new Error(`Cannot load ${type} "${key}". Expected "true" or "false", got ${obj[key]}.`);
 };
 }),
-"./node_modules/@smithy/util-config-provider/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-config-provider@2.2.1/node_modules/@smithy/util-config-provider/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   SelectorType: function() { return /* reexport safe */ _types__WEBPACK_IMPORTED_MODULE_2__.SelectorType; },
   booleanSelector: function() { return /* reexport safe */ _booleanSelector__WEBPACK_IMPORTED_MODULE_0__.booleanSelector; }
 });
-/* harmony import */var _booleanSelector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./booleanSelector */"./node_modules/@smithy/util-config-provider/dist-es/booleanSelector.js");
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./types */"./node_modules/@smithy/util-config-provider/dist-es/types.js");
+/* harmony import */var _booleanSelector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./booleanSelector */"./node_modules/.pnpm/@smithy+util-config-provider@2.2.1/node_modules/@smithy/util-config-provider/dist-es/booleanSelector.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./types */"./node_modules/.pnpm/@smithy+util-config-provider@2.2.1/node_modules/@smithy/util-config-provider/dist-es/types.js");
 
 
 
 }),
-"./node_modules/@smithy/util-config-provider/dist-es/numberSelector.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-config-provider@2.2.1/node_modules/@smithy/util-config-provider/dist-es/types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-const numberSelector = (obj, key, type)=>{
-    if (!(key in obj)) return undefined;
-    const numberValue = parseInt(obj[key], 10);
-    if (Number.isNaN(numberValue)) throw new TypeError(`Cannot load ${type} '${key}'. Expected number, got '${obj[key]}'.`);
-    return numberValue;
-};
-}),
-"./node_modules/@smithy/util-config-provider/dist-es/types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   SelectorType: function() { return SelectorType; }
 });
@@ -20069,9 +17382,8 @@ var SelectorType;
     SelectorType["CONFIG"] = "shared config entry";
 })(SelectorType || (SelectorType = {}));
 }),
-"./node_modules/@smithy/util-defaults-mode-node/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AWS_DEFAULT_REGION_ENV: function() { return AWS_DEFAULT_REGION_ENV; },
   AWS_EXECUTION_ENV: function() { return AWS_EXECUTION_ENV; },
@@ -20093,9 +17405,8 @@ const DEFAULTS_MODE_OPTIONS = [
 ];
 const IMDS_REGION_PATH = "/latest/meta-data/placement/region";
 }),
-"./node_modules/@smithy/util-defaults-mode-node/dist-es/defaultsModeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/defaultsModeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   NODE_DEFAULTS_MODE_CONFIG_OPTIONS: function() { return NODE_DEFAULTS_MODE_CONFIG_OPTIONS; }
 });
@@ -20111,27 +17422,25 @@ const NODE_DEFAULTS_MODE_CONFIG_OPTIONS = {
     default: "legacy"
 };
 }),
-"./node_modules/@smithy/util-defaults-mode-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveDefaultsModeConfig: function() { return /* reexport safe */ _resolveDefaultsModeConfig__WEBPACK_IMPORTED_MODULE_0__.resolveDefaultsModeConfig; }
 });
-/* harmony import */var _resolveDefaultsModeConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./resolveDefaultsModeConfig */"./node_modules/@smithy/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js");
+/* harmony import */var _resolveDefaultsModeConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./resolveDefaultsModeConfig */"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js");
 
 }),
-"./node_modules/@smithy/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveDefaultsModeConfig: function() { return resolveDefaultsModeConfig; }
 });
-/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/@smithy/config-resolver/dist-es/index.js");
-/* harmony import */var _smithy_credential_provider_imds__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/credential-provider-imds */"./node_modules/@smithy/credential-provider-imds/dist-es/index.js");
-/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/@smithy/node-config-provider/dist-es/index.js");
-/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/@smithy/property-provider/dist-es/memoize.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/util-defaults-mode-node/dist-es/constants.js");
-/* harmony import */var _defaultsModeConfig__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defaultsModeConfig */"./node_modules/@smithy/util-defaults-mode-node/dist-es/defaultsModeConfig.js");
+/* harmony import */var _smithy_config_resolver__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/config-resolver */"./node_modules/.pnpm/@smithy+config-resolver@2.1.1/node_modules/@smithy/config-resolver/dist-es/index.js");
+/* harmony import */var _smithy_credential_provider_imds__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/credential-provider-imds */"./node_modules/.pnpm/@smithy+credential-provider-imds@2.2.1/node_modules/@smithy/credential-provider-imds/dist-es/index.js");
+/* harmony import */var _smithy_node_config_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @smithy/node-config-provider */"./node_modules/.pnpm/@smithy+node-config-provider@2.2.1/node_modules/@smithy/node-config-provider/dist-es/index.js");
+/* harmony import */var _smithy_property_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @smithy/property-provider */"./node_modules/.pnpm/@smithy+property-provider@2.1.1/node_modules/@smithy/property-provider/dist-es/memoize.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/constants.js");
+/* harmony import */var _defaultsModeConfig__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defaultsModeConfig */"./node_modules/.pnpm/@smithy+util-defaults-mode-node@2.1.1/node_modules/@smithy/util-defaults-mode-node/dist-es/defaultsModeConfig.js");
 
 
 
@@ -20176,23 +17485,15 @@ const inferPhysicalRegion = async ()=>{
     } catch (e) {}
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   debugId: function() { return debugId; }
 });
 const debugId = "endpoints";
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/debug/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-}),
-"./node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   toDebugString: function() { return toDebugString; }
 });
@@ -20203,41 +17504,38 @@ function toDebugString(input) {
     return JSON.stringify(input, null, 2);
 }
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   customEndpointFunctions: function() { return /* reexport safe */ _utils_customEndpointFunctions__WEBPACK_IMPORTED_MODULE_2__.customEndpointFunctions; },
   isIpAddress: function() { return /* reexport safe */ _lib_isIpAddress__WEBPACK_IMPORTED_MODULE_0__.isIpAddress; },
   isValidHostLabel: function() { return /* reexport safe */ _lib_isValidHostLabel__WEBPACK_IMPORTED_MODULE_1__.isValidHostLabel; },
   resolveEndpoint: function() { return /* reexport safe */ _resolveEndpoint__WEBPACK_IMPORTED_MODULE_3__.resolveEndpoint; }
 });
-/* harmony import */var _lib_isIpAddress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/isIpAddress */"./node_modules/@smithy/util-endpoints/dist-es/lib/isIpAddress.js");
-/* harmony import */var _lib_isValidHostLabel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/isValidHostLabel */"./node_modules/@smithy/util-endpoints/dist-es/lib/isValidHostLabel.js");
-/* harmony import */var _utils_customEndpointFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/customEndpointFunctions */"./node_modules/@smithy/util-endpoints/dist-es/utils/customEndpointFunctions.js");
-/* harmony import */var _resolveEndpoint__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveEndpoint */"./node_modules/@smithy/util-endpoints/dist-es/resolveEndpoint.js");
+/* harmony import */var _lib_isIpAddress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/isIpAddress */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/isIpAddress.js");
+/* harmony import */var _lib_isValidHostLabel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/isValidHostLabel */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/isValidHostLabel.js");
+/* harmony import */var _utils_customEndpointFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/customEndpointFunctions */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/customEndpointFunctions.js");
+/* harmony import */var _resolveEndpoint__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolveEndpoint */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/resolveEndpoint.js");
 
 
 
 
 
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/booleanEquals.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/booleanEquals.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   booleanEquals: function() { return booleanEquals; }
 });
 const booleanEquals = (value1, value2)=>value1 === value2;
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/getAttr.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/getAttr.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getAttr: function() { return getAttr; }
 });
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
-/* harmony import */var _getAttrPathList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getAttrPathList */"./node_modules/@smithy/util-endpoints/dist-es/lib/getAttrPathList.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _getAttrPathList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getAttrPathList */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/getAttrPathList.js");
 
 
 const getAttr = (value, path)=>(0, _getAttrPathList__WEBPACK_IMPORTED_MODULE_0__.getAttrPathList)(path).reduce((acc, index)=>{
@@ -20246,13 +17544,12 @@ const getAttr = (value, path)=>(0, _getAttrPathList__WEBPACK_IMPORTED_MODULE_0__
         return acc[index];
     }, value);
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/getAttrPathList.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/getAttrPathList.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getAttrPathList: function() { return getAttrPathList; }
 });
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
 
 const getAttrPathList = (path)=>{
     const parts = path.split(".");
@@ -20270,9 +17567,8 @@ const getAttrPathList = (path)=>{
     return pathList;
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   booleanEquals: function() { return /* reexport safe */ _booleanEquals__WEBPACK_IMPORTED_MODULE_0__.booleanEquals; },
   getAttr: function() { return /* reexport safe */ _getAttr__WEBPACK_IMPORTED_MODULE_1__.getAttr; },
@@ -20284,15 +17580,15 @@ __webpack_require__.d(__webpack_exports__, {
   substring: function() { return /* reexport safe */ _substring__WEBPACK_IMPORTED_MODULE_7__.substring; },
   uriEncode: function() { return /* reexport safe */ _uriEncode__WEBPACK_IMPORTED_MODULE_8__.uriEncode; }
 });
-/* harmony import */var _booleanEquals__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./booleanEquals */"./node_modules/@smithy/util-endpoints/dist-es/lib/booleanEquals.js");
-/* harmony import */var _getAttr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getAttr */"./node_modules/@smithy/util-endpoints/dist-es/lib/getAttr.js");
-/* harmony import */var _isSet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./isSet */"./node_modules/@smithy/util-endpoints/dist-es/lib/isSet.js");
-/* harmony import */var _isValidHostLabel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./isValidHostLabel */"./node_modules/@smithy/util-endpoints/dist-es/lib/isValidHostLabel.js");
-/* harmony import */var _not__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./not */"./node_modules/@smithy/util-endpoints/dist-es/lib/not.js");
-/* harmony import */var _parseURL__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./parseURL */"./node_modules/@smithy/util-endpoints/dist-es/lib/parseURL.js");
-/* harmony import */var _stringEquals__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./stringEquals */"./node_modules/@smithy/util-endpoints/dist-es/lib/stringEquals.js");
-/* harmony import */var _substring__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./substring */"./node_modules/@smithy/util-endpoints/dist-es/lib/substring.js");
-/* harmony import */var _uriEncode__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./uriEncode */"./node_modules/@smithy/util-endpoints/dist-es/lib/uriEncode.js");
+/* harmony import */var _booleanEquals__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./booleanEquals */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/booleanEquals.js");
+/* harmony import */var _getAttr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getAttr */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/getAttr.js");
+/* harmony import */var _isSet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./isSet */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/isSet.js");
+/* harmony import */var _isValidHostLabel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./isValidHostLabel */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/isValidHostLabel.js");
+/* harmony import */var _not__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./not */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/not.js");
+/* harmony import */var _parseURL__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./parseURL */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/parseURL.js");
+/* harmony import */var _stringEquals__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./stringEquals */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/stringEquals.js");
+/* harmony import */var _substring__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./substring */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/substring.js");
+/* harmony import */var _uriEncode__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./uriEncode */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/uriEncode.js");
 
 
 
@@ -20303,26 +17599,23 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/isIpAddress.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/isIpAddress.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isIpAddress: function() { return isIpAddress; }
 });
 const IP_V4_REGEX = new RegExp(`^(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)){3}$`);
 const isIpAddress = (value)=>IP_V4_REGEX.test(value) || value.startsWith("[") && value.endsWith("]");
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/isSet.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/isSet.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isSet: function() { return isSet; }
 });
 const isSet = (value)=>value != null;
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/isValidHostLabel.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/isValidHostLabel.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   isValidHostLabel: function() { return isValidHostLabel; }
 });
@@ -20336,22 +17629,20 @@ const isValidHostLabel = (value, allowSubDomains = false)=>{
     return true;
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/not.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/not.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   not: function() { return not; }
 });
 const not = (value)=>!value;
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/parseURL.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/parseURL.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   parseURL: function() { return parseURL; }
 });
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
-/* harmony import */var _isIpAddress__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./isIpAddress */"./node_modules/@smithy/util-endpoints/dist-es/lib/isIpAddress.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _isIpAddress__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./isIpAddress */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/isIpAddress.js");
 
 
 const DEFAULT_PORTS = {
@@ -20394,17 +17685,15 @@ const parseURL = (value)=>{
     };
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/stringEquals.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/stringEquals.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   stringEquals: function() { return stringEquals; }
 });
 const stringEquals = (value1, value2)=>value1 === value2;
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/substring.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/substring.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   substring: function() { return substring; }
 });
@@ -20414,24 +17703,22 @@ const substring = (input, start, stop, reverse)=>{
     return input.substring(input.length - stop, input.length - start);
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/lib/uriEncode.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/uriEncode.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   uriEncode: function() { return uriEncode; }
 });
 const uriEncode = (value)=>encodeURIComponent(value).replace(/[!*'()]/g, (c)=>`%${c.charCodeAt(0).toString(16).toUpperCase()}`);
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/resolveEndpoint.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/resolveEndpoint.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   resolveEndpoint: function() { return resolveEndpoint; }
 });
-/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./debug */"./node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js");
-/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./debug */"./node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js");
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
-/* harmony import */var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */"./node_modules/@smithy/util-endpoints/dist-es/utils/index.js");
+/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./debug */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js");
+/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./debug */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/index.js");
 
 
 
@@ -20463,9 +17750,8 @@ const resolveEndpoint = (ruleSetObject, options)=>{
     return endpoint;
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   EndpointError: function() { return EndpointError; }
 });
@@ -20476,56 +17762,14 @@ class EndpointError extends Error {
     }
 }
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointFunctions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/callFunction.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointRuleObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/util-endpoints/dist-es/types/ErrorRuleObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/util-endpoints/dist-es/types/RuleSetObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/util-endpoints/dist-es/types/TreeRuleObject.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/util-endpoints/dist-es/types/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-
-
-
-
-}),
-"./node_modules/@smithy/util-endpoints/dist-es/types/shared.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/callFunction.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   callFunction: function() { return callFunction; }
 });
-/* harmony import */var _customEndpointFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./customEndpointFunctions */"./node_modules/@smithy/util-endpoints/dist-es/utils/customEndpointFunctions.js");
-/* harmony import */var _endpointFunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./endpointFunctions */"./node_modules/@smithy/util-endpoints/dist-es/utils/endpointFunctions.js");
-/* harmony import */var _evaluateExpression__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateExpression */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js");
+/* harmony import */var _customEndpointFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./customEndpointFunctions */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/customEndpointFunctions.js");
+/* harmony import */var _endpointFunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./endpointFunctions */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/endpointFunctions.js");
+/* harmony import */var _evaluateExpression__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateExpression */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js");
 
 
 
@@ -20539,21 +17783,19 @@ const callFunction = ({ fn, argv }, options)=>{
     return (0, _endpointFunctions__WEBPACK_IMPORTED_MODULE_0__.endpointFunctions)[fn](...evaluatedArgs);
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/customEndpointFunctions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/customEndpointFunctions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   customEndpointFunctions: function() { return customEndpointFunctions; }
 });
 const customEndpointFunctions = {};
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/endpointFunctions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/endpointFunctions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   endpointFunctions: function() { return endpointFunctions; }
 });
-/* harmony import */var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lib */"./node_modules/@smithy/util-endpoints/dist-es/lib/index.js");
+/* harmony import */var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lib */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/index.js");
 
 const endpointFunctions = {
     booleanEquals: _lib__WEBPACK_IMPORTED_MODULE_0__.booleanEquals,
@@ -20567,16 +17809,15 @@ const endpointFunctions = {
     uriEncode: _lib__WEBPACK_IMPORTED_MODULE_0__.uriEncode
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateCondition.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateCondition.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   evaluateCondition: function() { return evaluateCondition; }
 });
-/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../debug */"./node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js");
-/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../debug */"./node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js");
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
-/* harmony import */var _callFunction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./callFunction */"./node_modules/@smithy/util-endpoints/dist-es/utils/callFunction.js");
+/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../debug */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js");
+/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../debug */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _callFunction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./callFunction */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/callFunction.js");
 
 
 
@@ -20595,15 +17836,14 @@ const evaluateCondition = ({ assign, ...fnArgs }, options)=>{
     };
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateConditions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateConditions.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   evaluateConditions: function() { return evaluateConditions; }
 });
-/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../debug */"./node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js");
-/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../debug */"./node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js");
-/* harmony import */var _evaluateCondition__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateCondition */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateCondition.js");
+/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../debug */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js");
+/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../debug */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js");
+/* harmony import */var _evaluateCondition__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateCondition */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateCondition.js");
 
 
 const evaluateConditions = (conditions = [], options)=>{
@@ -20630,18 +17870,17 @@ const evaluateConditions = (conditions = [], options)=>{
     };
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateEndpointRule.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateEndpointRule.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   evaluateEndpointRule: function() { return evaluateEndpointRule; }
 });
-/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../debug */"./node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js");
-/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../debug */"./node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js");
-/* harmony import */var _evaluateConditions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateConditions */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateConditions.js");
-/* harmony import */var _getEndpointHeaders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getEndpointHeaders */"./node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointHeaders.js");
-/* harmony import */var _getEndpointProperties__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getEndpointProperties */"./node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperties.js");
-/* harmony import */var _getEndpointUrl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getEndpointUrl */"./node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointUrl.js");
+/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../debug */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/debugId.js");
+/* harmony import */var _debug__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../debug */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/debug/toDebugString.js");
+/* harmony import */var _evaluateConditions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateConditions */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateConditions.js");
+/* harmony import */var _getEndpointHeaders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getEndpointHeaders */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointHeaders.js");
+/* harmony import */var _getEndpointProperties__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getEndpointProperties */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperties.js");
+/* harmony import */var _getEndpointUrl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getEndpointUrl */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointUrl.js");
 
 
 
@@ -20671,15 +17910,14 @@ const evaluateEndpointRule = (endpointRule, options)=>{
     };
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateErrorRule.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateErrorRule.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   evaluateErrorRule: function() { return evaluateErrorRule; }
 });
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
-/* harmony import */var _evaluateConditions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateConditions */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateConditions.js");
-/* harmony import */var _evaluateExpression__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateExpression */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _evaluateConditions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateConditions */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateConditions.js");
+/* harmony import */var _evaluateExpression__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateExpression */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js");
 
 
 
@@ -20696,16 +17934,15 @@ const evaluateErrorRule = (errorRule, options)=>{
     }));
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   evaluateExpression: function() { return evaluateExpression; }
 });
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
-/* harmony import */var _callFunction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./callFunction */"./node_modules/@smithy/util-endpoints/dist-es/utils/callFunction.js");
-/* harmony import */var _evaluateTemplate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateTemplate */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTemplate.js");
-/* harmony import */var _getReferenceValue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getReferenceValue */"./node_modules/@smithy/util-endpoints/dist-es/utils/getReferenceValue.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _callFunction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./callFunction */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/callFunction.js");
+/* harmony import */var _evaluateTemplate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateTemplate */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTemplate.js");
+/* harmony import */var _getReferenceValue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getReferenceValue */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getReferenceValue.js");
 
 
 
@@ -20717,16 +17954,15 @@ const evaluateExpression = (obj, keyName, options)=>{
     throw new _types__WEBPACK_IMPORTED_MODULE_3__.EndpointError(`'${keyName}': ${String(obj)} is not a string, function or reference.`);
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateRules.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateRules.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   evaluateRules: function() { return evaluateRules; }
 });
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
-/* harmony import */var _evaluateEndpointRule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateEndpointRule */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateEndpointRule.js");
-/* harmony import */var _evaluateErrorRule__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateErrorRule */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateErrorRule.js");
-/* harmony import */var _evaluateTreeRule__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./evaluateTreeRule */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTreeRule.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _evaluateEndpointRule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateEndpointRule */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateEndpointRule.js");
+/* harmony import */var _evaluateErrorRule__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateErrorRule */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateErrorRule.js");
+/* harmony import */var _evaluateTreeRule__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./evaluateTreeRule */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTreeRule.js");
 
 
 
@@ -20745,13 +17981,12 @@ const evaluateRules = (rules, options)=>{
     throw new _types__WEBPACK_IMPORTED_MODULE_3__.EndpointError(`Rules evaluation failed`);
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTemplate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTemplate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   evaluateTemplate: function() { return evaluateTemplate; }
 });
-/* harmony import */var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lib */"./node_modules/@smithy/util-endpoints/dist-es/lib/index.js");
+/* harmony import */var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lib */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/lib/index.js");
 
 const evaluateTemplate = (template, options)=>{
     const evaluatedTemplateArr = [];
@@ -20786,14 +18021,13 @@ const evaluateTemplate = (template, options)=>{
     return evaluatedTemplateArr.join("");
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTreeRule.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTreeRule.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   evaluateTreeRule: function() { return evaluateTreeRule; }
 });
-/* harmony import */var _evaluateConditions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateConditions */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateConditions.js");
-/* harmony import */var _evaluateRules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateRules */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateRules.js");
+/* harmony import */var _evaluateConditions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateConditions */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateConditions.js");
+/* harmony import */var _evaluateRules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateRules */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateRules.js");
 
 
 const evaluateTreeRule = (treeRule, options)=>{
@@ -20809,14 +18043,13 @@ const evaluateTreeRule = (treeRule, options)=>{
     });
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointHeaders.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointHeaders.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getEndpointHeaders: function() { return getEndpointHeaders; }
 });
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
-/* harmony import */var _evaluateExpression__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateExpression */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _evaluateExpression__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateExpression */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js");
 
 
 const getEndpointHeaders = (headers, options)=>Object.entries(headers).reduce((acc, [headerKey, headerVal])=>({
@@ -20828,28 +18061,26 @@ const getEndpointHeaders = (headers, options)=>Object.entries(headers).reduce((a
             })
         }), {});
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperties.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperties.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getEndpointProperties: function() { return getEndpointProperties; }
 });
-/* harmony import */var _getEndpointProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getEndpointProperty */"./node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperty.js");
+/* harmony import */var _getEndpointProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getEndpointProperty */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperty.js");
 
 const getEndpointProperties = (properties, options)=>Object.entries(properties).reduce((acc, [propertyKey, propertyVal])=>({
             ...acc,
             [propertyKey]: (0, _getEndpointProperty__WEBPACK_IMPORTED_MODULE_0__.getEndpointProperty)(propertyVal, options)
         }), {});
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperty.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperty.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getEndpointProperty: function() { return getEndpointProperty; }
 });
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
-/* harmony import */var _evaluateTemplate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateTemplate */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTemplate.js");
-/* harmony import */var _getEndpointProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getEndpointProperties */"./node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperties.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _evaluateTemplate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateTemplate */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateTemplate.js");
+/* harmony import */var _getEndpointProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getEndpointProperties */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointProperties.js");
 
 
 
@@ -20868,14 +18099,13 @@ const getEndpointProperty = (property, options)=>{
     }
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointUrl.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getEndpointUrl.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getEndpointUrl: function() { return getEndpointUrl; }
 });
-/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../types */"./node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
-/* harmony import */var _evaluateExpression__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateExpression */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js");
+/* harmony import */var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../types */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/types/EndpointError.js");
+/* harmony import */var _evaluateExpression__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./evaluateExpression */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateExpression.js");
 
 
 const getEndpointUrl = (endpointUrl, options)=>{
@@ -20889,9 +18119,8 @@ const getEndpointUrl = (endpointUrl, options)=>{
     throw new _types__WEBPACK_IMPORTED_MODULE_1__.EndpointError(`Endpoint URL must be a string, got ${typeof expression}`);
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/getReferenceValue.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/getReferenceValue.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getReferenceValue: function() { return getReferenceValue; }
 });
@@ -20903,19 +18132,17 @@ const getReferenceValue = ({ ref }, options)=>{
     return referenceRecord[ref];
 };
 }),
-"./node_modules/@smithy/util-endpoints/dist-es/utils/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   evaluateRules: function() { return /* reexport safe */ _evaluateRules__WEBPACK_IMPORTED_MODULE_1__.evaluateRules; }
 });
-/* harmony import */var _evaluateRules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateRules */"./node_modules/@smithy/util-endpoints/dist-es/utils/evaluateRules.js");
+/* harmony import */var _evaluateRules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./evaluateRules */"./node_modules/.pnpm/@smithy+util-endpoints@1.1.1/node_modules/@smithy/util-endpoints/dist-es/utils/evaluateRules.js");
 
 
 }),
-"./node_modules/@smithy/util-hex-encoding/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-hex-encoding@2.1.1/node_modules/@smithy/util-hex-encoding/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromHex: function() { return fromHex; },
   toHex: function() { return toHex; }
@@ -20944,31 +18171,28 @@ function toHex(bytes) {
     return out;
 }
 }),
-"./node_modules/@smithy/util-middleware/dist-es/getSmithyContext.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/getSmithyContext.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getSmithyContext: function() { return getSmithyContext; }
 });
-/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/@smithy/types/dist-es/index.js");
+/* harmony import */var _smithy_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/types */"./node_modules/.pnpm/@smithy+types@2.9.1/node_modules/@smithy/types/dist-es/index.js");
 
 const getSmithyContext = (context)=>context[_smithy_types__WEBPACK_IMPORTED_MODULE_0__.SMITHY_CONTEXT_KEY] || (context[_smithy_types__WEBPACK_IMPORTED_MODULE_0__.SMITHY_CONTEXT_KEY] = {});
 }),
-"./node_modules/@smithy/util-middleware/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getSmithyContext: function() { return /* reexport safe */ _getSmithyContext__WEBPACK_IMPORTED_MODULE_0__.getSmithyContext; },
   normalizeProvider: function() { return /* reexport safe */ _normalizeProvider__WEBPACK_IMPORTED_MODULE_1__.normalizeProvider; }
 });
-/* harmony import */var _getSmithyContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getSmithyContext */"./node_modules/@smithy/util-middleware/dist-es/getSmithyContext.js");
-/* harmony import */var _normalizeProvider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./normalizeProvider */"./node_modules/@smithy/util-middleware/dist-es/normalizeProvider.js");
+/* harmony import */var _getSmithyContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getSmithyContext */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/getSmithyContext.js");
+/* harmony import */var _normalizeProvider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./normalizeProvider */"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/normalizeProvider.js");
 
 
 }),
-"./node_modules/@smithy/util-middleware/dist-es/normalizeProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-middleware@2.1.1/node_modules/@smithy/util-middleware/dist-es/normalizeProvider.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   normalizeProvider: function() { return normalizeProvider; }
 });
@@ -20978,15 +18202,14 @@ const normalizeProvider = (input)=>{
     return ()=>promisified;
 };
 }),
-"./node_modules/@smithy/util-retry/dist-es/AdaptiveRetryStrategy.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/AdaptiveRetryStrategy.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AdaptiveRetryStrategy: function() { return AdaptiveRetryStrategy; }
 });
-/* harmony import */var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./config */"./node_modules/@smithy/util-retry/dist-es/config.js");
-/* harmony import */var _DefaultRateLimiter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DefaultRateLimiter */"./node_modules/@smithy/util-retry/dist-es/DefaultRateLimiter.js");
-/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/@smithy/util-retry/dist-es/StandardRetryStrategy.js");
+/* harmony import */var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./config */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/config.js");
+/* harmony import */var _DefaultRateLimiter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DefaultRateLimiter */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/DefaultRateLimiter.js");
+/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/StandardRetryStrategy.js");
 
 
 
@@ -21012,10 +18235,9 @@ class AdaptiveRetryStrategy {
     }
 }
 }),
-"./node_modules/@smithy/util-retry/dist-es/ConfiguredRetryStrategy.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/ConfiguredRetryStrategy.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/@smithy/util-retry/dist-es/StandardRetryStrategy.js");
+/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/StandardRetryStrategy.js");
 
 
 class ConfiguredRetryStrategy extends (/* unused pure expression or super */ null && (StandardRetryStrategy)) {
@@ -21031,13 +18253,12 @@ class ConfiguredRetryStrategy extends (/* unused pure expression or super */ nul
     }
 }
 }),
-"./node_modules/@smithy/util-retry/dist-es/DefaultRateLimiter.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/DefaultRateLimiter.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   DefaultRateLimiter: function() { return DefaultRateLimiter; }
 });
-/* harmony import */var _smithy_service_error_classification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/service-error-classification */"./node_modules/@smithy/service-error-classification/dist-es/index.js");
+/* harmony import */var _smithy_service_error_classification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/service-error-classification */"./node_modules/.pnpm/@smithy+service-error-classification@2.1.1/node_modules/@smithy/service-error-classification/dist-es/index.js");
 
 class DefaultRateLimiter {
     constructor(options){
@@ -21135,16 +18356,15 @@ class DefaultRateLimiter {
     }
 }
 }),
-"./node_modules/@smithy/util-retry/dist-es/StandardRetryStrategy.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/StandardRetryStrategy.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   StandardRetryStrategy: function() { return StandardRetryStrategy; }
 });
-/* harmony import */var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./config */"./node_modules/@smithy/util-retry/dist-es/config.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/util-retry/dist-es/constants.js");
-/* harmony import */var _defaultRetryBackoffStrategy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultRetryBackoffStrategy */"./node_modules/@smithy/util-retry/dist-es/defaultRetryBackoffStrategy.js");
-/* harmony import */var _defaultRetryToken__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defaultRetryToken */"./node_modules/@smithy/util-retry/dist-es/defaultRetryToken.js");
+/* harmony import */var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./config */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/config.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/constants.js");
+/* harmony import */var _defaultRetryBackoffStrategy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultRetryBackoffStrategy */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/defaultRetryBackoffStrategy.js");
+/* harmony import */var _defaultRetryToken__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defaultRetryToken */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/defaultRetryToken.js");
 
 
 
@@ -21206,9 +18426,8 @@ class StandardRetryStrategy {
     }
 }
 }),
-"./node_modules/@smithy/util-retry/dist-es/config.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/config.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   DEFAULT_MAX_ATTEMPTS: function() { return DEFAULT_MAX_ATTEMPTS; },
   DEFAULT_RETRY_MODE: function() { return DEFAULT_RETRY_MODE; },
@@ -21222,9 +18441,8 @@ var RETRY_MODES;
 const DEFAULT_MAX_ATTEMPTS = 3;
 const DEFAULT_RETRY_MODE = RETRY_MODES.STANDARD;
 }),
-"./node_modules/@smithy/util-retry/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/constants.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   DEFAULT_RETRY_DELAY_BASE: function() { return DEFAULT_RETRY_DELAY_BASE; },
   INITIAL_RETRY_TOKENS: function() { return INITIAL_RETRY_TOKENS; },
@@ -21246,13 +18464,12 @@ const NO_RETRY_INCREMENT = 1;
 const INVOCATION_ID_HEADER = "amz-sdk-invocation-id";
 const REQUEST_HEADER = "amz-sdk-request";
 }),
-"./node_modules/@smithy/util-retry/dist-es/defaultRetryBackoffStrategy.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/defaultRetryBackoffStrategy.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   getDefaultRetryBackoffStrategy: function() { return getDefaultRetryBackoffStrategy; }
 });
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/util-retry/dist-es/constants.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/constants.js");
 
 const getDefaultRetryBackoffStrategy = ()=>{
     let delayBase = _constants__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_RETRY_DELAY_BASE;
@@ -21268,13 +18485,12 @@ const getDefaultRetryBackoffStrategy = ()=>{
     };
 };
 }),
-"./node_modules/@smithy/util-retry/dist-es/defaultRetryToken.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/defaultRetryToken.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   createDefaultRetryToken: function() { return createDefaultRetryToken; }
 });
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/util-retry/dist-es/constants.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/constants.js");
 
 const createDefaultRetryToken = ({ retryDelay, retryCount, retryCost })=>{
     const getRetryCount = ()=>retryCount;
@@ -21287,9 +18503,8 @@ const createDefaultRetryToken = ({ retryDelay, retryCount, retryCost })=>{
     };
 };
 }),
-"./node_modules/@smithy/util-retry/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   AdaptiveRetryStrategy: function() { return /* reexport safe */ _AdaptiveRetryStrategy__WEBPACK_IMPORTED_MODULE_0__.AdaptiveRetryStrategy; },
   DEFAULT_MAX_ATTEMPTS: function() { return /* reexport safe */ _config__WEBPACK_IMPORTED_MODULE_4__.DEFAULT_MAX_ATTEMPTS; },
@@ -21299,11 +18514,11 @@ __webpack_require__.d(__webpack_exports__, {
   RETRY_MODES: function() { return /* reexport safe */ _config__WEBPACK_IMPORTED_MODULE_4__.RETRY_MODES; },
   StandardRetryStrategy: function() { return /* reexport safe */ _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_3__.StandardRetryStrategy; }
 });
-/* harmony import */var _AdaptiveRetryStrategy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdaptiveRetryStrategy */"./node_modules/@smithy/util-retry/dist-es/AdaptiveRetryStrategy.js");
-/* harmony import */var _ConfiguredRetryStrategy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ConfiguredRetryStrategy */"./node_modules/@smithy/util-retry/dist-es/ConfiguredRetryStrategy.js");
-/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/@smithy/util-retry/dist-es/StandardRetryStrategy.js");
-/* harmony import */var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./config */"./node_modules/@smithy/util-retry/dist-es/config.js");
-/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./constants */"./node_modules/@smithy/util-retry/dist-es/constants.js");
+/* harmony import */var _AdaptiveRetryStrategy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdaptiveRetryStrategy */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/AdaptiveRetryStrategy.js");
+/* harmony import */var _ConfiguredRetryStrategy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ConfiguredRetryStrategy */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/ConfiguredRetryStrategy.js");
+/* harmony import */var _StandardRetryStrategy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StandardRetryStrategy */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/StandardRetryStrategy.js");
+/* harmony import */var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./config */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/config.js");
+/* harmony import */var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./constants */"./node_modules/.pnpm/@smithy+util-retry@2.1.1/node_modules/@smithy/util-retry/dist-es/constants.js");
 
 
 
@@ -21312,18 +18527,12 @@ __webpack_require__.d(__webpack_exports__, {
 
 
 }),
-"./node_modules/@smithy/util-retry/dist-es/types.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/blob/Uint8ArrayBlobAdapter.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-}),
-"./node_modules/@smithy/util-stream/dist-es/blob/Uint8ArrayBlobAdapter.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Uint8ArrayBlobAdapter: function() { return Uint8ArrayBlobAdapter; }
 });
-/* harmony import */var _transforms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./transforms */"./node_modules/@smithy/util-stream/dist-es/blob/transforms.js");
+/* harmony import */var _transforms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./transforms */"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/blob/transforms.js");
 
 class Uint8ArrayBlobAdapter extends Uint8Array {
     static fromString(source, encoding = "utf-8") {
@@ -21343,16 +18552,15 @@ class Uint8ArrayBlobAdapter extends Uint8Array {
     }
 }
 }),
-"./node_modules/@smithy/util-stream/dist-es/blob/transforms.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/blob/transforms.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   transformFromString: function() { return transformFromString; },
   transformToString: function() { return transformToString; }
 });
-/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/@smithy/util-base64/dist-es/index.js");
-/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/@smithy/util-utf8/dist-es/index.js");
-/* harmony import */var _Uint8ArrayBlobAdapter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Uint8ArrayBlobAdapter */"./node_modules/@smithy/util-stream/dist-es/blob/Uint8ArrayBlobAdapter.js");
+/* harmony import */var _smithy_util_base64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-base64 */"./node_modules/.pnpm/@smithy+util-base64@2.1.1/node_modules/@smithy/util-base64/dist-es/index.js");
+/* harmony import */var _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-utf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js");
+/* harmony import */var _Uint8ArrayBlobAdapter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Uint8ArrayBlobAdapter */"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/blob/Uint8ArrayBlobAdapter.js");
 
 
 
@@ -21365,9 +18573,8 @@ function transformFromString(str, encoding) {
     return _Uint8ArrayBlobAdapter__WEBPACK_IMPORTED_MODULE_2__.Uint8ArrayBlobAdapter.mutate((0, _smithy_util_utf8__WEBPACK_IMPORTED_MODULE_1__.fromUtf8)(str));
 }
 }),
-"./node_modules/@smithy/util-stream/dist-es/getAwsChunkedEncodingStream.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/getAwsChunkedEncodingStream.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 /* harmony import */var stream__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! stream */"stream");
 /* harmony import */var stream__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(stream__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -21396,24 +18603,22 @@ const getAwsChunkedEncodingStream = (readableStream, options)=>{
     return awsChunkedEncodingStream;
 };
 }),
-"./node_modules/@smithy/util-stream/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Uint8ArrayBlobAdapter: function() { return /* reexport safe */ _blob_Uint8ArrayBlobAdapter__WEBPACK_IMPORTED_MODULE_0__.Uint8ArrayBlobAdapter; }
 });
-/* harmony import */var _blob_Uint8ArrayBlobAdapter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blob/Uint8ArrayBlobAdapter */"./node_modules/@smithy/util-stream/dist-es/blob/Uint8ArrayBlobAdapter.js");
-/* harmony import */var _getAwsChunkedEncodingStream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getAwsChunkedEncodingStream */"./node_modules/@smithy/util-stream/dist-es/getAwsChunkedEncodingStream.js");
-/* harmony import */var _sdk_stream_mixin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sdk-stream-mixin */"./node_modules/@smithy/util-stream/dist-es/sdk-stream-mixin.js");
+/* harmony import */var _blob_Uint8ArrayBlobAdapter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blob/Uint8ArrayBlobAdapter */"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/blob/Uint8ArrayBlobAdapter.js");
+/* harmony import */var _getAwsChunkedEncodingStream__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getAwsChunkedEncodingStream */"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/getAwsChunkedEncodingStream.js");
+/* harmony import */var _sdk_stream_mixin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sdk-stream-mixin */"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/sdk-stream-mixin.js");
 
 
 
 }),
-"./node_modules/@smithy/util-stream/dist-es/sdk-stream-mixin.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-stream@2.1.1/node_modules/@smithy/util-stream/dist-es/sdk-stream-mixin.js": (function (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/@smithy/node-http-handler/dist-es/index.js");
-/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/@smithy/util-buffer-from/dist-es/index.js");
+/* harmony import */var _smithy_node_http_handler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/node-http-handler */"./node_modules/.pnpm/@smithy+node-http-handler@2.3.1/node_modules/@smithy/node-http-handler/dist-es/index.js");
+/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/.pnpm/@smithy+util-buffer-from@2.1.1/node_modules/@smithy/util-buffer-from/dist-es/index.js");
 /* harmony import */var stream__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! stream */"stream");
 /* harmony import */var stream__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(stream__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */var util__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! util */"util");
@@ -21454,62 +18659,46 @@ const sdkStreamMixin = (stream)=>{
     });
 };
 }),
-"./node_modules/@smithy/util-uri-escape/dist-es/escape-uri-path.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-uri-escape@2.1.1/node_modules/@smithy/util-uri-escape/dist-es/escape-uri.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-const escapeUriPath = (uri)=>uri.split("/").map(escapeUri).join("/");
-}),
-"./node_modules/@smithy/util-uri-escape/dist-es/escape-uri.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   escapeUri: function() { return escapeUri; }
 });
 const escapeUri = (uri)=>encodeURIComponent(uri).replace(/[!'()*]/g, hexEncode);
 const hexEncode = (c)=>`%${c.charCodeAt(0).toString(16).toUpperCase()}`;
 }),
-"./node_modules/@smithy/util-uri-escape/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/fromUtf8.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-}),
-"./node_modules/@smithy/util-utf8/dist-es/fromUtf8.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromUtf8: function() { return fromUtf8; }
 });
-/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/@smithy/util-buffer-from/dist-es/index.js");
+/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/.pnpm/@smithy+util-buffer-from@2.1.1/node_modules/@smithy/util-buffer-from/dist-es/index.js");
 
 const fromUtf8 = (input)=>{
     const buf = (0, _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__.fromString)(input, "utf8");
     return new Uint8Array(buf.buffer, buf.byteOffset, buf.byteLength / Uint8Array.BYTES_PER_ELEMENT);
 };
 }),
-"./node_modules/@smithy/util-utf8/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   fromUtf8: function() { return /* reexport safe */ _fromUtf8__WEBPACK_IMPORTED_MODULE_0__.fromUtf8; },
   toUint8Array: function() { return /* reexport safe */ _toUint8Array__WEBPACK_IMPORTED_MODULE_1__.toUint8Array; },
   toUtf8: function() { return /* reexport safe */ _toUtf8__WEBPACK_IMPORTED_MODULE_2__.toUtf8; }
 });
-/* harmony import */var _fromUtf8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromUtf8 */"./node_modules/@smithy/util-utf8/dist-es/fromUtf8.js");
-/* harmony import */var _toUint8Array__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toUint8Array */"./node_modules/@smithy/util-utf8/dist-es/toUint8Array.js");
-/* harmony import */var _toUtf8__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./toUtf8 */"./node_modules/@smithy/util-utf8/dist-es/toUtf8.js");
+/* harmony import */var _fromUtf8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromUtf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/fromUtf8.js");
+/* harmony import */var _toUint8Array__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toUint8Array */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/toUint8Array.js");
+/* harmony import */var _toUtf8__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./toUtf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/toUtf8.js");
 
 
 
 }),
-"./node_modules/@smithy/util-utf8/dist-es/toUint8Array.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/toUint8Array.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   toUint8Array: function() { return toUint8Array; }
 });
-/* harmony import */var _fromUtf8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromUtf8 */"./node_modules/@smithy/util-utf8/dist-es/fromUtf8.js");
+/* harmony import */var _fromUtf8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fromUtf8 */"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/fromUtf8.js");
 
 const toUint8Array = (data)=>{
     if (typeof data === "string") return (0, _fromUtf8__WEBPACK_IMPORTED_MODULE_0__.fromUtf8)(data);
@@ -21517,164 +18706,27 @@ const toUint8Array = (data)=>{
     return new Uint8Array(data);
 };
 }),
-"./node_modules/@smithy/util-utf8/dist-es/toUtf8.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/@smithy+util-utf8@2.1.1/node_modules/@smithy/util-utf8/dist-es/toUtf8.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   toUtf8: function() { return toUtf8; }
 });
-/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/@smithy/util-buffer-from/dist-es/index.js");
+/* harmony import */var _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @smithy/util-buffer-from */"./node_modules/.pnpm/@smithy+util-buffer-from@2.1.1/node_modules/@smithy/util-buffer-from/dist-es/index.js");
 
 const toUtf8 = (input)=>(0, _smithy_util_buffer_from__WEBPACK_IMPORTED_MODULE_0__.fromArrayBuffer)(input.buffer, input.byteOffset, input.byteLength).toString("utf8");
 }),
-"./node_modules/@smithy/util-waiter/dist-es/createWaiter.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _poller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./poller */"./node_modules/@smithy/util-waiter/dist-es/poller.js");
-/* harmony import */var _waiter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./waiter */"./node_modules/@smithy/util-waiter/dist-es/waiter.js");
-
-
-
-const abortTimeout = async (abortSignal)=>{
-    return new Promise((resolve)=>{
-        abortSignal.onabort = ()=>resolve({
-                state: WaiterState.ABORTED
-            });
-    });
-};
-const createWaiter = async (options, input, acceptorChecks)=>{
-    const params = {
-        ...waiterServiceDefaults,
-        ...options
-    };
-    validateWaiterOptions(params);
-    const exitConditions = [
-        runPolling(params, input, acceptorChecks)
-    ];
-    if (options.abortController) exitConditions.push(abortTimeout(options.abortController.signal));
-    if (options.abortSignal) exitConditions.push(abortTimeout(options.abortSignal));
-    return Promise.race(exitConditions);
-};
-}),
-"./node_modules/@smithy/util-waiter/dist-es/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _createWaiter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createWaiter */"./node_modules/@smithy/util-waiter/dist-es/createWaiter.js");
-/* harmony import */var _waiter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./waiter */"./node_modules/@smithy/util-waiter/dist-es/waiter.js");
-
-
-}),
-"./node_modules/@smithy/util-waiter/dist-es/poller.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _waiter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./waiter */"./node_modules/@smithy/util-waiter/dist-es/waiter.js");
-
-
-const exponentialBackoffWithJitter = (minDelay, maxDelay, attemptCeiling, attempt)=>{
-    if (attempt > attemptCeiling) return maxDelay;
-    const delay = minDelay * 2 ** (attempt - 1);
-    return randomInRange(minDelay, delay);
-};
-const randomInRange = (min, max)=>min + Math.random() * (max - min);
-const runPolling = async ({ minDelay, maxDelay, maxWaitTime, abortController, client, abortSignal }, input, acceptorChecks)=>{
-    const { state, reason } = await acceptorChecks(client, input);
-    if (state !== WaiterState.RETRY) return {
-        state,
-        reason
-    };
-    let currentAttempt = 1;
-    const waitUntil = Date.now() + maxWaitTime * 1000;
-    const attemptCeiling = Math.log(maxDelay / minDelay) / Math.log(2) + 1;
-    while(true){
-        if (abortController?.signal?.aborted || abortSignal?.aborted) return {
-            state: WaiterState.ABORTED
-        };
-        const delay = exponentialBackoffWithJitter(minDelay, maxDelay, attemptCeiling, currentAttempt);
-        if (Date.now() + delay * 1000 > waitUntil) return {
-            state: WaiterState.TIMEOUT
-        };
-        await sleep(delay);
-        const { state, reason } = await acceptorChecks(client, input);
-        if (state !== WaiterState.RETRY) return {
-            state,
-            reason
-        };
-        currentAttempt += 1;
-    }
-};
-}),
-"./node_modules/@smithy/util-waiter/dist-es/utils/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-}),
-"./node_modules/@smithy/util-waiter/dist-es/utils/sleep.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const sleep = (seconds)=>{
-    return new Promise((resolve)=>setTimeout(resolve, seconds * 1000));
-};
-}),
-"./node_modules/@smithy/util-waiter/dist-es/utils/validate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const validateWaiterOptions = (options)=>{
-    if (options.maxWaitTime < 1) throw new Error(`WaiterConfiguration.maxWaitTime must be greater than 0`);
-    else if (options.minDelay < 1) throw new Error(`WaiterConfiguration.minDelay must be greater than 0`);
-    else if (options.maxDelay < 1) throw new Error(`WaiterConfiguration.maxDelay must be greater than 0`);
-    else if (options.maxWaitTime <= options.minDelay) throw new Error(`WaiterConfiguration.maxWaitTime [${options.maxWaitTime}] must be greater than WaiterConfiguration.minDelay [${options.minDelay}] for this waiter`);
-    else if (options.maxDelay < options.minDelay) throw new Error(`WaiterConfiguration.maxDelay [${options.maxDelay}] must be greater than WaiterConfiguration.minDelay [${options.minDelay}] for this waiter`);
-};
-}),
-"./node_modules/@smithy/util-waiter/dist-es/waiter.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const waiterServiceDefaults = (/* unused pure expression or super */ null && ({
-    minDelay: 2,
-    maxDelay: 120
-}));
-var WaiterState;
-(function(WaiterState) {
-    WaiterState["ABORTED"] = "ABORTED";
-    WaiterState["FAILURE"] = "FAILURE";
-    WaiterState["SUCCESS"] = "SUCCESS";
-    WaiterState["RETRY"] = "RETRY";
-    WaiterState["TIMEOUT"] = "TIMEOUT";
-})(WaiterState || (WaiterState = {}));
-const checkExceptions = (result)=>{
-    if (result.state === WaiterState.ABORTED) {
-        const abortError = new Error(`${JSON.stringify({
-            ...result,
-            reason: "Request was aborted"
-        })}`);
-        abortError.name = "AbortError";
-        throw abortError;
-    } else if (result.state === WaiterState.TIMEOUT) {
-        const timeoutError = new Error(`${JSON.stringify({
-            ...result,
-            reason: "Waiter has timed out"
-        })}`);
-        timeoutError.name = "TimeoutError";
-        throw timeoutError;
-    } else if (result.state !== WaiterState.SUCCESS) throw new Error(`${JSON.stringify({
-        result
-    })}`);
-    return result;
-};
-}),
-"./node_modules/fast-xml-parser/src/fxp.js": (function (module, __unused_webpack_exports, __webpack_require__) {
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/fxp.js": (function (module, __unused_webpack_exports, __webpack_require__) {
 'use strict';
-const validator = __webpack_require__(/*! ./validator */"./node_modules/fast-xml-parser/src/validator.js");
-const XMLParser = __webpack_require__(/*! ./xmlparser/XMLParser */"./node_modules/fast-xml-parser/src/xmlparser/XMLParser.js");
-const XMLBuilder = __webpack_require__(/*! ./xmlbuilder/json2xml */"./node_modules/fast-xml-parser/src/xmlbuilder/json2xml.js");
+const validator = __webpack_require__(/*! ./validator */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/validator.js");
+const XMLParser = __webpack_require__(/*! ./xmlparser/XMLParser */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/XMLParser.js");
+const XMLBuilder = __webpack_require__(/*! ./xmlbuilder/json2xml */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlbuilder/json2xml.js");
 module.exports = {
     XMLParser: XMLParser,
     XMLValidator: validator,
     XMLBuilder: XMLBuilder
 };
 }),
-"./node_modules/fast-xml-parser/src/util.js": (function (__unused_webpack_module, exports) {
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/util.js": (function (__unused_webpack_module, exports) {
 'use strict';
 const nameStartChar = ':A-Za-z_\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
 const nameChar = nameStartChar + '\\-.\\d\\u00B7\\u0300-\\u036F\\u203F-\\u2040';
@@ -21729,9 +18781,9 @@ exports.isName = isName;
 exports.getAllMatches = getAllMatches;
 exports.nameRegexp = nameRegexp;
 }),
-"./node_modules/fast-xml-parser/src/validator.js": (function (__unused_webpack_module, exports, __webpack_require__) {
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/validator.js": (function (__unused_webpack_module, exports, __webpack_require__) {
 'use strict';
-const util = __webpack_require__(/*! ./util */"./node_modules/fast-xml-parser/src/util.js");
+const util = __webpack_require__(/*! ./util */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/util.js");
 const defaultOptions = {
     allowBooleanAttributes: false,
     unpairedTags: []
@@ -22021,10 +19073,10 @@ function getPositionFromMatch(match) {
     return match.startIndex + match[1].length;
 }
 }),
-"./node_modules/fast-xml-parser/src/xmlbuilder/json2xml.js": (function (module, __unused_webpack_exports, __webpack_require__) {
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlbuilder/json2xml.js": (function (module, __unused_webpack_exports, __webpack_require__) {
 'use strict';
 //parse Empty Node as self closing node
-const buildFromOrderedJs = __webpack_require__(/*! ./orderedJs2Xml */"./node_modules/fast-xml-parser/src/xmlbuilder/orderedJs2Xml.js");
+const buildFromOrderedJs = __webpack_require__(/*! ./orderedJs2Xml */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlbuilder/orderedJs2Xml.js");
 const defaultOptions = {
     attributeNamePrefix: '@_',
     attributesGroupName: false,
@@ -22220,7 +19272,7 @@ function isAttribute(name /*, options*/ ) {
 }
 module.exports = Builder;
 }),
-"./node_modules/fast-xml-parser/src/xmlbuilder/orderedJs2Xml.js": (function (module) {
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlbuilder/orderedJs2Xml.js": (function (module) {
 const EOL = "\n";
 /**
  * 
@@ -22323,8 +19375,8 @@ function replaceEntitiesValue(textValue, options) {
 }
 module.exports = toXml;
 }),
-"./node_modules/fast-xml-parser/src/xmlparser/DocTypeReader.js": (function (module, __unused_webpack_exports, __webpack_require__) {
-const util = __webpack_require__(/*! ../util */"./node_modules/fast-xml-parser/src/util.js");
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/DocTypeReader.js": (function (module, __unused_webpack_exports, __webpack_require__) {
+const util = __webpack_require__(/*! ../util */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/util.js");
 //TODO: handle comments
 function readDocType(xmlData, i) {
     const entities = {};
@@ -22417,7 +19469,7 @@ function validateEntityName(name) {
 }
 module.exports = readDocType;
 }),
-"./node_modules/fast-xml-parser/src/xmlparser/OptionsBuilder.js": (function (__unused_webpack_module, exports) {
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/OptionsBuilder.js": (function (__unused_webpack_module, exports) {
 const defaultOptions = {
     preserveOrder: false,
     attributeNamePrefix: '@_',
@@ -22463,13 +19515,13 @@ const buildOptions = function(options) {
 exports.buildOptions = buildOptions;
 exports.defaultOptions = defaultOptions;
 }),
-"./node_modules/fast-xml-parser/src/xmlparser/OrderedObjParser.js": (function (module, __unused_webpack_exports, __webpack_require__) {
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/OrderedObjParser.js": (function (module, __unused_webpack_exports, __webpack_require__) {
 'use strict';
 ///@ts-check
-const util = __webpack_require__(/*! ../util */"./node_modules/fast-xml-parser/src/util.js");
-const xmlNode = __webpack_require__(/*! ./xmlNode */"./node_modules/fast-xml-parser/src/xmlparser/xmlNode.js");
-const readDocType = __webpack_require__(/*! ./DocTypeReader */"./node_modules/fast-xml-parser/src/xmlparser/DocTypeReader.js");
-const toNumber = __webpack_require__(/*! strnum */"./node_modules/strnum/strnum.js");
+const util = __webpack_require__(/*! ../util */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/util.js");
+const xmlNode = __webpack_require__(/*! ./xmlNode */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/xmlNode.js");
+const readDocType = __webpack_require__(/*! ./DocTypeReader */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/DocTypeReader.js");
+const toNumber = __webpack_require__(/*! strnum */"./node_modules/.pnpm/strnum@1.0.5/node_modules/strnum/strnum.js");
 const regx = '<((!\\[CDATA\\[([\\s\\S]*?)(]]>))|((NAME:)?(NAME))([^>]*)>|((\\/)(NAME)\\s*>))([^<]*)'.replace(/NAME/g, util.nameRegexp);
 //const tagsRegx = new RegExp("<(\\/?[\\w:\\-\._]+)([^>]*)>(\\s*"+cdataRegx+")*([^<]+)?","g");
 //const tagsRegx = new RegExp("<(\\/?)((\\w*:)?([\\w:\\-\._]+))([^>]*)>([^<]*)("+cdataRegx+"([^<]*))*([^<]+)?","g");
@@ -22941,11 +19993,11 @@ function parseValue(val, shouldParse, options) {
 }
 module.exports = OrderedObjParser;
 }),
-"./node_modules/fast-xml-parser/src/xmlparser/XMLParser.js": (function (module, __unused_webpack_exports, __webpack_require__) {
-const { buildOptions } = __webpack_require__(/*! ./OptionsBuilder */"./node_modules/fast-xml-parser/src/xmlparser/OptionsBuilder.js");
-const OrderedObjParser = __webpack_require__(/*! ./OrderedObjParser */"./node_modules/fast-xml-parser/src/xmlparser/OrderedObjParser.js");
-const { prettify } = __webpack_require__(/*! ./node2json */"./node_modules/fast-xml-parser/src/xmlparser/node2json.js");
-const validator = __webpack_require__(/*! ../validator */"./node_modules/fast-xml-parser/src/validator.js");
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/XMLParser.js": (function (module, __unused_webpack_exports, __webpack_require__) {
+const { buildOptions } = __webpack_require__(/*! ./OptionsBuilder */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/OptionsBuilder.js");
+const OrderedObjParser = __webpack_require__(/*! ./OrderedObjParser */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/OrderedObjParser.js");
+const { prettify } = __webpack_require__(/*! ./node2json */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/node2json.js");
+const validator = __webpack_require__(/*! ../validator */"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/validator.js");
 class XMLParser {
     constructor(options){
         this.externalEntities = {};
@@ -22983,7 +20035,7 @@ class XMLParser {
 }
 module.exports = XMLParser;
 }),
-"./node_modules/fast-xml-parser/src/xmlparser/node2json.js": (function (__unused_webpack_module, exports) {
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/node2json.js": (function (__unused_webpack_module, exports) {
 'use strict';
 /**
  * 
@@ -23069,7 +20121,7 @@ function isLeafTag(obj, options) {
 }
 exports.prettify = prettify;
 }),
-"./node_modules/fast-xml-parser/src/xmlparser/xmlNode.js": (function (module) {
+"./node_modules/.pnpm/fast-xml-parser@4.2.5/node_modules/fast-xml-parser/src/xmlparser/xmlNode.js": (function (module) {
 'use strict';
 class XmlNode {
     constructor(tagname){
@@ -23097,7 +20149,7 @@ class XmlNode {
 }
 module.exports = XmlNode;
 }),
-"./node_modules/strnum/strnum.js": (function (module) {
+"./node_modules/.pnpm/strnum@1.0.5/node_modules/strnum/strnum.js": (function (module) {
 const hexRegex = /^[-+]?0x[a-fA-F0-9]+$/;
 const numRegex = /^([\-\+])?(0*)(\.[0-9]+([eE]\-?[0-9]+)?|[0-9]+(\.[0-9]+([eE]\-?[0-9]+)?)?)$/;
 // const octRegex = /0x[a-z0-9]+/;
@@ -23194,74 +20246,383 @@ function toNumber(str, options = {}) {
 }
 module.exports = toNumber;
 }),
-"./node_modules/uuid/dist/esm-node/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/tslib@1.14.1/node_modules/tslib/tslib.es6.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+__webpack_require__.d(__webpack_exports__, {
+  __assign: function() { return __assign; },
+  __asyncDelegator: function() { return __asyncDelegator; },
+  __asyncGenerator: function() { return __asyncGenerator; },
+  __asyncValues: function() { return __asyncValues; },
+  __await: function() { return __await; },
+  __awaiter: function() { return __awaiter; },
+  __classPrivateFieldGet: function() { return __classPrivateFieldGet; },
+  __classPrivateFieldSet: function() { return __classPrivateFieldSet; },
+  __createBinding: function() { return __createBinding; },
+  __decorate: function() { return __decorate; },
+  __exportStar: function() { return __exportStar; },
+  __extends: function() { return __extends; },
+  __generator: function() { return __generator; },
+  __importDefault: function() { return __importDefault; },
+  __importStar: function() { return __importStar; },
+  __makeTemplateObject: function() { return __makeTemplateObject; },
+  __metadata: function() { return __metadata; },
+  __param: function() { return __param; },
+  __read: function() { return __read; },
+  __rest: function() { return __rest; },
+  __spread: function() { return __spread; },
+  __spreadArrays: function() { return __spreadArrays; },
+  __values: function() { return __values; }
+});
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
 
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
 
-
-
-
-
-
-
-
-}),
-"./node_modules/uuid/dist/esm-node/md5.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! crypto */"crypto");
-/* harmony import */var crypto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(crypto__WEBPACK_IMPORTED_MODULE_0__);
-
-function md5(bytes) {
-    if (Array.isArray(bytes)) bytes = Buffer.from(bytes);
-    else if (typeof bytes === 'string') bytes = Buffer.from(bytes, 'utf8');
-    return crypto.createHash('md5').update(bytes).digest();
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */ /* global Reflect, Promise */ var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || ({
+        __proto__: []
+    }) instanceof Array && function(d, b) {
+        d.__proto__ = b;
+    } || function(d, b) {
+        for(var p in b)if (b.hasOwnProperty(p)) d[p] = b[p];
+    };
+    return extendStatics(d, b);
+};
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() {
+        this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (md5)));
-}),
-"./node_modules/uuid/dist/esm-node/nil.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ('00000000-0000-0000-0000-000000000000');
-}),
-"./node_modules/uuid/dist/esm-node/parse.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-function parse(uuid) {
-    if (!validate(uuid)) throw TypeError('Invalid UUID');
-    let v;
-    const arr = new Uint8Array(16); // Parse ########-....-....-....-............
-    arr[0] = (v = parseInt(uuid.slice(0, 8), 16)) >>> 24;
-    arr[1] = v >>> 16 & 0xff;
-    arr[2] = v >>> 8 & 0xff;
-    arr[3] = v & 0xff; // Parse ........-####-....-....-............
-    arr[4] = (v = parseInt(uuid.slice(9, 13), 16)) >>> 8;
-    arr[5] = v & 0xff; // Parse ........-....-####-....-............
-    arr[6] = (v = parseInt(uuid.slice(14, 18), 16)) >>> 8;
-    arr[7] = v & 0xff; // Parse ........-....-....-####-............
-    arr[8] = (v = parseInt(uuid.slice(19, 23), 16)) >>> 8;
-    arr[9] = v & 0xff; // Parse ........-....-....-....-############
-    // (Use "/" to avoid 32-bit truncation when bit-shifting high-order bytes)
-    arr[10] = (v = parseInt(uuid.slice(24, 36), 16)) / 0x10000000000 & 0xff;
-    arr[11] = v / 0x100000000 & 0xff;
-    arr[12] = v >>> 24 & 0xff;
-    arr[13] = v >>> 16 & 0xff;
-    arr[14] = v >>> 8 & 0xff;
-    arr[15] = v & 0xff;
-    return arr;
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for(var s, i = 1, n = arguments.length; i < n; i++){
+            s = arguments[i];
+            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+function __rest(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
 }
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (parse)));
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+function __param(paramIndex, decorator) {
+    return function(target, key) {
+        decorator(target, key, paramIndex);
+    };
+}
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+            resolve(value);
+        });
+    }
+    return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+            try {
+                step(generator.next(value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function rejected(value) {
+            try {
+                step(generator["throw"](value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function step(result) {
+            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+function __generator(thisArg, body) {
+    var _ = {
+        label: 0,
+        sent: function() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+        },
+        trys: [],
+        ops: []
+    }, f, y, t, g;
+    return g = {
+        next: verb(0),
+        "throw": verb(1),
+        "return": verb(2)
+    }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+        return this;
+    }), g;
+    function verb(n) {
+        return function(v) {
+            return step([
+                n,
+                v
+            ]);
+        };
+    }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while(_)try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [
+                op[0] & 2,
+                t.value
+            ];
+            switch(op[0]){
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return {
+                        value: op[1],
+                        done: false
+                    };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [
+                        0
+                    ];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                        _ = 0;
+                        continue;
+                    }
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                        _.label = op[1];
+                        break;
+                    }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();
+                    continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) {
+            op = [
+                6,
+                e
+            ];
+            y = 0;
+        } finally{
+            f = t = 0;
+        }
+        if (op[0] & 5) throw op[1];
+        return {
+            value: op[0] ? op[1] : void 0,
+            done: true
+        };
+    }
+}
+function __createBinding(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}
+function __exportStar(m, exports) {
+    for(var p in m)if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function() {
+            if (o && i >= o.length) o = void 0;
+            return {
+                value: o && o[i++],
+                done: !o
+            };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while((n === void 0 || n-- > 0) && !(r = i.next()).done)ar.push(r.value);
+    } catch (error) {
+        e = {
+            error: error
+        };
+    } finally{
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        } finally{
+            if (e) throw e.error;
+        }
+    }
+    return ar;
+}
+function __spread() {
+    for(var ar = [], i = 0; i < arguments.length; i++)ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+function __spreadArrays() {
+    for(var s = 0, i = 0, il = arguments.length; i < il; i++)s += arguments[i].length;
+    for(var r = Array(s), k = 0, i = 0; i < il; i++)for(var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)r[k] = a[j];
+    return r;
+}
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i;
+    function verb(n) {
+        if (g[n]) i[n] = function(v) {
+            return new Promise(function(a, b) {
+                q.push([
+                    n,
+                    v,
+                    a,
+                    b
+                ]) > 1 || resume(n, v);
+            });
+        };
+    }
+    function resume(n, v) {
+        try {
+            step(g[n](v));
+        } catch (e) {
+            settle(q[0][3], e);
+        }
+    }
+    function step(r) {
+        r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
+    }
+    function fulfill(value) {
+        resume("next", value);
+    }
+    function reject(value) {
+        resume("throw", value);
+    }
+    function settle(f, v) {
+        if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]);
+    }
+}
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function(e) {
+        throw e;
+    }), verb("return"), i[Symbol.iterator] = function() {
+        return this;
+    }, i;
+    function verb(n, f) {
+        i[n] = o[n] ? function(v) {
+            return (p = !p) ? {
+                value: __await(o[n](v)),
+                done: n === "return"
+            } : f ? f(v) : v;
+        } : f;
+    }
+}
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i);
+    function verb(n) {
+        i[n] = o[n] && function(v) {
+            return new Promise(function(resolve, reject) {
+                v = o[n](v), settle(resolve, reject, v.done, v.value);
+            });
+        };
+    }
+    function settle(resolve, reject, d, v) {
+        Promise.resolve(v).then(function(v) {
+            resolve({
+                value: v,
+                done: d
+            });
+        }, reject);
+    }
+}
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) Object.defineProperty(cooked, "raw", {
+        value: raw
+    });
+    else cooked.raw = raw;
+    return cooked;
+}
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) {
+        for(var k in mod)if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    }
+    result.default = mod;
+    return result;
+}
+function __importDefault(mod) {
+    return mod && mod.__esModule ? mod : {
+        default: mod
+    };
+}
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) throw new TypeError("attempted to get private field on non-instance");
+    return privateMap.get(receiver);
+}
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) throw new TypeError("attempted to set private field on non-instance");
+    privateMap.set(receiver, value);
+    return value;
+}
 }),
-"./node_modules/uuid/dist/esm-node/regex.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/regex.js": (function (__unused_webpack_module, __webpack_exports__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (/^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i);
 }),
-"./node_modules/uuid/dist/esm-node/rng.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/rng.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   "default": function() { return rng; }
 });
@@ -23278,23 +20639,9 @@ function rng() {
     return rnds8Pool.slice(poolPtr, poolPtr += 16);
 }
 }),
-"./node_modules/uuid/dist/esm-node/sha1.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/stringify.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! crypto */"crypto");
-/* harmony import */var crypto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(crypto__WEBPACK_IMPORTED_MODULE_0__);
-
-function sha1(bytes) {
-    if (Array.isArray(bytes)) bytes = Buffer.from(bytes);
-    else if (typeof bytes === 'string') bytes = Buffer.from(bytes, 'utf8');
-    return crypto.createHash('sha1').update(bytes).digest();
-}
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (sha1)));
-}),
-"./node_modules/uuid/dist/esm-node/stringify.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./validate.js */"./node_modules/uuid/dist/esm-node/validate.js");
+/* harmony import */var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./validate.js */"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/validate.js");
 
 /**
  * Convert array of 16 byte values to UUID string format of the form:
@@ -23314,131 +20661,10 @@ function stringify(arr, offset = 0) {
 }
 /* harmony default export */ __webpack_exports__["default"] = (stringify);
 }),
-"./node_modules/uuid/dist/esm-node/v1.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/v4.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-
- // **`v1()` - Generate time-based UUID**
-//
-// Inspired by https://github.com/LiosK/UUID.js
-// and http://docs.python.org/library/uuid.html
-let _nodeId;
-let _clockseq; // Previous uuid creation time
-let _lastMSecs = 0;
-let _lastNSecs = 0; // See https://github.com/uuidjs/uuid for API details
-function v1(options, buf, offset) {
-    let i = buf && offset || 0;
-    const b = buf || new Array(16);
-    options = options || {};
-    let node = options.node || _nodeId;
-    let clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq; // node and clockseq need to be initialized to random values if they're not
-    // specified.  We do this lazily to minimize issues related to insufficient
-    // system entropy.  See #189
-    if (node == null || clockseq == null) {
-        const seedBytes = options.random || (options.rng || rng)();
-        if (node == null) // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
-        node = _nodeId = [
-            seedBytes[0] | 0x01,
-            seedBytes[1],
-            seedBytes[2],
-            seedBytes[3],
-            seedBytes[4],
-            seedBytes[5]
-        ];
-        if (clockseq == null) // Per 4.2.2, randomize (14 bit) clockseq
-        clockseq = _clockseq = (seedBytes[6] << 8 | seedBytes[7]) & 0x3fff;
-    } // UUID timestamps are 100 nano-second units since the Gregorian epoch,
-    // (1582-10-15 00:00).  JSNumbers aren't precise enough for this, so
-    // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
-    // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
-    let msecs = options.msecs !== undefined ? options.msecs : Date.now(); // Per 4.2.1.2, use count of uuid's generated during the current clock
-    // cycle to simulate higher resolution clock
-    let nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1; // Time since last uuid creation (in msecs)
-    const dt = msecs - _lastMSecs + (nsecs - _lastNSecs) / 10000; // Per 4.2.1.2, Bump clockseq on clock regression
-    if (dt < 0 && options.clockseq === undefined) clockseq = clockseq + 1 & 0x3fff;
-     // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
-    // time interval
-    if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) nsecs = 0;
-     // Per 4.2.1.2 Throw error if too many uuids are requested
-    if (nsecs >= 10000) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-    _lastMSecs = msecs;
-    _lastNSecs = nsecs;
-    _clockseq = clockseq; // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
-    msecs += 12219292800000; // `time_low`
-    const tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
-    b[i++] = tl >>> 24 & 0xff;
-    b[i++] = tl >>> 16 & 0xff;
-    b[i++] = tl >>> 8 & 0xff;
-    b[i++] = tl & 0xff; // `time_mid`
-    const tmh = msecs / 0x100000000 * 10000 & 0xfffffff;
-    b[i++] = tmh >>> 8 & 0xff;
-    b[i++] = tmh & 0xff; // `time_high_and_version`
-    b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
-    b[i++] = tmh >>> 16 & 0xff; // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
-    b[i++] = clockseq >>> 8 | 0x80; // `clock_seq_low`
-    b[i++] = clockseq & 0xff; // `node`
-    for(let n = 0; n < 6; ++n)b[i + n] = node[n];
-    return buf || stringify(b);
-}
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (v1)));
-}),
-"./node_modules/uuid/dist/esm-node/v3.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _v35_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./v35.js */"./node_modules/uuid/dist/esm-node/v35.js");
-/* harmony import */var _md5_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./md5.js */"./node_modules/uuid/dist/esm-node/md5.js");
-
-
-const v3 = ('v3', 0x30, );
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (v3)));
-}),
-"./node_modules/uuid/dist/esm-node/v35.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-function stringToBytes(str) {
-    str = unescape(encodeURIComponent(str)); // UTF8 escape
-    const bytes = [];
-    for(let i = 0; i < str.length; ++i)bytes.push(str.charCodeAt(i));
-    return bytes;
-}
-const DNS = '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
-const URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
-/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(name, version, hashfunc) {
-    function generateUUID(value, namespace, buf, offset) {
-        if (typeof value === 'string') value = stringToBytes(value);
-        if (typeof namespace === 'string') namespace = parse(namespace);
-        if (namespace.length !== 16) throw TypeError('Namespace must be array-like (16 iterable integer values, 0-255)');
-         // Compute hash of namespace and value, Per 4.3
-        // Future: Use spread syntax when supported on all platforms, e.g. `bytes =
-        // hashfunc([...namespace, ... value])`
-        let bytes = new Uint8Array(16 + value.length);
-        bytes.set(namespace);
-        bytes.set(value, namespace.length);
-        bytes = hashfunc(bytes);
-        bytes[6] = bytes[6] & 0x0f | version;
-        bytes[8] = bytes[8] & 0x3f | 0x80;
-        if (buf) {
-            offset = offset || 0;
-            for(let i = 0; i < 16; ++i)buf[offset + i] = bytes[i];
-            return buf;
-        }
-        return stringify(bytes);
-    } // Function#name is not settable on some platforms (#270)
-    try {
-        generateUUID.name = name; // eslint-disable-next-line no-empty
-    } catch (err) {} // For CommonJS default export support
-    generateUUID.DNS = DNS;
-    generateUUID.URL = URL;
-    return generateUUID;
-}
-}),
-"./node_modules/uuid/dist/esm-node/v4.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _rng_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rng.js */"./node_modules/uuid/dist/esm-node/rng.js");
-/* harmony import */var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stringify.js */"./node_modules/uuid/dist/esm-node/stringify.js");
+/* harmony import */var _rng_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rng.js */"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/rng.js");
+/* harmony import */var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stringify.js */"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/stringify.js");
 
 
 function v4(options, buf, offset) {
@@ -23455,47 +20681,131 @@ function v4(options, buf, offset) {
 }
 /* harmony default export */ __webpack_exports__["default"] = (v4);
 }),
-"./node_modules/uuid/dist/esm-node/v5.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/validate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _v35_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./v35.js */"./node_modules/uuid/dist/esm-node/v35.js");
-/* harmony import */var _sha1_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sha1.js */"./node_modules/uuid/dist/esm-node/sha1.js");
-
-
-const v5 = ('v5', 0x50, );
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (v5)));
-}),
-"./node_modules/uuid/dist/esm-node/validate.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */var _regex_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./regex.js */"./node_modules/uuid/dist/esm-node/regex.js");
+/* harmony import */var _regex_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./regex.js */"./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/regex.js");
 
 function validate(uuid) {
     return typeof uuid === 'string' && _regex_js__WEBPACK_IMPORTED_MODULE_0__["default"].test(uuid);
 }
 /* harmony default export */ __webpack_exports__["default"] = (validate);
 }),
-"./node_modules/uuid/dist/esm-node/version.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"./src/index.js": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+__webpack_require__.d(__webpack_exports__, {
+  paginateDescribeAlarmHistory: function() { return /* reexport safe */ _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__.paginateDescribeAlarmHistory; },
+  paginateDescribeAlarms: function() { return /* reexport safe */ _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__.paginateDescribeAlarms; },
+  paginateDescribeAnomalyDetectors: function() { return /* reexport safe */ _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__.paginateDescribeAnomalyDetectors; },
+  paginateDescribeInsightRules: function() { return /* reexport safe */ _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__.paginateDescribeInsightRules; },
+  paginateGetMetricData: function() { return /* reexport safe */ _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__.paginateGetMetricData; },
+  paginateListDashboards: function() { return /* reexport safe */ _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__.paginateListDashboards; },
+  paginateListManagedInsightRules: function() { return /* reexport safe */ _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__.paginateListManagedInsightRules; },
+  paginateListMetricStreams: function() { return /* reexport safe */ _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__.paginateListMetricStreams; },
+  paginateListMetrics: function() { return /* reexport safe */ _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__.paginateListMetrics; }
+});
+/* harmony import */var _aws_sdk_client_cloudwatch_dist_es_pagination_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/client-cloudwatch/dist-es/pagination/index */"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/dist-es/pagination/index.js");
 
-function version(uuid) {
-    if (!validate(uuid)) throw TypeError('Invalid UUID');
-    return parseInt(uuid.substr(14, 1), 16);
-}
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (version)));
 }),
-"./node_modules/@aws-sdk/client-cloudwatch/package.json": (function (module) {
+"buffer": (function (module) {
+module.exports = require('buffer')}),
+"child_process": (function (module) {
+module.exports = require('child_process')}),
+"crypto": (function (module) {
+module.exports = require('crypto')}),
+"fs": (function (module) {
+module.exports = require('fs')}),
+"http": (function (module) {
+module.exports = require('http')}),
+"http2": (function (module) {
+module.exports = require('http2')}),
+"https": (function (module) {
+module.exports = require('https')}),
+"os": (function (module) {
+module.exports = require('os')}),
+"path": (function (module) {
+module.exports = require('path')}),
+"process": (function (module) {
+module.exports = require('process')}),
+"stream": (function (module) {
+module.exports = require('stream')}),
+"url": (function (module) {
+module.exports = require('url')}),
+"util": (function (module) {
+module.exports = require('util')}),
+"./node_modules/.pnpm/@aws-sdk+client-cloudwatch@3.490.0/node_modules/@aws-sdk/client-cloudwatch/package.json": (function (module) {
 "use strict";
 module.exports = JSON.parse('{"version":"3.490.0"}')}),
-"./node_modules/@aws-sdk/client-sso/package.json": (function (module) {
+"./node_modules/.pnpm/@aws-sdk+client-sso@3.490.0/node_modules/@aws-sdk/client-sso/package.json": (function (module) {
 "use strict";
 module.exports = JSON.parse('{"version":"3.490.0"}')}),
-"./node_modules/@aws-sdk/client-sts/package.json": (function (module) {
+"./node_modules/.pnpm/@aws-sdk+client-sts@3.490.0/node_modules/@aws-sdk/client-sts/package.json": (function (module) {
 "use strict";
 module.exports = JSON.parse('{"version":"3.490.0"}')}),
-"./node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partitions.json": (function (module) {
+"./node_modules/.pnpm/@aws-sdk+util-endpoints@3.489.0/node_modules/@aws-sdk/util-endpoints/dist-es/lib/aws/partitions.json": (function (module) {
 "use strict";
 module.exports = JSON.parse('{"partitions":[{"id":"aws","outputs":{"dnsSuffix":"amazonaws.com","dualStackDnsSuffix":"api.aws","implicitGlobalRegion":"us-east-1","name":"aws","supportsDualStack":true,"supportsFIPS":true},"regionRegex":"^(us|eu|ap|sa|ca|me|af|il)\\\\-\\\\w+\\\\-\\\\d+$","regions":{"af-south-1":{"description":"Africa (Cape Town)"},"ap-east-1":{"description":"Asia Pacific (Hong Kong)"},"ap-northeast-1":{"description":"Asia Pacific (Tokyo)"},"ap-northeast-2":{"description":"Asia Pacific (Seoul)"},"ap-northeast-3":{"description":"Asia Pacific (Osaka)"},"ap-south-1":{"description":"Asia Pacific (Mumbai)"},"ap-south-2":{"description":"Asia Pacific (Hyderabad)"},"ap-southeast-1":{"description":"Asia Pacific (Singapore)"},"ap-southeast-2":{"description":"Asia Pacific (Sydney)"},"ap-southeast-3":{"description":"Asia Pacific (Jakarta)"},"ap-southeast-4":{"description":"Asia Pacific (Melbourne)"},"aws-global":{"description":"AWS Standard global region"},"ca-central-1":{"description":"Canada (Central)"},"ca-west-1":{"description":"Canada West (Calgary)"},"eu-central-1":{"description":"Europe (Frankfurt)"},"eu-central-2":{"description":"Europe (Zurich)"},"eu-north-1":{"description":"Europe (Stockholm)"},"eu-south-1":{"description":"Europe (Milan)"},"eu-south-2":{"description":"Europe (Spain)"},"eu-west-1":{"description":"Europe (Ireland)"},"eu-west-2":{"description":"Europe (London)"},"eu-west-3":{"description":"Europe (Paris)"},"il-central-1":{"description":"Israel (Tel Aviv)"},"me-central-1":{"description":"Middle East (UAE)"},"me-south-1":{"description":"Middle East (Bahrain)"},"sa-east-1":{"description":"South America (Sao Paulo)"},"us-east-1":{"description":"US East (N. Virginia)"},"us-east-2":{"description":"US East (Ohio)"},"us-west-1":{"description":"US West (N. California)"},"us-west-2":{"description":"US West (Oregon)"}}},{"id":"aws-cn","outputs":{"dnsSuffix":"amazonaws.com.cn","dualStackDnsSuffix":"api.amazonwebservices.com.cn","implicitGlobalRegion":"cn-northwest-1","name":"aws-cn","supportsDualStack":true,"supportsFIPS":true},"regionRegex":"^cn\\\\-\\\\w+\\\\-\\\\d+$","regions":{"aws-cn-global":{"description":"AWS China global region"},"cn-north-1":{"description":"China (Beijing)"},"cn-northwest-1":{"description":"China (Ningxia)"}}},{"id":"aws-us-gov","outputs":{"dnsSuffix":"amazonaws.com","dualStackDnsSuffix":"api.aws","implicitGlobalRegion":"us-gov-west-1","name":"aws-us-gov","supportsDualStack":true,"supportsFIPS":true},"regionRegex":"^us\\\\-gov\\\\-\\\\w+\\\\-\\\\d+$","regions":{"aws-us-gov-global":{"description":"AWS GovCloud (US) global region"},"us-gov-east-1":{"description":"AWS GovCloud (US-East)"},"us-gov-west-1":{"description":"AWS GovCloud (US-West)"}}},{"id":"aws-iso","outputs":{"dnsSuffix":"c2s.ic.gov","dualStackDnsSuffix":"c2s.ic.gov","implicitGlobalRegion":"us-iso-east-1","name":"aws-iso","supportsDualStack":false,"supportsFIPS":true},"regionRegex":"^us\\\\-iso\\\\-\\\\w+\\\\-\\\\d+$","regions":{"aws-iso-global":{"description":"AWS ISO (US) global region"},"us-iso-east-1":{"description":"US ISO East"},"us-iso-west-1":{"description":"US ISO WEST"}}},{"id":"aws-iso-b","outputs":{"dnsSuffix":"sc2s.sgov.gov","dualStackDnsSuffix":"sc2s.sgov.gov","implicitGlobalRegion":"us-isob-east-1","name":"aws-iso-b","supportsDualStack":false,"supportsFIPS":true},"regionRegex":"^us\\\\-isob\\\\-\\\\w+\\\\-\\\\d+$","regions":{"aws-iso-b-global":{"description":"AWS ISOB (US) global region"},"us-isob-east-1":{"description":"US ISOB East (Ohio)"}}},{"id":"aws-iso-e","outputs":{"dnsSuffix":"cloud.adc-e.uk","dualStackDnsSuffix":"cloud.adc-e.uk","implicitGlobalRegion":"eu-isoe-west-1","name":"aws-iso-e","supportsDualStack":false,"supportsFIPS":true},"regionRegex":"^eu\\\\-isoe\\\\-\\\\w+\\\\-\\\\d+$","regions":{}},{"id":"aws-iso-f","outputs":{"dnsSuffix":"csp.hci.ic.gov","dualStackDnsSuffix":"csp.hci.ic.gov","implicitGlobalRegion":"us-isof-south-1","name":"aws-iso-f","supportsDualStack":false,"supportsFIPS":true},"regionRegex":"^us\\\\-isof\\\\-\\\\w+\\\\-\\\\d+$","regions":{}}],"version":"1.1"}')}),
 
+}
+// The module cache
+ var __webpack_module_cache__ = {};
+function __webpack_require__(moduleId) {
+// Check if module is in cache
+        var cachedModule = __webpack_module_cache__[moduleId];
+        if (cachedModule !== undefined) {
+      return cachedModule.exports;
+      }
+      // Create a new module (and put it into the cache)
+      var module = (__webpack_module_cache__[moduleId] = {
+       exports: {}
+      });
+      // Execute the module function
+      __webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+// Return the exports of the module
+ return module.exports;
+
+}
+// webpack/runtime/define_property_getters
+!function() {
+__webpack_require__.d = function(exports, definition) {
+	for(var key in definition) {
+        if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+            Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+        }
+    }
 };
+}();
+// webpack/runtime/make_namespace_object
+!function() {
+// define __esModule on exports
+__webpack_require__.r = function(exports) {
+	if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+		Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+	}
+	Object.defineProperty(exports, '__esModule', { value: true });
+};
+
+}();
+// webpack/runtime/compat_get_default_export
+!function() {
+// getDefaultExport function for compatibility with non-harmony modules
+__webpack_require__.n = function (module) {
+	var getter = module && module.__esModule ?
+		function () { return module['default']; } :
+		function () { return module; };
+	__webpack_require__.d(getter, { a: getter });
+	return getter;
+};
+
+
+
+
+}();
+// webpack/runtime/has_own_property
+!function() {
+__webpack_require__.o = function (obj, prop) {
+	return Object.prototype.hasOwnProperty.call(obj, prop);
+};
+
+}();
+var __webpack_exports__ = __webpack_require__("./src/index.js");module.exports = __webpack_exports__;

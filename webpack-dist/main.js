@@ -6,19 +6,11 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   slackServer: () => (/* binding */ slackServer)
+/* harmony export */   "paginateListAccounts": () => (/* reexport safe */ _aws_sdk_client_sso_dist_es_pagination_ListAccountsPaginator_js__WEBPACK_IMPORTED_MODULE_0__.paginateListAccounts)
 /* harmony export */ });
-/* harmony import */ var _aws_sdk_client_cloudwatch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/@aws-sdk/client-cloudwatch/dist-es/CloudWatchClient.js");
-/* harmony import */ var _aws_sdk_client_cloudwatch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/@aws-sdk/client-cloudwatch/dist-es/commands/PutMetricDataCommand.js");
+/* harmony import */ var _aws_sdk_client_sso_dist_es_pagination_ListAccountsPaginator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/@aws-sdk/client-sso/dist-es/pagination/ListAccountsPaginator.js");
+// node_modules/.pnpm/uuid@8.3.2/node_modules/uuid/dist/esm-node/v5.js
 
-
-async function slackServer(event) {
-  await new _aws_sdk_client_cloudwatch__WEBPACK_IMPORTED_MODULE_0__.CloudWatchClient().send(new _aws_sdk_client_cloudwatch__WEBPACK_IMPORTED_MODULE_1__.PutMetricDataCommand({
-    MetricData: [],
-    Namespace: 'rspack',
-  }));
-  console.log(event);
-}
 
 
 /***/ }),
@@ -27,13 +19,6 @@ async function slackServer(event) {
 /***/ ((module) => {
 
 module.exports = require("buffer");
-
-/***/ }),
-
-/***/ "child_process":
-/***/ ((module) => {
-
-module.exports = require("child_process");
 
 /***/ }),
 
@@ -147,7 +132,7 @@ module.exports = require("util");
 /******/ __webpack_require__.x = () => {
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_aws-crypto_crc32_build_aws_crc32_js-node_modules_aws-crypto_crc32_build_-597852","vendors-node_modules_aws-sdk_client-sts_dist-es_defaultRoleAssumers_js","vendors-node_modules_aws-sdk_core_dist-es_client_emitWarningIfUnsupportedVersion_js-node_modu-2be6eb","vendors-node_modules_fast-xml-parser_src_fxp_js","vendors-node_modules_smithy_core_dist-es_index_js-node_modules_smithy_hash-node_dist-es_index-317b1c"], () => (__webpack_require__("./src/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_aws-sdk_client-sso_dist-es_pagination_ListAccountsPaginator_js-node_modu-e8c101","vendors-node_modules_smithy_hash-node_dist-es_index_js-node_modules_smithy_middleware-content-53edaa"], () => (__webpack_require__("./src/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	return __webpack_exports__;
 /******/ };
@@ -293,11 +278,8 @@ module.exports = require("util");
 /******/ (() => {
 /******/ 	var next = __webpack_require__.x;
 /******/ 	__webpack_require__.x = () => {
-/******/ 		__webpack_require__.e("vendors-node_modules_aws-crypto_crc32_build_aws_crc32_js-node_modules_aws-crypto_crc32_build_-597852");
-/******/ 		__webpack_require__.e("vendors-node_modules_aws-sdk_client-sts_dist-es_defaultRoleAssumers_js");
-/******/ 		__webpack_require__.e("vendors-node_modules_aws-sdk_core_dist-es_client_emitWarningIfUnsupportedVersion_js-node_modu-2be6eb");
-/******/ 		__webpack_require__.e("vendors-node_modules_fast-xml-parser_src_fxp_js");
-/******/ 		__webpack_require__.e("vendors-node_modules_smithy_core_dist-es_index_js-node_modules_smithy_hash-node_dist-es_index-317b1c");
+/******/ 		__webpack_require__.e("vendors-node_modules_aws-sdk_client-sso_dist-es_pagination_ListAccountsPaginator_js-node_modu-e8c101");
+/******/ 		__webpack_require__.e("vendors-node_modules_smithy_hash-node_dist-es_index_js-node_modules_smithy_middleware-content-53edaa");
 /******/ 		return next();
 /******/ 	};
 /******/ })();
