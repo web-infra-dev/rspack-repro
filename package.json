@@ -24,7 +24,9 @@
     "webpack-cli": "^5.0.1"
   },
   "devDependencies": {
-    "@rsbuild/core": "^0.3.11",
+    "@rsbuild/core": "latest",
+    "@rsbuild/plugin-swc": "latest",
+    "@rsbuild/webpack": "latest",
     "npm-run-all": "^4.1.5"
   }
 }
