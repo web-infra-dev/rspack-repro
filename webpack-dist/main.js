@@ -198,7 +198,8 @@
 /******/ 				cc = data.charCodeAt(i);
 /******/ 				if(cc == 58) { token2 = token; token = ""; }
 /******/ 				else if(cc == 47) { token = token.replace(/^_/, ""); token2 = token2.replace(/^_/, ""); exports[token2] = token; token = ""; token2 = ""; }
-/******/ 				else if(!cc || cc == 44) { token = token.replace(/^_/, ""); __webpack_require__.r(exports); target[token] = ((exports, module) => {
+/******/ 				else if(cc == 38) { __webpack_require__.r(exports); }
+/******/ 				else if(!cc || cc == 44) { token = token.replace(/^_/, ""); target[token] = ((exports, module) => {
 /******/ 					module.exports = exports;
 /******/ 				}).bind(null, exports); token = ""; token2 = ""; exports = {};  }
 /******/ 				else if(cc == 92) { token += data[++i] }

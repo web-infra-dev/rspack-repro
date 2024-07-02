@@ -7,15 +7,19 @@ __webpack_require__.d(__webpack_exports__, {
 });
 /* harmony import */var _render_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./render.css */ "./src/render.css");
 
+
 function render() {
-    const el = document.createElement('div');
-    el.classList.add('text');
-    document.getElementsByTagName('body')[0].appendChild(el);
-    el.innerHTML = 'hello, world';
+    const el = document.createElement('div')
+    el.classList.add('text')
+    document.getElementsByTagName('body')[0].appendChild(el)
+    el.innerHTML = 'hello, world'
 }
+
 }),
 "./src/render.css": (function (module, __unused_webpack_exports, __webpack_require__) {
 __webpack_require__.r(module.exports = {});
+
+
 }),
 
 }]);

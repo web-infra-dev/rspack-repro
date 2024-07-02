@@ -167,6 +167,13 @@ __webpack_require__.r = function(exports) {
 };
 
 })();
+// webpack/runtime/rspack_version
+(() => {
+__webpack_require__.rv = function () {
+	return "1.0.0-alpha.0";
+};
+
+})();
 // webpack/runtime/auto_public_path
 (() => {
 
@@ -179,7 +186,7 @@ __webpack_require__.r = function(exports) {
           var scripts = document.getElementsByTagName("script");
               if (scripts.length) {
                 var i = scripts.length - 1;
-                while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+                while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
               }
         }
       }
@@ -427,11 +434,16 @@ chunkLoadingGlobal.push = webpackJsonpCallback.bind(
 );
 
 })();
+// webpack/runtime/rspack_unique_id
+(() => {
+__webpack_require__.ruid = "bundler=rspack@1.0.0-alpha.0";
+
+})();
 /************************************************************************/
 var __webpack_exports__ = {};
-__webpack_require__.e(/*! import() */ "src_render_js").then(__webpack_require__.bind(__webpack_require__, /*! ./render */ "./src/render.js")).then((exports)=>{
-    exports.render();
-});
+__webpack_require__.e(/*! import() */ "src_render_js").then(__webpack_require__.bind(__webpack_require__, /*! ./render */ "./src/render.js")).then(exports => {
+    exports.render()
+})
 
 })()
 ;
