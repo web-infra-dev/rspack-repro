@@ -88,7 +88,8 @@ typings/
 # public
 
 rsbuild-dist
-
+rspack-dist
+webpack-dist
 # Serverless directories
 .serverless/
 
@@ -100,3 +101,5 @@ rsbuild-dist
 
 # TernJS port file
 .tern-port
+
+
