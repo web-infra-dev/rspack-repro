@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm-run-all build:* --sequential --print-name",
     "build:rspack": "cross-env RSPACK=1 pnpm rspack -c ./rspack.config.mjs",
-    "build:rsbuild": "rsbuild build --env-mode development",
+    "build:rsbuild": "rsbuild build",
     "build:webpack": "cross-env WEBPACK=1 pnpm webpack -c ./rspack.config.mjs",
     "dev:rspack": "cross-env RSPACK=1 rspack dev -c ./rspack.config.mjs",
     "dev:rsbuild": "rsbuild dev",
