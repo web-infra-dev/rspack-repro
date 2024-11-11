@@ -88,8 +88,6 @@ typings/
 # public
 
 rsbuild-dist
-rspack-dist
-webpack-dist
 # Serverless directories
 .serverless/
 

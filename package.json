@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "npm-run-all build:* --sequential --print-name",
-    "build:rspack": "RSPACK=1 pnpm rspack -c ./rspack.config.mjs",
+    "build:rspack": "cross-env RSPACK=1 pnpm rspack -c ./rspack.config.mjs",
     "build:rsbuild": "rsbuild build",
-    "build:webpack": "WEBPACK=1 pnpm webpack -c ./rspack.config.mjs",
-    "dev:rspack": "RSPACK=1 rspack dev -c ./rspack.config.mjs",
+    "build:webpack": "cross-env WEBPACK=1 pnpm webpack -c ./rspack.config.mjs",
+    "dev:rspack": "cross-env RSPACK=1 rspack dev -c ./rspack.config.mjs",
     "dev:rsbuild": "rsbuild dev",
-    "dev:webpack": "WEBPACK=1 webpack serve -c ./rspack.config.mjs",
+    "dev:webpack": "cross-env WEBPACK=1 webpack serve -c ./rspack.config.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@rsbuild/core": "^1.0.1",
+    "cross-env": "^7.0.3",
     "npm-run-all2": "^6.2.0"
   }
 }
