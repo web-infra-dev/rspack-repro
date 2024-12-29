@@ -1,31 +1,27 @@
 {
   "name": "rspack-repro",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "build": "npm-run-all build:* --sequential --print-name",
-    "build:rspack": "cross-env RSPACK=1 pnpm rspack -c ./rspack.config.mjs",
+    "build:rspack": "cross-env RSPACK=1 rspack",
     "build:rsbuild": "rsbuild build",
-    "build:webpack": "cross-env WEBPACK=1 pnpm webpack -c ./rspack.config.mjs",
-    "dev:rspack": "cross-env RSPACK=1 rspack dev -c ./rspack.config.mjs",
+    "build:webpack": "cross-env WEBPACK=1 webpack -c ./rspack.config.mjs",
+    "dev:rspack": "cross-env RSPACK=1 rspack dev",
     "dev:rsbuild": "rsbuild dev",
-    "dev:webpack": "cross-env WEBPACK=1 webpack serve -c ./rspack.config.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:webpack": "cross-env WEBPACK=1 webpack serve -c ./rspack.config.mjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@rspack/cli": "^1.0.0",
-    "@rspack/core": "^1.0.0",
-    "html-webpack-plugin": "^5.6.0",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4"
+    "@rspack/cli": "^1.1.8",
+    "@rspack/core": "^1.1.8",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.0.1",
+    "@rsbuild/core": "^1.1.13",
     "cross-env": "^7.0.3",
-    "npm-run-all2": "^6.2.0"
-  }
+    "npm-run-all2": "^7.0.2"
+  },
+  "packageManager": "pnpm@9.15.2"
 }
