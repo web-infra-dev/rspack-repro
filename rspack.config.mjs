@@ -9,6 +9,54 @@ if (!isRunningRspack && !isRunningWebpack) {
   throw new Error("Unknown bundler");
 }
 
+const alias = {
+  a: path.resolve(__dirname, 'src', 'a.js'),
+  b: 'c',
+  c: path.resolve(__dirname, 'src', 'c.js')
+};
+
+class ResolverPlugin {
+  apply(compiler) {
+    compiler.hooks.compilation.tap(
+      ResolverPlugin.name,
+      (compilation, { normalModuleFactory }) => {
+        normalModuleFactory.hooks.beforeResolve.tap(
+          ResolverPlugin.name,
+          (resolveData) => {
+            const { request } = resolveData;
+
+            if (request === 'a' || request === 'b' || request === 'c') {
+              console.log("before request", request);
+            }
+          }
+        );
+
+        normalModuleFactory.hooks.resolve.tap(
+          ResolverPlugin.name,
+          (resolveData) => {
+            const { request } = resolveData;
+
+            if (request === 'a' || request === 'b' || request === 'c') {
+              console.log("request", request);
+            }
+          }
+        );
+
+        normalModuleFactory.hooks.afterResolve.tap(
+          ResolverPlugin.name,
+          (resolveData) => {
+            const { request } = resolveData;
+
+            if (request === 'a' || request === 'b' || request === 'c') {
+              console.log("after request", request);
+            }
+          }
+        );
+      }
+    );
+  }
+}
+
 /**
  * @type {import('webpack').Configuration | import('@rspack/cli').Configuration}
  */
@@ -18,7 +66,8 @@ const config = {
   entry: {
     main: "./src/index",
   },
-  plugins: [new HtmlWebpackPlugin()],
+  resolve: {alias},
+  plugins: [new HtmlWebpackPlugin(), new ResolverPlugin()],
   output: {
     clean: true,
     path: isRunningWebpack
