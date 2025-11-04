@@ -2,6 +2,7 @@
   "name": "rspack-repro",
   "version": "1.0.0",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "npm-run-all build:* --sequential --print-name",
     "build:rspack": "cross-env RSPACK=1 rspack",
