@@ -12,16 +12,16 @@
     "dev:webpack": "cross-env WEBPACK=1 webpack serve -c ./rspack.config.mjs"
   },
   "dependencies": {
-    "@rspack/cli": "^1.5.2",
-    "@rspack/core": "^1.5.2",
+    "@rspack/cli": "^1.6.0",
+    "@rspack/core": "^1.6.0",
     "html-webpack-plugin": "^5.6.4",
-    "webpack": "^5.101.3",
+    "webpack": "^5.102.1",
     "webpack-cli": "^6.0.1"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.5.3",
-    "cross-env": "^10.0.0",
+    "@rsbuild/core": "^1.6.1",
+    "cross-env": "^10.1.0",
     "npm-run-all2": "^8.0.4"
   },
-  "packageManager": "pnpm@10.15.1"
+  "packageManager": "pnpm@10.20.0"
 }
